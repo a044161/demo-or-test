@@ -7,10 +7,12 @@ var bsCreate = browserSync.create();
 
 const babel = require('gulp-babel');
 const browserify = require('gulp-browserify');
-const concat = require('gulp-concat');
+const gulpLoadPlugins = require('gulp-load-plugins');
+const $ = gulpLoadPlugins();
+
 const del = require('del');
 
-gulp.task('default', gulp.series(clear, gulp.parallel(server,all,scripts)));
+gulp.task('default', gulp.series(clear, gulp.parallel(scripts,watch,server)));
 
 function server(){
 	bsCreate.init({
@@ -19,19 +21,7 @@ function server(){
 			directory: true
 		}
 	});
-
-	var watcher = gulp.watch(['html/**/*.html', 'styles/**/*.css', 'scripts/**/*.js'],{cwd:'src'});
-    watcher.on('all', function(event, path, stats){
-    	scripts()
-        bsCreate.reload()
-        
-    })
 };
-
-function all(){
-	return gulp.src(['**/*.html', '**/*.css'],{cwd:'src'})
-		.pipe(gulp.dest('tmp'))
-}
 
 function scripts(){
 	return gulp.src(['**/*.js'],{cwd:'src'})
@@ -39,8 +29,25 @@ function scripts(){
 			presets: ['es2015'],
 			plugins: ['transform-runtime']
 		}))
-		.pipe(concat('/scripts/all.js'))
+		.pipe($.cached('scripts'))
+		.pipe($.remember('scripts'))
+		.pipe($.concat('/scripts/all.js'))
 		.pipe(browserify())
+		.pipe(gulp.dest('tmp'))
+};
+
+function watch(){
+	var watcher = gulp.watch('src/**/*.js', gulp.series(scripts,gulp.parallel(bsCreate.reload)));
+	watcher.on('change', function(event){
+		if(event.type === 'deleted'){
+			delete $.cached.caches['scripts'][event.path];
+			$.remember.forget('scripts', event.path);
+		}
+	})
+};
+
+function all(){
+	return gulp.src(['**/*.html', '**/*.css'],{cwd:'src'})
 		.pipe(gulp.dest('tmp'))
 }
 

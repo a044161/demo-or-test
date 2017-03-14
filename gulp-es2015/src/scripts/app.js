@@ -12,5 +12,7 @@ class A {
 
 	a(){
 		console.log('this A->a');
+		var s = 'a';
+		var c = 'cssss';
 	}
 }
