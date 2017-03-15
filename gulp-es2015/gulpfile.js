@@ -12,7 +12,7 @@ const $ = gulpLoadPlugins();
 
 const del = require('del');
 
-gulp.task('default', gulp.series(clear, gulp.parallel(scripts,watch,server)));
+
 
 function server(){
 	bsCreate.init({
@@ -21,9 +21,12 @@ function server(){
 			directory: true
 		}
 	});
+
+	gulp.watch('src/**/*.js',gulp.series('scripts'));
+	gulp.watch('src/**/*.css',gulp.series('styles'));
 };
 
-function scripts(){
+gulp.task('scripts',function(){
 	return gulp.src(['**/*.js'],{cwd:'src'})
 		.pipe(babel({
 			presets: ['es2015'],
@@ -31,26 +34,25 @@ function scripts(){
 		}))
 		.pipe($.cached('scripts'))
 		.pipe($.remember('scripts'))
-		.pipe($.concat('/scripts/all.js'))
+		.pipe($.concat('scripts/app.js'))
 		.pipe(browserify())
 		.pipe(gulp.dest('tmp'))
-};
+});
 
-function watch(){
-	var watcher = gulp.watch('src/**/*.js', gulp.series(scripts,gulp.parallel(bsCreate.reload)));
-	watcher.on('change', function(event){
-		if(event.type === 'deleted'){
-			delete $.cached.caches['scripts'][event.path];
-			$.remember.forget('scripts', event.path);
-		}
-	})
-};
-
-function all(){
-	return gulp.src(['**/*.html', '**/*.css'],{cwd:'src'})
+gulp.task('styles', function(){
+	return gulp.src(['**/*.css'], {cwd: 'src'})
+		.pipe($.cached('styles'))
+		.pipe($.remember('styles'))
 		.pipe(gulp.dest('tmp'))
-}
+});
+
+gulp.task('all', function(){
+	return gulp.src(['**/*.html'],{cwd:'src'})
+		.pipe(gulp.dest('tmp'))
+});
 
 function clear(){
 	return del('tmp')
 }
+
+gulp.task('default', gulp.series(clear, gulp.parallel('scripts','styles',server,'all')));

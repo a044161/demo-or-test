@@ -1,5 +1,5 @@
 'use strict';
-const module1 = require('./libs/module-1');
+import module1 from './libs/module-1'
 const a = 'a';
 
 module1()
@@ -13,6 +13,6 @@ class A {
 	a(){
 		console.log('this A->a');
 		var s = 'a';
-		var c = 'cssss';
+		var c = 'cssssddds';
 	}
 }
