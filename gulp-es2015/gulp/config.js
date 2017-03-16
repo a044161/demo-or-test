@@ -2,8 +2,7 @@
 
 const path = {
 	dist: 'dist',
-	src: 'src',
-	tmp: 'tmp'
+	src: 'app'
 };
 
 const folder = {

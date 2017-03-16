@@ -1,58 +1,25 @@
 'use strict';
 
+const path = require('path');
+
 const gulp = require('gulp');
-
-var browserSync = require('browser-sync');
-var bsCreate = browserSync.create();
-
-const babel = require('gulp-babel');
-const browserify = require('gulp-browserify');
-const gulpLoadPlugins = require('gulp-load-plugins');
-const $ = gulpLoadPlugins();
-
 const del = require('del');
+const watch = require('gulp-watch');
 
+const _path = require('./gulp/config').path;
+const _folder = require('./gulp/config').folder;
 
+const server = require('./gulp/server');
+const scripts = require('./gulp/scripts');
+const styles = require('./gulp/styles');
 
-function server(){
-	bsCreate.init({
-		server:{
-			baseDir: 'tmp',
-			directory: true
-		}
-	});
+gulp.task('watch', function(){
+	watch(path.join(_path.src,_folder.js),gulp.series(scripts,gulp.parallel(server.reload)));
+	watch(path.join(_path.src,_folder.css),gulp.series(styles,gulp.parallel(server.reload)));
+})
 
-	gulp.watch('src/**/*.js',gulp.series('scripts'));
-	gulp.watch('src/**/*.css',gulp.series('styles'));
-};
+gulp.task('clean', function(){
+	return del(_path.dist)
+})
 
-gulp.task('scripts',function(){
-	return gulp.src(['**/*.js'],{cwd:'src'})
-		.pipe(babel({
-			presets: ['es2015'],
-			plugins: ['transform-runtime']
-		}))
-		.pipe($.cached('scripts'))
-		.pipe($.remember('scripts'))
-		.pipe($.concat('scripts/app.js'))
-		.pipe(browserify())
-		.pipe(gulp.dest('tmp'))
-});
-
-gulp.task('styles', function(){
-	return gulp.src(['**/*.css'], {cwd: 'src'})
-		.pipe($.cached('styles'))
-		.pipe($.remember('styles'))
-		.pipe(gulp.dest('tmp'))
-});
-
-gulp.task('all', function(){
-	return gulp.src(['**/*.html'],{cwd:'src'})
-		.pipe(gulp.dest('tmp'))
-});
-
-function clear(){
-	return del('tmp')
-}
-
-gulp.task('default', gulp.series(clear, gulp.parallel('scripts','styles',server,'all')));
+gulp.task('default', gulp.series('clean',gulp.parallel(scripts,styles,server.dev,'watch')))
