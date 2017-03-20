@@ -1,6 +1,8 @@
 'use strict';
+
 import module1 from './libs/module-1'
-const a = 'a';
+
+const a = 'abc';
 
 module1()
 
