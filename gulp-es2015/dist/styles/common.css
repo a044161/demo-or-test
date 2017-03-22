@@ -1,2 +1,12 @@
+.parent, body span {
+  color: red; }
+
+body div {
+  background: #fff;
+  height: 750 px; }
+
+body span {
+  background: #fff; }
+
 a {
   display: none; }

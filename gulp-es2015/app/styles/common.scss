@@ -1,3 +1,30 @@
 @charset 'utf8';
 
-@import './common/layout/layout.scss';
+// 定义变量
+$white: #fff;
+
+// mixin
+@mixin backgroundColor($color){
+	background: $color;
+}
+
+.parent{
+	color: red;
+}
+
+
+// 嵌套写法
+body{
+	div{
+		background: $white;
+		height: (600+150)px; // 运算
+	}
+
+	span{
+		@extend .parent; // 继承
+		@include backgroundColor(#fff);
+	}
+} 
+
+// 导入
+@import './common/layout/_layout';

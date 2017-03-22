@@ -6,6 +6,7 @@ const path = {
 };
 
 const folder = {
+	app_entry: './scripts/app.js',
 	js: '/**/*.js',
 	css: '/**/*.{css,scss}',
 	html: '/**/*.html',

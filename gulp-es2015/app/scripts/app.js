@@ -1,6 +1,6 @@
 'use strict';
 
-import module1 from './libs/module-1'
+import module1 from '../libs/module-1'
 
 const a = 'abc';
 
@@ -18,3 +18,5 @@ class A {
 		var c = 'cdsassddds';
 	}
 }
+
+const _A = new A()
