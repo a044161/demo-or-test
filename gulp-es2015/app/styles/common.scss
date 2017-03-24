@@ -10,6 +10,7 @@ $white: #fff;
 
 .parent{
 	color: red;
+	transition: all ease .1s;
 }
 
 
@@ -17,7 +18,7 @@ $white: #fff;
 body{
 	div{
 		background: $white;
-		height: (600+150)px; // 运算
+		height: (600+1501)px; // 运算
 	}
 
 	span{
@@ -28,3 +29,4 @@ body{
 
 // 导入
 @import './common/layout/_layout';
+@import './common/ui/button/_button';

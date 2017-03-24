@@ -15,15 +15,11 @@ const stream = require('./server').stream;
 
 function html(){
 	return gulp.src(path.join(_path.src,_folder.html))
-			.pipe(cached('html'))
 			.pipe(fileInclude({
 				prefix: '@@',
 				basePath: path.join(_path.src,_folder.html)
 			}))
-			.pipe(htmlReplace({
-				'css': 'styles/common.css',
-				'js': 'scripts/bundle.js'
-			}))
+			.pipe(cached('html'))
 			.pipe(gulp.dest(_path.dist))
 			.pipe(stream())
 }

@@ -1,4 +1,42 @@
-*{
-	padding: 0;
-	margin: 0;
+a{
+	width: 100px;
+}
+
+p{
+	width: 100px;
+}
+
+.css{
+	width: 100px;
+	height: 20px;
+}
+
+.css-1{
+	width: 200px;
+}
+
+.css-2{
+	width: 100px;
+}
+
+.css-3{
+	z-index: 100;
+}
+
+.css-4{
+	z-index: 10;
+}
+
+.css-5{
+	z-index: 100;
+	animation: abc .5s;
+}
+
+@keyframes abc{
+	from{
+		width: 10px;
+	}
+	to{
+		width: 100px;
+	}
 }

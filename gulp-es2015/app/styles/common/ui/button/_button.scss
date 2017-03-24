@@ -1,0 +1,14 @@
+.btn{
+	width: 100px;
+	height: 100px;
+}
+
+.btn-red{
+	@extend .btn;
+	background-color: red;
+}
+
+.btn-blue{
+	@extend .btn;
+	background-color: blue;
+}

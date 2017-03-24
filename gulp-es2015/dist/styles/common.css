@@ -1,12 +1,2 @@
-.parent, body span {
-  color: red; }
-
-body div {
-  background: #fff;
-  height: 750 px; }
-
-body span {
-  background: #fff; }
-
-a {
-  display: none; }
+.parent,body span{color:red;transition:all .1s ease}body div{height:2101 px}body div,body span{background:#fff}a{display:none;width:10px}.btn,.btn-blue,.btn-red{width:100px;height:100px}.btn-red{background-color:red}.btn-blue{background-color:blue}
+/*# sourceMappingURL=common.css.map */
