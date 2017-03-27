@@ -14,7 +14,7 @@ class A {
 
 	a(){
 		console.log('this A->a');
-		var s = 'a';
+		var s = 'aa';
 		var c = 'cdsassddds';
 	}
 }
