@@ -1,0 +1,87 @@
+.com_btn_remind{
+  position: absolute; z-index: 9999;
+  display: inline-block;
+  width: pxToEm(67px);
+  height: pxToEm(79px);
+  background: url("resources/common/tips/wood/images/remind_zcn.png") no-repeat;
+  .remind_num{
+    position: absolute;top:pxToEm(-2px);
+    padding:0 pxToEm(7px);
+    display: inline-block;
+    height: pxToEm(26px);
+    line-height: pxToEm(26px);
+    border-radius: pxToEm(15px);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e90706), color-stop(100%, #d30201));
+    background: -webkit-linear-gradient(top, #e90706 0%, #d30201 100%);
+    background: linear-gradient(to bottom, #e90706 0%, #d30201 100%);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    font-size: pxToEm(18px);
+    color: #fff;
+    text-align: center;
+  }
+  &.remind_left{
+    left: pxToEm(120px); top:pxToEm(58px);
+    background-position:center top;background-size: 100% auto;
+    .remind_num{right: pxToEm(-5px);}
+  }
+  &.remind_right{
+    right: pxToEm(120px); top:pxToEm(58px);
+    background-position: center bottom;background-size: 100% auto;
+    .remind_num{left: pxToEm(-5px);}
+  }
+  /* 日语 */
+  &.com_btn_remind_ja{
+    background-image: url("resources/common/tips/wood/images/remind_jp.png")
+  }
+}
+
+/* 用文字制作提示
+.com_btn_remind{
+  position: absolute; z-index: 9999;
+  display: inline-block;
+  width: pxToEm(67px);
+  height: pxToEm(79px);
+  background: url("resources/common/tips/wood/images/remind.png") no-repeat;
+  .remind_text{
+    color: #5d390d;
+    font-size: .8em;
+    position: absolute;
+    left: 0;
+    top: 23%;
+    white-space: nowrap;
+    right: 0;
+    text-align: center;
+    //transform: perspective(600px) rotateY(45deg);
+    text-shadow: 1px 1px 1px  rgb(255, 255, 255);
+    transform: perspective(1000px) rotateZ(-1deg) rotateY(38deg);
+  }
+  .remind_num{
+    position: absolute;top:pxToEm(-2px);
+    padding:0 pxToEm(7px);
+    display: inline-block;
+    height: pxToEm(26px);
+    line-height: pxToEm(26px);
+    border-radius: pxToEm(15px);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e90706), color-stop(100%, #d30201));
+    background: -webkit-linear-gradient(top, #e90706 0%, #d30201 100%);
+    background: linear-gradient(to bottom, #e90706 0%, #d30201 100%);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    font-size: pxToEm(18px);
+    color: #fff;
+    text-align: center;
+  }
+  &.remind_left{
+    left: pxToEm(120px); top:pxToEm(58px);
+    background-position:center top;background-size: 100% auto;
+    .remind_num{right: pxToEm(-5px);}
+  }
+  &.remind_right{
+    right: pxToEm(120px); top:pxToEm(58px);
+    background-position: center bottom;background-size: 100% auto;
+    .remind_num{left: pxToEm(-5px);}
+    .remind_text{
+      transform: perspective(1000px) rotateZ(-1deg) rotateY(-38deg);
+    }
+  }
+} 
+*/

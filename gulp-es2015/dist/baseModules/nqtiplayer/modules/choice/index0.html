@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>基础题型--多选题</title>
+        <link rel="stylesheet" type="text/css" href="../../../baseModule/common/common_base_module.css">
+        <link rel="stylesheet" type="text/css" href="../../common/common.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="exam-skin-wood">
+            <div class="baseMod-com-layout" id="layout">
+                <!--
+                        pad类名baseMod-com-wrapper-pad
+                        白板类名baseMod-com-wrapper-board
+                        学生端答题框baseMod-com-wrapper-answer
+                        老师端等待学生答题baseMod-com-wrapper-waiting
+                -->
+                <div class="baseMod-com-wrapper-board">
+                    <div class="baseMod-com-header-box">
+                        <!--计时器-->
+                        <div class="com_time">
+                            <div class="time_default">
+                                <b class="time_text">答题时间：</b>
+                                <span class="time_m"><em>05</em></span>
+                                <b class="time_text">分</b>
+                                <i>:</i>
+                                <span class="time_s"><em>21</em></span>
+                                <b class="time_text">秒</b>
+                            </div>
+                        </div>
+                        <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>
+                    </div>
+                    <!-- 公共提交按钮 -->
+                    <div class="baseMod-com-submit">
+                        <a class="com_btn_round com_btn_disabled _js_showSubmit" href="javascript:;"><!-- 不可点击添加类名com_btn_disabled -->
+                        <span class="icons_box"></span>
+                        <span class="text_box">提&nbsp;&nbsp;交</span>
+                        </a>
+                    </div>
+                    <!-- /公共提交按钮 -->
+                    <div class="baseMod-com-layout-container">
+                        <!-- 公共标题 -->
+                        <div class="baseMod-com-layout-title">
+                            <div class="baseMod-tit">多选题</div>
+                        </div>
+                        <!-- /公共标题 -->
+                        <div class="baseMod-com-layout-body baseMod-scrollbar-style-gray">
+                            <!-- module-nqit容器 -->
+                            <div class="nqti-player-skin-wood"><!-- nqti皮肤控制层 默认皮肤类名nqti-player-skin-default -->
+                            <div class="nqti-player-body nqti-scrollbar-style-gray nqti-player-run-loading"><!-- 加载中添加类名nqti-player-run-loading 显示序号添加类名nqti-module-show-num -->
+                            <div class="nqti-player-loading" ><span>正在努力解析中<span class="nqti-loading-dotting"></span></span></div>
+                            <div class="nqti-module-body nqti-base-choice hide_dom">
+                                <!-- 题目序号 -->
+                                <div class="nqti-module-listnum">
+                                    <span class="nqti-listnum-text">1</span>
+                                    <span class="nqti-listnum-dot">、</span>
+                                </div>
+                                <!-- /题目序号 -->
+                                <!-- 题目描述文字 -->
+                                <div class="nqti-module-title">
+                                    <div class="nqti-title-text _js_nqti_title">
+
+                                    </div>
+                                </div>
+                                <!-- /题目描述文字 -->
+                                <!-- 多媒体附件插入容器 -->
+                                <div class="nqti-module-media nqti-hide-dom">
+                                    不显示的dom结构添加类名nqti-hide-dom
+                                </div>
+                                <!-- /多媒体附件插入容器 -->
+                                <!-- 提示按钮容器 -->
+                                <div class="nqti-hint-box nqti-hide-dom">
+                                    <span class="nqti-preload-img-01">预加载此按钮点击之后的背景图</span>
+                                    <a class="nqti-hint-btn" href="javascript:;">
+                                    <span class="nqti-tip-icon"></span>
+                                    <span class="nqti-tip-icon-text">提示</span>
+                                    </a>
+                                    <!-- 提示弹窗 -->
+                                    <div class="nqti-com-pop-content nqti-hide-dom" id="testBox4">
+                                        <i class="opacity_black_bg" style="display:none;"></i>
+                                        <div class="nqti-com-pop-box com-pop-hint-box">
+                                            <!-- 答对添加类名com-pop-right答错添加类名com-pop-wrong 提交提示文字这里添加类名com-pop-submit 提示弹窗添加类名com-pop-hint-box -->
+                                            <p class="nqti-com-pop-hd">
+                                            <span class="nqti-pop-dec nqti-dec-1"></span>
+                                            <span class="nqti-com-pop-title"><em>提&nbsp;&nbsp;示</em></span>
+                                            <span class="nqti-pop-dec nqti-dec-2"></span>
+                                            </p>
+                                            <div class="nqti-com-pop-bd nqti-scrollbar-style-gray">
+                                                <div class="nqti-com-remind-text">
+                                                    <span class="nqti-text-size">提示文字</span>
+                                                </div>
+                                            </div>
+                                            <div class="nqti-com-pop-bt">
+                                                <a class="nqti-hint-btn" href="javascript:;">
+                                                <span class="nqti-tip-icon-text">确认</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /提示弹窗 -->
+                                </div>
+                                <!-- /提示按钮容器 -->
+
+                                <!-- 题型选项 -->
+                                <div class="nqti-module-content">
+                                    <!--隐藏提示上面的 "boxTips": "nqti-hide-dom" -->
+                                    <ul class="nqti-base-choice-multiple _js_nqti_choice_list"><!--单选题类名.nqti-base-choice-list,多选题类名.nqti-base-choice-multiple,判断题类名.nqti-base-judment-list-->
+                                    <!-- <li class="nqti-option nqti-option-on">选中增加类名option-on,错误增加类名option-wrong,正确增加类名option-right
+                                                                                    <i class="nqti-option-checkbox-icon"></i>
+                                                                                    <span class="nqti-check"><span class="size">A</span></span>
+                                                                                    <div class="nqti-content"><span class="size">选项是对的</span></div>
+                                    </li> -->
+                                    <!-- <li class="nqti-option nqti-option-on" data-identifier=" e ">
+                                                                                    <i class="nqti-option-checkbox-icon"></i>
+                                                                                    <span class="nqti-check"><span class="size">e</span></span>
+                                                                                    <div class="nqti-content"><span class="size">选项是对的</span></div>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <!-- /题型选项 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 弹窗与弹窗交互 -->
+    <div class="baseMod-com-pop-content baseMod-hide-dom _js_click_hide" id="testBox1">
+        <i class="opacity_black_bg" style="display:none;"></i>
+        <div class="baseMod-com-pop-box _js_answer_state"><!-- 答对添加类名com-pop-right答错添加类名com-pop-wrong 提交提示文字这里添加类名com-pop-submit 提示弹窗添加类名com-pop-hint-box -->
+            <p class="baseMod-com-pop-hd">
+            <span class="baseMod-pop-dec baseMod-dec-1"></span>
+            <span class="baseMod-pop-dec baseMod-dec-2"></span>
+            </p>
+            <div class="baseMod-com-pop-bd baseMod-scrollbar-style-gray">
+                <span class="baseMod-com-pop-icon"></span>
+                <p class="baseMod-com-pop-text _js_answer_txt"></p>
+            </div>
+        </div>
+    </div>
+
+
+<div class="baseMod-com-pop-content baseMod-hide-dom" id="testBox3">
+<i class="opacity_black_bg" style="display:none;"></i>
+<div class="baseMod-com-pop-box com-pop-submit">
+    <!-- 答对添加类名com-pop-right答错添加类名com-pop-wrong 提交提示文字这里添加类名com-pop-submit 提示弹窗添加类名com-pop-hint-box -->
+    <p class="baseMod-com-pop-hd">
+    <span class="baseMod-pop-dec baseMod-dec-1"></span>
+    <span class="baseMod-pop-dec baseMod-dec-2"></span>
+    </p>
+    <div class="baseMod-com-pop-bd baseMod-scrollbar-style-gray">
+        <div class="baseMod-com-remind-text">
+            <span class="baseMod-text-size">确定要提交答案吗？</span>
+        </div>
+    </div>
+    <div class="baseMod-com-pop-bt">
+        <a class="baseMod-hint-btn _js_submitCancel" href="javascript:;">
+        <span class="baseMod-tip-icon-text">取消</span>
+        </a>
+        <a class="baseMod-hint-btn _js_submitTrue" href="javascript:;">
+        <span class="baseMod-tip-icon-text">确认</span>
+        </a>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript" src="http://www.w3school.com.cn/jquery/jquery.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $.ajax({
+            url: 'js/data.json',
+            type: 'GET',
+            dataType: 'json',
+            timeout: 1000,
+            cache: false,
+                beforeSend: LoadFunction, //加载执行方法
+                error: erryFunction,  //错误执行方法
+                success: succFunction //成功执行方法
+        })
+        function LoadFunction() {
+            //$(".nqti-player-body").removeClass("nqti-player-run-loading");
+        }
+        function erryFunction() {
+            //alert("error");
+        }
+        function succFunction(showJson) {
+        //eval将字符串转成对象数组
+        //var json = { "id": "10086", "uname": "zhangsan", "email": "zhangsan@qq.com" };
+        //json = eval(json);
+        //alert("===json:id=" + json.id + ",uname=" + json.uname + ",email=" + json.email);
+         
+        /*
+        try{
+            test.sss();
+        }catch(e){
+            console.log(e)
+        }
+        */
+            var json = showJson; //数组
+            //获取标题
+            var title = json.title;
+            $('._js_nqti_title').html(title);
+                //获取答案
+            $.each(json.choice, function (index, item) {
+                    //循环获取数据
+                var num = item.num;
+                var content = item.content;
+                var idiom = item.idiom;
+                var choice_num = '<span class="nqti-check">' + 
+                                        '<span class="size">' + num + '</span>' + 
+                                 '</span>';
+                var choice_content = '<div class="nqti-content">' + '<span class="size">' + content + '</span>' + '</div>';
+                var str =
+                        '<li class="nqti-option" data-identifier="'+num+'">' +
+                        '<i class="nqti-option-checkbox-icon"></i>' + choice_num + choice_content +
+                        '</li>';
+                var $choice_list = $(str);
+                $('._js_nqti_choice_list').append($choice_list);
+            });
+            //渲染结束去掉loading
+            //加载演示
+            setTimeout(function () {
+                $('.nqti-player-body').removeClass('nqti-player-run-loading ');
+                $('.nqti-module-body').removeClass('hide_dom ');
+            }, Math.random()*2000);       
+
+            //界面交互
+            var ischecked_global = false;//初始化提交事件的绑定
+
+            var $ul_list = $("._js_nqti_choice_list li"); //把遍历的dom储存为对象
+            var changeBtnByChecked = function($checkbox, ischecked){  //判断界面是否有选项被选中
+                if(ischecked){
+                    $checkbox.addClass("nqti-option-on");
+                }else{
+                    $checkbox.removeClass("nqti-option-on");
+                }
+                if($ul_list.hasClass('nqti-option-on')){
+                    $('.com_btn_round').removeClass('com_btn_disabled').addClass('_js_showSubmit');
+                    ischecked_global = true;
+                }else{
+                    $('.com_btn_round').addClass('com_btn_disabled').removeClass('_js_showSubmit');
+                    ischecked_global = false;
+                } 
+            };
+            //提交操作
+            $('._js_showSubmit').click(function(){
+                if(ischecked_global){
+                    $('#testBox3').removeClass('baseMod-hide-dom');
+                }
+            });
+                //取消提交
+                $('._js_submitCancel').click(function(){
+                    $('#testBox3').addClass('baseMod-hide-dom');                
+                });
+                //确认提交
+                $('._js_submitTrue').click(function(){
+                    var textLength = $ul_list.length;
+                    var aArray = [];
+                    for(var i = 0; i < textLength; i++){
+                        if($ul_list.eq(i).hasClass('nqti-option-on')){
+                            aArray.push($ul_list.eq(i).data('identifier').trim());
+                        }
+                    } 
+                    var aArray_feeds = aArray;             
+                    var aArray = aArray.sort().toString().toUpperCase();//排序字符串并且转换成大写
+                    var aArray_answer = json.answer.toString().toUpperCase();
+                    //console.log(aArray_answer);
+                    //console.log(aArray);
+                    //获取答案的数组
+                    //var aArray_answer = [json.answer];
+                    /*for(var index = 0; index < json.answer; index++){
+                        aArray_answer.push(json.answer);
+                    }*/
+                    //console.log(aArray_answer);
+                    var js_answer_txt = '' ;//存储正误答案的文字
+
+                    //正误答案的功能
+                    function stuAnswerRight() {
+                        $('#testBox3').addClass('baseMod-hide-dom');
+                        $('#testBox1').removeClass('baseMod-hide-dom').find("._js_answer_state").addClass('com-pop-right');
+                        js_answer_txt = '太棒啦，您答对了！';
+                        $('._js_answer_txt').html(js_answer_txt);
+                    }
+                    function stuAnswerWrong() {
+                        $('#testBox3').addClass('baseMod-hide-dom');
+                        $('#testBox1').removeClass('baseMod-hide-dom').find("._js_answer_state").addClass('com-pop-wrong');
+                        js_answer_txt = '这道题没有做对，下次加油哦！';
+                        $('._js_answer_txt').html(js_answer_txt);
+                    }
+                    //判断正误
+                    if(aArray.length != aArray_answer.length){                        
+                        stuAnswerWrong();
+                    }else{
+                        if( aArray === aArray_answer ){
+                            stuAnswerRight();
+                        }else{
+                            stuAnswerWrong();
+                        }
+                    }
+                });
+
+            $('.nqti-option').toggle(function(){
+                changeBtnByChecked($(this), true);
+                }, function() {
+                changeBtnByChecked($(this), false);
+            });
+            //点击任意处关闭答题反馈
+            $("._js_click_hide").click(function(){
+              $(this).addClass("baseMod-hide-dom").find("._js_answer_state").attr('class','baseMod-com-pop-box _js_answer_state');
+            });
+        }
+    });
+    $(document).ready(function(){
+        // if($('.nqti-option').hasClass('nqti-option-on')){
+        //     $('.com_btn_round').removeClass('com_btn_disabled');
+        // }
+    });
+</script>
+
+</div>
+<script src="../../common/resources/layout/wood/layout.js"></script>
+</div>
+</body>
+</html>

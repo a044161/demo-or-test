@@ -1,0 +1,436 @@
+@charset "UTF-8";
+.exam_skin_wood {
+  /* 填色游戏题布局变化修改 */ }
+  .exam_skin_wood .fillColor_wrapper .layout_FreeCombination .nhw_write_toolbar {
+    right: 0.29167em; }
+  .exam_skin_wood .layout_FillColor {
+    /* 暂时解决颗粒窗口宽度被overflow */
+    position: absolute;
+    left: 0.20833em;
+    top: 0;
+    right: 0.20833em;
+    bottom: 0;
+    /* 暂时解决颗粒窗口宽度被overflow end*/
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.3);
+    border-radius: 0.66667em;
+    /*收起侧边栏按钮*/
+    /*收起侧边栏按钮end*/
+    /* 查看事例按钮 */
+    /*.fc_see_btn{
+      display: inline-block;
+      position: absolute;
+      right:pxToEm(-236px);
+      bottom: pxToEm(3px);
+      margin:0 pxToEm(18px);
+      padding:0 pxToEm(34px);
+      height:pxToEm(70px);
+      line-height:pxToEm(70px);
+      text-align: center;
+      vertical-align: middle;
+      border-radius: pxToEm(35px);
+      background: #fff;
+      border: pxToEm(1px) solid none;
+      box-shadow: 0 0 pxToEm(5px) 1px rgba(0, 0, 0, .3);
+      background: linear-gradient(to top, rgb(233,233,233) 0%, rgb(255,255,255) 100%);
+      &:active,&.ui_btn_active{
+          border-color:#fe9d13;
+          box-shadow: 0px 1px 1px 1px #ffd100, inset 0px 1px 1px 1px #ffd100;
+      }
+      &.click_disabled{
+          border-color:#93989a;
+          background: linear-gradient(to bottom, #c8d1d7 0%, #c1c8cc 100%);
+          box-shadow:none;
+          cursor: default;
+          &:active{
+              border-color:#93989a;
+              background: linear-gradient(to bottom, #c8d1d7 0%, #c1c8cc 100%);
+              box-shadow:none;
+          }
+          .fc_see_text{
+              color: #969fa4;
+          }
+      }
+      .fc_see_text{
+          font-size: pxToEm(30px);
+          color: #5d390d;
+      }
+  }*/
+    /* 查看事例按钮end */
+    /*填色示例*/
+    /*填色示例end*/ }
+    .exam_skin_wood .layout_FillColor.take_up_leftbar .com_layout_main {
+      left: 0;
+      border-radius: 0 0 0.66667em 0.66667em; }
+      .exam_skin_wood .layout_FillColor.take_up_leftbar .com_layout_main .com_layout_main_att {
+        left: 8.25em; }
+    .exam_skin_wood .layout_FillColor.take_up_leftbar .FillColor_txt_wrap {
+      left: 0;
+      border-radius: 0.66667em; }
+      .exam_skin_wood .layout_FillColor.take_up_leftbar .FillColor_txt_wrap .FillColor_txt {
+        padding-left: 7.91667em; }
+    .exam_skin_wood .layout_FillColor.take_up_leftbar .left_fillcolor_bar .ndui-tool-box {
+      display: none; }
+    .exam_skin_wood .layout_FillColor.take_up_leftbar .left_fillcolor_bar .fc_switch_btn {
+      display: none; }
+    .exam_skin_wood .layout_FillColor.take_up_leftbar .ndui-tool-colse {
+      transform: rotate(-180deg); }
+    .exam_skin_wood .layout_FillColor .com_layout_main {
+      top: 3.83333em;
+      right: 0;
+      bottom: 0;
+      left: 5.66667em;
+      background: #f6f2e8;
+      border-top: 1px solid #ded7cc;
+      overflow: initial;
+      border-radius: 0 0 0.66667em 0; }
+      .exam_skin_wood .layout_FillColor .com_layout_main .inner {
+        width: 100%;
+        height: 100%; }
+        .exam_skin_wood .layout_FillColor .com_layout_main .inner img {
+          width: 100%;
+          height: 100%; }
+        .exam_skin_wood .layout_FillColor .com_layout_main .inner.animate_set {
+          animation: con_show_animate 1s linear 1 forwards;
+          transform-origin: center center; }
+      .exam_skin_wood .layout_FillColor .com_layout_main .com_layout_main_att {
+        width: 52.91667em;
+        height: 33.16667em;
+        left: 2.58333em;
+        top: 0.70833em;
+        position: absolute; }
+        .exam_skin_wood .layout_FillColor .com_layout_main .com_layout_main_att:before {
+          content: '';
+          position: absolute;
+          bottom: -0.125em;
+          left: -0.125em;
+          width: 1.25em;
+          height: 1.25em;
+          border-left: 0.125em solid #e2ded6;
+          border-bottom: 0.125em solid #e2ded6;
+          pointer-events: none; }
+        .exam_skin_wood .layout_FillColor .com_layout_main .com_layout_main_att:after {
+          content: '';
+          position: absolute;
+          bottom: -0.125em;
+          right: -0.125em;
+          width: 1.25em;
+          height: 1.25em;
+          border-right: 0.125em solid #e2ded6;
+          border-bottom: 0.125em solid #e2ded6;
+          pointer-events: none; }
+        .exam_skin_wood .layout_FillColor .com_layout_main .com_layout_main_att .layout_att_inner {
+          width: 100%;
+          height: 100%; }
+          .exam_skin_wood .layout_FillColor .com_layout_main .com_layout_main_att .layout_att_inner:before {
+            content: '';
+            position: absolute;
+            top: -0.125em;
+            left: -0.125em;
+            width: 1.25em;
+            height: 1.25em;
+            border-left: 0.125em solid #e2ded6;
+            border-top: 0.125em solid #e2ded6;
+            pointer-events: none; }
+          .exam_skin_wood .layout_FillColor .com_layout_main .com_layout_main_att .layout_att_inner:after {
+            content: '';
+            position: absolute;
+            top: -0.125em;
+            right: -0.125em;
+            width: 1.25em;
+            height: 1.25em;
+            border-right: 0.125em solid #e2ded6;
+            border-top: 0.125em solid #e2ded6;
+            pointer-events: none; }
+    .exam_skin_wood .layout_FillColor .FillColor_txt_wrap {
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 5.66667em;
+      height: 100%;
+      background: #f1ebde;
+      border-radius: 0 0.66667em 0.66667em 0; }
+    .exam_skin_wood .layout_FillColor .FillColor_txt {
+      height: 30em;
+      padding: 0.33333em 2.25em;
+      overflow-y: auto;
+      overflow-x: hidden; }
+      .exam_skin_wood .layout_FillColor .FillColor_txt .txt {
+        line-height: 1.8;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1.75em;
+        color: #333333; }
+    .exam_skin_wood .layout_FillColor .left_fillcolor_bar {
+      z-index: 13;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5.66667em;
+      height: 38.33333em; }
+    .exam_skin_wood .layout_FillColor .ndui-tool-colse {
+      position: absolute;
+      top: 35em;
+      left: 1.41667em;
+      z-index: 20;
+      cursor: pointer; }
+      .exam_skin_wood .layout_FillColor .ndui-tool-colse .ndui-btn-pic {
+        display: inline-block;
+        width: 2.83333em;
+        height: 3.16667em;
+        background-image: url(resources/wood/images/nudi_btn/ndui-tool-colse.png);
+        background-size: 100% auto; }
+    .exam_skin_wood .layout_FillColor .fc_seeexm_btn {
+      position: absolute;
+      right: -10em;
+      bottom: 0.125em; }
+      .exam_skin_wood .layout_FillColor .fc_seeexm_btn .text_box {
+        font-size: 1.25em;
+        color: #5d390d; }
+    .exam_skin_wood .layout_FillColor .show_exm {
+      position: absolute;
+      padding: 0 0.20833em;
+      text-align: center;
+      right: -9.16667em;
+      bottom: 0.125em; }
+      .exam_skin_wood .layout_FillColor .show_exm .show_exam_text {
+        display: block;
+        font-size: 0.99958em; }
+      .exam_skin_wood .layout_FillColor .show_exm .show_exam_icon {
+        background: #fff;
+        margin-top: 0.58333em;
+        width: 7.5em;
+        height: 4.66667em;
+        display: inline-block;
+        box-shadow: 0px 3px 0.41667em 1px rgba(0, 0, 0, 0.2);
+        padding: 0.20833em; }
+        .exam_skin_wood .layout_FillColor .show_exm .show_exam_icon img {
+          width: 100%;
+          height: 100%; }
+  .exam_skin_wood .fillColor_wrapper.com_wrapper_board .com_layout_container {
+    height: 38.33333em;
+    width: 72.16667em; }
+  .exam_skin_wood .com_wrapper_pad .layout_FillColor .com_layout_main_att {
+    position: absolute;
+    right: 9.45833em;
+    left: initial;
+    top: 50%;
+    margin-top: -16.58333em; }
+  .exam_skin_wood .com_wrapper_pad .layout_FillColor.take_up_leftbar .com_layout_main {
+    left: 0;
+    border-radius: 0 0 0.66667em 0.66667em; }
+  .exam_skin_wood .com_wrapper_pad .layout_FillColor.take_up_leftbar .com_layout_main_att {
+    position: absolute;
+    right: 9.45833em;
+    left: initial;
+    top: 50%;
+    margin-top: -16.58333em; }
+  .exam_skin_wood .ndui-tool.left_fillcolor_bar {
+    /*侧边栏按钮*/
+    /*手写板开启关闭按钮*/
+    /*调色区域*/
+    /*调色盘区域*/ }
+    .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui-tool-box {
+      margin: 0 auto;
+      padding: 3.625em 0 0.70833em 0;
+      width: 5.08333em; }
+    .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_switch_btn.ndui-switch-finger {
+      position: absolute;
+      top: 0.83333em;
+      left: 0.125em; }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_switch_btn.ndui-switch-finger .tip-on,
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_switch_btn.ndui-switch-finger .tip-off {
+        display: none; }
+    .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui-tool-cell {
+      width: 100%;
+      height: 5.08333em;
+      margin-bottom: 0em;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      /*手写板开启关闭按钮end*/ }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui-tool-cell:not(:nth-child(3)) {
+        z-index: 999; }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui-tool-cell:nth-child(4) {
+        margin-top: 11em; }
+    .exam_skin_wood .ndui-tool.left_fillcolor_bar .nhw_write_toolbar {
+      position: absolute;
+      top: 3.75em;
+      right: 4.58333em;
+      bottom: 0;
+      z-index: 13;
+      padding: 0 0.25em; }
+    .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor {
+      display: inline-block;
+      width: 100%;
+      height: 100%; }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor .ndui-btn-pic {
+        display: block;
+        width: 5.08333em;
+        height: 3.5em;
+        margin-bottom: -0.25em;
+        background-repeat: no-repeat;
+        background-position: center center; }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor .ndui-btn-text {
+        font-size: 1em;
+        line-height: 1.16667em;
+        color: #544f49; }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor:active, .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor.ui-btn-active {
+        background: rgba(213, 162, 79, 0.4);
+        box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.294), inset 0px 2px 2px 0px rgba(4, 0, 0, 0.059); }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor:active.color .ndui-btn-pic, .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor.ui-btn-active.color .ndui-btn-pic {
+          background-image: url(resources/wood/images/nudi_btn/ndui_btn_color_active.png); }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor:active.clear .ndui-btn-pic, .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor.ui-btn-active.clear .ndui-btn-pic {
+          background-image: url(resources/wood/images/nudi_btn/icon_dustbin_s.png); }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor:active.back .ndui-btn-pic, .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor.ui-btn-active.back .ndui-btn-pic {
+          background-image: url(resources/wood/images/nudi_btn/ndui_btn_back_active.png); }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor.clear .ndui-btn-pic {
+        background-image: url(resources/wood/images/nudi_btn/icon_dustbin.png);
+        background-size: 3.91667em auto; }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor.back .ndui-btn-pic {
+        background-image: url(resources/wood/images/nudi_btn/ndui_btn_back.png);
+        background-size: 4.41667em auto;
+        margin-bottom: -0.33333em; }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor.color .ndui-btn-pic {
+        background-image: url(resources/wood/images/nudi_btn/ndui_btn_color.png);
+        background-size: 4.16667em auto; }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor.click_disabled {
+        filter: grayscale(100%);
+        opacity: 0.5; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor.click_disabled:active {
+          background: none;
+          box-shadow: none; }
+          .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor.click_disabled:active.clear .ndui-btn-pic {
+            background-image: url(resources/wood/images/nudi_btn/icon_dustbin.png);
+            background-size: 3.91667em auto; }
+          .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor.click_disabled:active.back .ndui-btn-pic {
+            background-image: url(resources/wood/images/nudi_btn/ndui_btn_back.png);
+            background-size: 4.41667em auto;
+            margin-bottom: -0.33333em; }
+          .exam_skin_wood .ndui-tool.left_fillcolor_bar .ndui_btn_fillcolor.click_disabled:active.color .ndui-btn-pic {
+            background-image: url(resources/wood/images/nudi_btn/ndui_btn_color.png);
+            background-size: 4.16667em auto; }
+    .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning {
+      pointer-events: none;
+      background: url(resources/wood/images/bg_fctoning_take.png) center center no-repeat;
+      background-size: 100% 100%;
+      display: block;
+      border-radius: 0.75em;
+      position: absolute;
+      left: -1.33333em;
+      top: -0.25em;
+      width: 10em;
+      padding: 1.25em 0.5em 0.66667em 0.5em;
+      overflow: hidden;
+      z-index: 999;
+      max-height: 16.5em;
+      /*自定义颜色调色盘6格*/
+      /*12格子固定颜色*/ }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning.contract_set {
+        background: url(resources/wood/images/bg_fctoning_back.png) center center no-repeat;
+        background-size: 7.08333em 100%;
+        left: -2.5em; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning.contract_set .fix_color {
+          transform: translateX(-200px); }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning.contract_set .toning_toolbox .fc_toolrow:last-child {
+          right: 2.5em; }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning.contract_fix_set {
+        background: url(resources/wood/images/bg_fctoning_back.png) center center no-repeat;
+        background-size: 9.83333em 100%;
+        left: -3.75em; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning.contract_fix_set .toning_toolbox .fc_toolrow.fix_color {
+          margin-left: 3em; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning.contract_fix_set .toning_toolbox .fc_toolrow:last-child {
+          transform: translateX(200px); }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning .toning_toolbox {
+        text-align: left;
+        width: 100%;
+        padding: 0;
+        z-index: 9; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning .toning_toolbox .fc_toolrow {
+          pointer-events: auto;
+          display: inline-block;
+          text-align: center; }
+          .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning .toning_toolbox .fc_toolrow.fix_color {
+            margin-left: 0.58333em;
+            width: 5.66667em; }
+          .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning .toning_toolbox .fc_toolrow:last-child {
+            position: absolute;
+            right: 0.625em;
+            width: 2.33333em; }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning .fc_listcom {
+        position: relative;
+        display: inline-block;
+        width: 1.95833em;
+        height: 1.95833em;
+        margin: 0 0.20833em 0.375em 0;
+        border-radius: 50%;
+        background-image: url(resources/wood/images/fc_listcom_bg.png);
+        background-size: 100% 100%;
+        border: 0 solid #ff0000; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning .fc_listcom.red .select_color_icon {
+          background: #ff0000; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning .fc_listcom.blue .select_color_icon {
+          background: #ff0000; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning .fc_listcom.green .select_color_icon {
+          background: #ff0000; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning .fc_listcom .select_color_icon {
+          position: absolute;
+          display: inline-block;
+          left: 50%;
+          top: 50%;
+          margin-left: -0.77083em;
+          margin-top: -0.77083em;
+          width: 1.54167em;
+          height: 1.54167em;
+          border-radius: 50%; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning .fc_listcom.on {
+          border: 0.125em solid #ff8f00; }
+          .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning .fc_listcom.on:before {
+            position: absolute;
+            bottom: -0.16667em;
+            right: -0.25em;
+            z-index: 1;
+            content: "";
+            width: 0.91667em;
+            height: 0.91667em;
+            background: url(resources/wood/images/nudi_btn/toolbar_tool_on.png) no-repeat top right;
+            background-size: 100% auto; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning .fc_listcom:active {
+          border: 0.125em solid #ff8f00; }
+    .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning_palette {
+      width: 19.25em;
+      height: 38.5em;
+      background-image: url(resources/wood/images/fillc_toning_palette_bg.png);
+      background-size: 100% 100%;
+      border-radius: 0 19.25em 19.25em 0;
+      position: absolute;
+      left: 100em;
+      top: -13.875em;
+      overflow: hidden; }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning_palette.show {
+        left: 5.33333em !important; }
+      .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning_palette .fctp_svg_container {
+        width: 38.5em;
+        height: 38.5em;
+        margin-left: -100%;
+        position: relative; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning_palette .fctp_svg_container:before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          height: 100%; }
+        .exam_skin_wood .ndui-tool.left_fillcolor_bar .fc_toning_palette .fctp_svg_container .svg_inner_con {
+          width: 37.66667em;
+          height: 37.66667em;
+          position: relative;
+          display: inline-block;
+          vertical-align: middle; }
+
+@keyframes con_show_animate {
+  0% {
+    transform: scale(0.1); }
+  100% {
+    transform: scale(1); } }
+
+/*# sourceMappingURL=style.css.map */

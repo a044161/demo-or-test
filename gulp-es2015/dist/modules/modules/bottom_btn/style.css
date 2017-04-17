@@ -1,0 +1,61 @@
+@charset "UTF-8";
+.btnUi_skin_wood.com_board_btnUi_box {
+  position: absolute;
+  /*bottom: pxToEm(12px);*/
+  top: 40.5em;
+  right: 4em;
+  z-index: 340;
+  /*底部按钮调大*/
+  top: 40.3em; }
+  .btnUi_skin_wood.com_board_btnUi_box .com_btnUi_bg {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 4.08333em;
+    height: 4.08333em;
+    text-align: center;
+    color: #0c0701;
+    background: url(resources/wood/images/ui_btn_br_board.png) center top no-repeat;
+    background-size: 100% auto;
+    text-decoration: none;
+    /*底部按钮调大*/
+    height: 4.58333em;
+    width: 4.58333em; }
+    .btnUi_skin_wood.com_board_btnUi_box .com_btnUi_bg .com_btnUi_word {
+      display: block;
+      color: #0c0701;
+      font-size: 0.66667em;
+      line-height: 1.25em;
+      /*底部按钮调大*/
+      font-size: .78667em; }
+    .btnUi_skin_wood.com_board_btnUi_box .com_btnUi_bg .com_btnUi_pic {
+      display: inline-block;
+      width: 2.58333em;
+      height: 2.58333em;
+      margin: 0 auto;
+      background: url(resources/wood/images/ui_icon_board14.png) center top no-repeat;
+      background-size: 100% auto;
+      /*底部按钮调大*/
+      margin: 0.1em auto 0; }
+    .btnUi_skin_wood.com_board_btnUi_box .com_btnUi_bg.btn_ui_goBackStat .com_btnUi_pic {
+      background-image: url(resources/wood/images/ui_icon_board17.png); }
+    .btnUi_skin_wood.com_board_btnUi_box .com_btnUi_bg:active, .btnUi_skin_wood.com_board_btnUi_box .com_btnUi_bg.on {
+      background-position: center -4.10417em;
+      /*底部按钮调大*/
+      background-position: center -4.58333em; }
+    .btnUi_skin_wood.com_board_btnUi_box .com_btnUi_bg.click_disabled {
+      filter: Gray;
+      -webkit-filter: grayscale(100%); }
+    .btnUi_skin_wood.com_board_btnUi_box .com_btnUi_bg.btnUi_turn_left {
+      left: -72em; }
+    .btnUi_skin_wood.com_board_btnUi_box .com_btnUi_bg.btnUi_turn_right {
+      right: 0; }
+
+/* 天空皮肤
+.btnUi_skin_sky {
+    @import "resources/sky/style_sky";
+}
+
+*/
+
+/*# sourceMappingURL=style.css.map */

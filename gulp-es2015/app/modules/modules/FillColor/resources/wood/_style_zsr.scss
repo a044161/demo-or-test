@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* 填色游戏题布局变化修改 */
+
+.fillColor_wrapper {
+    &.com_wrapper_board .com_layout_container {
+        height: pxToEm(920px);
+        width: pxToEm(1732px);
+    }
+}
+
+.com_wrapper_pad {
+    //&.fillColor_wrapper 
+    .layout_FillColor {
+        // .FillColor_txt {
+        //     padding-left: pxToEm(30px);
+        //     .txt {
+        //         font-size: pxToEm(36px);
+        //     }
+        // }
+        // .left_fillcolor_bar {
+        //     .fc_toning_palette {
+        //         top: pxToEm(-358px)
+        //     }
+        //     .fc_switch_btn {
+        //         &.ndui-switch-finger {
+        //             margin-top: pxToEm(48px);
+        //         }
+        //     }
+        //     .ndui-tool-box {
+        //         padding-top: pxToEm(136px);
+        //     }
+        //     .ndui-tool-colse {
+        //         top: pxToEm(894px);
+        //     }
+        // }
+        //.layout_FillColor {
+        .com_layout_main_att {
+            position: absolute;
+            right: pxToEm(227px);
+            left: initial;
+            top: 50%;
+            margin-top: pxToEm(-398px);
+        }
+        &.take_up_leftbar {
+            .com_layout_main {
+                left: 0;
+                border-radius: 0 0 pxToEm(16px) pxToEm(16px);
+            }
+            // .FillColor_txt_wrap {
+            //     left: 0;
+            //     .FillColor_txt {
+            //         padding-left: pxToEm(166px);
+            //     }
+            // }
+            .com_layout_main_att {
+            position: absolute;
+            right: pxToEm(227px);
+            left: initial;
+            top: 50%;
+            //: translate(-50%, -50%);
+            margin-top: pxToEm(-398px);
+        }
+        }
+        //}
+        
+    }
+}

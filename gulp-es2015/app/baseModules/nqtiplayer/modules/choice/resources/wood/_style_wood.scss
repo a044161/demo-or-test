@@ -1,0 +1,484 @@
+.nqti-base-choice{
+    &.hide_dom{
+        display: none;
+    }
+}
+.nqti-base-choice-list {
+    .nqti-option {
+        position: relative;
+        padding-left: pxToEm(112px);
+        line-height: pxToEm(80px);
+        color: #333;
+        cursor: pointer;
+        //选中
+        &.nqti-option-on {
+            color: #854700;
+            /*.nqti-check {
+                &:before {
+                    background-position: center bottom;
+                }
+            }*/
+            .nqti-option-radio-icon {
+                background-position: center bottom;
+            }
+        }
+        //选项正确
+        &.nqti-option-right {
+            color: #69b300;
+        /*    .nqti-check {
+                &:before {
+                    background: url(resources/wood/images/choice_checked.png) center bottom no-repeat;
+                    background-size: 100% auto;
+                }
+            }*/
+            .nqti-option-radio-icon {
+                background: url(resources/wood/images/choice_checked.png) center bottom no-repeat;
+                background-size: 100% auto;
+            }
+        }
+        //选项错误
+        &.nqti-option-wrong {
+            color: #ff491f;
+          /*  .nqti-check {
+                &:before {
+                    background: url(resources/wood/images/choice_checked.png) center top no-repeat;
+                    background-size: 100% auto;
+                }
+            }*/
+            .nqti-option-radio-icon {
+                background: url(resources/wood/images/choice_checked.png) center top no-repeat;
+                background-size: 100% auto;
+            }
+        }
+    }
+    .nqti-option-radio-icon {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: pxToEm(18px);
+        width: pxToEm(42px);
+        height: pxToEm(42px);
+        background: url(resources/wood/images/wood_comradio.png) center top no-repeat;
+        background-size: 100% auto;
+    }
+    .nqti-check {
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        top: 0;
+        padding-left: pxToEm(64px);
+        width: pxToEm(112px);
+        height: pxToEm(42px);
+    /*    &:before {
+            content:'';
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: pxToEm(18px);
+            width: pxToEm(42px);
+            height: pxToEm(42px);
+            background: url(resources/wood/images/wood_comradio.png) center top no-repeat;
+            background-size: 100% auto;
+        }*/
+        .size:after {
+            content:'.';
+        }
+    }
+    .size {
+        font-size: pxToEm(40px);
+    }
+    
+}
+
+/*多选题*/
+.nqti-base-choice-multiple {
+    .nqti-option {
+        position: relative;
+        padding-left: pxToEm(112px);
+        line-height: pxToEm(80px);
+        color: #333;
+        cursor: pointer;
+        //选中
+        &.nqti-option-on {
+            color: #854700;
+         /*   .nqti-check {
+                &:before {
+                    background-position: center bottom;
+                }
+            }*/
+            .nqti-option-checkbox-icon {
+                background-position: center bottom;
+            }
+        }
+        //选项正确
+        &.nqti-option-right {
+            color: #69b300;
+           /* .nqti-check {
+                &:before {
+                    background: url(resources/wood/images/mutichoice_checked.png) center bottom no-repeat;
+                    background-size: 100% auto;
+                }
+            }*/
+            .nqti-option-checkbox-icon {
+                background: url(resources/wood/images/mutichoice_checked.png) center bottom no-repeat;
+                background-size: 100% auto;
+            }
+        }
+        //选项错误
+        &.nqti-option-wrong {
+            color: #ff491f;
+           /* .nqti-check {
+                &:before {
+                    background: url(resources/wood/images/mutichoice_checked.png) center top no-repeat;
+                    background-size: 100% auto;
+                }
+            }*/
+            .nqti-option-checkbox-icon {
+                background: url(resources/wood/images/mutichoice_checked.png) center top no-repeat;
+                background-size: 100% auto;
+            }
+        }
+    }
+    .nqti-option-checkbox-icon {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: pxToEm(18px);
+        width: pxToEm(42px);
+        height: pxToEm(42px);
+        background: url(resources/wood/images/wood_comcheckbox.png) center top no-repeat;
+        background-size: 100% auto;
+    }
+    .nqti-check {
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        top: 0;
+        padding-left: pxToEm(64px);
+        width: pxToEm(112px);
+        height: pxToEm(42px);
+        /*&:before {
+            content:'';
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: pxToEm(18px);
+            width: pxToEm(42px);
+            height: pxToEm(42px);
+            background: url(resources/wood/images/wood_comcheckbox.png) center top no-repeat;
+            background-size: 100% auto;
+        }*/
+        .size:after {
+            content:'.';
+        }
+    }
+    .size {
+        font-size: pxToEm(40px);
+    }
+    
+}
+
+
+/*判断题*/
+.nqti-base-judment-list {
+    .nqti-option {
+        position: relative;
+        padding-left: pxToEm(64px);
+        line-height: pxToEm(80px);
+        color: #333;
+        cursor: pointer;
+        //选中
+        &.nqti-option-on {
+            color: #854700;
+          /*  .nqti-check {
+                &:before {
+                    background-position: center bottom;
+                }
+            }*/
+            .nqti-option-radio-icon {
+                background-position: center bottom;
+            }
+        }
+        //选项正确
+        &.nqti-option-right {
+            color: #69b300;
+         /*   .nqti-check {
+                &:before {
+                    background: url(resources/wood/images/choice_checked.png) center bottom no-repeat;
+                    background-size: 100% auto;
+                }
+            }*/
+            .nqti-option-radio-icon {
+                background: url(resources/wood/images/choice_checked.png) center bottom no-repeat;
+                background-size: 100% auto;
+            }
+        }
+        //选项错误
+        &.nqti-option-wrong {
+            color: #ff491f;
+          /*  .nqti-check {
+                &:before {
+                    background: url(resources/wood/images/choice_checked.png) center top no-repeat;
+                    background-size: 100% auto;
+                }
+            }*/
+            .nqti-option-radio-icon {
+                background: url(resources/wood/images/choice_checked.png) center top no-repeat;
+                background-size: 100% auto;
+            }
+        }
+    }
+    .nqti-option-radio-icon {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: pxToEm(18px);
+        width: pxToEm(42px);
+        height: pxToEm(42px);
+        background: url(resources/wood/images/wood_comradio.png) center top no-repeat;
+        background-size: 100% auto;
+    }
+    .nqti-check {
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        top: 0;
+        padding-left: pxToEm(64px);
+        width: 0;
+        height: pxToEm(42px);
+      /*  &:before {
+            content:'';
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: pxToEm(18px);
+            width: pxToEm(42px);
+            height: pxToEm(42px);
+            background: url(resources/wood/images/wood_comradio.png) center top no-repeat;
+            background-size: 100% auto;
+        }*/
+        .size:after {
+            content:'.';
+        }
+
+    }
+    .size {
+        font-size: pxToEm(40px);
+    }
+    
+}
+
+/* 简单单选多选 */
+.nqti-com-btn-radio,.nqti-com-btn-checkbox{
+    position: relative;
+    display: inline-block;
+    height: pxToEm(60px);
+    padding-left: pxToEm(60px);
+    line-height: pxToEm(60px);
+    color: #685e4f;
+    cursor: pointer;
+    vertical-align: middle;
+    min-width: pxToEm(120px);
+    margin: 0 pxToEm(20px);
+    &>.nqti-txt{
+        font-size: pxToEm(46px);
+    }
+/*    &:before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: pxToEm(10px);
+        width: pxToEm(40px);
+        height: pxToEm(40px);
+    }*/
+    .nqti-option-radio-icon, .nqti-option-checkbox-icon {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: pxToEm(10px);
+        width: pxToEm(40px);
+        height: pxToEm(40px);
+    }
+    &.nqti-checked,&.nqti-option-on{
+        color: #a3ba35;
+        /*&:before {
+            background-position: center bottom;
+        }*/
+        .nqti-option-radio-icon, .nqti-option-checkbox-icon{
+            background-position: center bottom;
+        }
+    }    
+    input{
+        display:none;
+    }
+}
+.nqti-com-btn-radio{
+    .nqti-option-radio-icon{
+        background: url(resources/wood/images/wood_comradio2.png) center top no-repeat;
+        background-size: 100% auto;
+    }
+    &.nqti-correct,&.nqti-option-right{
+        color: #69b300;
+        .nqti-option-radio-icon {
+            background: url(resources/wood/images/choice_checked.png) center bottom no-repeat;
+            background-size: 100% auto;
+        }
+    }
+    &.nqti-error,&.nqti-option-wrong{
+        color: #ff491f;
+        .nqti-option-radio-icon {
+            background: url(resources/wood/images/choice_checked.png) center top no-repeat;
+            background-size: 100% auto;
+        }
+    }
+}
+.nqti-com-btn-checkbox{
+    .nqti-option-checkbox-icon {
+        background: url(resources/wood/images/wood_comcheckbox2.png) center top no-repeat;
+        background-size: 100% auto;
+    }
+    &.nqti-correct,&.nqti-option-right{
+        color: #69b300;
+        .nqti-option-checkbox-icon {
+            background: url(resources/wood/images/mutichoice_checked.png) center bottom no-repeat;
+            background-size: 100% auto;
+        }
+    }
+    &.nqti-error,&.nqti-option-wrong{
+        color: #ff491f;
+        .nqti-option-checkbox-icon {
+            background: url(resources/wood/images/mutichoice_checked.png) center top no-repeat;
+            background-size: 100% auto;
+        }
+    }
+}
+/* end 简单单选多选 */
+/*截图答题*/
+.nqti-srcm-layout-options{
+    position: absolute;
+    left:0;
+    right:0;
+    height: pxToEm(160px);
+    padding:0 pxToEm(240px) 0 pxToEm(42px) ;
+    background: #fff2dc;
+    border-bottom: 1px solid #975c19;
+    line-height: pxToEm(159px);
+    .nqti-com-btn-radio,.nqti-com-btn-checkbox{
+        //height:4em;
+        //line-height: 4em;
+        height:3.3em;
+        line-height: 3.3em;
+        .nqti-option-radio-icon,.nqti-option-checkbox-icon{
+            //top:1em;
+            top:0.65em;     
+            width:2em;
+            height:2em;       
+        }
+    }
+    .nqti-com-btn-radio.nqti-option-right .nqti-option-radio-icon{
+        background-image: url(resources/wood/images/choice_checked2.png);
+    }
+    .nqti-com-btn-radio.nqti-option-wrong .nqti-option-radio-icon{
+        background-image: url(resources/wood/images/choice_checked2.png);
+    }
+    //截图答题20161201修改bug98078
+    .nqti-com-layout-title-answer{
+        display: flex;
+        position: relative;
+        top: 50%;
+        transform: translate(0,-50%);
+        & > .nqti-txt{
+            line-height: 1.8;
+            //white-space: nowrap;
+            max-width: 23em;
+        }
+        .nqti-srcm-options-box{
+            flex: 1;
+        }
+    }
+}
+
+
+.nqti-com-layout-title-answer{
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.5;
+        &>.nqti-txt{
+            color: #685e4f;
+            font-size: pxToEm(40px);
+            vertical-align: middle;
+        }
+    }
+.nqti-com-wrapper-waiting{
+    .nqti-srcm-layout-options{
+        /* padding: 0;
+        background: #f3e2c6;
+        border-bottom: 1px solid #d3b388;
+        border-bottom-color: #ead6b4;
+        color: #796647;
+        font-size: pxToEm(22px);
+        height: 2.45em;
+        line-height: 2.45em;
+        strong{
+            font-weight: normal;
+            font-size: pxToEm(26px);
+        } */
+        display: none;
+    }
+    .nqti-player-srcm-body{
+        padding:0
+    }
+}
+
+.nqti-player-srcm-body{
+    &.nqti-module-body{
+        padding:0;
+        margin:0;
+        padding-top: pxToEm(180px);
+        height: 100%;
+        overflow: hidden;
+    }
+    .nqti-module-content{
+        margin:0;
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+    }
+    .nqti-module-title{
+        text-align: center;
+        height: 35.5em;
+        overflow: auto;
+        .nqti-title-text{
+            vertical-align:middle;
+            display: inline-block;
+            max-width:98%;
+        }
+        img{
+            border: 1px solid #965b18;
+            max-width:100%;
+            //max-height:35em;
+            max-height:18.4em;
+        }
+        p{
+            //vertical-align:middle;
+            //display: inline-block;
+            //max-width:96%; 截图发题bug修改到 nqti-title-text控制
+            line-height: 1.5;
+        }
+        &:after{
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 99%;
+            vertical-align: middle;
+        }
+    }
+    &.nqti-player-srcm-body-waiting{
+         padding:0;
+        .nqti-srcm-layout-options{
+            display: none;
+        }
+    }
+}

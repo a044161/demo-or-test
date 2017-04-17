@@ -1,0 +1,571 @@
+@charset "UTF-8";
+.exam_skin_wood {
+  /* 媒体演示样式 */
+  /* 英语单词 */
+  /* 英标样式 */
+  /* 释义 */
+  /* 变形 */
+  /* 词组 */
+  /* 例句 */
+  /*词汇卡-老师上课-主体部分*/
+  /*左侧详细模块内容*/
+  /*右侧菜单栏样式*/
+  /* 学生端 */
+  /* 白板端 */ }
+  .exam_skin_wood .ec_com_media {
+    width: 24.16667em; }
+    .exam_skin_wood .ec_com_media .ec_carousel {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      height: 15.25em;
+      overflow: hidden; }
+      .exam_skin_wood .ec_com_media .ec_carousel .carousel_content {
+        position: relative;
+        width: 400%;
+        height: 100%;
+        font-size: 0; }
+        .exam_skin_wood .ec_com_media .ec_carousel .carousel_content ul {
+          width: 100%;
+          height: 100%; }
+        .exam_skin_wood .ec_com_media .ec_carousel .carousel_content li {
+          display: inline-block;
+          width: 25%;
+          height: 100%; }
+        .exam_skin_wood .ec_com_media .ec_carousel .carousel_content img {
+          width: 100%;
+          height: 100%; }
+      .exam_skin_wood .ec_com_media .ec_carousel .carousel_points_group {
+        position: absolute;
+        right: 1.45833em;
+        bottom: 1.25em; }
+      .exam_skin_wood .ec_com_media .ec_carousel .carousel_points_group a {
+        display: inline-block;
+        width: 0.33333em;
+        height: 0.33333em;
+        margin: 0 0.08333em;
+        border-radius: 50%;
+        background-color: rgba(255, 132, 0, 0.4);
+        cursor: pointer; }
+      .exam_skin_wood .ec_com_media .ec_carousel .carousel_points_group a.on {
+        background-color: #ff8400; }
+    .exam_skin_wood .ec_com_media .ec_video {
+      display: inline-block;
+      width: 100%;
+      height: 15.25em; }
+    .exam_skin_wood .ec_com_media .media_switch {
+      position: relative;
+      left: -0.25em;
+      margin-top: 0.33333em; }
+    .exam_skin_wood .ec_com_media .switch_carousel,
+    .exam_skin_wood .ec_com_media .switch_video {
+      position: relative;
+      display: inline-block;
+      width: 4.41667em;
+      height: 4.41667em;
+      background: url(resources/wood/images/card_tab_bg.png) no-repeat;
+      background-size: 100% 100%;
+      cursor: pointer; }
+    .exam_skin_wood .ec_com_media .switch_carousel:active,
+    .exam_skin_wood .ec_com_media .switch_video:active {
+      background: url(resources/wood/images/card_tab_bg_active.png) no-repeat;
+      background-size: 100% 100%; }
+    .exam_skin_wood .ec_com_media .switch_carousel.on,
+    .exam_skin_wood .ec_com_media .switch_video.on {
+      background: url(resources/wood/images/card_tab_bg_active.png) no-repeat;
+      background-size: 100% 100%; }
+    .exam_skin_wood .ec_com_media .media_switch span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 3.625em;
+      height: 3.625em; }
+    .exam_skin_wood .ec_com_media .switch_carousel span {
+      background: url(resources/wood/images/card_tab_pic.png) no-repeat;
+      background-size: 100% 100%; }
+    .exam_skin_wood .ec_com_media .switch_video span {
+      background: url(resources/wood/images/card_tab_video.png) no-repeat;
+      background-size: 100% 100%; }
+  .exam_skin_wood .ec_com_media.only_carousel .en_card_video,
+  .exam_skin_wood .ec_com_media.only_carousel .media_switch {
+    display: none; }
+  .exam_skin_wood .ec_com_word_show {
+    display: inline-block;
+    width: 100%;
+    height: 5.58333em;
+    padding-left: 0.625em;
+    background: url(resources/wood/images/bg_word_showing.png) repeat-x;
+    background-size: auto 100%; }
+    .exam_skin_wood .ec_com_word_show em {
+      font: 3.33333em "Microsoft YaHei";
+      line-height: 1.45; }
+  .exam_skin_wood .ec_com_phonetic {
+    display: inline-block;
+    width: 24.16667em;
+    color: #565451; }
+    .exam_skin_wood .ec_com_phonetic .ec_phonetic_txt {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 1em;
+      font: 1.79167em "Microsoft YaHei"; }
+    .exam_skin_wood .ec_com_phonetic .word_audio {
+      display: inline-block;
+      vertical-align: bottom;
+      width: 2.08333em;
+      height: 2.25em;
+      background: url(resources/wood/images/card_voicebg.png) 0 -2.66667em no-repeat;
+      background-size: 100% auto;
+      cursor: pointer; }
+      .exam_skin_wood .ec_com_phonetic .word_audio:active {
+        opacity: 0.6; }
+      .exam_skin_wood .ec_com_phonetic .word_audio.disabled {
+        background-position: 0 0; }
+  .exam_skin_wood .ec_com_definition {
+    display: inline-block;
+    width: 24.16667em;
+    color: #585858; }
+    .exam_skin_wood .ec_com_definition span {
+      font: 1.79167em "Microsoft YaHei"; }
+  .exam_skin_wood .ec_com_transform {
+    width: 20.83333em; }
+    .exam_skin_wood .ec_com_transform p {
+      font: 1.79167em "Microsoft YaHei";
+      line-height: 3.04167em; }
+  .exam_skin_wood .ec_com_phrase {
+    width: 20.83333em; }
+    .exam_skin_wood .ec_com_phrase p {
+      font: 1.79167em "Microsoft YaHei"; }
+      .exam_skin_wood .ec_com_phrase p span:first-child {
+        margin-right: 0.91667em; }
+      .exam_skin_wood .ec_com_phrase p em {
+        color: #ff8400; }
+  .exam_skin_wood .ec_com_sentences {
+    width: 20.83333em; }
+    .exam_skin_wood .ec_com_sentences li {
+      padding-left: 0; }
+    .exam_skin_wood .ec_com_sentences p {
+      font: 1.79167em "Microsoft YaHei"; }
+      .exam_skin_wood .ec_com_sentences p em {
+        color: #ff8400; }
+    .exam_skin_wood .ec_com_sentences .en_sentence a {
+      display: inline-block;
+      width: 0.83333em;
+      height: 0.91667em;
+      margin-left: 0.41667em;
+      vertical-align: middle;
+      background: url(resources/wood/images/card_voicebg.png) 0 -1.16667em no-repeat;
+      background-size: 100% auto;
+      cursor: pointer; }
+      .exam_skin_wood .ec_com_sentences .en_sentence a:active {
+        opacity: 0.6; }
+      .exam_skin_wood .ec_com_sentences .en_sentence a.disabled {
+        background-position: 0 0; }
+  .exam_skin_wood .hide_dom {
+    display: none; }
+  .exam_skin_wood .english_card_wrapper {
+    position: absolute;
+    left: 4.16667em;
+    top: 4.16667em;
+    height: 37em;
+    padding-right: 9.66667em;
+    border-radius: 0.83333em;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #D6D1D1;
+    box-shadow: #bbbbbb 0.04167em 0.20833em 0.625em 0.08333em; }
+    .exam_skin_wood .english_card_wrapper .btn_card_close {
+      display: inline-block;
+      position: absolute;
+      z-index: 10;
+      right: 0.25em;
+      top: 0;
+      width: 2em;
+      height: 2.08333em;
+      text-indent: -9999px;
+      background: #d4d4d4;
+      border-bottom-left-radius: 0.75em;
+      border-top-right-radius: 0.33333em; }
+      .exam_skin_wood .english_card_wrapper .btn_card_close:active {
+        background: #e4e4e4; }
+      .exam_skin_wood .english_card_wrapper .btn_card_close:before {
+        content: "";
+        z-index: 9;
+        position: absolute;
+        left: 0.5em;
+        top: 0.54167em;
+        width: 1em;
+        height: 1em;
+        background: url(resources/wood/images/card_closebtn.png) no-repeat center center;
+        background-size: 100% 100%; }
+  .exam_skin_wood .english_card_main {
+    padding: 2.75em 1.08333em 2.25em 3em;
+    height: 100%;
+    min-width: 52em; }
+    .exam_skin_wood .english_card_main .english_card_main_wrap {
+      height: 100%;
+      width: 100%; }
+      .exam_skin_wood .english_card_main .english_card_main_wrap .detail_info_scroll {
+        overflow-y: auto; }
+        .exam_skin_wood .english_card_main .english_card_main_wrap .detail_info_scroll::-webkit-scrollbar {
+          width: 0.58333em;
+          height: 0.58333em; }
+        .exam_skin_wood .english_card_main .english_card_main_wrap .detail_info_scroll::-webkit-scrollbar-track {
+          height: 100%;
+          background-color: rgba(227, 227, 227, 0.5); }
+        .exam_skin_wood .english_card_main .english_card_main_wrap .detail_info_scroll::-webkit-scrollbar-thumb {
+          border: 0.58333em solid transparent;
+          border-image: url(resources/wood/images/bg_detail_info_scroll.png) 9 9; }
+      .exam_skin_wood .english_card_main .english_card_main_wrap .detail_info_media {
+        float: left;
+        margin-top: 0.41667em; }
+      .exam_skin_wood .english_card_main .english_card_main_wrap .detail_info_left {
+        min-width: 20.83333em;
+        max-width: 46.25em;
+        width: 24.16667em;
+        position: relative; }
+      .exam_skin_wood .english_card_main .english_card_main_wrap .detail_info_right {
+        float: right;
+        height: 100%;
+        border: 1px solid #bdbdbd;
+        border-radius: 1px;
+        margin-left: 1.25em;
+        margin-top: -10.5em; }
+        .exam_skin_wood .english_card_main .english_card_main_wrap .detail_info_right ul li {
+          padding-left: 0.91667em;
+          padding-top: 0.91667em;
+          padding-bottom: 0.91667em;
+          border-bottom: 1px dashed #bdbdbd; }
+          .exam_skin_wood .english_card_main .english_card_main_wrap .detail_info_right ul li:first-child {
+            padding-top: 0;
+            padding-bottom: 0; }
+          .exam_skin_wood .english_card_main .english_card_main_wrap .detail_info_right ul li:last-child {
+            border-bottom: none; }
+  .exam_skin_wood .show_sentences .english_card_main_wrap .detail_info_left {
+    width: 100%; }
+  .exam_skin_wood .show_sentences .english_card_main_wrap .detail_info_right {
+    margin-top: 0.41667em;
+    height: 15.41667em; }
+  .exam_skin_wood .show_sentences .english_card_menu .phonetic, .exam_skin_wood .show_sentences .english_card_menu .transform, .exam_skin_wood .show_sentences .english_card_menu .phrase {
+    display: none; }
+  .exam_skin_wood .show_sentences .english_card_menu .definition {
+    border-top: 1px solid #bababa; }
+  .exam_skin_wood .english_card_middle .english_card_menu .menu_list .transform, .exam_skin_wood .english_card_middle .english_card_menu .menu_list .phrase, .exam_skin_wood .english_card_middle .english_card_menu .menu_list .sentences, .exam_skin_wood .english_card_junior .english_card_menu .menu_list .transform, .exam_skin_wood .english_card_junior .english_card_menu .menu_list .phrase, .exam_skin_wood .english_card_junior .english_card_menu .menu_list .sentences {
+    display: none; }
+  .exam_skin_wood .english_card_middle .detail_info_right, .exam_skin_wood .english_card_junior .detail_info_right {
+    display: none; }
+  .exam_skin_wood .english_card_middle .english_card_main, .exam_skin_wood .english_card_junior .english_card_main {
+    min-width: 26em; }
+  .exam_skin_wood .english_card_junior .english_card_menu .btn_start_practice {
+    display: none; }
+  .exam_skin_wood .english_card_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 9.66667em;
+    border-left: 1px solid #d9d9d9;
+    background-image: linear-gradient(to right, #fefefe, #f2f2f2);
+    border-right: 0.25em solid #f0a598; }
+    .exam_skin_wood .english_card_menu .menu_list {
+      padding-top: 2.70833em;
+      margin-right: -0.25em; }
+    .exam_skin_wood .english_card_menu .item_menu {
+      height: 3.70833em;
+      border-bottom: 1px solid #bababa;
+      border-top: 1px solid #ffffff; }
+      .exam_skin_wood .english_card_menu .item_menu.on .menu {
+        color: #fff; }
+      .exam_skin_wood .english_card_menu .item_menu .menu {
+        display: block;
+        height: 100%;
+        line-height: 3.66667em;
+        color: #333;
+        text-align: center; }
+        .exam_skin_wood .english_card_menu .item_menu .menu .word {
+          font-style: normal;
+          font-size: 1.5em; }
+    .exam_skin_wood .english_card_menu .phonetic {
+      border-top: 1px solid #bababa;
+      border-right: 0.25em solid #f875a5; }
+      .exam_skin_wood .english_card_menu .phonetic.on .menu {
+        background-image: linear-gradient(to right, #f9dbe5, #f875a5); }
+    .exam_skin_wood .english_card_menu .definition {
+      border-right: 0.25em solid #ffbb42; }
+      .exam_skin_wood .english_card_menu .definition.on .menu {
+        background-image: linear-gradient(to right, #f8e5cc, #ffbd48); }
+    .exam_skin_wood .english_card_menu .media {
+      border-right: 0.25em solid #cdd940; }
+      .exam_skin_wood .english_card_menu .media.on .menu {
+        background-image: linear-gradient(to right, #d8ebb6, #c3ff50); }
+    .exam_skin_wood .english_card_menu .transform {
+      border-right: 0.25em solid #be9a3f; }
+      .exam_skin_wood .english_card_menu .transform.on .menu {
+        background-image: linear-gradient(to right, #f0e1c0, #be9a3f); }
+    .exam_skin_wood .english_card_menu .phrase {
+      border-right: 0.25em solid #74baa9; }
+      .exam_skin_wood .english_card_menu .phrase.on .menu {
+        background-image: linear-gradient(to right, #c9ece3, #6dcdb6); }
+    .exam_skin_wood .english_card_menu .sentences {
+      border-right: 0.25em solid #98ba74; }
+      .exam_skin_wood .english_card_menu .sentences.on .menu {
+        background-image: linear-gradient(to right, #e3ece0, #98ba74); }
+    .exam_skin_wood .english_card_menu .btn_all_hide, .exam_skin_wood .english_card_menu .btn_all_show, .exam_skin_wood .english_card_menu .btn_start_practice {
+      display: block;
+      position: absolute;
+      right: 1em;
+      width: 7.25em;
+      height: 2.41667em;
+      line-height: 2.41667em;
+      font-size: 1em;
+      text-align: center;
+      box-shadow: #e1e1e1 0 0 0.125em 0.125em;
+      background-image: linear-gradient(to bottom, #fcfcfc, #e6e6e6);
+      border-radius: 1.33333em; }
+      .exam_skin_wood .english_card_menu .btn_all_hide:active, .exam_skin_wood .english_card_menu .btn_all_show:active, .exam_skin_wood .english_card_menu .btn_start_practice:active {
+        background-image: linear-gradient(to top, #fcfcfc, #e6e6e6); }
+    .exam_skin_wood .english_card_menu .btn_all_hide, .exam_skin_wood .english_card_menu .btn_all_show {
+      color: #323232;
+      bottom: 7.08333em; }
+    .exam_skin_wood .english_card_menu .btn_start_practice {
+      color: #ff8400;
+      bottom: 2.58333em; }
+  .exam_skin_wood .com_layout .com_wrapper_pad.en_card_wrapper .com_layout_container {
+    height: 40.20833em; }
+  .exam_skin_wood .com_layout .com_wrapper_pad.en_card_wrapper {
+    width: 80em;
+    height: 45em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22.5em 0 0 -40em;
+    padding: 0 1.125em;
+    box-sizing: border-box; }
+    .exam_skin_wood .com_layout .com_wrapper_pad.en_card_wrapper .com_layout_header {
+      margin-left: -.6em;
+      margin-right: -.7em; }
+  .exam_skin_wood .com_wrapper_pad.en_card_wrapper {
+    /* 单词拼写 */
+    /* 句子拼写 */
+    /* 滚动条 */
+    /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+    /*定义滚动条轨道 内阴影+圆角*/
+    /*定义滑块 内阴影+圆角*/ }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_com_media {
+      width: 21.75em; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_carousel {
+      height: 13.70833em; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .com_btn_square_s {
+      display: none; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .en_card_main {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: #faf5ec;
+      border-radius: 0.66667em;
+      text-align: center;
+      box-shadow: 0 0 1px rgba(250, 245, 236, 0.2); }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .en_card_view {
+      position: relative;
+      width: 76em;
+      height: 100%;
+      overflow-x: hidden; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_see_answer {
+      position: absolute;
+      top: -4.25em;
+      right: 8.75em;
+      z-index: 500; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_spell_content {
+      display: inline-block;
+      width: 96%;
+      height: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 4.58333em; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_com_media {
+      display: inline-block; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_spell_content.ec_show_answer {
+      padding-top: 1.25em; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_spell_info {
+      display: inline-block;
+      width: 21.75em;
+      color: #565451;
+      margin: 0.5em 0 0.83333em;
+      text-align: left; }
+      .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_spell_info span {
+        display: inline-block;
+        font: 2.5em "Microsoft YaHei"; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_spell_writting_area {
+      position: relative;
+      left: 50%;
+      margin-left: -33.33333em;
+      margin-bottom: 0.83333em;
+      width: 66.66667em;
+      height: 10.41667em;
+      background: url(resources/wood/images/bg_word_writting.png) repeat-x;
+      background-size: auto 100%; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_spell_dash_line {
+      display: none;
+      position: relative;
+      margin-top: 1.66667em;
+      width: 74.16667em;
+      height: 1px;
+      background: url(resources/wood/images/bg_dash.png) repeat-x;
+      background-size: 0.625em auto; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_show_answer .ec_spell_writting_area {
+      margin-bottom: 0; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_show_answer .ec_spell_dash_line {
+      display: block; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_spell_answer_area {
+      display: none; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_show_answer .ec_spell_answer_area {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      display: block; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_spell_answer_info {
+      display: none;
+      color: #333333;
+      margin-bottom: 0.625em; }
+      .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_spell_answer_info span {
+        font: 1.5em "Microsoft YaHei"; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_spell_answer_writting {
+      min-width: 24.16667em;
+      height: 7.29167em;
+      padding: 0 0.5em;
+      color: #333333;
+      text-align: center;
+      margin-bottom: 0; }
+      .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_word_spell .ec_spell_answer_writting em {
+        font: 4.375em "Microsoft YaHei";
+        line-height: 1.58; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_sentence_spell .ec_spell_content {
+      height: 100%;
+      padding: 3.33333em 0 0 6.08333em; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_sentence_spell .ec_spell_info {
+      color: #565451;
+      margin: 0.5em 0 0.83333em;
+      text-align: left; }
+      .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_sentence_spell .ec_spell_info span {
+        font: 2.5em "Microsoft YaHei"; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_sentence_spell .ec_spell_writting_area {
+      width: 66.66667em;
+      height: 10.41667em;
+      background: url(resources/wood/images/bg_word_writting.png) repeat-x;
+      background-size: auto 100%; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_sentence_spell .ec_spell_dash_line {
+      display: none;
+      position: absolute;
+      left: 0;
+      width: 99%;
+      height: 1px;
+      margin-top: 1.33333em;
+      background: url(resources/wood/images/bg_dash.png) repeat-x;
+      background-size: 0.625em auto; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_sentence_spell .ec_show_answer .ec_spell_dash_line {
+      display: block; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_sentence_spell .ec_spell_answer_area {
+      display: none;
+      margin: 2em 0; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_sentence_spell .ec_show_answer .ec_spell_answer_area {
+      display: block;
+      text-align: left; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_sentence_spell .ec_spell_answer_info {
+      display: inline-block;
+      color: #333333; }
+      .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_sentence_spell .ec_spell_answer_info span {
+        font: 1.5em "Microsoft YaHei"; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_sentence_spell .ec_spell_answer_writting {
+      display: inline-block;
+      color: #333333; }
+      .exam_skin_wood .com_wrapper_pad.en_card_wrapper .ec_sentence_spell .ec_spell_answer_writting em {
+        font: 1.5em "Microsoft YaHei"; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .en_card_main_board {
+      display: none; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .scrollbar_style_wborder::-webkit-scrollbar {
+      width: 0.58333em;
+      background-color: #F5F5F5; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .scrollbar_style_wborder::-webkit-scrollbar-track {
+      border-radius: 0.66667em;
+      margin: 1.08333em 0;
+      background-color: #e2dfdb; }
+    .exam_skin_wood .com_wrapper_pad.en_card_wrapper .scrollbar_style_wborder::-webkit-scrollbar-thumb {
+      border-radius: 0.66667em;
+      background-color: #c9c4bd; }
+  .exam_skin_wood .com_wrapper_board.en_card_wrapper {
+    /* 单词拼写 */
+    /* 句子拼写 */
+    /* 滚动条 */
+    /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+    /*定义滚动条轨道 内阴影+圆角*/
+    /*定义滑块 内阴影+圆角*/ }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .com_btn_round {
+      display: none; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .com_header_time {
+      display: none; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper.en_card_wrapper_send .com_header_time {
+      display: block; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .en_card_main {
+      position: relative;
+      width: 71.33333em;
+      height: 37.70833em;
+      background-color: #faf5ec;
+      border-radius: 0.58333em;
+      margin: 0 auto;
+      box-shadow: 0 0 1px rgba(250, 245, 236, 0.2); }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .en_card_view {
+      position: relative;
+      width: 70.83333em;
+      height: 100%;
+      overflow-x: hidden;
+      text-align: center; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .ec_word_spell .ec_spell_content {
+      display: inline-block;
+      height: 100%;
+      margin: 0 auto;
+      padding-top: 2.91667em; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .ec_word_spell .ec_spell_info {
+      color: #565451;
+      margin: 0.5em 0 0.83333em;
+      text-align: left; }
+      .exam_skin_wood .com_wrapper_board.en_card_wrapper .ec_word_spell .ec_spell_info span {
+        font: 2.5em "Microsoft YaHei"; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .ec_word_spell .ec_spell_writting_area {
+      position: absolute;
+      left: 2.29167em;
+      width: 66.66667em;
+      height: 10.41667em;
+      background: url(resources/wood/images/bg_word_writting.png) repeat-x;
+      background-size: auto 100%;
+      margin-bottom: 2em; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .ec_sentence_spell .ec_spell_content {
+      height: 100%;
+      padding: 3.33333em 0 0 2.29167em; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .ec_sentence_spell .ec_spell_info {
+      color: #565451;
+      margin: 0.5em 0 0.83333em;
+      text-align: left; }
+      .exam_skin_wood .com_wrapper_board.en_card_wrapper .ec_sentence_spell .ec_spell_info span {
+        font: 2.5em "Microsoft YaHei"; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .ec_sentence_spell .ec_spell_writting_area {
+      width: 66.66667em;
+      height: 10.41667em;
+      background: url(resources/wood/images/bg_word_writting.png) repeat-x;
+      background-size: auto 100%;
+      margin-bottom: 2em; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .ec_spell_dash_line,
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .ec_spell_answer_area,
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .ec_see_answer {
+      display: none; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .scrollbar_style_wborder::-webkit-scrollbar {
+      width: 0.58333em;
+      background-color: #F5F5F5; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .scrollbar_style_wborder::-webkit-scrollbar-track {
+      border-radius: 0.66667em;
+      margin: 1.08333em 0 1.875em;
+      background-color: #e2dfdb; }
+    .exam_skin_wood .com_wrapper_board.en_card_wrapper .scrollbar_style_wborder::-webkit-scrollbar-thumb {
+      border-radius: 0.66667em;
+      background-color: #c9c4bd; }
+
+/*# sourceMappingURL=style.css.map */

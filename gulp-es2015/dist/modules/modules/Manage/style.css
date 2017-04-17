@@ -1,0 +1,178 @@
+@charset "UTF-8";
+.exam_skin_wood .manage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* s 组件: 面板 */
+  /* e 组件: 面板 */ }
+  .exam_skin_wood .manage .com_layout_main {
+    text-align: center; }
+  .exam_skin_wood .manage .com_m_sideboard_1 {
+    position: relative;
+    width: 31.66667em;
+    height: 100%;
+    padding: 4.20833em 0 1.45833em;
+    margin-left: 1.45833em;
+    margin-right: 3.20833em; }
+    .exam_skin_wood .manage .com_m_sideboard_1 .com_m_sidehead {
+      position: absolute;
+      left: 0;
+      top: 1.45833em;
+      right: 0;
+      height: 2.75em;
+      background: url(resources/wood/images/bg_sidetit1.png) repeat-x;
+      background-size: auto 100%;
+      border-top-left-radius: 0.75em;
+      border-top-right-radius: 0.75em; }
+    .exam_skin_wood .manage .com_m_sideboard_1 .com_m_sidecon {
+      height: 100%;
+      border-bottom: 0.375em solid transparent;
+      background-image: url(resources/wood/images/decl_sidecon.png), url(resources/wood/images/decr_sidecon.png), url(resources/wood/images/decm_sidecon.png), url(resources/wood/images/bg_sidecon1.png);
+      background-repeat: no-repeat, no-repeat, repeat-x, repeat;
+      background-position: left bottom, right bottom, center bottom, left top;
+      background-size: 0.875em auto, 0.875em auto, 0.375em auto, 2.70833em auto;
+      background-origin: border-box, border-box, border-box, content-box;
+      box-shadow: 0.0625em 0.10825em 0.79167em 0 rgba(75, 40, 0, 0.75);
+      border-bottom-left-radius: 0.75em;
+      border-bottom-right-radius: 0.75em; }
+  .exam_skin_wood .manage .com_m_mainboard_1 {
+    position: relative;
+    height: 100%;
+    overflow: hidden; }
+  .exam_skin_wood .manage .cellMiddle {
+    white-space: nowrap; }
+    .exam_skin_wood .manage .cellMiddle:after {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle; }
+  .exam_skin_wood .manage .manage_right {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1.5em 0 0;
+    float: right; }
+  .exam_skin_wood .manage .com_m_sidehead {
+    text-align: center;
+    z-index: 5; }
+  .exam_skin_wood .manage .tip_box {
+    position: relative;
+    height: 100%;
+    margin-right: 0.08333em;
+    padding: 1em 1.66667em 0 1.5em;
+    text-align: left;
+    overflow: auto; }
+  .exam_skin_wood .manage .tip_normal {
+    position: relative;
+    padding: 0 0.5em;
+    line-height: 1.5;
+    margin: 0 1.66667em 1em 0;
+    color: #2e2e2e; }
+    .exam_skin_wood .manage .tip_normal .num,
+    .exam_skin_wood .manage .tip_normal .word {
+      word-wrap: break-word;
+      break-word: break-all;
+      font-style: normal;
+      font-size: 1.5em;
+      line-height: 1.4; }
+    .exam_skin_wood .manage .tip_normal .point {
+      padding-right: 0.5em; }
+    .exam_skin_wood .manage .tip_normal.correct {
+      background-color: #e0e0e0;
+      color: #5c5c5c; }
+      .exam_skin_wood .manage .tip_normal.correct:after {
+        content: '';
+        position: absolute;
+        top: 0.20833em;
+        right: -2.5em;
+        width: 1.70833em;
+        height: 1.75em;
+        background: url(resources/wood/images/correct.png) center center no-repeat;
+        background-size: 100% auto; }
+  .exam_skin_wood .manage .com_m_sidecon {
+    box-shadow: none !important; }
+  .exam_skin_wood .manage .manage_right_tit {
+    color: #fff6e4;
+    line-height: 1.65;
+    font-size: 1.5em; }
+  .exam_skin_wood .manage .manage_left {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center; }
+  .exam_skin_wood .manage .manage_box {
+    display: inline-block;
+    position: relative;
+    left: 0.625em;
+    vertical-align: middle;
+    border-left: 1px solid #9d866a; }
+    .exam_skin_wood .manage .manage_box .normal {
+      float: left;
+      background-color: #fff8e6;
+      border: 1px solid #9d866a;
+      margin: -1px 0 0 -1px;
+      color: #494136;
+      text-align: center; }
+      .exam_skin_wood .manage .manage_box .normal.correct {
+        background-color: #a8dd55; }
+      .exam_skin_wood .manage .manage_box .normal.correct_x {
+        background-color: #a6d5e7; }
+      .exam_skin_wood .manage .manage_box .normal.correct_y {
+        background-color: #cfe269; }
+      .exam_skin_wood .manage .manage_box .normal.correct_fix {
+        background-color: #b1b153; }
+      .exam_skin_wood .manage .manage_box .normal.on {
+        background-color: #d4b9c8; }
+      .exam_skin_wood .manage .manage_box .normal .manage_text {
+        font-style: normal; }
+  .exam_skin_wood .manage .largeBox {
+    max-width: 32.04167em; }
+    .exam_skin_wood .manage .largeBox.large_5 {
+      width: 26.91667em; }
+    .exam_skin_wood .manage .largeBox.large_6 {
+      width: 32.04167em; }
+    .exam_skin_wood .manage .largeBox .normal {
+      width: 5.16667em;
+      height: 5.16667em;
+      line-height: 5.16667em; }
+      .exam_skin_wood .manage .largeBox .normal .manage_text {
+        font-size: 2.5em; }
+  .exam_skin_wood .manage .normalBox {
+    max-width: 31.625em; }
+    .exam_skin_wood .manage .normalBox.normal_5 {
+      width: 20em; }
+    .exam_skin_wood .manage .normalBox.normal_6 {
+      width: 23.875em; }
+    .exam_skin_wood .manage .normalBox.normal_7 {
+      width: 27.75em; }
+    .exam_skin_wood .manage .normalBox.normal_8 {
+      width: 31.625em; }
+    .exam_skin_wood .manage .normalBox .normal {
+      width: 3.875em;
+      height: 3.875em;
+      line-height: 3.875em; }
+      .exam_skin_wood .manage .normalBox .normal .manage_text {
+        font-size: 2em; }
+  .exam_skin_wood .manage .smallBox {
+    max-width: 31.75em; }
+    .exam_skin_wood .manage .smallBox.small_5 {
+      width: 16em; }
+    .exam_skin_wood .manage .smallBox.small_6 {
+      width: 19.125em; }
+    .exam_skin_wood .manage .smallBox.small_7 {
+      width: 22.25em; }
+    .exam_skin_wood .manage .smallBox.small_8 {
+      width: 25.375em; }
+    .exam_skin_wood .manage .smallBox.small_9 {
+      width: 28.5em; }
+    .exam_skin_wood .manage .smallBox.small_10 {
+      width: 31.75em; }
+    .exam_skin_wood .manage .smallBox .normal {
+      width: 3.125em;
+      height: 3.125em;
+      line-height: 3.125em; }
+      .exam_skin_wood .manage .smallBox .normal .manage_text {
+        font-size: 1.66667em; }
+  .exam_skin_wood .manage .tip_normal .num.green {
+    color: green; }
+
+/*# sourceMappingURL=style.css.map */

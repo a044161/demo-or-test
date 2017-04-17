@@ -1,0 +1,84 @@
+/* 左上方时间 */
+.com_time{
+    text-align: center;
+    width: pxToEm(260px);
+    span{
+        position: relative;
+        display: inline-block;
+        width: pxToEm(120px);
+        height: pxToEm(114px);
+        line-height: pxToEm(114px);        
+        color: #dfdfdf;
+        text-align: center;
+        background: url(resources/common/time/wood/images/bg_time.png) center center no-repeat;
+        background-size: 100% auto;
+        margin-right: pxToEm(-30px);
+        &:before {
+            position: absolute;
+            left: pxToEm(20px);
+            top: pxToEm(51px);
+            content: "";
+            width: pxToEm(74px);
+            height: 1px;
+            border-top: 1px solid #000;
+        }
+    }
+    em{
+        font-style: normal;
+        font-size: pxToEm(52px);
+        color: #dfdfdf;
+        display:block;
+        height:100%;
+        text-align: center;
+        margin-top:pxToEm(-2px);
+    }
+    i{
+        display:none;
+    }
+    >div{
+        display: inline-block;
+        width:auto !important;
+        height:auto !important;
+    }
+    b.time_text{
+        display:none;
+        font-weight: normal;
+        font-size: 0;
+    } 
+}
+
+/* 白板的时间*/
+.com_wrapper_board{
+    .com_time {
+        width:auto;
+        color: #63543d;
+        margin-right: pxToEm(70px);        
+        span {
+            background:none;
+            color: #63543d;
+            height: pxToEm(50px);
+            line-height: pxToEm(50px);
+            width:auto;
+            margin:0;
+            &:before{
+                display:none;
+            }
+        }
+        em{
+            font-size: pxToEm(28px);
+            color: #63543d;
+            display:inline-block;
+        }
+        b.time_text{
+            font-size: pxToEm(28px);
+            display:inline-block;
+            font-weight: normal;
+        }
+    }
+}
+
+
+
+
+
+

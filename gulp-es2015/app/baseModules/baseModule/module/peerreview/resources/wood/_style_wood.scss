@@ -1,0 +1,1362 @@
+@charset "UTF-8";
+/*互评底部模块*/
+.peerreview-bottom{
+    height: pxToEm(114px);
+    margin-top: pxToEm(18px);
+    border: 1px solid #d1af80;
+    padding: pxToEm(20px) pxToEm(32px) pxToEm(16px);
+    border-radius: 0.5em 0.5em 0 0;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    //background:#000;
+    @include bglinear(#fdfbf9,#efede9);
+    //显示自己的内容
+    &.peerreview-bottom-my {
+        .peerreview-end-text,.peerreview-thanks-text {
+            display: inline-block;
+        }
+        .peerreview-text-pop-btn {
+            display: none;
+        }
+        .peerreview-bottom-right{
+            padding-right: pxToEm(18px);
+        }
+    }    
+}
+.ui-give-score-box{
+    white-space: nowrap;
+    .ui-give-score-titile{
+        font-size: pxToEm(30px);
+        color: #928877;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 2.5;
+    }
+    .ui-give-score{
+        display: inline-block;
+        background: url(resources/wood/images/icons_prw_stars.png) repeat-x left top;
+        background-size: pxToEm(72px) auto;
+        position: relative;
+        vertical-align: middle;
+        .ui-give-score-bg{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height:100%;
+            background: url(resources/wood/images/icons_prw_stars.png) repeat-x left pxToEm(-83px);
+            background-size: pxToEm(72px) auto;
+            width: 0;
+        }
+        &.score-bg-on1{
+            .ui-give-score-bg{
+                width: 20%;
+            }            
+        }
+        &.score-bg-on2{
+            .ui-give-score-bg{
+                width: 40%;
+            }            
+        }
+        &.score-bg-on3{
+            .ui-give-score-bg{
+                width: 60%;
+            }            
+        }
+        &.score-bg-on4{
+            .ui-give-score-bg{
+                width: 80%;
+            }            
+        }
+        &.score-bg-on5{
+            .ui-give-score-bg{
+                width: 100%;
+            }            
+        }
+    }
+    .ui-give-score-btn{
+        position: relative;
+        background: none;
+        border: none;
+        width: pxToEm(72px);
+        height: pxToEm(72px);
+        cursor: pointer;
+        padding: 0;
+        font-size: 1em;
+    }
+}
+.peerreview-bottom-right{
+    position: relative;
+    background:#ded5c1;
+    box-shadow:0 pxToEm(2px) pxToEm(3px) rgba(255, 255, 255, .8),inset 0 pxToEm(3px) pxToEm(6px) rgba(199, 190, 171, .8);  
+    border-radius: pxToEm(36px);
+    flex: 1;    
+    overflow: hidden;
+    margin-left: pxToEm(18px);
+    padding: pxToEm(8px) pxToEm(18px);    
+    padding-right: pxToEm(82px);
+    .peerreview-text-input{
+        /* background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        font-size: pxToEm(30px);
+        line-height: 1.5;
+        width: 100%;
+        padding-top: pxToEm(12px);
+        &::-webkit-input-placeholder {
+            color: #928877;
+        } */
+        font-size: pxToEm(30px);
+        line-height: 2;
+        color: #928877;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: inline-block;
+        width: 100%;
+        &.peerreview-text-in{
+            color: #000;
+        }
+    }
+}
+.peerreview-text-pop-btn{
+    position: absolute;
+    right: pxToEm(8px);
+    top: pxToEm(8px);
+    width: pxToEm(58px);
+    height: pxToEm(58px);
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: linear-gradient(to top, #cecdcd 0%,#faf9f9 100%);
+    box-shadow: 0px pxToEm(3px) pxToEm(3px) 0px rgba(4, 0, 0, 0.3);
+    padding: 0;
+    //border: pxToEm(2px) solid transparent;
+    /* &:after{
+        position: absolute;
+        content: '';
+        top: -2px;
+        right:-2px;
+        bottom: -2px;
+        left: -12px;
+        background: url(resources/wood/images/icons_prw_tt.png) no-repeat center center;
+        background-size: pxToEm(28px) auto;
+    } */
+    &.prv-pop-btn-close{
+        &:after{
+            transform:rotate(180deg);
+            margin-top: -0.7em;
+        }
+    }
+    &:before{
+        position: absolute;
+        content: '';
+        top: pxToEm(-18px);
+        right: pxToEm(-24px);
+        bottom: pxToEm(-18px);
+        left: pxToEm(-24px);
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        left:50%;
+        top: 50%;
+        display: inline-block;
+        width: pxToEm(40px);
+        height: pxToEm(40px);
+        margin: pxToEm(-22px) 0 0 pxToEm(-20px);
+        background: url(resources/wood/images/icons_prw_tt.png) no-repeat center center;
+        background-size: pxToEm(28px) auto;
+    }
+    &:active,&.ui-btn-active{
+        background-image: linear-gradient(to top, #fffdfa 0%,#fed490 100%);
+        border: pxToEm(4px) solid #f17201;
+    }
+}
+.peerreview-text-pop{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: pxToEm(110px);
+    border: pxToEm(1px) solid rgba(30,20,0,.5);
+    background: rgba(72,69,62,.93);
+    border-radius: pxToEm(10px);
+    padding: pxToEm(15px);
+}
+/* 弹窗使用navtive做
+.peerreview-quick-reply{
+    font-size: pxToEm(36px);
+    color: #ffffff;
+    height: pxToEm(72px);
+    line-height: pxToEm(72px);
+    border-bottom: 1px solid #9f9d99;
+    &.quick-reply-active,&:active{
+        color: #ff9c00;
+    }
+} 
+*/
+.peerreview-end-text{
+    padding-left: pxToEm(110px);
+    margin-left: pxToEm(20px);
+    position: relative;
+    border-left:1px solid #d6d2c9;
+    display: none;
+    &:before{
+        content:"";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height:100%;
+        width:1px;
+        background: #fff4dc;
+    }
+    .peerreview-highlights{
+        position: absolute;
+        left: pxToEm(20px);
+        top: pxToEm(-10px);
+        width: pxToEm(70px);
+        height: pxToEm(92px);
+        background: url(resources/wood/images/icons_prw_ld.png) no-repeat center center;
+        background-size: 100% auto;
+        &.peerreview-none{
+            filter: Gray;
+            -webkit-filter: grayscale(100%);
+            opacity: 0.4;
+            filter: alpha(opacity=40);
+            .highlights-num{
+                display: none;
+            }
+        }
+    }
+    .highlights-num{
+        position: absolute;
+        right: pxToEm(-2px);
+        top: pxToEm(4px);
+        background: #ffb700;
+        border-radius: 50%;
+        border: pxToEm(4px) solid #fff;
+        font-size: pxToEm(20px);
+        width: pxToEm(36px);
+        height: pxToEm(36px);
+        text-align: center;
+        color: #fff;
+        line-height: 1.2;
+        box-shadow: 0px pxToEm(1px) pxToEm(24px) 0px rgba(70, 70, 70, 0.3);
+    }
+    .peerreview-remarks-title{
+        white-space: nowrap;
+        font-size: 1.25em;
+        color: #928877;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 2.5;
+    }
+}
+
+.peerreview-thanks-text{
+    padding-right: pxToEm(72px);
+    margin-left: pxToEm(20px);
+    position: relative;
+    display: none;
+    .peerreview-thanks{
+        position: absolute;
+        right: pxToEm(-8px);
+        top: pxToEm(0px);
+        width: pxToEm(68px);
+        height: pxToEm(68px);
+        vertical-align: middle;
+        text-align: center;
+        font-size: 1em;
+        border-radius: 50%;
+        cursor: pointer;
+        background-image: linear-gradient(to top, #cccbca 0%,#f8f8f7 100%);
+        box-shadow: 0 0 pxToEm(3px) 0px rgba(4, 0, 0, 0.3);
+        //border: pxToEm(2px) solid transparent;
+        /* &:after{
+            position: absolute;
+            content: '';
+            top: -2px;
+            right:-2px;
+            bottom: -2px;
+            left: -12px;
+            background: url(resources/wood/images/icons_prw_tt.png) no-repeat center center;
+            background-size: pxToEm(28px) auto;
+        } */
+        &:before{
+            position: absolute;
+            content: '';
+            top: pxToEm(-18px);
+            right: pxToEm(-24px);
+            bottom: pxToEm(-18px);
+            left: pxToEm(-24px);
+        }
+        &:after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: pxToEm(56px);
+            height: pxToEm(56px);
+            margin: pxToEm(-28px) 0 0 pxToEm(-28px);
+            background: url(resources/wood/images/icons_thanks_h.png) no-repeat center center;
+            background-size: 100% auto;
+        }
+        &:active,&.ui-btn-active{
+            background-image: linear-gradient(to top, #fffdfa 0%,#fed490 100%);
+            border: pxToEm(4px) solid #f17201;
+        }
+        &.peerreview-none{
+            filter: Gray;
+            -webkit-filter: grayscale(100%);
+            opacity: 0.4;
+            filter: alpha(opacity=40);
+            .highlights-num{
+                display: none;
+            }
+            &:active,&.ui-btn-active{
+                background-image: linear-gradient(to top, #cecdcd 0%,#faf9f9 100%);
+                border: none;
+            }
+        }
+    }
+    .peerreview-remarks-title{
+        white-space: nowrap;
+        font-size: 1.25em;
+        color: #362200;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 2.5;
+    }
+}
+
+
+
+.peerreview-bottom2{
+    height:pxToEm(154px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border-top: pxToEm(2px) solid #e1e1e1; 
+    border-bottom: pxToEm(1px) solid #c6c6c6; 
+    display: flex;
+    padding: pxToEm(20px) pxToEm(32px) pxToEm(16px);
+}
+.peerreview-give-comments-titile{
+    font-size: pxToEm(30px);
+    color: #8f8f8f;
+    display: inline-block;
+    white-space: nowrap;
+    padding-top: 1.5em;
+}
+.peerreview-give-comments-box{
+    background:#eee;    
+    border-radius: pxToEm(10px);
+    width: 100%;
+    padding: pxToEm(10px) pxToEm(18px);
+    border: 1px solid #b3b3b3;
+    margin-left: pxToEm(18px);
+    
+}
+.peerreview-give-comments-text{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: pxToEm(30px);
+    line-height: 1.5;
+    width: 100%;
+}
+
+.peerreview-box-composition{
+    background:#f7f7f7;    
+    border-radius: pxToEm(18px);
+    padding: pxToEm(10px) pxToEm(18px);
+    border: 1px solid #c5c5c5;
+    height: pxToEm(826px);
+    margin: 0 pxToEm(64px);
+    overflow-y: auto;
+
+    position: relative;
+    text-align: center;
+    img{
+        position: absolute;
+        max-height: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+        left: 50%;
+        top: 50%;
+        //transform-origin:50% 50%;
+        transform:translate(-50%,-50%);
+    }
+}
+.peerreview-box-handwriting{
+    padding: 0;
+    height: pxToEm(826px);
+    margin: 0 pxToEm(34px);
+    position: relative;
+    text-align: center;
+    img{
+        position: absolute;
+        max-height: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+        left: 50%;
+        top: 50%;
+        //transform-origin:50% 50%;
+        transform:translate(-50%,-50%);
+    }
+}
+/*互评主观题*/
+.peerreview-box-subjective {
+    padding: pxToEm(24px) pxToEm(200px) 0;
+    position: relative;
+}
+.prv-box-subjective-main{
+    height: pxToEm(612px);
+    margin-bottom: pxToEm(12px);
+    border: pxToEm(2px) solid #d0c9bc;
+    background: #fff;
+    border-radius: pxToEm(3px);
+}
+.subjective-main-previous,.subjective-main-next{
+    position: absolute;
+    top:50%;
+    margin-top: pxToEm(-55px);
+    width: pxToEm(78px);
+    height: pxToEm(78px);
+    text-indent: -9999em;
+    overflow: hidden;
+    background-image: url(resources/wood/images/icons_prw_pn.png);
+    background-position: center center;
+    background-repeat: no-repeat;               
+    background-size: 100% auto;        
+    &:active{
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+    &.off{            
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+    }
+}
+.subjective-main-previous{
+    left: pxToEm(88px);
+}
+.subjective-main-next{
+    right: pxToEm(88px);
+    transform: rotate(180deg);
+}
+.prv-subjective-main-text{   
+    padding: pxToEm(98px) pxToEm(38px);
+    overflow: auto;
+    p{
+        font-size: pxToEm(45px);
+        color: #603301;
+        line-height: 1.8;
+    } 
+}
+.prv-subjective-main-pic{
+    position: relative;
+    height: 100%;
+    text-align: center;
+    img{
+        position: absolute;
+        max-height: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+        left: 50%;
+        top: 50%;
+        //transform-origin:50% 50%;
+        transform:translate(-50%,-50%);
+    }
+}
+
+.peerreview-signals-done,.peerreview-signals-unfinished{
+    position: fixed;
+    top: pxToEm(58px);
+    right: pxToEm(74px);
+    width: pxToEm(226px);
+    height: pxToEm(182px);
+    text-indent: -9999em;
+    overflow: hidden;    
+    background-position: center center;
+    background-repeat: no-repeat;               
+    background-size: 100% auto; 
+}
+.peerreview-signals-done{
+    background-image: url(resources/wood/images/icons_stu_pg.png);
+}
+.peerreview-signals-unfinished{
+    background-image: url(resources/wood/images/icons_stu_upg.png);
+}
+/*学生端底部页码翻页*/
+.com-student-page-contain{
+    text-align: center;
+    a{
+        display: inline-block;
+        width: pxToEm(56px);
+        height: pxToEm(56px);
+        line-height: pxToEm(56px);
+        font-size: pxToEm(28px);
+        color: #887b67;
+        vertical-align: top;
+        &:active{
+            color:#ccb28a;
+        }
+        &.on{
+            color: #fe9a0e;
+        }
+    }
+    .previous,.next{
+        text-indent: -9999em;
+        overflow: hidden;
+        background-image: url(resources/wood/images/icons_prw_pn.png);
+        background-position: center center;
+        background-repeat: no-repeat;               
+        background-size: 40% auto;        
+        &:active{
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+        &.off{            
+            opacity: 0.3;
+            filter: alpha(opacity=30);
+        }
+    }
+    .next{
+        transform: rotate(180deg);
+    }
+    //当前页，标签需加上atv的类
+    //若上一页或者下一页不可以点击时，需要加上off这个类
+}
+
+/*互评底部模块end */
+
+/*提示弹窗*/
+.notice-tip-box{
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    display: none;
+    &:after{
+        width: 0;
+        height: 100%;
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .notice-tip-main{
+        display: inline-block;
+        vertical-align: middle;
+        pointer-events: auto;
+        padding: 1em 4.16667em;
+        line-height: 2.08333em;
+        background: rgba(47,47,47,.8);
+        border-radius: pxToEm(12px);;
+        color: #fff;
+        max-width: 46em;
+        margin-top: -9em;
+    }
+    .notice-tip-text{
+        font-size: pxToEm(34px);
+    }
+    &.notice-tip-box-auto{
+        animation: noticeTipShow 4s ease  forwards;
+        display: inline-block;
+    }
+}
+
+@keyframes noticeTipShow{
+    0%{
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    20%{
+        opacity: 1;
+        filter: alpha(opacity=100);
+        transform:translate(0,0);
+    }
+    80%{
+        opacity: 1;
+        filter: alpha(opacity=100);
+        transform:translate(0,0);
+    }
+    100%{
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transform:translate(0,-10%);
+    }
+}
+
+
+
+.nqti-base-peerreview{
+    //互评结束
+    .baseMod-com-layout-title{
+        display: none;
+    }
+    &.nqti-base-peerreview-finish {
+        .baseMod-com-header-box,.baseMod-com-submit,.nqti-base-peerreview-tit,.nhw_write_toolbar,.baseMod-com-layout-title{
+            display: none;
+        }
+        padding-top: pxToEm(28px);
+        .baseMod-com-layout-body{
+            right: 0;
+            border-radius: pxToEm(12px);
+            padding-top: pxToEm(48px);
+        }
+        .baseMod-com-layout-container {
+            height: pxToEm(894px) !important;
+        }
+        .peerreview-box-subjective{
+            padding:  pxToEm(54px)  pxToEm(168px) 0;
+        }
+        .prv-box-subjective-main{
+            height: pxToEm(708px);
+        }
+        .subjective-main-previous{
+            left: pxToEm(42px);
+        }
+        .subjective-main-next{
+            right: pxToEm(42px);
+        }
+        //主观重写结束
+        .peerreview-box-handwriting{
+            height: 39em;
+            margin: 0 3em;
+
+        }
+        //手写重写结束
+        .peerreview-box-composition{
+            height: 33.3em;
+            margin: 0 pxToEm(138px);          
+        }
+        //作文题重写结束
+    }
+    //互评结束end
+    .baseMod-com-layout-container{
+        background: rgba(255, 255, 255, .15);
+        height: pxToEm(817px) !important;
+    }
+    .baseMod-com-layout-body{
+        left: 0;
+        right: pxToEm(150px);
+        bottom: 0;
+        padding: 0 ;
+        background: #f8efde;
+        border-bottom-left-radius: pxToEm(20px);
+        overflow: inherit;
+        top: 0;
+        background: #faf5ec;
+        border-radius: 0.41667em 0 0 0.41667em;
+    }
+    .nhw_write_toolbar{
+        right: pxToEm(-147px);
+    }
+    .com_layout_main{
+        position: relative;
+        .peerreview-tit{
+            position: relative;
+            margin-top: pxToEm(20px);
+            z-index: 9;
+            color: #000;
+            text-align: center;
+            height: pxToEm(110px);
+            line-height: pxToEm(110px);
+            .txt{
+                font-size: pxToEm(42px);
+            }
+            input{
+                width: 8em;
+                line-height: 1.4;
+                border-bottom: .08em solid #333;
+                font-size: 1em;
+                background: transparent;
+            }
+        }
+        .handWrite_content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            width: pxToEm(1516px);
+            height: pxToEm(661px);
+        }
+    }
+    &.baseMod-com-wrapper-pad{
+        /*height: pxToEm(1200px);*/
+        /*margin-top: pxToEm(-600px);*/
+    }
+}
+.nqti-base-peerreview-tit{
+    height: pxToEm(100px);
+    line-height: pxToEm(100px);
+    color: #585858;
+    overflow: hidden;
+    text-align: center;
+    &>.txt{
+        font-size: pxToEm(50px);
+    }
+    &.prw_tit_bg{
+        background: #f1ebde;
+        border-bottom: 1px solid #dad1c4;
+        border-top-left-radius: pxToEm(10px);
+    }
+}
+
+/*查看互评的手写内容详情弹窗*/
+.peerreview-view-box{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    .peerreview-view-title{
+        color: #603301;
+        font-size: pxToEm(55px);
+        text-align: center;
+    }
+    .peerreview-view-main{
+        margin: pxToEm(96px) 0 0;
+        text-align: center;
+        max-height: 18em;
+        overflow: auto;
+    }
+    .peerreview-view-text{
+        display: inline-block;
+        text-align: left;
+        font-size: pxToEm(40px);
+        color: #603301;
+        line-height: 1.5;
+    }
+}
+.com_pop_square {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: pxToEm(-393px) 0 0 pxToEm(-597px);
+    width: pxToEm(1194px);
+    height: pxToEm(786px);
+    padding: pxToEm(20px) pxToEm(23px) pxToEm(27px);
+    background: url(resources/wood/images/bg_pop_square.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 350;
+}
+//新关闭按钮
+.stati_com_btn_close {
+    position:absolute;
+    bottom: pxToEm(48px);
+    width: pxToEm(75px);
+    min-height: pxToEm(99px);
+    background: url(resources/wood/images/icon_close_squ_nor.png) no-repeat center center;
+    background-size: 100% 100%;
+    text-align: right;
+    padding: pxToEm(16px) 0;
+
+    em{
+        font-size: pxToEm(26px);
+        color: #796647;
+        word-wrap: break-word;
+        letter-spacing: pxToEm(6px);
+        text-align: center;
+        width: pxToEm(26px);
+        display: inline-block;
+        margin-right: pxToEm(12px);
+        line-height: 1.2;
+        text-shadow: #fff 0 1px 0;
+    }
+    &.stati_com_btn_rb {
+        right: pxToEm(-36px);
+    }
+    &.stati_com_btn_lb {
+        left: pxToEm(-36px);
+        background: url(resources/wood/images/icon_close_squ_nor_l.png) no-repeat center center;
+        background-size: 100% 100%;
+        text-align: left;
+        em{
+            margin:0 0 0 pxToEm(12px);
+        }
+        &:active,&.on{
+            background-image: url(resources/wood/images/icon_close_squ_active_l.png);
+        }
+    }
+    &:active,&.on{
+        background-image: url(resources/wood/images/icon_close_squ_active.png);
+    }
+    &.stati_com_btn_hide{
+        display: none !important;
+    }
+    //预加载图片
+    .preload_btn_close_pic1{
+        display: none;
+        background: url(resources/wood/images/icon_close_squ_active.png) no-repeat center center;
+    }
+    .preload_btn_close_pic2{
+        display: none;
+        background: url(resources/wood/images/icon_close_squ_active_l.png) no-repeat center center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 右侧手写工具栏 */
+.nhw_write_toolbar{
+    position: absolute;
+    top: pxToEm(90px);
+    right: pxToEm(110px);
+    bottom: 0;
+    z-index: 13;
+    padding:0 pxToEm(6px);
+}
+.nhw_btn_switch_box{ 
+    position: relative; 
+    margin: pxToEm(48px) 0 0 pxToEm(9px); 
+    display: block; 
+    width: pxToEm(120px); 
+    height: pxToEm(60px);  
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    .nhw_btn_switch{
+        content:"";
+        position: absolute;
+        width: pxToEm(60px);
+        height: pxToEm(60px);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center center;
+        transition: transform .3s;
+        top: 0;
+        left: 0;
+    }
+    &.off{
+        background-image: url(resources/wood/images/icon_hand_write_off.png);
+        .nhw_btn_switch{
+            transform: translateX(pxToEm(-12px));
+            background-image: url(resources/wood/images/icon_hand_off.png);
+        }
+        .off_text{ 
+            display:block; 
+            left: pxToEm(-15px);
+        }
+    }
+    &.on{
+       background-image: url(resources/wood/images/icon_hand_write_on.png);
+        .nhw_btn_switch{
+            transform: translateX(pxToEm(65px));
+            background-image: url(resources/wood/images/icon_hand_on.png);
+        } 
+        .on_text{ 
+            display:block; 
+            left: pxToEm(-3px);
+        }
+    }
+    span{ 
+        position: absolute; 
+        top: pxToEm(-48px); 
+        display: none; 
+        color: #422701; 
+        height: pxToEm(35px);
+        padding: 0 pxToEm(15px); 
+        background: #f9eedd; 
+        box-shadow: 0px 5px 5px 0px rgba(56, 32, 0, 0.27);
+        border-radius: pxToEm(30px); 
+        white-space: nowrap;
+        text-align:center;
+        line-height: pxToEm(35px);
+        &>em{
+            font-size: pxToEm(20px); 
+            vertical-align: top;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: pxToEm(35px);
+            left: 50%;
+            margin-left: pxToEm(-10px);
+            border-left: pxToEm(10px) solid transparent;
+            border-right: pxToEm(10px) solid transparent;
+            border-top: pxToEm(8px) solid #f9eedd; 
+        }
+    }
+}
+.nhw_write_toolbar_list{
+    margin: pxToEm(36px) 0 ;
+    &>li{
+        position: relative;
+        margin-top: pxToEm(36px);
+        .nhw_mainlink{
+            display: block;
+            text-align: center;
+            width: pxToEm(135px);
+            padding: pxToEm(96px) 0 pxToEm(15px) 0;
+            background-position:center top;
+            background-repeat:no-repeat;
+            background-size: 100% auto;
+            &.icon1 {
+                background-image:url(resources/wood/images/icon_pen_s.png);
+                &:active{ 
+                    background-image:url(resources/wood/images/icon_pen_s_p.png);
+                }
+            }
+            &.icon2 {
+                background-image:url(resources/wood/images/icon_clear_s.png);
+                &:active{ 
+                    background-image:url(resources/wood/images/icon_clear_s_p.png);
+                }
+            }
+            &.icon3 {
+                background-image:url(resources/wood/images/icon_dustbin.png);
+                // background-position: center pxToEm(12px);
+                background-size: pxToEm(96px) auto;
+                &:active{ 
+                    background-image:url(resources/wood/images/icon_dustbin_s.png);
+                }
+            }
+            &.icon4 {
+                background-image:url(resources/wood/images/icon_biaozhuld.png);
+                // background-position: center pxToEm(12px);
+                background-size: pxToEm(96px) auto;
+                &:active{ 
+                    background-image:url(resources/wood/images/icon_biaozhuld_s.png);
+                }
+            }
+        }
+        .listtxt {
+            display: block;
+            width: 100%;
+            line-height: 100%;
+            color: #6d5835;
+            font-size: pxToEm(30px);
+            font-weight: bold;
+        }
+        &.on{
+            .nhw_mainlink {
+                &:after{
+                    position: absolute;
+                    content:"";
+                    right: pxToEm(18px);
+                    top: pxToEm(32px);
+                    width:pxToEm(42px);
+                    height: pxToEm(42px);
+                    background: url(resources/wood/images/tool_s_r_on.png) center center no-repeat;
+                    background-size: 100% auto;
+                }
+            }
+            .nhw_mainlink .listtxt {
+                color: #351d00;
+                text-shadow: 0 0 pxToEm(15px) rgba(255, 255, 190, 0.75);
+            }
+            .nhw_mainlink.icon1 {
+                background-image: url(resources/wood/images/icon_pen_s_p.png);
+            }
+            .nhw_mainlink.icon2 {
+                background-image: url(resources/wood/images/icon_clear_s_p.png);
+            }
+            .nhw_toolbarpop01{ 
+                display:block; 
+                top:0;
+                right: pxToEm(90px);
+            }
+        }
+        &.open{
+            background: rgba(213, 162, 79, 0.4);
+            box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.294), inset 0px 2px 2px 0px rgba(4, 0, 0, 0.059);
+            .nhw_mainlink{
+                &.icon1{
+                    background-image:url(resources/wood/images/icon_pen_s_p.png);
+                }
+                &.icon2{
+                    background-image:url(resources/wood/images/icon_clear_s_p.png);
+                }
+                &.icon3{ 
+                    background-image:url(resources/wood/images/icon_dustbin_s.png);
+                }
+                .listtxt{
+                    color: #6d3f0c;
+                    text-shadow:0 0 pxToEm(15px) rgba(255, 255, 190, 0.75);
+                }
+            }
+            .nhw_toolbarpop_bg{
+                display:block;
+            }
+        }
+    }
+    .nhw_wrap_rubber{
+        width: auto;
+        min-width: pxToEm(345px);
+        .nhw_toolbarpop{
+            padding: 0 pxToEm(10px);
+        }
+    }
+} 
+.nhw_toolbarpop_bg{
+    background:url(resources/wood/images/bg_com_hd_write.png) center center no-repeat;
+    background-size: 105% 105%;
+    border-radius: pxToEm(18px);
+    box-shadow: 0 0 pxToEm(21px) pxToEm(6px) rgba(4, 0, 0, 0.3),inset 0 -2px 2px rgba(4, 0, 0, 0.3);
+    display: none;
+    position: absolute;
+    right: pxToEm(165px);
+    top: 0;
+    width: pxToEm(345px);
+    border-radius: pxToEm(18px);
+    padding:pxToEm(12px);
+    overflow: hidden;
+}
+.nhw_toolbarpop01 {
+    background: #f4f1e9 url(resources/wood/images/tool_bar_bg_rb.png) right bottom no-repeat;
+    box-shadow: 0 0 pxToEm(6px) rgba(76, 47, 0, 0.24);
+    border-radius: 0 0 pxToEm(30px) 0;
+    .nhw_toolbox{
+        width: 100%;
+        padding: 0;
+        z-index: 9; 
+        .nhw_toolrow{
+            text-align: center;
+        }
+        .nhw_listcon {
+            position: relative;
+            display: inline-block;
+            width: pxToEm(68px);
+            height: pxToEm(68px);
+            margin: 0 pxToEm(15px) pxToEm(15px);
+            border-radius: 50%;
+            background-color: #e5cca3;
+            border: pxToEm(3px) solid #f4f1e9;
+            box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.75), inset 0px 2px 2px 0px rgba(98, 57, 0, 0.24);
+            &.penweight1{
+                background-image: url(resources/wood/images/toolbar_weight_s.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: auto 100%;
+            }
+            &.penweight2{
+                background-image: url(resources/wood/images/toolbar_weight_m.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: auto 100%;
+            }
+            &.penweight3{
+                background-image: url(resources/wood/images/toolbar_weight_w.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: auto 100%;
+            }
+            &.colordark{
+                &:after{
+                    content:"";
+                    position: absolute;
+                    left: pxToEm(5px);
+                    right: pxToEm(5px);
+                    top: pxToEm(5px);
+                    bottom: pxToEm(5px);                     
+                    border-radius:50%;
+                    background: #333333;
+                }
+            }
+            &.colorred {
+                &:after{
+                    content:"";
+                    position: absolute;
+                    left: pxToEm(5px);
+                    right: pxToEm(5px);
+                    top: pxToEm(5px);
+                    bottom: pxToEm(5px);                     
+                    border-radius:50%;
+                    background: #ff4a32;
+                }
+            }
+            &.colorgrey {
+                &:after{
+                    content:"";
+                    position: absolute;
+                    left: pxToEm(5px);
+                    right: pxToEm(5px);
+                    top: pxToEm(5px);
+                    bottom: pxToEm(5px);                     
+                    border-radius:50%;
+                    background: #e1e1e1;
+                }
+            }
+            &.on,&:active{
+                border-color: #ff8f00;
+                &:before {
+                    position: absolute;
+                    bottom: pxToEm(6px);
+                    right: pxToEm(-9px);
+                    z-index: 1;
+                    content: "";
+                    width: pxToEm(22px);
+                    height: pxToEm(22px);
+                    background: url(resources/wood/images/toolbar_tool_on.png) no-repeat top right;
+                    background-size: 100% auto; 
+                }
+            }
+        }
+    }
+    .nhw_penbox,.nhw_classtoolbox{
+        .nhw_listcon{
+            width: pxToEm(108px);
+            height: pxToEm(108px);
+            margin: pxToEm(-35px) 0 pxToEm(6px) pxToEm(-9px);
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+            background-position: 0 0px;
+        }
+    }
+    .nhw_penbox{
+        padding-bottom: pxToEm(14px);
+        .nhw_listcon{
+            position: relative;
+            .preview{
+                display: none;
+                position: absolute;
+                left: pxToEm(10px);
+                bottom: pxToEm(-12px);
+            }
+            &:active,&.on{
+                .preview{
+                    display: block; 
+                }
+            }
+        }
+        .pen1 {
+            background: url(resources/wood/images/toolbar_pen_1.png) no-repeat;
+            background-size: auto 100%; 
+            &:before{
+                display:none;
+            }
+            &:active,&.on{
+                background: url(resources/wood/images/toolbar_pen_1_press.png) no-repeat;
+                background-size: auto 100%;
+                background-position: pxToEm(-9px) pxToEm(22px);
+            }
+            &.preview{
+                width: pxToEm(246px);
+                height: pxToEm(30px);
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+            }
+            .bold_black {
+                background-image: url(resources/wood/images/pen_brushwork/pen1_bold_black.png); 
+            }
+            .bold_grey {
+                background-image: url(resources/wood/images/pen_brushwork/pen1_bold_grey.png); 
+            }
+            .bold_red {
+                background-image: url(resources/wood/images/pen_brushwork/pen1_bold_red.png); 
+            }
+            .nor_black {
+                background-image: url(resources/wood/images/pen_brushwork/pen1_nor_black.png); 
+            }
+            .nor_grey {
+                background-image: url(resources/wood/images/pen_brushwork/pen1_nor_grey.png); 
+            }
+            .nor_red {
+                background-image: url(resources/wood/images/pen_brushwork/pen1_nor_red.png); 
+            }
+            .thin_black {
+                background-image: url(resources/wood/images/pen_brushwork/pen1_thin_black.png); 
+            }
+            .thin_grey {
+                background-image: url(resources/wood/images/pen_brushwork/pen1_thin_grey.png); 
+            }
+            .thin_red {
+                background-image: url(resources/wood/images/pen_brushwork/pen1_thin_red.png); 
+            }
+        }
+        .pen2{
+            background: url(resources/wood/images/toolbar_pen_2.png) no-repeat;
+            background-size: auto 100%; 
+            &:before{
+                display:none;
+            }
+            &.on,&:active{
+                background: url(resources/wood/images/toolbar_pen_2_press.png) no-repeat;
+                background-size: auto 100%;
+                background-position: pxToEm(-9px) pxToEm(22px);
+            }
+            .preview {
+                width: pxToEm(180px);
+                height: pxToEm(30px);
+                background-size: 100% auto;
+                background-repeat: no-repeat; 
+            }
+            .bold_black {
+                background-image: url(resources/wood/images/pen_brushwork/pen2_bold_black.png); 
+            }
+            .bold_grey {
+                background-image: url(resources/wood/images/pen_brushwork/pen2_bold_grey.png); 
+            }
+            .bold_red {
+                background-image: url(resources/wood/images/pen_brushwork/pen2_bold_red.png); 
+            }
+            .nor_black {
+                background-image: url(resources/wood/images/pen_brushwork/pen2_nor_black.png); 
+            }
+            .nor_grey {
+                background-image: url(resources/wood/images/pen_brushwork/pen2_nor_grey.png); 
+            }
+            .nor_red {
+                background-image: url(resources/wood/images/pen_brushwork/pen2_nor_red.png); 
+            }
+            .thin_black {
+                background-image: url(resources/wood/images/pen_brushwork/pen2_thin_black.png); 
+            }
+            .thin_grey {
+                background-image: url(resources/wood/images/pen_brushwork/pen2_thin_grey.png); 
+            }
+            .thin_red {
+                background-image: url(resources/wood/images/pen_brushwork/pen2_thin_red.png); 
+            }
+        }
+        .pen3 {
+            background: url(resources/wood/images/toolbar_pen_3.png) no-repeat;
+            background-size: auto 100%; 
+            &:before{
+                display:none;
+            }
+            &:active,&.on{
+                background: url(resources/wood/images/toolbar_pen_3_press.png) no-repeat;
+                background-size: auto 100%;
+                background-position: pxToEm(-9px) pxToEm(22px);
+            }
+            .preview {
+                width: pxToEm(80px);
+                height: pxToEm(30px);
+                background-size: 100% auto;
+                background-repeat: no-repeat; 
+            }
+            .bold_black {
+                background-image: url(resources/wood/images/pen_brushwork/pen3_bold_black.png); 
+            }
+            .bold_grey {
+                background-image: url(resources/wood/images/pen_brushwork/pen3_bold_grey.png); 
+            }
+            .bold_red {
+                background-image: url(resources/wood/images/pen_brushwork/pen3_bold_red.png); 
+            }
+            .nor_black {
+                background-image: url(resources/wood/images/pen_brushwork/pen3_nor_black.png); 
+            }
+            .nor_grey {
+                background-image: url(resources/wood/images/pen_brushwork/pen3_nor_grey.png); 
+            }
+            .nor_red {
+                background-image: url(resources/wood/images/pen_brushwork/pen3_nor_red.png); 
+            }
+            .thin_black {
+                background-image: url(resources/wood/images/pen_brushwork/pen3_thin_black.png); 
+            }
+            .thin_grey {
+                background-image: url(resources/wood/images/pen_brushwork/pen3_thin_grey.png); 
+            }
+            .thin_red {
+                background-image: url(resources/wood/images/pen_brushwork/pen3_thin_red.png); 
+            }
+        }
+    }
+    .nhw_rubberbox {
+        padding: 0 0 pxToEm(15px) pxToEm(15px); 
+        white-space: nowrap;
+        .nhw_listcon {
+            width: auto;
+            padding: 0 pxToEm(15px);
+            background: transparent;
+            .icon{
+                display: block;
+                margin: pxToEm(9px) auto;
+                width: pxToEm(105px);
+                height: pxToEm(88px);
+            }
+            &:before{
+                display:none;
+            }
+            .tit {
+                display: inline-block;
+                height: pxToEm(36px);
+                margin: pxToEm(3px);
+                // margin-top: pxToEm(117px);
+                padding: 0 pxToEm(12px);
+                line-height: pxToEm(32px);
+                text-align: center;
+                border-radius: pxToEm(18px);
+                color: #999;
+                .txt{
+                    font-size: pxToEm(18px);
+                }
+            }
+            &:active,&.on{
+                .tit{
+                    color: #000;
+                    border-radius: pxToEm(18px);
+                    background: #e1c08d;
+                    box-shadow: inset 0px pxToEm(3px) pxToEm(3px) rgba(98, 57, 0, 0.24);
+                }
+                &:before{
+                    display: block;
+                    right: auto;
+                    left: 50%;
+                    margin-left: pxToEm(30px);
+                }
+            }
+        }
+    }
+    .nhw_classtoolbox{
+        .toolbar_rubber1 {
+            .icon{
+                background: url(resources/wood/images/toolbar_rubber_1_off.png) no-repeat;
+                background-size: 100% auto;
+            }
+            &.on,&:active{
+                .icon{
+                   background: url(resources/wood/images/toolbar_rubber_1.png) no-repeat;
+                   background-size: 100% auto;
+                   background-position: pxToEm(3px) pxToEm(12px); 
+                }
+            }
+        }
+        .toolbar_rubber2 {
+            .icon{
+                background: url(resources/wood/images/toolbar_rubber_2_off.png) no-repeat;
+                background-size: 100% auto;
+            }
+            &.on,&:active{
+                .icon{
+                    background: url(resources/wood/images/toolbar_rubber_2.png) no-repeat;
+                    background-size: 100% auto;
+                    background-position: pxToEm(3px) pxToEm(12px);
+                }
+            }
+        }
+    }
+}
+/* /右侧手写工具栏 */

@@ -1,0 +1,246 @@
+<div class="com_layout" id="layout">
+    <div class="com_wrapper_pad" id="wrapper">
+        <!-- pad端加.com_wrapper_pad，白板端加.com_wrapper_board -->
+        <!--防止页面加载完根据比例缩放的闪动现象执行该脚本-->
+        <script>
+        layoutReset();
+        </script>
+        <!--头部-->
+        <div class="com_layout_header">
+            <!--计时器-->
+            <div class="com_header_time">
+                @@include('../../common/resources/common/time/_time.html', {"txt":"", "classname":""})
+                <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>
+            </div>
+            <!--/计时器-->
+            <!--提交按钮-->
+            <div class="com_header_tool">
+                @@include('../../common/resources/common/button/_com_btn_round.html', {"txt":"提&nbsp;&nbsp;交", "classname":""})
+            </div>
+            <!--/提交按钮-->
+            <!-- mobile ，插入返回按钮 -->
+            <div class="com_header_tool return">
+                <a href="javascript:;" class="btn-return"></a>
+            </div>
+            <!-- /mobile ，插入返回按钮 -->
+        </div>
+        <!--/头部-->
+        <div class="com_layout_container">
+            <!-- 比大小学生端 -->
+            <!--题型比较大小-->
+            <div class="com_layout_exam_content compare_main">
+                <!--主体内容-->
+                <div class="com_layout_main_exam">
+                    <!-- 没有标题时加.notit -->
+                    <div class="com_layout_tit">
+                        <h2 class="tit">比较左右两边大小，并填入正确的符号</h2>
+                        <!-- 文字过多的情况加.s_tit -->
+                    </div>
+                    <div class="com_layout_main">
+                        <div class="exam_box scrollbar_style_simple">
+                            <!--中间符号框默认class为：com_u_btn2(蓝色)，移动符号到中间class为：com_s_on(加上深蓝边框)-->
+                            <!--中间符号框错误class为：com_s_error(红色)，移动符号到中间class为：com_s_right(绿色)-->
+                            <!--红色加边框class为：com_s_error_on(红色加边框)，绿色加边框class为：com_s_right_on(绿色加边框)-->
+                            <ul>
+                                <li>
+                                    <span class="module_number">111</span>
+                                    <span class="module_left"><em class="module_fz_em">7+2</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2"></a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">6</em></span>
+                                </li>
+                                <li>
+                                    <span class="module_number">2</span>
+                                    <span class="module_left"><em class="module_fz_em"> 5+8</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2 com_s_on">
+                                            <!-- 方块被放置的时候内容填充下面的span -->
+                                            <em>=</em>
+                                        </a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">24</em></span>
+                                </li>
+                                <li>
+                                    <span class="module_number">3</span>
+                                    <span class="module_left"><em class="module_fz_em">12+3</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2 com_s_error"></a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">15</em></span>
+                                </li>
+                                <li>
+                                    <span class="module_number">4</span>
+                                    <span class="module_left"><em class="module_fz_em">π</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2 com_s_error_on">
+                                            <!-- 方块被放置的时候内容填充下面的span -->
+                                            <em>=</em>
+                                        </a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">3.14</em></span>
+                                </li>
+                                <li>
+                                    <span class="module_number">5</span>
+                                    <span class="module_left"><em class="module_fz_em fz_em_big"><!-- 英文添加类名. fz_em_big 来显示46号文字-->Apple</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2 com_s_right"><em>=</em></a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">苹果</em></span>
+                                </li>
+                                <li>
+                                    <span class="module_number">6</span>
+                                    <span class="module_left"><em class="module_fz_em">88</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2 com_s_right_on"><em>=</em></a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">66</em></span>
+                                </li>
+                                <li>
+                                    <span class="module_number">7</span>
+                                    <span class="module_left"><em class="module_fz_em">89+2</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2"><em>=</em></a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">91</em></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--拖动的符号-->
+                        <div class="moving_tool">
+                            <em>＜</em>
+                        </div>
+                        <!--拖动的符号结束-->
+                    </div>
+                    <!--底部比较符号-->
+                    <div class="compare_bottom_tool">
+                        <ul class="bottom_tools">
+                            <li>
+                                <em>＜</em>
+                                <div></div>
+                            </li>
+                            <li>
+                                <em>＞</em>
+                                <div></div>
+                            </li>
+                            <li class="ui_btn_selected">
+                                <em>≤</em>
+                                <div></div>
+                            </li>
+                            <li>
+                                <em>≥</em>
+                                <div></div>
+                            </li>
+                            <li>
+                                <em>＝</em>
+                                <div></div>
+                            </li>
+                            <li>
+                                <em>≈</em>
+                                <div></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--底部比较符号结束-->
+                </div>
+                <!-- 主体内容end -->
+                <!--正确答案-->
+                <div class="correct_ans">
+                    <!-- 没有标题时加.notit -->
+                    <div class="com_layout_tit">
+                        <h2 class="tit">正确答案：</h2>
+                    </div>
+                    <div class="com_layout_main">
+                        <div class="exam_box scrollbar_style_simple">
+                            <!--中间符号框默认class为：com_u_btn2(蓝色)，移动符号到中间class为：com_s_on(加上深蓝边框)-->
+                            <!--中间符号框错误class为：com_s_error(红色)，移动符号到中间class为：com_s_right(绿色)-->
+                            <!--红色加边框class为：com_s_error_on(红色加边框)，绿色加边框class为：com_s_right_on(绿色加边框)-->
+                            <ul>
+                                <li>
+                                    <span class="module_number">111</span>
+                                    <span class="module_left"><em class="module_fz_em">7+2</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2"></a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">6</em></span>
+                                </li>
+                                <li>
+                                    <span class="module_number">2</span>
+                                    <span class="module_left"><em class="module_fz_em"> 5+8</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2 com_s_on">
+                                            <!-- 方块被放置的时候内容填充下面的span -->
+                                            <em>=</em>
+                                        </a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">24</em></span>
+                                </li>
+                                <li>
+                                    <span class="module_number">3</span>
+                                    <span class="module_left"><em class="module_fz_em">12+3</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2 com_s_error"></a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">15</em></span>
+                                </li>
+                                <li>
+                                    <span class="module_number">4</span>
+                                    <span class="module_left"><em class="module_fz_em">π</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2 com_s_error_on">
+                                            <!-- 方块被放置的时候内容填充下面的span -->
+                                            <em>=</em>
+                                        </a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">3.14</em></span>
+                                </li>
+                                <li>
+                                    <span class="module_number">5</span>
+                                    <span class="module_left"><em class="module_fz_em fz_em_big"><!-- 英文添加类名. fz_em_big 来显示46号文字-->Apple</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2 com_s_right"><em>=</em></a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">苹果</em></span>
+                                </li>
+                                <li>
+                                    <span class="module_number">6</span>
+                                    <span class="module_left"><em class="module_fz_em">88</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2 com_s_right_on"><em>=</em></a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">66</em></span>
+                                </li>
+                                <li>
+                                    <span class="module_number">7</span>
+                                    <span class="module_left"><em class="module_fz_em">89+2</em></span>
+                                    <div class="module_mid">
+                                        <a href="###" class="com_u_btn2"><em>=</em></a>
+                                    </div>
+                                    <span class="module_right"><em class="module_fz_em">91</em></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--拖动的符号-->
+                        <div class="moving_tool">
+                            <em>＜</em>
+                        </div>
+                        <!--拖动的符号结束-->
+                    </div>
+                </div>
+                <!-- 正确答案end -->
+                <!-- 答案解析 -->
+                <div class="analysis_module">
+                    <div class="com_layout_tit">
+                        <h2 class="tit">答案解析：</h2>
+                        <!-- 文字过多的情况加.s_tit -->
+                    </div>
+                    <p>读书让我身心安妥，忘记时间的流逝；面对越来多 的遗憾，可用读书来缓解生命的疼痛；读书让自己 的眼界更宽阔，体验更深刻，读书也是读人世。
+                    </p>
+                </div>
+                <!-- 答案解析end -->
+            </div>
+            <!--题型比较大小-->
+            <!-- 比大小学生端end -->
+        </div>
+    </div>
+</div>

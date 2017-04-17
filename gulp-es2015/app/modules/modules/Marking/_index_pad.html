@@ -1,0 +1,228 @@
+<div class="com_layout" id="layout">
+    <div class="com_wrapper_board" id="wrapper"> <!-- pad端加.com_wrapper_pad，白板端加.com_wrapper_board -->
+        <!--防止页面加载完根据比例缩放的闪动现象执行该脚本-->
+        <script>layoutReset();</script>
+        <!--头部-->
+        <div class="com_layout_header">
+            <!--计时器-->
+            <div class="com_header_time">
+                @@include('../../common/resources/common/time/_time.html', {"txt":"", "classname":""})
+                <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>
+            </div>
+            <!--/计时器-->
+            <!--提交按钮-->
+            <div class="com_header_tool">
+                @@include('../../common/resources/common/button/_com_btn_round.html', {"txt":"提&nbsp;&nbsp;交", "classname":""})
+            </div>
+            <!--/提交按钮-->
+
+        </div>
+        <!--/头部-->
+        <div class="com_layout_container">
+
+            <!-- 划词标记 -->
+            <div class="com_layout_exam_content marking_box item_quantity_4">
+                <!-- 开发必看注释 必看必看
+                上面的item_quantity_1表示题目有一个颜色 / item_quantity_2表示题目有二个颜色 / 
+                item_quantity_3 控制三个题目颜色  /
+                item_quantity_4 控制四个题目颜色  /
+                css定位文章内容的高度需要用 
+                -->
+
+                <!-- 左侧划词标记-顶部 -->
+                <div class="marking_box_top clearfix">
+                    
+                    <!-- 画笔选择 -->
+                    <div class="contral_box marking_brush">
+                        <div class="marking_contral_title"><span class="font"><em>请选择画笔颜色</em></span></div>
+                        <div class="marking_brush_box">
+                            <!-- 选中的色块a标签添加类名：on -->
+                            <a class="brush color_red on" href="###">红色</a>
+                            <a class="brush color_green" href="###">绿色</a>
+                            <a class="brush color_purple" href="###">紫色</a>
+                            <a class="brush color_blue" href="###">蓝色</a>
+                        </div>
+                    </div>
+                    <!-- 画笔选择 -->
+
+                    <!-- 题目要求 -->
+                    <div class="contral_box marking_require">
+                        <div class="marking_contral_title"><span class="font"><em>题目要求:</em> 使用触控笔长按文本区域开始划词选择</span></div>
+                        <div class="marking_require_main">
+                            <a class="require color_red" href="###"><span class="font">1.请用<em>红色</em>笔触划出描述作者心理活动的词</span></a>
+                            <a class="require color_green" href="###"><span class="font">2.请用<em>绿色</em>笔触划出描述作者动作的词</span></a>
+                            <a class="require color_purple" href="###"><span class="font">3.请用<em>紫色</em>笔触划出所有形容词</span></a>
+                            <a class="require color_blue" href="###"><span class="font">4.请用<em>蓝色</em>笔触划出不会的生词</span></a>
+                        </div>
+                    </div>
+                    <!-- /题目要求 -->
+                </div>
+                
+                <!-- /左侧划词标记-顶部 -->
+                <!-- 左侧划词标记-底部 -->
+                <div class="com_m_sideboard_1 marking_box_bottom">
+                    <div class="com_m_sidehead"></div>
+                    <div class="com_m_sidecon">
+                        <div class="marking_article scrollbar_style_gray">
+                            <h1 class="article_tit"><span class="font">窃读记</span></h1>
+                            <!-- mark_red表示划线颜色的红色 /绿色是mark_green / 紫色是mark_purple/ 蓝色是mark_blue -->
+                            <p class="text">我边走边想：“昨天读到什么地方了？那本书放在哪里？左边第三排，不错……”走到门口，便看见书店里仍像往日一样挤满了顾客。我可以<span class="mark_red">安心</span>了。但我又<span class="mark_purple">担忧</span>那本书会不会卖光，因为一连几天都看见有人买，昨天<span class="mark_blue">好像</span>只剩下一两本了。我<span class="mark_green">跨进</span>店门，暗喜没人注意。</p>
+                            <p class="text">我边走边想：“昨天读到什么地方了？那本书放在哪里？左边第三排，不错……”走到门口，便看见书店里仍像往日一样挤满了顾客。我可以安心了。但我又担忧那本书会不会卖光，因为一连几天都看见有人买，昨天好像只剩下一两本了。我跨进店门，暗喜没人注意。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /左侧划词标记-底部 -->                
+                
+                <!-- 右侧词组板块 -->             
+                <div class="com_layout_main_exam"><!-- 没有标题时加.notit -->
+                    
+                    <div class="marking_text_box scrollbar_style_default">
+                        <ul>
+                            <!-- 点击编辑进入的模块li添加class名text_box_edit -->
+                            <li class="item_seleted">
+                                <div class="types_title">
+                                    <span class="font">划出描述作者心理活动的词</span>
+                                    <a class="btn_oper" href="###">编辑</a>
+                                </div>
+                                <div class="types_main">
+                                    <span class="marked_word">
+                                        <b>花花绿绿</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>花花绿绿</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>担忧</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>一连几天</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>花花绿绿</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                </div>
+                            </li>
+                            <!-- 点击编辑进入的模块li添加class名text_box_edit -->
+                            <li class="text_box_edit">
+                                <div class="types_title">
+                                    <span class="font">划出描述作者动作的词</span>
+                                    <a class="btn_oper" href="###">取消</a><!-- 进入编辑状态后文字变为取消 -->
+                                </div>
+                                <div class="types_main">
+                                    <span class="marked_word">
+                                        <b>一连几天</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>担忧</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>到门口</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>花花绿绿</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>高兴</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>一连几天</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="types_title">
+                                    <span class="font">划出所有形容词</span>
+                                    <a class="btn_oper" href="###">编辑</a>
+                                </div>
+                                <div class="types_main">
+                                    <span class="marked_word">
+                                        <b>花花绿绿</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>花花绿绿</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>担忧</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>一连几天</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>花花绿绿</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="types_title">
+                                    <span class="font">划出不会的生词</span>
+                                    <a class="btn_oper" href="###">编辑</a>
+                                </div>
+                                <div class="types_main">
+                                    <span class="marked_word">
+                                        <b>一连几天</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>担忧</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>到门口</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>花花绿绿</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>高兴</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>一连几天</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>一连几天</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                    <span class="marked_word">
+                                        <b>一连几天</b>
+                                        <a class="btn_del" href="###"></a>
+                                    </span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+                <!-- /右侧词组板块 -->
+
+            </div>
+            <!--划词标记-->
+
+
+        </div>
+       
+    </div>
+</div>
+
+

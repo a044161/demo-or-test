@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>手写题-白板端</title>
+    <link rel="stylesheet" type="text/css" href="../../../common/common.css">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+
+<body>
+    <div class="exam_skin_wood">
+        <div class="com_layout" id="layout">
+            <div class="com_wrapper_pad" id="wrapper">
+                <!-- pad端加.com_wrapper_pad，白板端加.com_wrapper_board -->
+                <!--头部-->
+                <div class="com_layout_header">
+                    <!--计时器-->
+                    <div class="com_header_time">
+                        <div class="com_time">
+    <div class="time_default ">
+        <b class="time_text">答题时间：</b><!-- 
+                 --><span class="time_m"><em>05</em></span><!-- 
+                          --><b class="time_text">分</b><!--         
+                                   --><i>:</i><!-- 
+                                            --><span class="time_s"><em>21</em></span><!-- 
+                                                     --><b class="time_text">秒</b>
+    </div>
+</div>
+                        <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>
+                    </div>
+                    <!--/计时器-->
+                    <!--提交按钮-->
+                    <div class="com_header_tool">
+                        <a class="com_btn_round " href="javascript:;">
+<!-- <span class="icons_box"></span> -->
+<span class="text_box">提&nbsp;&nbsp;交</span>
+</a>
+                    </div>
+                    <!--/提交按钮-->
+                </div>
+                <!--/头部-->
+                <!--主体内容-->
+                <div class="com_layout_container">
+                <!-- 没有标题时加.notit -->
+                    <div class="com_layout_exam_content handWrite">
+                        <div class="layout_handWrite">
+                        <!-- 具体题型内容 -->
+                            <div class="handWrite_txt_wrap">
+                                <div class="handWrite_txt scrollbar_style_gray">
+                                    <div class="txt">请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置请将图片下方的标签选项贴在“世界地图”上相应的位置</div>
+                                    <!-- 文字过多的情况加.s_tit -->
+                                </div>
+                            </div>
+                            <div style="width:100%;height:0;">
+                                <div class="com_layout_main">
+                                    <!-- 重新调整尺寸按钮 改变尺寸时，改变com_layout_main的top属性 -->
+                                    <a href="javascript:;" class="handWrite_resize"></a>
+                                    <!-- /重新调整尺寸按钮 -->
+                                    <!-- 在这里新建div写新的题型 -->
+                                    <div class="handWrite_wrap">
+    <div class="handWrite_content scrollbar_style_gray">
+        <p class="handWrite_placeholder"><span class="txt">可书写区域</span></p>
+    </div>
+</div>
+                                </div>
+                                <!-- 工具栏 -->
+                                <div class="nhw_write_toolbar">
+                                <!--
+                                开关的状态类型：
+                                关闭：off
+                                开启：on
+                                -->
+                                    <div class="nhw_btn_switch_box off" href="####">
+                                        <span class="off_text"><em>推开即可手写</em></span>
+                                        <span class="on_text"><em>手写已开启</em></span>
+                                        <a class="nhw_btn_switch" href="###"></a>
+                                    </div>
+                                    <!--其他操作按钮-->
+                                    <ul class="nhw_write_toolbar_list">
+                                        <!--工具被点中的时候li添加类名open 使用的是当前工具添加类名on-->
+                                        <li class="">
+                                            <a href="####" class="nhw_mainlink icon1">
+                                                <em class="listtxt">画笔</em>
+                                            </a>
+                                            <!--画笔弹出层-->
+                                            <div class="nhw_toolbarpop_bg">
+                                                <div class="nhw_toolbarpop nhw_toolbarpop01">
+                                                    <div class="nhw_toolbox nhw_penbox">
+                                                        <p class="nhw_toolrow clearfix"> 
+                                                        <!--不同笔触对应类名：
+                                                        粗+黑色：bold_black
+                                                        粗+灰色：bold_grey
+                                                        粗+红色：bold_red
+                                                        中+黑色：nor_black
+                                                        中+灰色：nor_grey
+                                                        中+红色：nor_red
+                                                        细+黑色：thin_black
+                                                        细+灰色：thin_grey
+                                                        细+红色：thin_red
+                                                        --> 
+                                                            <a href="####" class="nhw_listcon pen1"><em class="preview thin_black"></em></a>
+                                                            <a href="####" class="nhw_listcon pen2 on"><em class="preview nor_black"></em></a>
+                                                            <a href="####" class="nhw_listcon pen3"><em class="preview thin_grey"></em></a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="nhw_toolbox">
+                                                        <p class="nhw_toolrow clearfix">
+                                                            <a href="####" class="nhw_listcon penweight1"></a>
+                                                            <a href="####" class="nhw_listcon penweight2"></a>
+                                                            <a href="####" class="nhw_listcon penweight3 on"></a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="nhw_toolbox">
+                                                        <p class="nhw_toolrow clearfix">
+                                                            <a href="####" class="nhw_listcon colordark on"></a>
+                                                            <a href="####" class="nhw_listcon colorgrey"></a>
+                                                            <a href="####" class="nhw_listcon colorred"></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/画笔弹出层--> 
+                                        </li>
+                                        <li class="">
+                                            <a href="####" class="nhw_mainlink icon2">
+                                                <em class="listtxt">橡皮</em>
+                                            </a>
+                                            <!--橡皮弹出层--> 
+                                            <div class="nhw_toolbarpop_bg nhw_wrap_rubber">
+                                                <div class="nhw_toolbarpop nhw_toolbarpop01">
+                                                    <div class="nhw_toolbox nhw_classtoolbox nhw_rubberbox">
+                                                        <p class="nhw_toolrow clearfix">
+                                                            <a href="####" class="nhw_listcon toolbar_rubber1">
+                                                                <span class="icon"></span>
+                                                                <span class="tit"><em class="txt">一键清除</em></span>
+                                                            </a>
+                                                            <a href="####" class="nhw_listcon toolbar_rubber2 on">
+                                                                <span class="icon"></span>
+                                                                <span class="tit"><em class="txt">普通橡皮</em></span>
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/橡皮弹出层-->
+                                        </li>
+                                        <li class="">
+                                            <a href="####" class="nhw_mainlink icon3">
+                                                <em class="listtxt">一键清除</em>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                    <!--/其他操作按钮-->
+                                </div>
+                                <!-- /工具栏 -->
+                            </div>
+                        <!-- 具体题型内容 -->
+                        </div>
+                    </div>
+                </div>
+                <!--/主体内容-->
+            </div>
+        </div>
+    </div>
+    <script src="../../../common/resources/common/layout/wood/layout.js"></script>
+</body>
+</html>

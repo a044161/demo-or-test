@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+.nqti-base-puzzle {
+    overflow: hidden;
+    padding-bottom: pxToEm(90px);
+    min-height: pxToEm(730px);
+    // height: 100%;
+    .tips-to-bottom{
+        position: absolute;
+        left: pxToEm(39px);
+        bottom: pxToEm(10px);
+    }
+}
+.nqti-base-puzzle-wrap {
+    display: inline-block;
+    position: relative;
+    margin-left: pxToEm(39px);
+    height: pxToEm(493px);
+    background: #f4f4f4;
+    border: 1px solid #c1c1c1;
+    box-shadow: 0px pxToEm(3px) pxToEm(10px) 0px rgba(0, 0, 0, 0.2);
+}
+
+//侧边拼图选区
+.nqti-base-side-puzzle {
+    float: left;
+    padding: pxToEm(12px) pxToEm(5px) pxToEm(24px) pxToEm(12px);
+    width: pxToEm(420px);
+    height: 100%;
+    border-left: 1px solid #c1c1c1;
+    background: #f4f4f4;    
+}
+.nqti-base-puzzle-list {
+    overflow-y: auto;
+    height: 100%;
+    li {
+        float: left;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        margin: pxToEm(12px) pxToEm(10px);
+        width: pxToEm(174px);
+        height: pxToEm(126px);
+        background: #ddd;
+        text-align: center;
+        cursor: pointer;
+        opacity: .4;
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
+            max-height: 100%;
+        }
+        &:after {
+            display: inline-block;
+            content: '';
+            width: 0;
+            height: 100%;
+            vertical-align: middle;
+        }
+        &:active {
+            opacity: .2;
+        }
+        &.on {
+            opacity: 1;
+        }
+        
+    }
+    &.nqti-scrollbar-style-gray::-webkit-scrollbar{
+      width: pxToEm(8px);
+      height: pxToEm(8px);
+      border-radius: pxToEm(8px);
+    }
+    &.nqti-scrollbar-style-gray::-webkit-scrollbar-thumb{
+      border-radius: pxToEm(8px);
+    }
+}
+
+//拼图模块
+.nqti-base-puzzle-module {
+    float: left;
+    height: 100%;
+    border: 5px solid #fff;
+    
+}
+.nqti-base-puzzle-table {
+    td {
+        /* overflow: hidden; */
+        position: relative;
+        border: 2px solid #fff;
+        background: #f4f4f4;
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+        &:active {
+            opacity: .7;
+        }
+        &.td-move {
+            background: #faecd5;
+            /* &:after {
+                content: '';
+                position: absolute;
+                left: 1px;
+                top: 1px;
+                bottom: 1px;
+                right: 1px;
+                border: 1px solid #f4d4a0;
+            } */
+        }
+        img{
+            width: 100%;
+            max-height: 100%;
+        }
+    }
+
+}
+/* 开发用 */
+.nqti-base-puzzle-wrap ._move {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0.8;
+    z-index: 5;
+}
+.nqti-base-puzzle-wrap{
+    transform: translateZ(0);
+}
+.nqti-base-puzzle-wrap ._move img{
+    width: 100%;
+}
+
+ .nqti-base-puzzle-list li .nqti-base-puzzle-img-con._horizontal img{
+    width: auto;
+}
+ .nqti-base-puzzle-list li._autoh{
+    height: auto;
+}
+
+.nqti-base-puzzle-wrap ._old{
+    display: none !important;
+}
+.nqti-base-puzzle-table td{
+    padding: 0px;
+}
+/* 开发用end */

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+.baseMod-com-layout-body {
+    &.composition-toolbar-inleft {
+        left: pxToEm(160px);
+        right: 0;
+        border-radius: 0 0.41667em 0.41667em 0 !important;
+
+        .nqti-base-composition-bd {
+            overflow: visible;
+        }
+    }
+    &.composition-outline-layout {
+        left: 0;
+        right: 0;
+        border-radius: 0.41667em !important;
+        &.show-mindmap-toolbar {
+            left: pxToEm(160px);
+            right: 0;
+            border-radius: 0 0.41667em 0.41667em 0 !important;
+
+            .nqti-base-composition-bd {
+                overflow: visible !important;
+            }
+            .composition-write {
+                padding: 0;
+            }
+        }
+        .nqti-base-composition-tit {
+            position: relative;
+            z-index: 1;
+            overflow: visible;
+            line-height: 1;
+            >.txt {
+                line-height: 2.5;
+            }
+        }
+    }
+}
+.hide-dom {
+    display: none !important;
+}
+.nqti-base-composition-aftertit-wrap {
+    float: left;
+}
+.nqti-base-composition-chosetype {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: pxToEm(34px);
+    &.show-box {
+        .btn-typename {
+            display: none;
+        }
+        .nqti-base-composition-chosetype-box {
+            display: block;
+        }
+    }
+}
+.nqti-base-composition-chosetype-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nqti-base-composition-chosetype-btn {
+    display: inline-block;
+    position: relative;
+    padding: 0 pxToEm(15px) 0 pxToEm(37px);
+    width: 100%;
+    margin-top: pxToEm(4px);
+    height: pxToEm(56px);
+    line-height: pxToEm(54px);
+    border: 1px solid #cab593;
+    border-radius: pxToEm(28px) pxToEm(5px) pxToEm(5px) pxToEm(28px);
+    background: #f5f2ed;
+    background: linear-gradient(to bottom,#fff 0,#e4dccd 100%);
+    cursor: pointer;
+    &:before {
+        content: '';
+        position: absolute;
+        left: pxToEm(14px);
+        top: pxToEm(23px);
+        width: pxToEm(10px);
+        height: pxToEm(10px);
+        background: #ff9000;
+        border-radius: 50%;
+    }
+    .btn-txt {
+        white-space: nowrap;
+        font-size: pxToEm(28px);
+        color: #565656;
+    }
+    &:active,&.ui_btn_active {
+        background: #f5f2ed;
+        background: linear-gradient(to top,#fff 0,#e4dccd 100%);
+    }
+    &.click-disabled {
+        cursor: not-allowed;
+        filter: Gray;
+        -webkit-filter: grayscale(100%);
+        background: linear-gradient(to bottom,#fff 0,#e4dccd 100%);
+    }
+}

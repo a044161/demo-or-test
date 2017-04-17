@@ -1,0 +1,748 @@
+@charset "UTF-8";
+.exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-pad .baseMod-com-header-box:before, .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-board .baseMod-com-header-box:before, .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-pad .baseMod-com-header-box:after, .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-board .baseMod-com-header-box:after {
+  content: "";
+  display: table; }
+
+.exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-pad .baseMod-com-header-box:after, .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-board .baseMod-com-header-box:after {
+  clear: both; }
+
+body {
+  margin: 0;
+  height: 100%;
+  line-height: 1; }
+
+html, body {
+  border: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  height: 100%; }
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0; }
+
+.clearfix:after {
+  clear: both; }
+
+.exam-skin-wood {
+  height: 100%;
+  box-sizing: border-box;
+  /* HTML5 display-role reset for older browsers */
+  /*可以同时屏蔽ios和android下点击元素时出现的阴影。*/
+  /*截图类*/
+  /* 学生端答题框 */
+  /* 老师端等待学生答题 */
+  /*计时器*/
+  /* 白板的时间*/
+  /*复合题布局*/
+  /*button_style new*/
+  /*****************************************
+baseMod-com
+*****************************************/
+  /* com_pop_nubuck */
+  /* end com_pop_nubuck */
+  /* new con_pop */
+  /* end new con_pop */
+  /* 木纹底滚动条样式 */
+  /* 白格子纹底的滚动条样式 */
+  /* 浅黄滚动条 */
+  /* 棕色滚动条 */ }
+  .exam-skin-wood * {
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif; }
+  .exam-skin-wood *:before, .exam-skin-wood *:after {
+    box-sizing: border-box; }
+  .exam-skin-wood dl, .exam-skin-wood dd, .exam-skin-wood h1, .exam-skin-wood h2, .exam-skin-wood h3, .exam-skin-wood h4, .exam-skin-wood h5, .exam-skin-wood h6, .exam-skin-wood p, .exam-skin-wood form {
+    margin: 0; }
+  .exam-skin-wood fieldset, .exam-skin-wood img, .exam-skin-wood iframe, .exam-skin-wood abbr {
+    border: 0; }
+  .exam-skin-wood table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .exam-skin-wood ins {
+    text-decoration: none; }
+  .exam-skin-wood del {
+    text-decoration: line-through; }
+  .exam-skin-wood input, .exam-skin-wood select {
+    vertical-align: middle; }
+  .exam-skin-wood input, .exam-skin-wood textarea, .exam-skin-wood select {
+    font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif; }
+  .exam-skin-wood input:focus {
+    outline: none; }
+  .exam-skin-wood textarea {
+    resize: none; }
+  .exam-skin-wood fieldset, .exam-skin-wood img {
+    border: 0; }
+  .exam-skin-wood img {
+    border: none;
+    vertical-align: top; }
+  .exam-skin-wood address, .exam-skin-wood code, .exam-skin-wood caption, .exam-skin-wood th, .exam-skin-wood cite, .exam-skin-wood dfn, .exam-skin-wood em, .exam-skin-wood i {
+    font-style: normal;
+    font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif; }
+  .exam-skin-wood ol, .exam-skin-wood ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .exam-skin-wood h1, .exam-skin-wood h2, .exam-skin-wood h3, .exam-skin-wood h4, .exam-skin-wood h5, .exam-skin-wood h6 {
+    font-weight: normal; }
+  .exam-skin-wood blockquote, .exam-skin-wood q {
+    quotes: none; }
+  .exam-skin-wood blockquote:before, .exam-skin-wood blockquote:after, .exam-skin-wood q:before, .exam-skin-wood q:after {
+    content: "";
+    content: none; }
+  .exam-skin-wood legend {
+    display: none; }
+  .exam-skin-wood a {
+    text-decoration: none;
+    outline: none; }
+  .exam-skin-wood a:hover {
+    text-decoration: none; }
+  .exam-skin-wood article, .exam-skin-wood aside, .exam-skin-wood details, .exam-skin-wood figcaption, .exam-skin-wood figure,
+  .exam-skin-wood footer, .exam-skin-wood header, .exam-skin-wood hgroup, .exam-skin-wood menu, .exam-skin-wood nav, .exam-skin-wood section {
+    display: block; }
+  .exam-skin-wood input, .exam-skin-wood button, .exam-skin-wood select, .exam-skin-wood textarea {
+    outline: none;
+    border: none; }
+  .exam-skin-wood textarea {
+    resize: none; }
+  .exam-skin-wood table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .exam-skin-wood a, .exam-skin-wood img, .exam-skin-wood button, .exam-skin-wood input, .exam-skin-wood textarea, .exam-skin-wood li {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+  .exam-skin-wood .baseMod-hide-dom {
+    display: none !important; }
+  .exam-skin-wood .baseMod-com-layout {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: url(resources/baseModule/layout/wood/images/full_bg.jpg); }
+    .exam-skin-wood .baseMod-com-layout .baseMod-com-layout-container {
+      position: relative;
+      margin: 0 auto;
+      background: #faf5ec;
+      border: 1px solid #d1af80;
+      padding: 1.25em;
+      border-radius: 0.5em;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+      box-sizing: border-box; }
+    .exam-skin-wood .baseMod-com-layout .baseMod-com-layout-title {
+      color: #603300;
+      height: 3.5em;
+      border-bottom: 4px double #ababab;
+      padding: 0 0 0 2.66667em; }
+      .exam-skin-wood .baseMod-com-layout .baseMod-com-layout-title .baseMod-tit {
+        font-size: 2.08333em;
+        color: #333;
+        line-height: 1.1; }
+        .exam-skin-wood .baseMod-com-layout .baseMod-com-layout-title .baseMod-tit.stit {
+          font-size: 1.16667em; }
+    .exam-skin-wood .baseMod-com-layout .baseMod-com-submit {
+      position: absolute; }
+    .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-pad {
+      width: 80em;
+      height: 45em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -22.5em 0 0 -40em;
+      padding: 0 1.125em;
+      box-sizing: border-box; }
+      .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-pad .baseMod-com-header-box {
+        height: 4.375em;
+        margin: 0 auto; }
+        .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-pad .baseMod-com-header-box .com_header_time {
+          float: left;
+          margin: 0 0 0 -1.75em; }
+      .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-pad .baseMod-com-layout-container {
+        width: 77.75em;
+        height: 39.5em; }
+      .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-pad .baseMod-com-submit {
+        right: 0.58333em;
+        top: 0.16667em; }
+      .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-pad .upload {
+        display: none; }
+    .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-board {
+      width: 80em;
+      height: 45em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -22.5em 0 0 -40em;
+      padding: 2em 4em;
+      box-sizing: border-box; }
+      .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-board .baseMod-com-header-box {
+        position: absolute;
+        top: 0;
+        left: 4em;
+        right: 4em;
+        text-align: center; }
+      .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-board .baseMod-com-layout-container {
+        width: 72em;
+        height: 38.125em; }
+      .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-board .baseMod-com-submit {
+        text-align: center;
+        width: 13.33333em;
+        left: 50%;
+        bottom: 0.20833em;
+        margin-left: -6.66667em; }
+        .exam-skin-wood .baseMod-com-layout .baseMod-com-wrapper-board .baseMod-com-submit .icons_box {
+          display: none; }
+  .exam-skin-wood .baseMod-com-layout-body {
+    position: absolute;
+    left: 3.91667em;
+    bottom: 1.125em;
+    right: 1.25em;
+    top: 5.16667em;
+    overflow: auto; }
+  .exam-skin-wood .baseMod-com-layout-body-scrn .baseMod-com-layout-title {
+    display: none; }
+  .exam-skin-wood .baseMod-com-layout-body-scrn .baseMod-com-layout-body {
+    position: static;
+    overflow: visible;
+    width: 100%;
+    height: 100%; }
+  .exam-skin-wood .baseMod-com-wrapper-answer {
+    width: 80em;
+    height: 45em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -22.5em 0 0 -40em;
+    padding: 0 1.125em; }
+    .exam-skin-wood .baseMod-com-wrapper-answer .baseMod-com-layout-container {
+      width: 77.75em;
+      height: 44.16667em;
+      padding: 0;
+      border-radius: 0 0 .5em 0.5em; }
+    .exam-skin-wood .baseMod-com-wrapper-answer .baseMod-com-submit {
+      right: 1.66667em !important;
+      top: 1.25em !important;
+      z-index: 5 !important;
+      width: auto !important;
+      left: auto !important;
+      bottom: auto !important;
+      margin: 0 !important; }
+    .exam-skin-wood .baseMod-com-wrapper-answer .baseMod-com-layout-title-stat {
+      display: none; }
+    .exam-skin-wood .baseMod-com-wrapper-answer .baseMod-com-layout-body-scrn {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0; }
+      .exam-skin-wood .baseMod-com-wrapper-answer .baseMod-com-layout-body-scrn .nqti-player-srcm-body .nqti-module-title {
+        margin: 0 1.25em 0; }
+    .exam-skin-wood .baseMod-com-wrapper-answer.baseMod-com-answer-board {
+      width: 80em;
+      height: 45em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -22.5em 0 0 -40em;
+      padding: 0em 3.5em;
+      box-sizing: border-box; }
+      .exam-skin-wood .baseMod-com-wrapper-answer.baseMod-com-answer-board .baseMod-com-layout-container {
+        width: 72em;
+        height: 44em; }
+      .exam-skin-wood .baseMod-com-wrapper-answer.baseMod-com-answer-board .baseMod-com-submit {
+        right: 4.58333em !important; }
+      .exam-skin-wood .baseMod-com-wrapper-answer.baseMod-com-answer-board .nqti-player-srcm-body-waiting {
+        margin-top: 1.5em; }
+    .exam-skin-wood .baseMod-com-wrapper-answer.baseMod-com-answer-pad .baseMod-com-layout-body-scrn {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0; }
+      .exam-skin-wood .baseMod-com-wrapper-answer.baseMod-com-answer-pad .baseMod-com-layout-body-scrn .nqti-module-title {
+        text-align: center;
+        height: 35.5em;
+        overflow: auto; }
+  .exam-skin-wood .baseMod-com-wrapper-waiting {
+    width: 80em;
+    height: 45em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -22.5em 0 0 -40em;
+    padding: 0 4em; }
+    .exam-skin-wood .baseMod-com-wrapper-waiting .baseMod-com-layout-title-stat {
+      padding: 0;
+      background: #f3e2c6;
+      border-bottom: 1px solid #d3b388;
+      border-bottom-color: #ead6b4;
+      color: #796647;
+      font-size: 0.91667em;
+      height: 2.45em;
+      line-height: 2.45em; }
+      .exam-skin-wood .baseMod-com-wrapper-waiting .baseMod-com-layout-title-stat strong {
+        font-weight: normal;
+        font-size: 1.08333em; }
+    .exam-skin-wood .baseMod-com-wrapper-waiting .baseMod-com-layout-title-waiting {
+      position: relative; }
+    .exam-skin-wood .baseMod-com-wrapper-waiting .baseMod-com-layout-title-time {
+      position: absolute;
+      top: 0;
+      left: 3.45833em; }
+    .exam-skin-wood .baseMod-com-wrapper-waiting .baseMod-com-layout-title-num {
+      text-align: center; }
+    .exam-skin-wood .baseMod-com-wrapper-waiting .baseMod-com-layout-container {
+      width: 72em;
+      height: 40.25em;
+      padding: 0;
+      background: #f8efde;
+      border-radius: 0 0 0.83333em 0.83333em;
+      box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1); }
+    .exam-skin-wood .baseMod-com-wrapper-waiting .baseMod-com-layout-body-scrn {
+      left: 1.25em;
+      top: 3.25em;
+      bottom: 1.125em;
+      right: 1.25em;
+      position: absolute; }
+    .exam-skin-wood .baseMod-com-wrapper-waiting .baseMod-com-submit {
+      display: none; }
+  .exam-skin-wood .com_time {
+    text-align: left;
+    width: 10.83333em; }
+    .exam-skin-wood .com_time span {
+      position: relative;
+      display: inline-block;
+      width: 5em;
+      height: 4.75em;
+      line-height: 4.75em;
+      color: #dfdfdf;
+      text-align: center;
+      background: url(resources/baseModule/layout/wood/images/bg_time.png) center center no-repeat;
+      background-size: 100% auto;
+      margin-right: -1.25em; }
+      .exam-skin-wood .com_time span:before {
+        position: absolute;
+        left: 0.83333em;
+        top: 2.125em;
+        content: "";
+        width: 3.08333em;
+        height: 1px;
+        border-top: 1px solid #000; }
+    .exam-skin-wood .com_time em {
+      font-style: normal;
+      font-size: 2.16667em;
+      color: #dfdfdf;
+      display: block;
+      height: 100%;
+      text-align: center;
+      margin-top: -0.08333em; }
+    .exam-skin-wood .com_time i {
+      display: none; }
+    .exam-skin-wood .com_time > div {
+      display: inline-block;
+      width: auto !important;
+      height: auto !important; }
+    .exam-skin-wood .com_time .time_default {
+      margin-left: -0.7em; }
+    .exam-skin-wood .com_time b.time_text {
+      display: none; }
+  .exam-skin-wood .baseMod-com-wrapper-waiting .baseMod-com-header-box {
+    text-align: center; }
+  .exam-skin-wood .baseMod-com-wrapper-waiting .com_time {
+    width: auto;
+    color: #63543d;
+    margin-right: 2.91667em; }
+    .exam-skin-wood .baseMod-com-wrapper-waiting .com_time span {
+      background: none;
+      color: #63543d;
+      height: 2.08333em;
+      line-height: 2.08333em;
+      width: auto;
+      margin: 0; }
+      .exam-skin-wood .baseMod-com-wrapper-waiting .com_time span:before {
+        display: none; }
+    .exam-skin-wood .baseMod-com-wrapper-waiting .com_time em {
+      font-size: 1.16667em;
+      color: #63543d;
+      display: inline-block; }
+    .exam-skin-wood .baseMod-com-wrapper-waiting .com_time b.time_text {
+      font-size: 1.16667em;
+      display: inline-block;
+      font-weight: normal; }
+  .exam-skin-wood .baseMod-com-wrapper-waiting .com_time {
+    display: inline-block;
+    position: absolute;
+    left: 3.33333em; }
+  .exam-skin-wood .baseMod-com-wrapper-waiting .upload {
+    display: inline-block;
+    font-size: 1.16667em;
+    line-height: 1.75em;
+    color: #63543d; }
+    .exam-skin-wood .baseMod-com-wrapper-waiting .upload .upload_text {
+      font-weight: normal; }
+    .exam-skin-wood .baseMod-com-wrapper-waiting .upload .num {
+      color: #ff2704; }
+  .exam-skin-wood .baseMod-com-wrapper-board .baseMod-com-header-box {
+    text-align: center; }
+  .exam-skin-wood .baseMod-com-wrapper-board .com_time {
+    width: auto;
+    color: #63543d;
+    margin-right: 2.91667em; }
+    .exam-skin-wood .baseMod-com-wrapper-board .com_time span {
+      background: none;
+      color: #63543d;
+      height: 2.08333em;
+      line-height: 2.08333em;
+      width: auto;
+      margin: 0; }
+      .exam-skin-wood .baseMod-com-wrapper-board .com_time span:before {
+        display: none; }
+    .exam-skin-wood .baseMod-com-wrapper-board .com_time em {
+      font-size: 1.16667em;
+      color: #63543d;
+      display: inline-block; }
+    .exam-skin-wood .baseMod-com-wrapper-board .com_time b.time_text {
+      font-size: 1.16667em;
+      display: inline-block;
+      font-weight: normal; }
+  .exam-skin-wood .baseMod-com-wrapper-board .com_time {
+    display: inline-block;
+    position: relative;
+    margin-right: 2.91667em; }
+  .exam-skin-wood .baseMod-com-wrapper-board .upload {
+    display: inline-block;
+    font-size: 1.16667em;
+    line-height: 1.75em;
+    color: #63543d; }
+    .exam-skin-wood .baseMod-com-wrapper-board .upload .upload_text {
+      font-weight: normal; }
+    .exam-skin-wood .baseMod-com-wrapper-board .upload .num {
+      color: #ff2704; }
+  .exam-skin-wood .mixedModule-switch-container {
+    position: absolute;
+    left: 4em;
+    top: 35.7em;
+    right: 4em;
+    height: 4.375em;
+    pointer-events: none; }
+    .exam-skin-wood .mixedModule-switch-container .mixedModule-switch-btn, .exam-skin-wood .mixedModule-switch-container .mixedModule-subject-container, .exam-skin-wood .mixedModule-switch-container .mixedModule-shangxia-p {
+      pointer-events: auto; }
+    .exam-skin-wood .mixedModule-switch-container.mixedModule-switch-container-stat {
+      top: 40.3em;
+      left: 0;
+      right: 0;
+      text-align: center; }
+      .exam-skin-wood .mixedModule-switch-container.mixedModule-switch-container-stat .mixedModule-switch-btn, .exam-skin-wood .mixedModule-switch-container.mixedModule-switch-container-stat .mixedModule-subject-container, .exam-skin-wood .mixedModule-switch-container.mixedModule-switch-container-stat .mixedModule-shangxia-p {
+        float: none !important;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0; }
+      .exam-skin-wood .mixedModule-switch-container.mixedModule-switch-container-stat .mixedModule-subject-container {
+        margin: 0 0.25em; }
+      .exam-skin-wood .mixedModule-switch-container.mixedModule-switch-container-stat .mixedModule-switch {
+        padding-left: 0;
+        padding-right: 0; }
+      .exam-skin-wood .mixedModule-switch-container.mixedModule-switch-container-stat .mixedModule-switch:before {
+        display: none; }
+      .exam-skin-wood .mixedModule-switch-container.mixedModule-switch-container-stat .mixedModule-subject-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 0; }
+  .exam-skin-wood .baseMod-com-wrapper-pad .mixedModule-switch-container {
+    top: -4.29167em;
+    padding-left: 7.33333em;
+    bottom: auto;
+    left: 0;
+    right: 9em; }
+  .exam-skin-wood .baseMod-com-wrapper-pad .mixedModule-switch:before {
+    display: none; }
+  .exam-skin-wood .baseMod-com-wrapper-pad .mixedModule-shangxia-p {
+    float: left; }
+  .exam-skin-wood .baseMod-hint-btn {
+    text-decoration: none;
+    display: inline-block;
+    width: 6.5em;
+    height: 2.66667em;
+    line-height: 2.66667em;
+    color: #5d390d;
+    text-align: center;
+    background: url(resources/baseModule/button/wood/images/btn2_normal.png) no-repeat center center;
+    background-size: 100% auto;
+    text-shadow: 0.5px 0.866px 0px rgba(255, 255, 255, 0.51);
+    box-shadow: none; }
+    .exam-skin-wood .baseMod-hint-btn:active, .exam-skin-wood .baseMod-hint-btn .on {
+      background-image: url(resources/button/wood/images/btn2_press.png); }
+  .exam-skin-wood .com_btn_round {
+    display: inline-block;
+    width: 9.75em;
+    height: 4.375em;
+    line-height: 4.375em;
+    text-align: center;
+    color: #4f2c0b;
+    background: url(resources/baseModule/button/wood/images/btn_round.png) center top no-repeat;
+    background-size: 100% auto;
+    text-decoration: none;
+    position: relative; }
+    .exam-skin-wood .com_btn_round .text_box {
+      display: inline-block;
+      color: #4f2c0b;
+      font-size: 1.25em; }
+    .exam-skin-wood .com_btn_round .icons_box {
+      display: inline-block;
+      width: 2.25em;
+      height: 4.375em;
+      background: url(resources/baseModule/button/wood/images/icon_tick.png) left center no-repeat;
+      background-size: 100% auto;
+      vertical-align: top; }
+    .exam-skin-wood .com_btn_round:active {
+      background-position: center -4.375em; }
+    .exam-skin-wood .com_btn_round.com_btn_disabled {
+      background: url(resources/baseModule/button/wood/images/btn_round_dis.png) center top no-repeat;
+      background-size: 100% auto; }
+      .exam-skin-wood .com_btn_round.com_btn_disabled .text_box {
+        color: #c2ad8e; }
+      .exam-skin-wood .com_btn_round.com_btn_disabled .icons_box {
+        background: url(resources/baseModule/button/wood/images/icon_tick_dis.png) left center no-repeat;
+        background-size: 100% auto; }
+  .exam-skin-wood .baseMod-com-pop-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500; }
+    .exam-skin-wood .baseMod-com-pop-content:after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle; }
+    .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-box {
+      display: inline-block;
+      width: 60%;
+      min-height: 16.66667em;
+      border-radius: 0.625em;
+      vertical-align: middle;
+      box-shadow: 0px 0.125em 0.125em 0px rgba(0, 0, 0, 0.169), inset 0px -0.125em 0px 0px rgba(130, 99, 50, 0.392);
+      background: url(resources/baseModule/pop/wood/images/pop_w_bg.png) repeat; }
+    .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-hd {
+      position: relative;
+      height: 2.29167em;
+      border-radius: 0.625em 0.625em 0 0;
+      background: url(resources/baseModule/pop/wood/images/pop_w_dec2.png) repeat-x;
+      background-size: auto 100%;
+      box-shadow: 0px 2px 2px 0px rgba(156, 87, 5, 0.157), inset 0px -2px 0px 0px rgba(177, 113, 22, 0.392); }
+      .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-hd .baseMod-pop-dec {
+        display: inline-block;
+        width: 3.04167em;
+        height: 2.33333em;
+        background: url(resources/baseModule/pop/wood/images/pop_w_dec1.png) no-repeat;
+        background-size: 100% auto; }
+      .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-hd .baseMod-dec-1 {
+        position: absolute;
+        left: 1.66667em;
+        bottom: 0.83333em; }
+      .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-hd .baseMod-dec-2 {
+        position: absolute;
+        right: 1.66667em;
+        bottom: 0.83333em; }
+    .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-bd {
+      overflow-y: auto;
+      max-height: 22.5em; }
+      .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-bd .baseMod-com-pop-icon {
+        display: inline-block;
+        width: 4.91667em;
+        height: 4.91667em;
+        margin: 1.79167em 0 1.41667em; }
+      .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-bd .baseMod-com-pop-text {
+        padding: 0 0.625em;
+        font-size: 1.75em;
+        line-height: 1.2; }
+      .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-bd .baseMod-com-remind-text {
+        margin: 3.33333em 1em 1.08333em;
+        padding: 0 1.25em;
+        line-height: 2.08333em;
+        color: #603300; }
+        .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-bd .baseMod-com-remind-text .baseMod-text-size {
+          font-size: 2em; }
+    .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-bt {
+      text-align: center;
+      padding: 2.25em 0; }
+      .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-bt .baseMod-hint-btn {
+        width: 9.58333em;
+        height: 3.08333em;
+        line-height: 3.08333em;
+        margin: 0 1em;
+        background: url(resources/baseModule/button/wood/images/btn_pop_normal.png) no-repeat center center;
+        background-size: 100% auto; }
+        .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-bt .baseMod-hint-btn .baseMod-tip-icon-text {
+          font-size: 1.58333em; }
+        .exam-skin-wood .baseMod-com-pop-content .baseMod-com-pop-bt .baseMod-hint-btn:active {
+          background-image: url(resources/baseModule/button/wood/images/btn_pop_press.png); }
+    .exam-skin-wood .baseMod-com-pop-content .com-pop-right {
+      width: 30.83333em; }
+      .exam-skin-wood .baseMod-com-pop-content .com-pop-right .baseMod-com-pop-icon {
+        background: url(resources/baseModule/pop/wood/images/icon_a_right.png) no-repeat;
+        background-size: 100% auto; }
+      .exam-skin-wood .baseMod-com-pop-content .com-pop-right .baseMod-com-pop-text {
+        color: #d6630f; }
+      .exam-skin-wood .baseMod-com-pop-content .com-pop-right .baseMod-com-pop-bd {
+        min-height: 13.33333em; }
+    .exam-skin-wood .baseMod-com-pop-content .com-pop-wrong {
+      width: 30.83333em; }
+      .exam-skin-wood .baseMod-com-pop-content .com-pop-wrong .baseMod-com-pop-icon {
+        background: url(resources/baseModule/pop/wood/images/icon_a_wrong.png) no-repeat;
+        background-size: 100% auto; }
+      .exam-skin-wood .baseMod-com-pop-content .com-pop-wrong .baseMod-com-pop-text {
+        color: #972700; }
+      .exam-skin-wood .baseMod-com-pop-content .com-pop-wrong .baseMod-com-pop-bd {
+        min-height: 13.33333em; }
+    .exam-skin-wood .baseMod-com-pop-content .com-pop-submit {
+      width: 30.83333em; }
+    .exam-skin-wood .baseMod-com-pop-content .com-pop-hint-box {
+      text-align: left; }
+      .exam-skin-wood .baseMod-com-pop-content .com-pop-hint-box .baseMod-com-pop-bd {
+        min-height: 8.08333em; }
+      .exam-skin-wood .baseMod-com-pop-content .com-pop-hint-box .baseMod-com-remind-text {
+        text-align: left;
+        margin: 1em; }
+        .exam-skin-wood .baseMod-com-pop-content .com-pop-hint-box .baseMod-com-remind-text .baseMod-text-size {
+          font-size: 1.5em; }
+      .exam-skin-wood .baseMod-com-pop-content .com-pop-hint-box .baseMod-com-pop-bt {
+        padding-top: 1em; }
+  .exam-skin-wood .com_pop_nubuck {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 90; }
+    .exam-skin-wood .com_pop_nubuck:after {
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle;
+      content: ""; }
+    .exam-skin-wood .com_pop_nubuck .nubuck_content {
+      display: inline-block;
+      vertical-align: middle;
+      width: 25.58333em;
+      height: 14em;
+      background: url(resources/baseModule/pop/wood/images/pop_s_big.png) center center no-repeat;
+      background-size: 100% auto;
+      position: relative; }
+    .exam-skin-wood .com_pop_nubuck .nubuck_main {
+      padding: 1.66667em 2.5em 0.58333em;
+      line-height: 1.5;
+      font-size: 1.25em;
+      color: #603300;
+      text-align: center;
+      height: 4.41667em;
+      box-sizing: content-box; }
+    .exam-skin-wood .com_pop_nubuck .nubuck_bottom .com_btn_square_s {
+      margin: 0 1.08333em; }
+  .exam-skin-wood .com_btn_square_s {
+    display: inline-block;
+    width: 7.41667em;
+    height: 2.83333em;
+    line-height: 2.83333em;
+    text-align: center;
+    color: #5d390d;
+    font-size: 1.08333em;
+    background: url(resources/baseModule/pop/wood/images/btn_square_s.png) center top no-repeat;
+    background-size: 100% auto;
+    text-decoration: none; }
+    .exam-skin-wood .com_btn_square_s:active {
+      background-position: center -2.83333em; }
+  .exam-skin-wood .scrollbar_style_default::-webkit-scrollbar {
+    width: 0.79167em;
+    border-radius: 0.52083em;
+    height: 0.79167em;
+    background: url(resources/baseModule/scrollbar/wood/images/scrollv_bg.png) 50% 50% repeat;
+    padding: 0 0.16667em;
+    border: 0.04167em solid #b2874e; }
+  .exam-skin-wood .scrollbar_style_default::-webkit-scrollbar:horizontal {
+    width: 0.79167em;
+    border-radius: 0.52083em;
+    height: 0.79167em;
+    background: url(resources/baseModule/scrollbar/wood/images/scrollh_bg.png) 50% 50% repeat-x;
+    padding: 0.16667em 0;
+    border: 0.04167em solid #b2874e; }
+  .exam-skin-wood .scrollbar_style_default::-webkit-scrollbar-button:increment:vertical {
+    background: url(resources/baseModule/scrollbar/wood/images/scrollv_down.png) 50% 50% no-repeat;
+    background-size: 0.625em 0.625em; }
+  .exam-skin-wood .scrollbar_style_default::-webkit-scrollbar-button:decrement:vertical {
+    background: url(resources/baseModule/scrollbar/wood/images/srcollv_up.png) 50% 50% no-repeat;
+    background-size: 0.625em 0.625em; }
+  .exam-skin-wood .scrollbar_style_default::-webkit-scrollbar-button:increment:horizontal {
+    background: url(resources/baseModule/scrollbar/wood/images/scrollh_down.png) 50% 50% no-repeat;
+    background-size: 0.625em 0.625em; }
+  .exam-skin-wood .scrollbar_style_default::-webkit-scrollbar-button:decrement:horizontal {
+    background: url(resources/baseModule/scrollbar/wood/images/scrollh_up.png) 50% 50% no-repeat;
+    background-size: 0.625em 0.625em; }
+  .exam-skin-wood .scrollbar_style_default::-webkit-scrollbar-thumb:vertical {
+    background-image: url(resources/baseModule/scrollbar/wood/images/scrollv_line_mid.png), url(resources/baseModule/scrollbar/wood/images/scrollv_thumb_bg.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 50%,50% 0;
+    background-size: 0.375em 0.83333em, 0.79167em 100%;
+    box-shadow: inset 0px 0.04167em 0px 0px rgba(255, 255, 255, 0.95), 0px 0.08333em 0px 0px rgba(95, 59, 13, 0.42), inset 0 0 0.08333em 0.83333em rgba(255, 255, 255, 0.2);
+    border-radius: 0.83333em;
+    position: absolute; }
+  .exam-skin-wood .scrollbar_style_default::-webkit-scrollbar-thumb:horizontal {
+    background-image: url(resources/baseModule/scrollbar/wood/images/scrollh_line_mid.png), url(resources/baseModule/scrollbar/wood/images/scrollh_thumb_bg.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 50%,0 50%;
+    background-size: 0.83333em 0.375em, 100% 0.79167em;
+    box-shadow: inset 0.04167em 0px 0px 0px rgba(255, 255, 255, 0.95), 0.08333em 0px 0px 0px rgba(95, 59, 13, 0.42), inset 0 0 1.95px 20px rgba(255, 255, 255, 0.2);
+    border-radius: 0.83333em;
+    position: absolute; }
+  .exam-skin-wood .baseMod-scrollbar-style-gray::-webkit-scrollbar {
+    width: 0.875em;
+    height: 0.875em;
+    background-color: #e2dfdb;
+    border-radius: 0.5em; }
+  .exam-skin-wood .baseMod-scrollbar-style-gray::-webkit-scrollbar-thumb {
+    background: #c9c4bd;
+    border-radius: 0.5em; }
+  .exam-skin-wood .scrollbar_style_light::-webkit-scrollbar {
+    width: 9px;
+    border-radius: 12.5px;
+    /*background: url(resources/scroll_bg.png) 50% 50% repeat-y;*/
+    padding: 0 4px;
+    height: 9px;
+    /*border:1px solid #b2874e;*/ }
+  .exam-skin-wood .scrollbar_style_light::-webkit-scrollbar-button:increment {
+    background: url(resources/baseModule/scrollbar/wood/images/scroll_thumb_t_bg.png) 50% 50% no-repeat;
+    height: 5px;
+    width: 5px; }
+  .exam-skin-wood .scrollbar_style_light::-webkit-scrollbar-button:decrement {
+    background: url(resources/baseModule/scrollbar/wood/images/scroll_thumb_t_bg.png) 50% 50% no-repeat;
+    height: 1px;
+    width: 1px; }
+  .exam-skin-wood .scrollbar_style_light::-webkit-scrollbar-thumb {
+    background-image: url(resources/baseModule/scrollbar/wood/images/scroll_thumb_bg_t.png);
+    background-repeat: repeat;
+    background-position: 50% 0;
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.95), 0px 2px 0px 0px rgba(95, 59, 13, 0.42), inset 0 0 1.95px 20px rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    position: absolute; }
+  .exam-skin-wood .scrollbar_style_light::-webkit-scrollbar-thumb:horizontal:hover {
+    opacity: 0.5; }
+  .exam-skin-wood .scrollbar_style_brown::-webkit-scrollbar {
+    width: 0.33333em;
+    height: 0.33333em; }
+  .exam-skin-wood .scrollbar_style_brown::-webkit-scrollbar-thumb {
+    background: #a1763d;
+    border-radius: 0.16667em; }
+  .exam-skin-wood .baseMod-preload-img-01 {
+    display: none;
+    background-image: url(resources/baseModule/button/wood/images/btn2_press.png); }
+
+/*# sourceMappingURL=common_base_module.css.map */

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>排序题-学生端</title>
+    <link rel="stylesheet" type="text/css" href="../../../common/common.css">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+
+<body>
+    <div class="exam_skin_wood">
+        <div class="com_layout" id="layout">
+            <div class="com_wrapper_pad" id="wrapper">
+                <!-- pad端加.com_wrapper_pad，白板端加.com_wrapper_board -->
+                <!--头部-->
+                <div class="com_layout_header">
+                    <!--计时器-->
+                    <div class="com_header_time">
+                        <div class="com_time">
+    <div class="time_default ">
+        <b class="time_text">答题时间：</b><!-- 
+                 --><span class="time_m"><em>05</em></span><!-- 
+                          --><b class="time_text">分</b><!--         
+                                   --><i>:</i><!-- 
+                                            --><span class="time_s"><em>21</em></span><!-- 
+                                                     --><b class="time_text">秒</b>
+    </div>
+</div>
+                        <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>
+                    </div>
+                    <!--/计时器-->
+                    <!--提交按钮-->
+                    <div class="com_header_tool">
+                        <a class="com_btn_round " href="javascript:;">
+<!-- <span class="icons_box"></span> -->
+<span class="text_box">提&nbsp;&nbsp;交</span>
+</a>
+                    </div>
+                    <!--/提交按钮-->
+                </div>
+                <!--/头部-->
+                <!--主体内容-->
+                <div class="com_layout_container">
+                <!-- 没有标题时加.notit -->
+                    <div class="com_layout_exam_content textsort">
+                    <!-- 具体题型内容 -->
+                        <div class="com_layout_main_exam"><!-- 没有标题时加.notit -->
+                            <div class="com_layout_tit">
+                                <h2 class="tit">标题</h2>
+                                <!-- 文字过多的情况加.s_tit -->
+                            </div>
+                            <div class="com_layout_main">
+                                <!-- 在这里新建div写新的题型 -->
+                                <!--/左侧内容-->
+<div class="com_m_sideboard_1">
+
+    <!--/左侧-头部-->
+    <div class="com_m_sidehead"></div>
+    <!--/左侧-头部-->
+
+    <div class="com_m_sidecon">
+        <div class="coursebox">
+
+            <!-- 描述区域 -->
+            <div class="text_main_box">
+                <div class="text_main_bg">
+                    <div class="text_titi_box">
+                        <div class="text_titinp">
+                            《再别康桥》是现代诗人徐志摩脍炙
+人口的诗篇，是新月派诗歌的代表作
+品。请按照正确的顺序把这首诗重新
+排序。
+                            <!--
+                            输入文字的时候去掉类名style_tips来让文字左对齐与颜色正常显示
+                            字符超过60个字的时候添加类名text_s
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /描述区域 -->
+
+            <!-- 媒体插入区域 -->
+            <div class="insert_mvp">
+                    <!-- 插入的图片 -->
+                    <div class="insert_pic_bg scrollbar_style_gray">
+                        <div class="insert_pic_box">
+                            <img src="demopic/demo_editpaixu.png">
+                            <!-- 图片比例588/408 -->
+                        </div>
+                    </div>
+                    <!-- /插入的图片 -->
+
+                    <!-- 插入的视频 -->
+                    <div class="insert_video_box" style="display:none;">
+                        <div class="vidio_wrap">
+                             <video preload="auto" src="video.mp4" style="width: 100%; height: 100%;"></video>
+                            <div class="video_loading">loading..</div>
+                        </div>
+                        <div class="playcolwrap">
+                            <a href="###" class="btn_play btn_pause"></a><!--暂停添加样式：btn_pause-->
+                            <div class="probar">
+                                <p class="bar" style="width: 40%"><a href="###" class="btn_dot"></a></p>
+                            </div>
+                            <span class="time">00:23</span>
+                        </div>
+                    </div>
+                    <!-- /插入的视频 -->
+
+                    <!-- 插入的音频 -->
+                    <div class="insert_mt_box" style="display:none;">
+                        <div class="insert_mt_bg">
+                            <div class="insert_video_box">
+                                <div class="vidio_wrap">
+                                     
+                                </div>
+                                <div class="playcolwrap">
+                                    <a href="###" class="btn_play btn_pause"></a><!--暂停添加样式：btn_pause-->
+                                    <div class="probar">
+                                        <p class="bar" style="width: 40%"><a href="###" class="btn_dot"></a></p>
+                                    </div>
+                                    <span class="time">00:23</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /插入的音频 -->
+            </div>
+            <!-- /媒体插入区域 -->
+
+        </div>
+    </div>
+</div>
+<!--/左侧内容-->
+
+<!--主体内容-->
+<div class="com_m_mainboard_1">
+    <div class="match_board_bg">
+
+        <div class="com_layout_container inner">
+            <div class="com_layout_main scrollbar_style_simple">
+
+                <!-- 主体列表 -->
+                <ul class="paixulist">
+                    <li >
+                        <span class="paixulist_num">1</span>
+                        <p class="listtxt"><span class="paixu_txt">揉碎在浮藻间，沉淀着彩虹似的梦。</span></p>
+                        <em></em>
+                    </li>
+                    <li class="ui_btn_active"><!-- 点中这个li添加类名 ui_btn_active 并且外部 paixulist_li_move添加类名 ui_btn_active 然后赋给它计算后的left值与top值来定位-->
+                        <span class="paixulist_num">2</span>
+                        <p class="listtxt"><span class="paixu_txt">寻梦？撑一支长篙，向青草更青处漫溯；</span></p>
+                        <em></em>
+                    </li>
+                    <li class="sort_right_list">
+                        <span class="paixulist_num">3</span>
+                        <p class="listtxt"><span class="paixu_txt">那河畔的金柳，是夕阳中的新娘；波光里的艳
+影在我的心头荡漾。软泥上的青荇，油油的在
+水底招摇；在康河的柔波里！</span></p>
+                        <em></em>
+                    </li>
+                    <li>
+                        <span class="paixulist_num">4</span>
+                        <p class="listtxt"><span class="paixu_txt">轻轻的我走了，正如我轻轻的来；我轻轻的招
+手，作别西天的云彩。</span></p>
+                        <em></em>
+                    </li>
+                    <li>
+                        <span class="paixulist_num">5</span>
+                        <p class="listtxt"><span class="paixu_txt">那榆荫下的一潭，不是清泉，是天上虹；</span></p>
+                        <em></em>
+                    </li>
+                    <li>
+                        <span class="paixulist_num">6</span>
+                        <p class="listtxt"><span class="paixu_txt">我挥一挥衣袖，
+不带走一片云彩。</span></p>
+                        <em></em>
+                    </li>
+                    <li>
+                        <span class="paixulist_num">7</span>
+                        <p class="listtxt"><span class="paixu_txt">我挥一挥衣袖，
+不带走一片云彩。</span></p>
+                        <em></em>
+                    </li>
+                </ul></div>
+        </div>
+        
+    </div>
+</div>
+<!--/主体内容-->
+
+<!-- 移动动画的层 -->
+<div class="paixulist_li_move ui_btn_active"><!-- 点中paixulist_li_move添加类名 ui_btn_active -->
+    <p class="listtxt"><span class="paixu_txt">寻梦？撑一支长篙，向青草更青处漫溯；</span></p>
+</div>
+                            </div>
+                        </div>
+                    <!-- 具体题型内容 -->
+                    </div>
+                </div>
+                <!--/主体内容-->
+            </div>
+        </div>
+    </div>
+    <script src="../../../common/resources/common/layout/wood/layout.js"></script>
+</body>
+</html>

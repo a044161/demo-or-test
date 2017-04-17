@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import "../../common/resources/baseModule/setting";
+@import "../../common/resources/baseModule/function";
+// 木质皮肤
+.exam-skin-wood {
+    @import "resources/wood/style_wood";
+}
+
+// 天空皮肤
+.nqti-player-skin-default {
+    @import "resources/sky/style_sky";
+}
+

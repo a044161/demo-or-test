@@ -1,0 +1,153 @@
+@charset "UTF-8";
+.nqti-player-skin-wood {
+  /* 连线图片和文字区域 */
+  /* 连线序号部分 */
+  /* SVG */
+  /* 开发用 */
+  /* 开发用end */
+  /* 连线默认样式，褐色 */ }
+  .nqti-player-skin-wood .nqti-base-connectLine-container {
+    padding-left: 5.29167em; }
+  .nqti-player-skin-wood .nqti-base-connectLine-list-ul {
+    float: left;
+    margin-right: 7.95833em; }
+  .nqti-player-skin-wood .nqti-base-connectLine-list {
+    position: relative;
+    width: 10em;
+    height: 5.625em;
+    margin-top: 1em;
+    text-align: center;
+    background: #f7f7f7;
+    color: #333;
+    border-radius: 0.58333em;
+    cursor: default;
+    /* 边框 */
+    /* 选中态 */ }
+    .nqti-player-skin-wood .nqti-base-connectLine-list:after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle; }
+    .nqti-player-skin-wood .nqti-base-connectLine-list:before {
+      pointer-events: none;
+      z-index: 10;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border: 2px solid #c5c5c5;
+      border-radius: 0.41667em; }
+    .nqti-player-skin-wood .nqti-base-connectLine-list.on:before, .nqti-player-skin-wood .nqti-base-connectLine-list:active:before {
+      border: 3px solid #854700; }
+    .nqti-player-skin-wood .nqti-base-connectLine-list.correct:before {
+      border: 3px solid #69b300; }
+    .nqti-player-skin-wood .nqti-base-connectLine-list.error:before {
+      border: 3px solid #ff491f; }
+    .nqti-player-skin-wood .nqti-base-connectLine-list.nqti-base-connectLine-only-pic img, .nqti-player-skin-wood .nqti-base-connectLine-list.nqti-base-connectLine-pic-text img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle; }
+    .nqti-player-skin-wood .nqti-base-connectLine-list:first-child {
+      margin: 0; }
+  .nqti-player-skin-wood .nqti-base-connectLine-list-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    overflow: hidden; }
+    .nqti-player-skin-wood .nqti-base-connectLine-list-img:after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle; }
+  .nqti-player-skin-wood .nqti-base-connectLine-list-btm {
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.08333em 0.41667em;
+    overflow: hidden;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    border-radius: 0 0 0.5em 0.5em; }
+  .nqti-player-skin-wood .nqti-base-connectLine-list-btm-word {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.16667em;
+    line-height: 1.4; }
+  .nqti-player-skin-wood .nqti-base-connectLine-only-text-word {
+    overflow: hidden;
+    max-height: 2.58333em;
+    padding: 0 0.41667em;
+    display: inline-block;
+    word-wrap: break-word;
+    word-break: break-all;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 1.29167em;
+    font-size: 1.66667em;
+    max-width: 100%; }
+  .nqti-player-skin-wood .nqti-base-connectLine-list-ul:last-child {
+    margin-right: 0; }
+  .nqti-player-skin-wood .nqti-base-connectLine-sort-num-ul {
+    float: left; }
+  .nqti-player-skin-wood .nqti-base-connectLine-sort-list {
+    width: 5.45833em;
+    height: 5.625em;
+    margin-top: 1em;
+    text-align: center; }
+    .nqti-player-skin-wood .nqti-base-connectLine-sort-list:after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle; }
+    .nqti-player-skin-wood .nqti-base-connectLine-sort-list:first-child {
+      margin: 0; }
+  .nqti-player-skin-wood .nqti-base-connectLine-sort-text {
+    display: inline-block;
+    width: 2.41667em;
+    height: 2.41667em;
+    color: #898989;
+    border: 0.08333em solid #898989;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.25em; }
+  .nqti-player-skin-wood .nqti-base-connectLine-sort-text-word {
+    display: inline-block;
+    font-size: 1.66667em; }
+  .nqti-player-skin-wood .nqti-base-connectLine-svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 15;
+    transform: translateZ(0); }
+  .nqti-player-skin-wood .nqti-base-connectLine-content {
+    position: relative; }
+  .nqti-player-skin-wood .nqti-base-connectLine-normal {
+    stroke: #854700;
+    stroke-width: 0.25em;
+    /* 连线正确，绿色 */
+    /* 连线错误，红色 */
+    /* 连线，鼠标移上去，金黄色 */ }
+    .nqti-player-skin-wood .nqti-base-connectLine-normal.nqti-base-connectLine-correct {
+      stroke: #69b300; }
+    .nqti-player-skin-wood .nqti-base-connectLine-normal.nqti-base-connectLine-error {
+      stroke: #ff491f; }
+    .nqti-player-skin-wood .nqti-base-connectLine-normal.nqti-base-connectLine-hover {
+      stroke: #ffae00; }
+
+/*# sourceMappingURL=style.css.map */

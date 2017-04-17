@@ -1,0 +1,245 @@
+@charset "UTF-8";
+.punctuation {
+    position: relative;
+    .com_layout_main {
+        left: pxToEm(15px);
+        right: pxToEm(15px);
+        bottom: pxToEm(18px);
+    }
+    //加标点容器 
+    .punctuation_container {
+        overflow-y: auto;
+        position: absolute;
+        top: pxToEm(20px);
+        left: pxToEm(40px);
+        right: pxToEm(40px);
+        padding-right: pxToEm(10px);
+        height: pxToEm(580px);
+    }
+    .punctuation_text_main {
+        min-height: 100%;
+        line-height: pxToEm(96px);
+        background: url(resources/wood/images/iocn_pun_bg.png) repeat left pxToEm(-5px);
+        background-size: auto pxToEm(96px);
+        p {
+            font-size: pxToEm(40px);
+            color: #5d390d;
+        }
+        .symbol_list {
+            display: inline-block;
+            margin: 0 pxToEm(5px);
+            // padding: 0 pxToEm(2px);
+            min-width: pxToEm(30px);
+            height: pxToEm(36px);
+            line-height: pxToEm(36px);
+            border: 2px solid #643602;
+            vertical-align: middle;
+            text-align: center;
+            color: #5d390d;
+            &.on {
+                border-color: #71d073;
+            }
+            &.error {
+                border-color: #f83536;
+            }
+            // &.filled {
+            //     background: #71d073;
+            //     border-color: #71d073;
+            // }
+        }
+        /*大括号书名号ND3配置类名与包一层*/
+        .symbol_list_sp {
+            line-height: 100%;
+            .symbol_list_sp_txt{
+                position: relative;
+                top: 50%;
+                transform: translate(0,-50%);
+                display: inline-block;
+            }
+        }
+    }
+
+    //加标点底部
+    .punctuation_bottom {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: pxToEm(180px);
+        padding: 0 pxToEm(180px) 0 pxToEm(300px);
+        background: rgba(111,75,27,0.2);
+        border-bottom-left-radius: pxToEm(10px);
+        border-bottom-right-radius: pxToEm(10px);
+        .answer_title {
+            display: inline-block;
+            position: absolute;
+            left: pxToEm(34px);
+            top: pxToEm(42px);
+            font-size: pxToEm(40px);
+            color: #603300;
+        }
+        .icon_turn {
+            position: absolute;
+            top: 50%;
+            margin-top: pxToEm(-25px);
+            width: pxToEm(40px);
+            height: pxToEm(50px);
+            &.prev {
+                left: pxToEm(260px);
+                background: url(resources/wood/images/icon_g_l.png) no-repeat center center;
+                background-size: contain;
+            }
+            &.next {
+                right: pxToEm(134px);
+                background: url(resources/wood/images/icon_g_r.png) no-repeat center center;
+                background-size: contain;
+            }
+            &:active,
+            &.disabled {
+                opacity: 0.6;
+            }
+            &.disabled {
+                cursor: not-allowed;
+            }
+        }
+        .pun_answer_box {
+            height: 100%;
+        } 
+        &.click_disabled {
+            .list_btn {
+                cursor: default;
+                &:active {
+                    background-image: url(resources/wood/images/btn_b_normal.png);
+                }
+            }
+        }      
+    }
+
+    .punctuation_list {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        white-space: nowrap;
+        li {
+            float: left;
+            margin-left: pxToEm(28px);
+            margin-top: pxToEm(50px);
+        }
+    }
+    .list_btn {
+        display: inline-block;
+        position: relative;
+        width: pxToEm(74px);
+        height: pxToEm(80px);
+        background: url(resources/wood/images/btn_b_normal.png) no-repeat center center;
+        background-size: contain;
+        &:active {
+            background-image: url(resources/wood/images/btn_b_press.png);
+        }
+        &:before {
+            content:'';
+            position: absolute;
+            left: 0;
+            top: pxToEm(2px);
+            width: pxToEm(74px);
+            height: pxToEm(74px);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &.on:after {
+            content:'';
+            position: absolute;
+            left: 1px;
+            top: 2px;
+            right: 1px;
+            bottom: 2px;
+            border: 3px solid #00bdf4;
+            border-radius: pxToEm(12px);
+        }
+    }
+    .pun_i_1:before {
+        background-image: url(resources/wood/images/icon_pun1.png);
+    }
+    .pun_i_2:before {
+        background-image: url(resources/wood/images/icon_pun2.png);
+    }
+    .pun_i_3:before {
+        background-image: url(resources/wood/images/icon_pun3.png);
+    }
+    .pun_i_4:before {
+        background-image: url(resources/wood/images/icon_pun4.png);
+    }
+    .pun_i_5:before {
+        background-image: url(resources/wood/images/icon_pun5.png);
+    }
+    .pun_i_6:before {
+        background-image: url(resources/wood/images/icon_pun6.png);
+    }
+    .pun_i_7:before {
+        background-image: url(resources/wood/images/icon_pun7.png);
+    }
+    .pun_i_8:before {
+        background-image: url(resources/wood/images/icon_pun8.png);
+    }
+    .pun_i_9:before {
+        background-image: url(resources/wood/images/icon_pun9.png);
+    }
+    .pun_i_10:before {
+        background-image: url(resources/wood/images/icon_pun10.png);
+    }
+    .pun_i_11:before {
+        background-image: url(resources/wood/images/icon_pun11.png);
+    }
+    .pun_i_12:before {
+        background-image: url(resources/wood/images/icon_pun12.png);
+    }
+    .pun_i_13:before {
+        background-image: url(resources/wood/images/icon_pun13.png);
+    }
+    .pun_i_14:before {
+        background-image: url(resources/wood/images/icon_pun14.png);
+    }
+    .pun_i_15:before {
+        background-image: url(resources/wood/images/icon_pun15.png);
+    }
+    .pun_i_16:before {
+        background-image: url(resources/wood/images/icon_pun16.png);
+    }
+    .pun_i_17:before {
+        background-image: url(resources/wood/images/icon_pun17.png);
+    }
+    .pun_i_18:before {
+        background-image: url(resources/wood/images/icon_pun18.png);
+    }
+    .pun_i_19:before {
+        background-image: url(resources/wood/images/icon_pun19.png);
+    }
+    .pun_i_20:before {
+        background-image: url(resources/wood/images/icon_pun20.png);
+    }
+    .pun_i_21:before {
+        background-image: url(resources/wood/images/icon_pun21.png);
+    }
+    .pun_i_22:before {
+        background-image: url(resources/wood/images/icon_pun22.png);
+    }
+    .pun_i_23:before {
+        background-image: url(resources/wood/images/icon_pun23.png);
+    }
+    .pun_i_24:before {
+        background-image: url(resources/wood/images/icon_pun24.png);
+    }
+    .pun_i_25:before {
+        background-image: url(resources/wood/images/icon_pun25.png);
+    }
+    .pun_i_26:before {
+        background-image: url(resources/wood/images/icon_pun26.png);
+    }
+    .pun_i_27:before {
+        background-image: url(resources/wood/images/icon_pun27.png);
+    }
+    .pun_i_28:before {
+        background-image: url(resources/wood/images/icon_pun28.png);
+    }
+}   

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>基础题型--复合题</title>
+    <link rel="stylesheet" type="text/css" href="../../../baseModule/common/common_base_module.css">
+    <link rel="stylesheet" type="text/css" href="../../common/common.css">
+    <link rel="stylesheet" type="text/css" href="../choice/style.css">  
+    <link rel="stylesheet" type="text/css" href="../connectLine/style.css">  
+    <link rel="stylesheet" type="text/css" href="../essayQuestion/style.css">  
+    <link rel="stylesheet" type="text/css" href="../puzzle/style.css">  
+    <link rel="stylesheet" type="text/css" href="../screenshot/style.css">  
+    <link rel="stylesheet" type="text/css" href="../sequence/style.css">  
+    <link rel="stylesheet" type="text/css" href="../textEnter/style.css">  
+    <link rel="stylesheet" type="text/css" href="../vote/style.css">  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_handwrite.css">
+    
+</head>
+<body class="env-pptshell">
+<div class="exam-skin-wood exam_skin_wood">
+    <div class="baseMod-com-layout mixedModule-layout-box ChineseCharacterDictation-layout-box" id="layout">
+        <!-- 
+            pad类名baseMod-com-wrapper-pad
+            白板类名baseMod-com-wrapper-board
+            学生端答题框baseMod-com-wrapper-answer
+            老师端等待学生答题baseMod-com-wrapper-waiting
+        -->
+        <div class="baseMod-com-wrapper-board">
+              <div class="baseMod-com-header-box">
+                <!--计时器-->
+                <div class="com_time">
+                    <div class="time_default">
+                        <b class="time_text">答题时间：</b>
+                        <span class="time_m"><em>05</em></span>
+                        <b class="time_text">分</b>        
+                        <i>:</i>
+                        <span class="time_s"><em>21</em></span>
+                        <b class="time_text">秒</b>
+                    </div>
+                </div>
+                <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>             
+            </div>
+            <!-- 公共提交按钮 -->
+            <div class="baseMod-com-submit">
+                @@include('../../common/resources/button/_com_btn_round.html', {"txt": "提&nbsp;&nbsp;交","classname":"com_btn_disabled"})
+            </div>
+            <!-- /公共提交按钮 -->
+            <div class="baseMod-com-layout-container">
+
+                <div class="baseMod-com-layout-body baseMod-scrollbar-style-gray">
+                    <div class="mixedModule-topic" style="display: block;">
+                        <div class="mixedModule-header-text ">听读音，写汉字</div>
+                    </div>
+                    <div class="mixedModule-player-container">
+                        <div class="mixedModule-nqti-container">      
+
+                                <div style="width:100%;height:100%">
+                                    @@include('resources/_chinese_character.html')
+                                 
+                                    <!--  汉字听写部分样式 by 陈晶晶 复写部分样式添加前缀 chineseCharacter -->
+                                    <div class="mixedModule-switch-container chineseCharacter-switch-container" style="display: none"><!-- 这个写在layout -->
+                                        <div style="width:100%;height:100%">
+                                            <div class="mixedModule-switch">
+                                                <!-- 点击时，响应鼠标.mixedModule-switch-btn加类 click_on。完后移除-->
+                                                <a href="###" class="mixedModule-switch-btn click_on hide-dom">
+                                                    <!-- 当前显示题干时，底下内容变成隐藏题干。当前未显示题干时，底下内容变为查看题干 -->
+                                                    <em class="mixedModule-switch-text">隐藏题干</em>
+                                                </a>
+                                                <div class="mixedModule-subject-container">
+                                                    <div class="mixedModule-subject"><!-- 当小于等于5个题目时（含5个），用类mixedModule-less -->
+                                                        <!-- 汉字听写 mixedModule-subject-pre  不可点击添加类名 click_disabled 选中添加样式 ui_btn_active-->
+                                                        <a href="#" class="mixedModule-subject-pre click_disabled"></a>
+                                                        <!-- 题目按钮使用说明：.mixedModule-subject-btn
+                                                            答题中时:
+                                                                已答题加类answered
+                                                                正在答题中，加类answering
+                                                                未答题，什么都不加
+                                                                当前查看哪一题，加类answering-view
+                                                            正误反馈：
+                                                                该题正确，加类right
+                                                                该题错误，加类wrong
+                                                                该题为主观题，没有正误,加类noanswer
+                                                                查看当前题目时，加类checking-view
+                                                        -->
+                                                        <!--汉字听写 拼音按钮使用说明：.mixedModule-subject-btn
+                                                                选中加类：active;
+                                                                未选中: 什么都不加
+                                                        -->
+                                                        <ul class="mixedModule-subject-list">
+                                                            <li class="mixedModule-subject-btn active">
+                                                                <em class="mixedModule-subject-num">1</em>
+                                                                <em class="mixedModule-subject-word">yě</em>
+                                                            </li>
+                                                            <li class="mixedModule-subject-btn">
+                                                                <em class="mixedModule-subject-num">2</em>
+                                                                <em class="mixedModule-subject-word">jīn</em>
+                                                            </li>
+                                                            <li class="mixedModule-subject-btn">
+                                                                <em class="mixedModule-subject-num">3</em>
+                                                                <em class="mixedModule-subject-word">mǎng</em>
+                                                            </li>
+                                                            <li class="mixedModule-subject-btn">
+                                                                <em class="mixedModule-subject-num">4</em>
+                                                                <em class="mixedModule-subject-word">wá</em>
+                                                            </li>
+                                                            <li class="mixedModule-subject-btn">
+                                                                <em class="mixedModule-subject-num">5</em>
+                                                                <em class="mixedModule-subject-word">jǐ</em>
+                                                            </li>
+                                                            <li class="mixedModule-subject-btn">
+                                                                <em class="mixedModule-subject-num">6</em>
+                                                                <em class="mixedModule-subject-word">mǚ</em>
+                                                            </li>
+                                                            <li class="mixedModule-subject-btn">
+                                                                <em class="mixedModule-subject-num">7</em>
+                                                                <em class="mixedModule-subject-word">ě</em>
+                                                            </li>
+                                                            <li class="mixedModule-subject-btn">
+                                                                <em class="mixedModule-subject-num">8</em>
+                                                                <em class="mixedModule-subject-word">ě</em>
+                                                            </li>
+                                                        </ul>
+                                                        <!-- 汉字听写 mixedModule-subject-next 不可点击添加类名 click_disabled 选中添加样式 ui_btn_active-->
+                                                        <a href="#" class="mixedModule-subject-next"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="mixedModule-shangxia-p hide-dom">
+                                                <!-- 上一题下一题，不可点击加click_disabled -->
+                                                    <a href="###" class="mixedModule-prev click_disabled">
+                                                        <em class="mixedModule-switch-text">上一题</em>
+                                                    </a>
+                                                    <a href="###" class="mixedModule-next">
+                                                        <em class="mixedModule-switch-text">下一题</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                        </div>   
+                    </div>
+                </div>
+                                
+
+
+                                
+
+
+
+                <!-- 查看答案 -->
+                <div style="width:100%;height:100%; display: none ;">
+                     @@include('resources/_chinese_character_studentanswer.html')  
+                </div>
+                <!-- /查看答案 -->
+                                 
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+                <!-- 切换题目按钮 -->
+                <div class="mixedModule-switch-container chineseCharacter-switch-container mixedModule-switch-container-stat11111"><!-- 这个写在layout -->
+                    <div style="width:100%;height:100%">
+                        <div class="mixedModule-switch">
+                            <!-- 点击时，响应鼠标.mixedModule-switch-btn加类 click_on。完后移除-->
+                            <a href="###" class="mixedModule-switch-btn click_on">
+                                <!-- 当前显示题干时，底下内容变成隐藏题干。当前未显示题干时，底下内容变为查看题干 -->
+                                <em class="mixedModule-switch-text">隐藏题干</em>
+                            </a>
+                            <div class="mixedModule-subject-container">
+                                <div class="mixedModule-subject"><!-- 当小于等于5个题目时（含5个），用类mixedModule-less -->
+                                    <a href="#" class="mixedModule-subject-pre click_disabled"></a>
+                                    <!-- 题目按钮使用说明：.mixedModule-subject-btn
+                                        答题中时:
+                                            已答题加类answered
+                                            正在答题中，加类answering
+                                            未答题，什么都不加
+                                            当前查看哪一题，加类answering-view
+                                        正误反馈：
+                                            该题正确，加类right
+                                            该题错误，加类wrong
+                                            该题为主观题，没有正误,加类noanswer
+                                            查看当前题目时，加类checking-view
+                                     -->
+                                    <ul class="mixedModule-subject-list">
+                                            <li class="mixedModule-subject-btn active">
+                                                <em class="mixedModule-subject-num">1</em>
+                                                <em class="mixedModule-subject-word">yě</em>
+                                            </li>
+                                            <li class="mixedModule-subject-btn">
+                                                <em class="mixedModule-subject-num">2</em>
+                                                <em class="mixedModule-subject-word">jīn</em>
+                                            </li>
+                                            <li class="mixedModule-subject-btn">
+                                                <em class="mixedModule-subject-num">3</em>
+                                                <em class="mixedModule-subject-word">mǎng</em>
+                                            </li>
+                                            <li class="mixedModule-subject-btn">
+                                                <em class="mixedModule-subject-num">4</em>
+                                                <em class="mixedModule-subject-word">wá</em>
+                                            </li>
+                                            <li class="mixedModule-subject-btn">
+                                                <em class="mixedModule-subject-num">5</em>
+                                                <em class="mixedModule-subject-word">jǐ</em>
+                                            </li>
+                                            <li class="mixedModule-subject-btn">
+                                                <em class="mixedModule-subject-num">6</em>
+                                                <em class="mixedModule-subject-word">mǚ</em>
+                                            </li>
+                                            <li class="mixedModule-subject-btn">
+                                                <em class="mixedModule-subject-num">7</em>
+                                                <em class="mixedModule-subject-word">ě</em>
+                                            </li>
+                                            <li class="mixedModule-subject-btn answering-view">
+                                                <em class="mixedModule-subject-num">8</em>
+                                                <em class="mixedModule-subject-word">ě</em>
+                                            </li>
+                                        </ul>
+                                    <a href="#" class="mixedModule-subject-next"></a>
+                                </div>
+                            </div>
+                            <div class="mixedModule-shangxia-p">
+                            <!-- 上一题下一题，不可点击加click_disabled -->
+                                <a href="###" class="mixedModule-prev click_disabled">
+                                    <em class="mixedModule-switch-text">上一题</em>
+                                </a>
+                                <a href="###" class="mixedModule-next">
+                                    <em class="mixedModule-switch-text">下一题</em>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        <!-- 正确答案弹窗。隐藏加hide-dom -->
+        <div class="mixedModule-answerpop hide-dom">
+            <div class="mixedModule-answerpop-main">
+                <div class="mixedModule-answer-content nqti-player-skin-wood"  style="font-size: 0.9em;">
+                    @@include('../connectLine/resources/_index.html')
+                </div>
+                <div class="mixedModule-answerpop-bottom">
+                    <a href="#" class="mixedModule-answer-closebtn">关闭</a>
+                </div>
+            </div>
+        </div>
+        <!-- 正确答案弹窗 -->
+    </div>
+   
+</div>
+<script src="../../common/resources/layout/wood/layout.js"></script>
+</body>
+</html>

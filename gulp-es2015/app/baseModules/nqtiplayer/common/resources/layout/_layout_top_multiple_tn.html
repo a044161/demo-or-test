@@ -1,0 +1,40 @@
+
+<div class="baseMod-com-layout" id="layout">
+    <div class="baseMod-com-wrapper-board">
+        <div class="baseMod-com-header-box">
+            <!--计时器-->
+            <div class="com_time">
+                <div class="time_default">
+                    <b class="time_text">答题时间：</b>
+                    <span class="time_m"><em>05</em></span>
+                    <b class="time_text">分</b>        
+                    <i>:</i>
+                    <span class="time_s"><em>21</em></span>
+                    <b class="time_text">秒</b>
+                </div>
+            </div>
+            <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>             
+        </div>
+        <!-- 公共提交按钮 -->
+        <div class="baseMod-com-submit">
+            @@include('../button/_com_btn_round.html', {"txt": "提&nbsp;&nbsp;交","classname":"com_btn_disabled"})
+        </div>
+        <!-- /公共提交按钮 -->
+        <div class="baseMod-com-layout-container">
+            <!-- 公共标题 -->
+            <div class="baseMod-com-layout-title">
+                <p class="baseMod-tit">@@layoutTitle</p>
+            </div>
+            <!-- /公共标题 -->
+            <div class="baseMod-com-layout-body baseMod-scrollbar-style-gray">
+                <!-- module-nqit容器 -->
+                <div class="nqti-player-skin-wood"><!-- nqti皮肤控制层 默认皮肤类名nqti-player-skin-default -->            
+                    <div class="nqti-player-body nqti-scrollbar-style-gray"><!-- 加载中添加类名nqti-player-run-loading 显示序号添加类名nqti-module-show-num -->
+                        <div class="nqti-player-loading" ><span>正在努力解析中...</span></div>
+                        <!-- 复合题类的大标题 -->
+                        <div class="nqti-module-header">
+                            <div class="nqti-header-text">动画片复合题
+                            <!-- 题型选项 -->
+                            <!-- <div class="nqti-module-content"> -->
+
+                        

@@ -1,0 +1,358 @@
+@import "../../../../common/resources/common/mixin/mixin";
+.marking_box{
+    position: relative;
+    padding-right: pxToEm(710px);
+    
+    //画笔选择有一个颜色
+    &.item_quantity_1 {
+        .marking_box_top {
+            height: pxToEm(210px);
+        }
+        .marking_box_bottom {
+            top: pxToEm(230px);
+        }
+        .marking_brush_box .brush:before {
+            border-bottom-left-radius: pxToEm(20px);
+        }
+    }
+
+    //画笔选择有一个颜色
+    &.item_quantity_2 {
+        .marking_box_top {
+            height: pxToEm(210px);
+        }
+        .marking_box_bottom {
+            top: pxToEm(230px);
+        }
+        .marking_brush_box .brush:nth-child(1):before {
+            border-bottom-left-radius: pxToEm(20px);
+        }
+        .marking_brush_box .brush:nth-child(2):before {
+            border-bottom-right-radius: pxToEm(20px);
+        }
+    }
+
+    //画笔选择有一个颜色
+    &.item_quantity_3,
+    &.item_quantity_4 {
+        .marking_brush_box .brush:nth-child(3):before {
+            border-bottom-left-radius: pxToEm(20px);
+        }
+        .marking_brush_box .brush:nth-child(4):before {
+            border-bottom-right-radius: pxToEm(20px);
+        }
+    }
+
+    /*左侧划词标记-顶部*/
+    .marking_box_top{
+        margin-bottom: pxToEm(18px);
+        height: pxToEm(342px);
+    }
+    .contral_box{
+        // height: pxToEm(342px);
+        height: 100%;
+        border-radius: pxToEm(20px);
+        border-left: 1px solid #ce943b;
+        border-right: 1px solid #ce943b;
+        box-shadow: 1px 1.732px pxToEm(8px) 0px rgba(68, 49, 19, 0.176);
+        background: url(resources/wood/images/contral_bg.png) repeat-x;
+        background-size: auto 100%;
+    }
+    
+    //左側頂部標題
+    .marking_contral_title {
+        overflow: hidden;
+        height: pxToEm(50px);
+        line-height: pxToEm(50px);
+        color: #8a5d1b;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        .font {
+            font-size: pxToEm(28px);
+            text-shadow: 1px 1px 0px rgba(255, 244, 244, 0.75);
+        }
+        em {
+            font-weight: bold;
+        }
+    }
+
+    //题目要求
+    .marking_require {
+        overflow: hidden;
+        padding: pxToEm(12px) pxToEm(42px);
+    }
+    .marking_require_main {
+        .require {
+            display: block;
+            overflow: hidden;
+            margin-top: 8px;
+            padding-left: pxToEm(20px);
+            height: pxToEm(54px);
+            line-height: pxToEm(54px);
+            background: #fff;
+            border-radius: pxToEm(8px);
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            box-shadow: inset 0px 2px 4px #858383;
+            .font {
+                font-size: pxToEm(30px);
+                color: #5d390d;
+            }
+            &.color_red em {
+                color: #ff0000;
+            }
+            &.color_green em {
+                color: #6fbb04;
+            }
+            &.color_purple em {
+                color: #9857cb;
+            }
+            &.color_blue em {
+                color: #0f92ee;
+            }
+        }
+
+    }
+
+    //画笔选择
+    .marking_brush {
+        float: right;
+        overflow: hidden;
+        margin-left: pxToEm(20px);
+        width: pxToEm(258px);
+        .marking_contral_title {
+            height: pxToEm(82px);
+            line-height: pxToEm(82px);
+            border-bottom: 1px solid #d4a162;
+            text-align: center;
+        }
+    }
+    .marking_brush_box {
+        overflow: hidden;
+        margin-top: -1px;
+        .brush {
+            display: block;
+            float: left;
+            width: 50%;
+            height: pxToEm(129px);
+            overflow: hidden;
+            text-indent: -9999px;
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-size: 100% auto;
+            position: relative;
+            border: 1px solid #d4a162;
+            &:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                content: "";
+                z-index: 1;
+            }
+            &.on:before {
+                position: absolute;
+                top: 1px;
+                right: 1px;
+                bottom: 0;
+                left: 0;
+                content: "";
+                z-index: 2;
+                border: pxToEm(3px) solid #ff0000;
+            }
+        }
+        .color_red {
+            background-image: url(resources/wood/images/p_icon1.png);
+            &:after {
+                border-top: 1px solid #ffdeac;
+                border-right: 1px solid #ffdeac;
+            }
+        }
+        .color_green {
+            background-image: url(resources/wood/images/p_icon2.png);
+            &:after {
+                border-top: 1px solid #ffdeac;
+            }
+        }
+        .color_purple {
+            background-image: url(resources/wood/images/p_icon3.png);
+            &:after {
+                border-top: 1px solid #ffdeac;
+                border-right: 1px solid #ffdeac;
+            }
+        }
+        .color_blue {
+            background-image: url(resources/wood/images/p_icon4.png);
+            &:after {
+                border-top: 1px solid #ffdeac;
+            }
+        }
+    }
+
+    /*左侧划词标记-底部*/
+    .com_m_sidehead{
+        position: absolute;
+        top: 0;
+        width:100%;
+        height: pxToEm(60px);
+        z-index: 3;
+    }    
+    .marking_box_bottom {
+        position: absolute;
+        left: 0;
+        right: pxToEm(710px);
+        bottom: pxToEm(10px);
+        top: pxToEm(360px);
+        padding-top: pxToEm(60px);
+        // height: pxToEm(560px);
+        // width: 100%;
+    }
+    .com_m_sidecon{
+        position: relative;
+        padding: pxToEm(10px) pxToEm(20px) pxToEm(20px) pxToEm(40px);
+        height: 100%;
+        overflow: visible;
+    }
+    .marking_article {
+        overflow-y: auto;
+        height: 100%;
+        line-height: pxToEm(74px);
+        color: #333;
+        .article_tit {
+            font-size: 1em;
+            text-align: center;
+            font-weight: bold;
+            .font {
+                font-size: pxToEm(46px);
+            }
+        }
+        .text {
+            font-size: pxToEm(40px);
+            text-indent: pxToEm(28px);
+            .mark_red {
+                background: #ff0000;
+            }
+            .mark_green {
+                background: #6fbb04;
+            }
+            .mark_purple {
+                background: #9857cb;
+            }
+            .mark_blue {
+                background: #0f92ee;
+            }
+        }
+    }
+    
+
+    /*右侧词组板块*/
+    .com_layout_main_exam {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: pxToEm(695px);
+    }
+    .marking_text_box {
+        position: absolute;
+        top: pxToEm(40px);
+        left: pxToEm(30px);
+        right: pxToEm(30px);
+        bottom: pxToEm(40px);
+        padding-right: pxToEm(10px);
+        overflow-y: auto;
+        z-index: 2;
+        li {
+            background: rgba(153, 102, 37, 0.175);
+            border: 2px solid #c59759;
+            border-radius: pxToEm(10px);
+            margin-bottom: pxToEm(12px);
+            &.text_box_edit {
+                .btn_oper {
+                    box-shadow: inset 0 0 14.66667px rgba(200, 114, 40, 0.9);
+                    color: #fff;
+                }
+                .btn_del {
+                    display: block;
+                }
+            }
+            &.item_seleted {
+                border-color: #e78c6c;
+            }
+        }
+        .types_title {
+            position: relative;
+            background: rgba(153, 102, 37, 0.35);
+            border-radius: pxToEm(10px) pxToEm(10px) 0 0;
+            line-height: pxToEm(66px);
+            text-align: center;
+            .font {
+                font-size: pxToEm(30px);
+                color: #121212;
+            }
+            .btn_oper {
+                position: absolute;
+                display: inline-block;
+                top: pxToEm(13px);
+                right: pxToEm(20px);
+                width: pxToEm(77px);
+                height: pxToEm(45px);
+                line-height: pxToEm(42px);
+                background: rgba(153, 102, 37, 0.3);
+                border-radius: pxToEm(6px);
+                border: 1px solid #8c622d;
+                color: #e1d2c2;
+                font-size: pxToEm(22px);
+                &:active {
+                    background: rgba(153, 102, 37, 1);
+                }
+            }
+        }
+        .types_main {
+            padding: pxToEm(25px) 0 pxToEm(5px) pxToEm(8px);
+        }
+        .marked_word {
+            display: inline-block;
+            position: relative;
+            margin: 0 pxToEm(4px) pxToEm(25px);
+            padding: 0 pxToEm(20px);
+            height: pxToEm(70px);
+            line-height: pxToEm(64px);
+            border: pxToEm(2px) solid #f0d7b3;
+            // font-size: 1em;
+            border-radius: pxToEm(15px);
+            background: #f0d7b3;
+            box-shadow: 0px pxToEm(3px)pxToEm(8px) 0px rgba(151, 112, 49, 0.46);
+            &:before {
+                content:'';
+                position: absolute;
+                left: pxToEm(2px);
+                top: pxToEm(2px);
+                right: pxToEm(2px);
+                bottom: pxToEm(2px);
+                border: pxToEm(2px) solid #966f3a;
+                border-radius: pxToEm(15px);
+            }
+            b {
+                font-size: pxToEm(40px);
+                color: #121212;
+                font-weight: normal;
+            }
+            .btn_del {
+                display: none;
+                position: absolute;
+                right: pxToEm(-16px);
+                top: pxToEm(-16px);
+                width: pxToEm(45px);
+                height: pxToEm(45px);
+                background: url(resources/wood/images/btn_close.png) no-repeat center center;
+                background-size: 100% auto;
+                &:active {
+                    background-image: url(resources/wood/images/btn_close_ac.png);
+                }
+            }
+        }
+    }
+}
+

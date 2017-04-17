@@ -1,0 +1,145 @@
+@charset "UTF-8";
+.nqti-player-skin-wood {
+  /* 开发用 */
+  /* 开发用end */
+  /*拼图题统计*/ }
+  .nqti-player-skin-wood .nqti-base-puzzle {
+    overflow: hidden;
+    padding-bottom: 3.75em;
+    min-height: 30.41667em; }
+    .nqti-player-skin-wood .nqti-base-puzzle .tips-to-bottom {
+      position: absolute;
+      left: 1.625em;
+      bottom: 0.41667em; }
+  .nqti-player-skin-wood .nqti-base-puzzle-wrap {
+    display: inline-block;
+    position: relative;
+    margin-left: 1.625em;
+    height: 20.54167em;
+    background: #f4f4f4;
+    border: 1px solid #c1c1c1;
+    box-shadow: 0px 0.125em 0.41667em 0px rgba(0, 0, 0, 0.2); }
+  .nqti-player-skin-wood .nqti-base-side-puzzle {
+    float: left;
+    padding: 0.5em 0.20833em 1em 0.5em;
+    width: 17.5em;
+    height: 100%;
+    border-left: 1px solid #c1c1c1;
+    background: #f4f4f4; }
+  .nqti-player-skin-wood .nqti-base-puzzle-list {
+    overflow-y: auto;
+    height: 100%; }
+    .nqti-player-skin-wood .nqti-base-puzzle-list li {
+      float: left;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      margin: 0.5em 0.41667em;
+      width: 7.25em;
+      height: 5.25em;
+      background: #ddd;
+      text-align: center;
+      cursor: pointer;
+      opacity: .4; }
+      .nqti-player-skin-wood .nqti-base-puzzle-list li img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        max-height: 100%; }
+      .nqti-player-skin-wood .nqti-base-puzzle-list li:after {
+        display: inline-block;
+        content: '';
+        width: 0;
+        height: 100%;
+        vertical-align: middle; }
+      .nqti-player-skin-wood .nqti-base-puzzle-list li:active {
+        opacity: .2; }
+      .nqti-player-skin-wood .nqti-base-puzzle-list li.on {
+        opacity: 1; }
+    .nqti-player-skin-wood .nqti-base-puzzle-list.nqti-scrollbar-style-gray::-webkit-scrollbar {
+      width: 0.33333em;
+      height: 0.33333em;
+      border-radius: 0.33333em; }
+    .nqti-player-skin-wood .nqti-base-puzzle-list.nqti-scrollbar-style-gray::-webkit-scrollbar-thumb {
+      border-radius: 0.33333em; }
+  .nqti-player-skin-wood .nqti-base-puzzle-module {
+    float: left;
+    height: 100%;
+    border: 5px solid #fff; }
+  .nqti-player-skin-wood .nqti-base-puzzle-table td {
+    /* overflow: hidden; */
+    position: relative;
+    border: 2px solid #fff;
+    background: #f4f4f4;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer; }
+    .nqti-player-skin-wood .nqti-base-puzzle-table td:active {
+      opacity: .7; }
+    .nqti-player-skin-wood .nqti-base-puzzle-table td.td-move {
+      background: #faecd5;
+      /* &:after {
+                content: '';
+                position: absolute;
+                left: 1px;
+                top: 1px;
+                bottom: 1px;
+                right: 1px;
+                border: 1px solid #f4d4a0;
+            } */ }
+    .nqti-player-skin-wood .nqti-base-puzzle-table td img {
+      width: 100%;
+      max-height: 100%; }
+  .nqti-player-skin-wood .nqti-base-puzzle-wrap ._move {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0.8;
+    z-index: 5; }
+  .nqti-player-skin-wood .nqti-base-puzzle-wrap {
+    transform: translateZ(0); }
+  .nqti-player-skin-wood .nqti-base-puzzle-wrap ._move img {
+    width: 100%; }
+  .nqti-player-skin-wood .nqti-base-puzzle-list li .nqti-base-puzzle-img-con._horizontal img {
+    width: auto; }
+  .nqti-player-skin-wood .nqti-base-puzzle-list li._autoh {
+    height: auto; }
+  .nqti-player-skin-wood .nqti-base-puzzle-wrap ._old {
+    display: none !important; }
+  .nqti-player-skin-wood .nqti-base-puzzle-table td {
+    padding: 0px; }
+  .nqti-player-skin-wood.nqti-base-puzzle-stati {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: auto;
+    overflow: hidden; }
+    .nqti-player-skin-wood.nqti-base-puzzle-stati .nqti-player-loading {
+      display: none; }
+    .nqti-player-skin-wood.nqti-base-puzzle-stati .nqti-player-body {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      height: auto;
+      overflow: hidden; }
+    .nqti-player-skin-wood.nqti-base-puzzle-stati .nqti-module-body {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      height: auto;
+      min-height: 0; }
+    .nqti-player-skin-wood.nqti-base-puzzle-stati .nqti-module-listnum, .nqti-player-skin-wood.nqti-base-puzzle-stati .nqti-module-title, .nqti-player-skin-wood.nqti-base-puzzle-stati .nqti-module-media, .nqti-player-skin-wood.nqti-base-puzzle-stati .nqti-hint-box {
+      display: none; }
+    .nqti-player-skin-wood.nqti-base-puzzle-stati .nqti-base-side-puzzle {
+      display: none; }
+    .nqti-player-skin-wood.nqti-base-puzzle-stati .nqti-module-content {
+      margin: 0;
+      display: inline-block; }
+    .nqti-player-skin-wood.nqti-base-puzzle-stati .nqti-base-puzzle-wrap {
+      margin: 0;
+      box-shadow: none;
+      border: none; }
+    .nqti-player-skin-wood.nqti-base-puzzle-stati .nqti-base-puzzle-module {
+      border: none; }
+
+/*# sourceMappingURL=style.css.map */

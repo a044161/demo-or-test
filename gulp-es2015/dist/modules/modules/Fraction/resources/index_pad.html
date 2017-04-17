@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>互动工具--比较工具</title>
+    <link rel="stylesheet" type="text/css" href="../../../common/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/cssbotbtn.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style_dev.css">
+    <script src="../../../common/resources/common/layout/wood/layout.js"></script>
+</head>
+<body>
+<div class="exam_skin_wood">
+    <div class="com_layout" id="layout">
+    <div class="com_wrapper_pad" id="wrapper"> <!-- pad端加.com_wrapper_pad，白板端加.com_wrapper_board -->
+        <!--防止页面加载完根据比例缩放的闪动现象执行该脚本-->
+        <script>layoutReset();</script>
+        <!--头部-->
+        <div class="com_layout_header">
+            <!--计时器-->
+            <div class="com_header_time">
+                <div class="com_time">
+    <div class="time_default ">
+        <b class="time_text">答题时间：</b><!-- 
+                 --><span class="time_m"><em>05</em></span><!-- 
+                          --><b class="time_text">分</b><!--         
+                                   --><i>:</i><!-- 
+                                            --><span class="time_s"><em>21</em></span><!-- 
+                                                     --><b class="time_text">秒</b>
+    </div>
+</div>
+                <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>
+            </div>
+            <!--/计时器-->
+            <!--提交按钮-->
+            <div class="com_header_tool">
+                <a class="com_btn_round " href="javascript:;">
+<!-- <span class="icons_box"></span> -->
+<span class="text_box">提&nbsp;&nbsp;交</span>
+</a>
+            </div>
+            <!--/提交按钮-->
+
+        </div>
+        <!--/头部-->
+        <!-- 底部发题按钮 -->
+        <!-- 如果是思维道题，在class:ndui-tool  增加Class: mindmap-footer-tool -->
+<div class="ndui-tool k12-footer-tool mindmap-footer-tool">
+    <!-- 底部方形按钮 -->
+    <div class="ndui-tool-box @@tongjiBtns">
+        <ul class="ndui-tool-list ndui-tool-left">
+            <li class="ndui-tool-cell">
+                <!-- 选中加on -->
+<a class="ndui-btn-square square_tool_treasure" href="javascript:;">
+    <i class="ndui-btn-pic"></i>
+    <em class="ndui-btn-text">百宝袋</em>
+</a>
+            </li>
+            <li class="ndui-tool-cell">
+                <!-- 选中加on -->
+<a class="ndui-btn-square square_tool_result" href="javascript:;">
+    <i class="ndui-btn-pic"></i>
+    <em class="ndui-btn-text">公布结果</em>
+</a>
+            </li>
+            <li class="ndui-tool-cell">
+                <div class="ndui-btn-complex pop_up">
+                    <!-- 选中加on -->
+<a class="ndui-btn-square square_tool_peerReview" href="javascript:;">
+    <i class="ndui-btn-pic"></i>
+    <em class="ndui-btn-text">作业互评</em>
+</a>
+                    <div class="selected">
+                        <a href="###" class="options on">匿名互评</a><!-- 选中加on -->
+                        <a href="###" class="options">公开互评</a>
+                        <i class="tips"></i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="ndui-tool-list ndui-tool-right">
+            <li class="ndui-tool-cell">
+                <div class="ndui-btn-complex pop_up">
+                    <!-- 选中加on -->
+<a class="ndui-btn-square square_tool_peerReview" href="javascript:;">
+    <i class="ndui-btn-pic"></i>
+    <em class="ndui-btn-text">作业互评</em>
+</a>
+                    <div class="selected">
+                        <a href="###" class="options on">匿名互评</a><!-- 选中加on -->
+                        <a href="###" class="options">公开互评</a>
+                        <i class="tips"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="ndui-tool-cell">
+                <!-- 选中加on -->
+<a class="ndui-btn-square square_tool_result" href="javascript:;">
+    <i class="ndui-btn-pic"></i>
+    <em class="ndui-btn-text">公布结果</em>
+</a>
+            </li>
+            <li class="ndui-tool-cell">
+                <!-- 选中加on -->
+<a class="ndui-btn-square square_tool_treasure" href="javascript:;">
+    <i class="ndui-btn-pic"></i>
+    <em class="ndui-btn-text">百宝袋</em>
+</a>
+            </li>
+        </ul>                
+    </div>
+    <!-- 统计界面方形按钮 -->
+    <!-- 底部其他操作按钮 -->
+    <div class="ndui-tool-box-other @@otherBtns">
+        <!-- 底部对比操作栏 -->
+    </div>
+    <!-- 底部其他操作按钮 -->            
+</div>
+        <!-- /底部发题按钮 -->
+        <!--主体内容-->
+        <div class="com_layout_container"><!-- 没有标题时加.notit -->
+            <!--新结构-->
+            <div class="com_layout_exam_content fraction_box">
+            <!--题型分式加减-->
+
+                <div class="com_layout_main_exam">
+                    <div class="com_layout_tit">
+                        <h2 class="tit">在右侧选项中选择正确的选项拖入左侧空格中，使文章。</h2><!-- 文字过多的情况加.s_tit -->
+                    </div>
+                    <div class="com_layout_main scrollbar_style_simple">
+                        <p class="respondRes_tip respond_right respond_error">恭喜你，全部回答正确</p>
+                        <div class="fraction_container">
+                            <div class="fraction_body">
+                                <p class="remind">请在空格中填写正确的数字使等式成立</p>
+                                <div class="fraction_single">
+                                    <p><span><em>123456</em></span></p>
+                                    <p class="fraction_line"></p>
+                                    <p><span><em>123456</em></span></p>
+                                </div>
+                                <span class="fraction_symbol"><em>+</em></span>
+                                <div class="fraction_single">
+                                    <p><span><em>123456</em></span></p>
+                                    <p class="fraction_line"></p>
+                                    <p><span><em>123456</em></span></p>
+                                </div>
+                                <span class="fraction_symbol"><em>=</em></span>
+                                <div class="fraction_single">
+                                    <p>
+                                        <!--input框输入的时候，加class “on” ，回答错误加class "res_err",回答正确加class “res_right”-->
+                                        <span class="fraction_edit on"><input type="text" value="123456" maxLength="12"/></span>
+                                        <span class="fraction_symbol"><em>+</em></span>
+                                        <span class="fraction_edit res_right"><input type="text" value="123456"  maxLength="12"/></span>
+
+                                    </p>
+                                    <p class="fraction_line"></p>
+                                    <p>
+                                        <span class="fraction_edit res_err"><input type="text" value="123456"  maxLength="12"/></span>
+                                        <span class="fraction_symbol"><em>+</em></span>
+                                        <span><em>123456</em></span>
+                                    </p>
+                                </div>
+                                <span class="fraction_symbol"><em>+</em></span>
+                                <div class="fraction_single">
+                                    <p>
+                                        <span><em>123456</em></span>
+                                        <span class="fraction_symbol"><em>+</em></span>
+                                        <span><em>123456</em></span>
+                                    </p>
+                                    <p class="fraction_line"></p>
+                                    <p>
+                                        <span><em>123456</em></span>
+                                        <span class="fraction_symbol"><em>+</em></span>
+                                        <span><em>123456</em></span>
+                                    </p>
+                                </div>
+                                <span class="fraction_symbol"><em>=</em></span>
+                                <div class="fraction_single">
+                                    <p><span><em>123456</em></span></p>
+                                    <p class="fraction_line"></p>
+                                    <p><span><em>123456</em></span></p>
+                                </div>
+                                <!--输入键盘-->
+                                <div class="keyboard">
+                                    <div class="sidel">
+                                        <button class="com_u_btn2"><em>1</em></button>
+                                        <button class="com_u_btn2"><em>2</em></button>
+                                        <button class="com_u_btn2"><em>3</em></button>
+                                        <button class="com_u_btn2"><em>4</em></button>
+                                        <button class="com_u_btn2"><em>5</em></button>
+                                        <button class="com_u_btn2"><em>6</em></button>
+                                        <button class="com_u_btn2"><em>7</em></button>
+                                        <button class="com_u_btn2"><em>8</em></button>
+                                        <button class="com_u_btn2"><em>9</em></button>
+                                        <button class="com_u_btn2"><em>0</em></button>
+                                    </div>
+                                    <button class="com_u_btn3"><i class="icon"></i></button>
+                                </div>
+                                <!--输入键盘结束-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            <!--题型分式加减-->
+            </div>
+        </div>
+        <!--/主体内容-->
+    </div>
+</div>
+
+
+</div>
+</body>
+</html>

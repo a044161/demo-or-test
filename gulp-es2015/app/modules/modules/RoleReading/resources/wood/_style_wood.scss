@@ -1,0 +1,725 @@
+@charset "UTF-8";
+.layout_RoleReading {
+    width: 100%;
+    height: 100%;
+    background: #faf5ec;
+    box-shadow: 0 0 pxToEm(6px) 0 rgba(0, 0, 0, .3);
+    border-radius: pxToEm(16px);    
+    .com_layout_main {
+        top: pxToEm(200px);
+        left: 0;
+        bottom: 0;
+        //right: pxToEm(168px);
+        right: pxToEm(134px);
+        background: #f6f2e8;
+        border-radius: 0;
+        border-top: 1px solid #ded7cc;
+        overflow: initial;
+        border-radius: 0 0 0 pxToEm(16px); 
+        &:before{
+            content: '';
+            position: absolute;
+            top: pxToEm(20px);
+            left: pxToEm(25px);
+            width: pxToEm(30px);
+            height: pxToEm(30px);
+            border-left: pxToEm(3px) solid #e2ded6;
+            border-top: pxToEm(3px) solid #e2ded6;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            top: pxToEm(20px);
+            right: pxToEm(25px);
+            width: pxToEm(30px);
+            height: pxToEm(30px);
+            border-right: pxToEm(3px) solid #e2ded6;
+            border-top: pxToEm(3px) solid #e2ded6;
+        }
+    }
+    /*共用提取*/
+    .reading_grade {
+        display: inline-block;
+        width: pxToEm(66px);
+        height: pxToEm(66px);
+        line-height: pxToEm(66px);
+        border-radius: 50%;
+        text-align: center;
+        span {
+            font-size: pxToEm(36px);
+            color: #fff;
+        }
+        &.grade_a {
+            background: #7fcb5e;
+        }
+        &.grade_b {
+            background: #48cbdf;
+        }
+        &.grade_c {
+            background: #ffa421;
+        }
+        &.grade_d {
+            background: #ff6839;
+        }
+        &.grade_e {
+            background: #ff0000;
+        }
+    }
+}
+
+
+.role_reading_box {
+    position: relative;
+    height: 100%;
+    &:before {
+        content:"";
+        position: absolute;
+        left: pxToEm(60px);
+        top: 0;
+        right: pxToEm(60px);
+        height: pxToEm(132px);
+        background: url(resources/wood/images/rbg_mask.png) repeat-x 0 0;
+        background-size: 100% 100%;
+        z-index: 100;
+        pointer-events: none;
+    }
+    &:after {
+        content:"";
+        position: absolute;
+        left: pxToEm(60px);
+        bottom: pxToEm(164px);
+        right: pxToEm(60px);
+        height: pxToEm(132px);
+        background: url(resources/wood/images/rbg_mask.png) repeat-x 0 0;
+        background-size: 100% 100%;
+        z-index: 100;
+        transform: rotate(180deg);
+        pointer-events: none;
+    }
+    .role_r_loading {
+        position: absolute;
+        top: pxToEm(40px);
+        left: pxToEm(36px);
+        z-index: 150;
+        /* top: 4.4em;
+        left: 12.1em; */
+        top: -1.7em;
+        left: -0.2em;
+        .dot {
+            display: inline-block;
+            width: pxToEm(26px);
+            height: pxToEm(26px);
+            margin-right: pxToEm(6px);
+            background: url(resources/wood/images/icons_dot.png) no-repeat center center;
+            background-size: 100% 100%;
+            &:nth-child(1) {
+                opacity: 1;
+            }
+            &:nth-child(2) {
+                //opacity: .4;
+            }
+            &:nth-child(3) {
+                //opacity: .3;
+            }
+        }
+        &.ui_getready {
+            .dot {
+                &:nth-child(1) {
+                    animation: opacitysOut 1s linear 3s forwards;
+                }
+                &:nth-child(2) {
+                    animation: opacitysOut 1s linear 2s forwards;
+                }
+                &:nth-child(3) {
+                    animation: opacitysOut 1s linear 1s forwards;
+                }
+            }            
+        }
+    }
+}
+.role_reading_ul_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: pxToEm(168px);
+    overflow: hidden;   
+    
+}
+.role_reading_ul {
+    position: relative;
+    padding:  pxToEm(132px) 0 pxToEm(64px);
+    transform: translate( 0, 0);
+    transition: transform 1s;
+    will-change: transform;
+    li {
+        position: relative;
+        //overflow: hidden;
+        &.roler_left {
+            margin-left: pxToEm(128px);
+            padding-left: pxToEm(164px);
+            .role_reading_user_pic {
+                left: 0;
+            }
+            .role_reading_user_txt {
+                float: left;
+            }
+            .roler_tips {
+                right: 100%;
+                background-image: url(resources/wood/images/rbg_l1.png);
+                background-position: pxToEm(3px) 0;
+            }
+        }
+        &.roler_right {
+            margin-right: pxToEm(128px);
+            padding-right: pxToEm(164px);
+            .role_reading_user_pic {
+                right: 0;
+            }
+            .role_reading_user_txt {
+                float: right;
+            }
+            .roler_tips {
+                left: 100%;
+                background-image: url(resources/wood/images/rbg_r1.png);
+                background-position: pxToEm(-3px) 0;
+            }
+        }
+        &.on {
+            .role_reading_user_txt {
+                background-color: #00bcd8;
+                border-color: #00bcd8;
+                p {
+                    color: #fff;
+                }
+            }            
+            &.roler_left {
+                .roler_tips {
+                    background-image: url(resources/wood/images/rbg_l2.png);
+                }
+            }
+            &.roler_right {
+                .roler_tips {
+                    background-image: url(resources/wood/images/rbg_r2.png);
+                }
+            }
+        }
+        &.done {
+            .reading_grade {
+                display: block;
+            }
+            .ui_red {
+                color: #ff571d;
+            }
+            .ui_green {
+                color: #21c519;  
+            }
+        }
+        .reading_grade {
+            display: none;
+            position: absolute;
+            top: .7em;            
+            right: 100%;
+            margin-right: 1em;
+        }
+    }
+    .role_reading_user_pic {
+        position: absolute;
+        top: 0;
+        width: pxToEm(124px);
+        height: pxToEm(124px);
+        border: pxToEm(4px) solid #fff;
+        border-radius: 50%;
+        background: #eee;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        &.bg_c_male {
+            background: #a6e3e9;
+        }
+        &.bg_c_female {
+            background: #fec4da;
+        }
+    }
+    .role_reading_user_txt {
+        background: #fff;
+        border-radius: pxToEm(30px);
+        border: pxToEm(3px) solid #f0ebe1;
+        padding: pxToEm(24px) pxToEm(28px);
+        margin: pxToEm(12px) 0 pxToEm(60px);
+        max-width: 70%;
+        position: relative;    
+        min-width: 10em;    
+    }
+    .roler_tips {
+        position: absolute;
+        top: 1.5em;
+        width: pxToEm(32px);
+        height: pxToEm(28px);        
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .roler_txt {
+
+        p {
+            font-size: pxToEm(36px);
+            color: #6a6a6a;
+            line-height: 1.5;
+            word-wrap: break-word;
+            word-break: break-word;
+            span {
+                /*为了解决使用空格字符串引起的单词背换行而加的块状元素限制*/
+                display: inline-block;
+            }
+        }        
+    }        
+}
+.role_reading_btn_box {
+    position: absolute;
+    right: pxToEm(40px);
+    bottom: pxToEm(36px);
+    z-index: 150;
+    .com_btn_circular {
+        margin-left: pxToEm(20px);
+    }
+}
+
+/*录音控件图标*/
+.role_reading_sound {
+    position: absolute;
+    left: 50%;
+    bottom: 2em;
+    width: pxToEm(150px);
+    margin-left: pxToEm(-72px);
+    height: pxToEm(68px);
+    background: url(resources/wood/images/icons_soundp.png) left bottom no-repeat ;
+    background-size: auto pxToEm(64px);
+    padding: pxToEm(4px) 0 0 pxToEm(50px);
+    span {
+        display: inline-block;
+        width: 0;
+        height: pxToEm(64px);
+        background: url(resources/wood/images/icons_soundp1.png) left bottom no-repeat ;
+        background-size: auto 100%;
+    }
+    &.sound0 {
+        span {
+            width: 0;
+        }
+    }
+    &.sound1 {
+        span {
+            width: pxToEm(10px);
+        }
+    }
+    &.sound2 {
+        span {
+            width: pxToEm(24px);
+        }
+    }
+    &.sound3 {
+        span {
+            width: pxToEm(38px);
+        }
+    }
+    &.sound4 {
+        span {
+            width: pxToEm(52px);
+        }
+    }
+    &.sound5 {
+        span {
+            width: pxToEm(66px);
+        }
+    }
+    &.sound6 {
+        span {
+            width: pxToEm(80px);
+        }
+    }
+    &.sound7 {
+        span {
+            width: pxToEm(98px);
+        }
+    }
+}
+.com_btn_round2 {
+    .role_reading_sound {
+        width: pxToEm(106px);
+        margin: 0;
+        height: pxToEm(48px);
+        background-size: auto pxToEm(46px);
+        padding: pxToEm(2px) 0 0 pxToEm(32px);
+        left: auto;
+        bottom: auto;
+        display: inline-block;
+        top: .4em;
+        left: 1.8em;
+        span {
+            height: pxToEm(46px);
+            display: block;
+        }
+        &.sound0 {
+            span {
+                width: 0;
+            }
+        }
+        &.sound1 {
+            span {
+                width: pxToEm(8px);
+            }
+        }
+        &.sound2 {
+            span {
+                width: pxToEm(18px);
+            }
+        }
+        &.sound3 {
+            span {
+                width: pxToEm(28px);
+            }
+        }
+        &.sound4 {
+            span {
+                width: pxToEm(38px);
+            }
+        }
+        &.sound5 {
+            span {
+                width: pxToEm(48px);
+            }
+        }
+        &.sound6 {
+            span {
+                width: pxToEm(58px);
+            }
+        }
+        &.sound7 {
+            span {
+                width: pxToEm(70px);
+            }
+        }
+    }
+}
+/*评测结果*/
+.role_reading_result {
+    height: 100%;
+    position: relative;
+}
+.role_reading_result_hd {
+    text-align: center;
+    height: pxToEm(118px);
+    line-height: pxToEm(110px);
+    .com_btn_round2 {
+        margin-top: 0;
+        position: absolute;
+        left: 0;
+        top: 1em;
+        .text_box {
+            color: #5d390d;
+        }
+    }
+    .tit {
+        display: inline-block;
+        .new_ui_text {
+            font-size: pxToEm(46px);
+            color: #272727;
+        }
+    }
+    .ratings_a {
+        font-size: pxToEm(50px);
+        color: #7fcb5e;
+        span {
+            color: #7fcb5e;
+        }
+    }
+    .ratings_b {
+        font-size: pxToEm(50px);
+        color: #48cbdf;
+        span {
+            color: #48cbdf;
+        }
+    }
+    .ratings_c {
+        font-size: pxToEm(50px);
+        color: #ffa421;
+        span {
+            color: #ffa421;
+        }
+    }
+    .ratings_d {
+        font-size: pxToEm(50px);
+        color: #ff6839;
+        span {
+            color: #ff6839;
+        }
+    }
+    .ratings_e {
+        font-size: pxToEm(50px);
+        color: #ff0000;
+        span {
+            color: #ff0000;
+        }
+    }
+    
+}
+.role_reading_result_bd {
+    padding: 0  pxToEm(24px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: pxToEm(118px);
+    bottom: pxToEm(24px);
+}
+.role_reading_layout_left {
+    border: 1px solid #c5c5c5;
+    background: #fff;
+    border-radius: pxToEm(12px);
+    width: pxToEm(1350px);
+    float: left;
+    margin-right: pxToEm(24px);
+    position: relative;
+    height: 100%;
+    .en_page_num {
+        position: absolute;
+        left: pxToEm(24px);;
+        top: pxToEm(24px);
+        span {
+            font-size: pxToEm(30px);
+            color: #777;
+        }
+    }
+    .role_result_main {
+        padding-top: 3em;
+    }
+    .role_result_content {
+        width: pxToEm(1140px);
+        margin: 0 auto;
+        padding: 0;
+        height: pxToEm(240px);
+        height: 11em;
+        text-align: center;
+        &:after{
+            content:"";
+            width: 0;
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    .canto {
+        line-height: 1.3;
+        max-width: 97%;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        .new_ui_text {
+            word-break: break-word;
+            span {
+                display: inline-block;
+            }
+        }
+    }
+    .new_ui_text {
+        font-size: pxToEm(46px);
+        color: #858984;        
+    }
+    .ui_red {
+        color: #ff571d;
+    }
+    .ui_green {
+        color: #7fcb5e;  
+    }
+    .result {
+        text-align: center;
+        padding-bottom: pxToEm(46px);
+        .text {
+            display: inline-block;
+            margin: 0 pxToEm(45px);
+        }
+        .new_ui_text {
+            font-size: pxToEm(36px);
+            color: #323232; 
+        }
+        .reading_grade {
+            .new_ui_text {
+                color: #fff; 
+            }
+        }
+    }
+    .final_result {
+        background: #e3ebe0;
+        padding: pxToEm(36px) 0;
+        width: pxToEm(1140px);
+        margin: 0 auto;
+        text-align: center;
+        .final_result_title {
+            font-size: pxToEm(60px);
+            color: #323232;
+        }
+        .reading_grade {
+            width: pxToEm(72px);
+            height: pxToEm(72px);
+            line-height: pxToEm(72px);
+            .new_ui_text {
+                font-size: pxToEm(48px);
+                color: #fff;
+            }
+        }
+    }
+    .com_btn_round2 .text_box {
+        color: #5d390d;
+    }
+    .static_refresh_box {
+        display: none;
+        padding: pxToEm(30px) 0 0;
+        margin-bottom: -.5em;
+        p {
+            color: #323232;
+            font-size: pxToEm(30px);
+        }        
+    }    
+    .static_refresh {
+
+        .result {
+            padding-bottom: 1em;
+        }
+        .static_refresh_box{
+            display: block;
+        }
+        .role_result_content {
+            height: 8.5em;
+        }        
+    }
+}
+.new_ui_previous,
+.new_ui_next{
+    position: absolute;
+    top: 40%;
+}
+.new_ui_previous {
+    left: pxToEm(16px);
+}
+.new_ui_next {
+    right: pxToEm(16px);
+}
+
+.role_result_btns {
+    position: absolute;
+    left: 0;
+    bottom: pxToEm(36px);
+    right: 0;
+    border-top: 1px solid #c5c5c5;
+    text-align: center;
+    .com_btn_round2  {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+.role_reading_layout_right {
+    border: 1px solid #c5c5c5;
+    background: #fff;
+    border-radius: pxToEm(12px);
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    .role_reading_list_title {
+        height: pxToEm(58px);
+        line-height: pxToEm(58px);
+        border-bottom: 1px solid #d2d2d2;
+        text-align: center;
+        .new_ui_text {
+            color: #323232;
+            font-size: pxToEm(24px);
+        }
+    }
+    .role_reading_list {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: pxToEm(58px);
+        overflow: auto;
+        &::-webkit-scrollbar {
+            /* width: 19px/$s;
+            height:  19px/$s;
+            border: 19px/$s solid transparent; */
+            width: 27px;
+            height:  27px;
+            border-left: 1px solid #c6c6c6;
+        }
+        &::-webkit-scrollbar-thumb {
+            /* border: 19px/$s solid transparent; */
+            border: 27px solid transparent;
+            -webkit-border-image: url(resources/wood/images/wood-vertical-thumb.png) 13 13 ;    
+        } 
+        li {
+            position: relative;
+            height: pxToEm(90px);
+            line-height: pxToEm(90px);
+            border-bottom: 1px solid #d2d2d2;
+            padding: 0 pxToEm(64px) 0 pxToEm(12px);
+            &.on {
+                background: #f1f1f1;
+                .new_ui_text {
+                    color: #323232;
+                }
+            }
+        }
+        .canto {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .new_ui_text {
+            font-size: pxToEm(30px);
+            color: #676767;
+        }
+        .reading_grade {
+            position: absolute;
+            right: pxToEm(12px);
+            top: pxToEm(22px);
+            width: pxToEm(48px);
+            height: pxToEm(48px);
+            line-height: pxToEm(48px);
+            span {
+                font-size: pxToEm(30px);
+            }
+        }
+    }
+}
+/*白板适配*/
+.com_wrapper_board {
+    .layout_RoleReading {
+        
+        & + .comui_big_pop {
+            position: absolute;
+            border-radius: .7em;
+        }
+    }
+    .role_result_btns {
+        bottom: 0.8em;
+        .com_btn_round2 {
+            margin-top: .6em;
+        }
+    }
+}
+
+
+@keyframes opacitysOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

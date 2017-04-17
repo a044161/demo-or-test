@@ -1,0 +1,35 @@
+<!--图片-->
+<!--
+    @@config 为only_carousel或为""
+    切换通过在en_card_carousel和en_card_video上添加和移除hide_dom
+    轮播图:n张图就设置carousel_content为width为 n*100%,
+          li的width为 100%/n,
+          carousel_points_group中添加相应数量a标签,
+          a标签中添加类名on为选中.
+          图片左移通过控制carousel_content的left属性-n*100%就为左移几张图.
+-->
+<div class="ec_com_media @@config">
+    <div class="ec_carousel">
+        <div class="carousel_content">
+            <ul>
+                <li><img src="wood/images/pencil_01.png" alt=""></li>
+                <li><img src="wood/images/pencil_01.png" alt=""></li>
+                <li><img src="wood/images/pencil_01.png" alt=""></li>
+                <li><img src="wood/images/pencil_01.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="carousel_points_group">
+            <a class="on"></a>
+            <a></a>
+            <a></a>
+            <a></a>
+        </div>
+    </div>
+    <div class="ec_video hide_dom">
+        <video></video>
+    </div>
+    <!--a标签添加类.on来表示选中态-->
+    <div class="media_switch">
+        <a class="switch_carousel"><span></span></a><a class="switch_video"><span></span></a>
+    </div>
+</div>

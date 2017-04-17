@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>基础题型--判断题</title>
+    <link rel="stylesheet" type="text/css" href="../../../baseModule/common/common_base_module.css">
+    <link rel="stylesheet" type="text/css" href="../../common/common.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="exam-skin-wood">
+    <div class="baseMod-com-layout" id="layout">
+    <!-- 
+        pad类名baseMod-com-wrapper-pad
+        白板类名baseMod-com-wrapper-board
+        学生端答题框baseMod-com-wrapper-answer
+        老师端等待学生答题baseMod-com-wrapper-waiting
+    -->
+    <div class="baseMod-com-wrapper-board">
+        <div class="baseMod-com-header-box">
+            <!--计时器-->
+            <div class="com_time">
+                <div class="time_default">
+                    <b class="time_text">答题时间：</b>
+                    <span class="time_m"><em>05</em></span>
+                    <b class="time_text">分</b>        
+                    <i>:</i>
+                    <span class="time_s"><em>21</em></span>
+                    <b class="time_text">秒</b>
+                </div>
+            </div>
+            <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>             
+        </div>
+        <!-- 公共提交按钮 -->
+        <div class="baseMod-com-submit">
+            <a class="com_btn_round com_btn_disabled" href="javascript:;"><!-- 不可点击添加类名com_btn_disabled -->
+    <span class="icons_box"></span>
+    <span class="text_box">提&nbsp;&nbsp;交</span>
+</a>
+        </div>
+        <!-- /公共提交按钮 -->
+        <div class="baseMod-com-layout-container">
+            <!-- 公共标题 -->
+            <div class="baseMod-com-layout-title">
+                <div class="baseMod-tit">判断题</div>
+            </div>
+            <!-- /公共标题 -->
+            <div class="baseMod-com-layout-body baseMod-scrollbar-style-gray">
+                <!-- module-nqit容器 -->
+                <div class="nqti-player-skin-wood"><!-- nqti皮肤控制层 默认皮肤类名nqti-player-skin-default -->         
+                    <div class="nqti-player-body nqti-scrollbar-style-gray nqti-player-run-loading"><!-- 加载中添加类名nqti-player-run-loading 显示序号添加类名nqti-module-show-num -->
+                        <div class="nqti-player-loading" ><span>正在努力解析中<span class="nqti-loading-dotting"></span></span></div>
+                        <div class="nqti-module-body nqti-base-choice">
+                            <!-- 题目序号 -->
+                            <div class="nqti-module-listnum">
+                                <span class="nqti-listnum-text">1</span>
+                                <span class="nqti-listnum-dot">、</span>
+                            </div>
+                            <!-- /题目序号 -->
+                            <!-- 题目描述文字 -->
+                            <div class="nqti-module-title">
+                                <div class="nqti-title-text">题干说明文字，选择题，判断题都按这个标准来设定</div>
+                            </div>
+                            <!-- /题目描述文字 -->
+
+                            <!-- 多媒体附件插入容器 -->
+                            <div class="nqti-module-media  nqti-hide-dom">
+                                不显示的dom结构添加类名nqti-hide-dom
+                            </div>
+                            <!-- /多媒体附件插入容器 -->
+
+                            <!-- 提示按钮容器 -->
+                            <div class="nqti-hint-box nqti-hide-dom">
+                                <span class="nqti-preload-img-01">预加载此按钮点击之后的背景图</span>
+                                <a class="nqti-hint-btn" href="javascript:;">
+    <span class="nqti-tip-icon"></span>
+    <span class="nqti-tip-icon-text">提示</span>
+</a>
+                                <!-- 提示弹窗 -->
+                                <div class="nqti-com-pop-content nqti-hide-dom" id="testBox4">
+    <i class="opacity_black_bg" style="display:none;"></i>
+    <div class="nqti-com-pop-box com-pop-hint-box">
+        <!-- 答对添加类名com-pop-right答错添加类名com-pop-wrong 提交提示文字这里添加类名com-pop-submit 提示弹窗添加类名com-pop-hint-box -->
+        <p class="nqti-com-pop-hd">
+            <span class="nqti-pop-dec nqti-dec-1"></span>
+            <span class="nqti-com-pop-title"><em>提&nbsp;&nbsp;示</em></span>
+            <span class="nqti-pop-dec nqti-dec-2"></span>
+        </p>
+        <div class="nqti-com-pop-bd nqti-scrollbar-style-gray">
+            <div class="nqti-com-remind-text">
+                <span class="nqti-text-size">提示文字</span>
+            </div>
+        </div>
+        <div class="nqti-com-pop-bt">
+            <a class="nqti-hint-btn" href="javascript:;">
+                <span class="nqti-tip-icon-text">确认</span>
+            </a>
+		</div>
+    </div>
+</div>
+                                <!-- /提示弹窗 -->
+                            </div>
+                            <!-- /提示按钮容器 -->
+                            
+                            <!-- 题型选项 -->
+                            <div class="nqti-module-content">
+                                
+                                
+            
+    <!--隐藏提示上面的 "boxTips": "nqti-hide-dom" -->
+    <ul class="nqti-base-judment-list"><!--单选题类名.nqti-base-choice-list,多选题类名.nqti-base-choice-multiple,判断题类名.nqti-base-judment-list-->
+    <li class="nqti-option nqti-option-on"><!--选中增加类名option-on,错误增加类名option-wrong,正确增加类名option-right-->
+        <i class="nqti-option-radio-icon"></i>
+        <span class="nqti-check"></span>
+        <div class="nqti-content"><span class="size">选项是对的</span></div>
+    </li>
+    <li class="nqti-option">
+        <i class="nqti-option-radio-icon"></i>
+        <span class="nqti-check"></span>
+        <div class="nqti-content"><span class="size">选项是对的</span></div>
+    </li>
+</ul>
+
+                                    </div>
+                                <!-- /题型选项 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- 弹窗与弹窗交互 -->
+        <div class="baseMod-com-pop-content baseMod-hide-dom" id="testBox1">
+	<i class="opacity_black_bg" style="display:none;"></i>
+	<div class="baseMod-com-pop-box com-pop-right"><!-- 答对添加类名com-pop-right答错添加类名com-pop-wrong 提交提示文字这里添加类名com-pop-submit 提示弹窗添加类名com-pop-hint-box -->
+		<p class="baseMod-com-pop-hd">
+			<span class="baseMod-pop-dec baseMod-dec-1"></span>
+			<span class="baseMod-pop-dec baseMod-dec-2"></span>
+		</p>
+		<div class="baseMod-com-pop-bd baseMod-scrollbar-style-gray">
+			<span class="baseMod-com-pop-icon"></span>
+			<p class="baseMod-com-pop-text">太棒啦，您答对了！</p>
+		</div>
+	</div>
+</div> 
+        <div class="baseMod-com-pop-content baseMod-hide-dom" id="testBox2">
+    <i class="opacity_black_bg" style="display:none;"></i>
+    <div class="baseMod-com-pop-box com-pop-wrong"><!-- 答对添加类名com-pop-right答错添加类名com-pop-wrong 提交提示文字这里添加类名com-pop-submit 提示弹窗添加类名com-pop-hint-box -->
+        <p class="baseMod-com-pop-hd">
+            <span class="baseMod-pop-dec baseMod-dec-1"></span>
+            <span class="baseMod-pop-dec baseMod-dec-2"></span>
+        </p>
+        <div class="baseMod-com-pop-bd baseMod-scrollbar-style-gray">
+            <span class="baseMod-com-pop-icon"></span>
+            <p class="baseMod-com-pop-text">这道题没有做对，下次加油哦！</p>
+        </div>
+    </div>
+</div>
+
+ 
+        <div class="baseMod-com-pop-content baseMod-hide-dom" id="testBox3">
+    <i class="opacity_black_bg" style="display:none;"></i>
+    <div class="baseMod-com-pop-box com-pop-submit">
+        <!-- 答对添加类名com-pop-right答错添加类名com-pop-wrong 提交提示文字这里添加类名com-pop-submit 提示弹窗添加类名com-pop-hint-box -->
+        <p class="baseMod-com-pop-hd">
+            <span class="baseMod-pop-dec baseMod-dec-1"></span>
+            <span class="baseMod-pop-dec baseMod-dec-2"></span>
+        </p>
+        <div class="baseMod-com-pop-bd baseMod-scrollbar-style-gray">
+            <div class="baseMod-com-remind-text">
+                <span class="baseMod-text-size">确定要提交答案吗？</span>
+            </div>
+        </div>
+        <div class="baseMod-com-pop-bt">
+			<a class="baseMod-hint-btn" href="javascript:;">
+                <span class="baseMod-tip-icon-text">取消</span>
+            </a>
+            <a class="baseMod-hint-btn" href="javascript:;">
+                <span class="baseMod-tip-icon-text">确认</span>
+            </a>
+		</div>
+    </div>
+</div>           
+        
+        <!-- 可以删除的交互结构与js -->
+        <div style="position:fixed; right:0;bottom:0;opacity: 0.6; z-index:999999">
+            <button style="padding: 1px 6px;border: 2px outset buttonface;    background-color: buttonface; margin:0 10px 10px 0" id="testBtn1">显示答对了弹窗</button>
+            <button style="padding: 1px 6px;border: 2px outset buttonface;    background-color: buttonface; margin:0 10px 10px 0" id="testBtn2">显示答错了弹窗</button>
+            <button style="padding: 1px 6px;border: 2px outset buttonface;    background-color: buttonface; margin:0 10px 10px 0" id="testBtn3">显示是否提交弹窗</button>
+            <button style="padding: 1px 6px;border: 2px outset buttonface;    background-color: buttonface; margin:0 10px 10px 0" id="testBtn4">显示提示弹窗</button>
+        </div>
+        <script type="text/javascript" src="http://www.w3school.com.cn/jquery/jquery.js"></script>  
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $("#testBtn3").click(function(){
+                //$("#testBox3").addClass("intro");
+                $(".baseMod-com-pop-content").addClass("baseMod-hide-dom");
+                //$("#testBox3").addClass("baseMod-hide-dom");
+              });
+              $("#testBtn3").toggle(function(){
+                    $("#testBox3").removeClass("baseMod-hide-dom");
+                }, function() {
+                    $("#testBox3").addClass("baseMod-hide-dom");
+                });
+              $("#testBtn1").click(function(){
+                //$("#testBox3").addClass("intro");
+                $(".baseMod-com-pop-content").addClass("baseMod-hide-dom");
+                //$("#testBox3").addClass("baseMod-hide-dom");
+              });
+              $("#testBtn1").toggle(function(){
+                    $("#testBox1").removeClass("baseMod-hide-dom");
+                }, function() {
+                    $("#testBox1").addClass("baseMod-hide-dom");
+                });
+              $("#testBtn2").click(function(){
+                //$("#testBox3").addClass("intro");
+                $(".baseMod-com-pop-content").addClass("baseMod-hide-dom");
+                //$("#testBox3").addClass("baseMod-hide-dom");
+              });
+              $("#testBtn2").toggle(function(){
+                    $("#testBox2").removeClass("baseMod-hide-dom");
+                }, function() {
+                    $("#testBox2").addClass("baseMod-hide-dom");
+                });
+              $("#testBtn4").click(function(){
+                //$("#testBox3").addClass("intro");
+                $(".nqti-com-pop-content").addClass("nqti-hide-dom");
+                //$("#testBox3").addClass("baseMod-hide-dom");
+              });
+              $("#testBtn4").toggle(function(){
+                    $("#testBox4").removeClass("nqti-hide-dom");
+                }, function() {
+                    $("#testBox4").addClass("nqti-hide-dom");
+                });
+              //加载演示
+                setTimeout(function () {
+                    $(".nqti-player-body").removeClass("nqti-player-run-loading");
+                }, Math.random()*1000);
+            });
+        </script>      
+        <!-- /可以删除的交互结构与js -->
+        
+</div>
+<script src="../../common/resources/layout/wood/layout.js"></script>
+</div>
+
+</body>
+</html>

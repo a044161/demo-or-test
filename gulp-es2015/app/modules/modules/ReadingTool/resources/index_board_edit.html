@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>朗读工具编辑模式</title>
+    <link rel="stylesheet" type="text/css" href="../../../common/common.css">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+
+<body>
+<div class="exam_skin_wood" id="layout">
+    <div id="wrapper">
+        <div class="read_tool layout_edit">
+            <!-- 全屏模式加 layout_full ,窗口模式，加 layout_window ,编辑模式：layout_edit -->
+            <div class="read_tool_bg">
+                <img src="demo/read_bg_wood.jpg" alt="" />
+            </div>
+            <div class="read_tool_content">
+                @@include('../_play_tool.html')
+                @@include('../_read_body.html')
+                @@include('../_choose_para.html')
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../../common/resources/common/layout/wood/layout.js"></script>
+</body>
+</html>

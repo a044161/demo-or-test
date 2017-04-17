@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>互评中</title>
+    <link rel="stylesheet" type="text/css" href="../../../baseModule/common/common_base_module.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <!--[if gte IE 8]><link rel="stylesheet" type="text/css" href="../../common/lowVersion.css" /><![endif]-->
+</head>
+<body>
+<div class="exam-skin-wood">
+    <div class="baseMod-com-layout" id="layout">
+    <!-- 
+        pad类名baseMod-com-wrapper-pad
+        白板类名baseMod-com-wrapper-board
+        学生端答题框baseMod-com-wrapper-answer
+        老师端等待学生答题baseMod-com-wrapper-waiting
+    -->
+    <div class="baseMod-com-wrapper-pad nqti-base-peerreview">
+        <div class="baseMod-com-header-box">
+            <!--计时器-->
+            <div class="com_time">
+                <div class="time_default">
+                    <b class="time_text">答题时间：</b>
+                    <span class="time_m"><em>05</em></span>
+                    <b class="time_text">分</b>        
+                    <i>:</i>
+                    <span class="time_s"><em>21</em></span>
+                    <b class="time_text">秒</b>
+                </div>
+            </div>
+            <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>              
+        </div>
+        <!-- 公共提交按钮 -->
+        <div class="baseMod-com-submit">
+            <a class="com_btn_round com_btn_disabled" href="javascript:;"><!-- 不可点击添加类名com_btn_disabled -->
+    <!-- <span class="icons_box"></span> -->
+    <span class="text_box">提&nbsp;&nbsp;交</span>
+</a>
+        </div>
+        <!-- /公共提交按钮 -->
+        <div class="baseMod-com-layout-container">
+            <!-- 公共标题 -->
+            <div class="baseMod-com-layout-title">
+                <p class="baseMod-tit">互评</p>
+            </div>
+            <!-- /公共标题 -->
+            <div class="baseMod-com-layout-body baseMod-scrollbar-style-gray">
+                <!-- module-nqit容器 -->
+             
+    <!-- 头部导航 -->
+<div class="nqti-base-peerreview-tit prw_tit_bg">
+    <span class="txt">李明的作业</span>
+</div>
+<!-- /头部导航 -->
+
+<!-- 作文题容器 -->
+<div class="peerreview-box-composition" style="display:none">
+
+</div>
+<!-- /作文题容器 -->
+
+<!-- 手写题容器 -->
+<div class="peerreview-box-handwriting" style="display:none">
+
+</div>
+<!-- /手写题容器 -->
+
+<!-- 主观题容器 -->
+<div class="peerreview-box-subjective">
+    <div class="prv-box-subjective-main">
+        <!-- 显示的是图片 -->
+        <div class="prv-subjective-main-pic">
+            <img src="resources/wood/pic/demopic1.jpg" alt="" />
+        </div>
+        <!-- 显示的是文本 -->
+        <div class="prv-subjective-main-text" style="display:none">
+            <p>我们班语文老师每周都会请一位同学上台演讲，有讲小故事的，有讲笑话的，还有猜字谜的。
+我看到一个个同学勇敢的走向讲台，演讲的有声有色，非常精彩，讲笑话的时候引得我们捧腹大笑，讲故事的时候，我们聚精会神地听，猜字谜的时候我们会。讲笑话的时候引得我们捧腹大笑，讲故事的时候，我们聚精会神地听，猜字谜的时候我们会。
+            </p>
+        </div>
+
+    </div>
+    <a class="subjective-main-previous off" href="javascript:;">左边上一页</a>
+    <a class="subjective-main-next" href="javascript:;">右边下一页</a>
+
+    <div class="com-student-page-contain ">
+        <a class="previous off" href="javascript:;">上一页</a><!--如果上一页，或者下一页无法点击的时候，class需要加上off-->
+        <a href="javascript:;" class="on">1</a><!--如果当前页，class需要加上on，颜色为橙色，否则为灰色-->
+        <a href="javascript:;">2</a>
+        <a href="javascript:;">3</a>
+        <a href="javascript:;">4</a>
+        <a href="javascript:;">5</a>
+        <a class="next" href="javascript:;">下一页</a>
+    </div>
+</div>
+<!-- /主观题容器 -->
+
+<!-- 头部标签 -->
+<div class="peerreview-signals-done" style="display:none">
+
+</div>
+<div class="peerreview-signals-unfinished" style="display:none">
+
+</div>
+<!-- /头部标签 -->
+
+<!-- 发送成功与失败的提示  .notice-tip-box 显示的时候添加类名 .notice-tip-box-auto 实现2秒后消失 -->
+<div class="notice-tip-box">
+    <div class="notice-tip-main">
+        <span class="notice-tip-text">发送成功！发送失败，请重新发送！</span>
+    </div>
+</div>
+<!-- /发送成功与失败的提示 -->
+
+<div style="width:100%;height:0;">
+    <div class="com_layout_main">
+
+
+    </div>
+    <!-- 工具栏 -->
+    <div class="nhw_write_toolbar">
+    <!--
+    开关的状态类型：
+    关闭：off
+    开启：on
+    -->
+        <div class="nhw_btn_switch_box off" href="####">
+            <span class="off_text"><em>推开即可手写</em></span>
+            <span class="on_text"><em>手写已开启</em></span>
+            <a class="nhw_btn_switch" href="###"></a>
+        </div>
+        <!--其他操作按钮-->
+        <ul class="nhw_write_toolbar_list">
+            <!--工具被点中的时候li添加类名open 使用的是当前工具添加类名on-->
+            <li class="">
+                <a href="####" class="nhw_mainlink icon1">
+                    <em class="listtxt">画笔</em>
+                </a>
+                <!--画笔弹出层-->
+                <div class="nhw_toolbarpop_bg">
+                    <div class="nhw_toolbarpop nhw_toolbarpop01">
+                        <div class="nhw_toolbox nhw_penbox">
+                            <p class="nhw_toolrow clearfix"> 
+                            <!--不同笔触对应类名：
+                            粗+黑色：bold_black
+                            粗+灰色：bold_grey
+                            粗+红色：bold_red
+                            中+黑色：nor_black
+                            中+灰色：nor_grey
+                            中+红色：nor_red
+                            细+黑色：thin_black
+                            细+灰色：thin_grey
+                            细+红色：thin_red
+                            --> 
+                                <a href="####" class="nhw_listcon pen1"><em class="preview thin_black"></em></a>
+                                <a href="####" class="nhw_listcon pen2 on"><em class="preview nor_black"></em></a>
+                                <a href="####" class="nhw_listcon pen3"><em class="preview thin_grey"></em></a>
+                            </p>
+                        </div>
+                        <div class="nhw_toolbox">
+                            <p class="nhw_toolrow clearfix">
+                                <a href="####" class="nhw_listcon penweight1"></a>
+                                <a href="####" class="nhw_listcon penweight2"></a>
+                                <a href="####" class="nhw_listcon penweight3 on"></a>
+                            </p>
+                        </div>
+                        <div class="nhw_toolbox">
+                            <p class="nhw_toolrow clearfix">
+                                <a href="####" class="nhw_listcon colordark on"></a>
+                                <a href="####" class="nhw_listcon colorgrey"></a>
+                                <a href="####" class="nhw_listcon colorred"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--/画笔弹出层--> 
+            </li>
+            <li class="">
+                <a href="####" class="nhw_mainlink icon2">
+                    <em class="listtxt">橡皮</em>
+                </a>
+                <!--橡皮弹出层--> 
+                <div class="nhw_toolbarpop_bg nhw_wrap_rubber">
+                    <div class="nhw_toolbarpop nhw_toolbarpop01">
+                        <div class="nhw_toolbox nhw_classtoolbox nhw_rubberbox">
+                            <p class="nhw_toolrow clearfix">
+                                <a href="####" class="nhw_listcon toolbar_rubber1">
+                                    <span class="icon"></span>
+                                    <span class="tit"><em class="txt">一键清除</em></span>
+                                </a>
+                                <a href="####" class="nhw_listcon toolbar_rubber2 on">
+                                    <span class="icon"></span>
+                                    <span class="tit"><em class="txt">普通橡皮</em></span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--/橡皮弹出层-->
+            </li>
+            <li class="open on">
+                <a href="####" class="nhw_mainlink icon4">
+                    <em class="listtxt">标注亮点</em>
+                </a>
+            </li>
+            
+        </ul>
+        <!--/其他操作按钮-->
+    </div>
+    <!-- /工具栏 -->
+</div>
+
+
+
+
+                </div>
+        </div>
+        <!-- 互评底部操作容器 -->        
+        <!-- 互评底部操作容器  互评结束之后学生端显示自己的内容的时候添加类名 .peerreview-bottom-my -->  
+<div class="peerreview-bottom @@pevBottomStat">
+    <div class="ui-give-score-box">
+        <span class="ui-give-score-titile">打分：</span>
+        <span class="ui-give-score score-bg-on2">
+            <!-- 
+            score-bg-on1
+            score-bg-on2
+            score-bg-on3
+            score-bg-on4
+            score-bg-on5 
+            分别表示1-5颗星
+            -->
+            <span class="ui-give-score-bg"></span>
+                <button class="ui-give-score-btn" type="button"></button><button class="ui-give-score-btn" type="button"></button><button class="ui-give-score-btn" type="button"></button><button class="ui-give-score-btn" type="button"></button><button class="ui-give-score-btn" type="button"></button>
+        </span>
+    </div>
+
+    <!-- 互评结束后才需要的元素 -->
+    <div class="peerreview-end-text">
+        <span class="peerreview-highlights @@peerreviewNone"><!-- .peerreview-highlights 没有完成的时候亮点添加类名 .peerreview-none -->
+            <span class="highlights-num">8</span>
+        </span>
+        <span class="peerreview-remarks-title">评语：</span>
+    </div>
+    <!-- /互评结束后才需要的元素 -->
+
+    <div class="peerreview-bottom-right">
+        <!-- <textarea class="peerreview-text-input" placeholder="点击此处输入评语......"></textarea> -->
+        <span class="peerreview-text-input peerreview-text-in">你真是太棒了，看到一个个同学勇敢的走向讲台，演讲的有声有色，讲笑话的时候引得我们捧腹大笑！</span><!-- 有评语的时候 .peerreview-text-input 添加类名 .peerreview-text-in -->
+        <button class="peerreview-text-pop-btn " type="button"></button><!-- 点击显示快捷回复的窗口之后.peerreview-text-pop-btn 添加类名 .prv-pop-btn-close 让箭头方向处于朝下的状态 -->
+        <!-- <div class="peerreview-text-pop">
+            <ul>
+                <li class="peerreview-quick-reply quick-reply-active">你太聪明了！</li>
+                <li class="peerreview-quick-reply">你真是太棒了！</li>
+                <li class="peerreview-quick-reply">再接再厉哦！</li>
+                <li class="peerreview-quick-reply">你文字真是太漂亮了！</li>
+                <li class="peerreview-quick-reply">要是再细心点就好了！</li>
+            </ul>
+        </div> -->
+    </div>  
+    <!-- 互评结束后才需要的元素 -->
+    <div class="peerreview-thanks-text">
+        <a class="peerreview-thanks @@peerreviewNone"><!-- .peerreview-thanks 没有完成的或者送完一次的时候时候亮点添加类名 .peerreview-none -->
+        </a>
+        <span class="peerreview-remarks-title">
+            <span>批改人：</span>
+            <span>李向南</span>
+        </span>
+    </div>
+    <!-- /互评结束后才需要的元素 -->  
+</div>
+
+
+<div class="peerreview-bottom2" style="display: none">
+    <div class="peerreview-give-comments-titile">
+    评语：
+    </div>
+    <div class="peerreview-give-comments-box">
+        <textarea class="peerreview-give-comments-text" placeholder="点击此处输入评语......"></textarea>
+    </div>
+</div> 
+        <!-- /互评底部操作容器 -->
+    </div> 
+    
+</div>
+<script src="common/resources/baseModule/layout/wood/layout.js"></script>
+</div>
+<script src="../../common/resources/baseModule/layout/wood/layout.js"></script>
+</body>
+</html>

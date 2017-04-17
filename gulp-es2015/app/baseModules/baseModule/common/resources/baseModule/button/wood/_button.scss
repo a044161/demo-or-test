@@ -1,0 +1,56 @@
+.baseMod-hint-btn{
+    text-decoration: none;
+    display: inline-block;
+    width: pxToEm(156px);
+    height: pxToEm(64px);
+    line-height: pxToEm(64px);
+    color: #5d390d;
+    text-align: center;
+    background: url(resources/baseModule/button/wood/images/btn2_normal.png) no-repeat center center;
+    background-size: 100% auto;
+    text-shadow: 0.5px 0.866px 0px rgba(255, 255, 255, 0.51);
+    box-shadow: none;
+    &:active,.on{
+        background-image: url(resources/button/wood/images/btn2_press.png);
+    }
+}
+/*button_style new*/
+.com_btn_round{    
+    display: inline-block;
+    width: pxToEm(234px);
+    height: pxToEm(105px);
+    line-height: pxToEm(105px);
+    text-align: center;
+    color:#4f2c0b;
+    background: url(resources/baseModule/button/wood/images/btn_round.png) center top no-repeat;
+    background-size: 100% auto;
+    text-decoration: none;
+    position: relative;
+    .text_box{
+        display: inline-block;
+        color: #4f2c0b;
+        font-size: pxToEm(30px);
+    }
+    .icons_box{
+        display: inline-block;
+        width: pxToEm(54px);
+        height: pxToEm(105px);
+        background: url(resources/baseModule/button/wood/images/icon_tick.png) left center no-repeat;
+        background-size: 100% auto;
+        vertical-align: top;
+    }    
+    &:active{
+        background-position: center pxToEm(-105px);
+    }
+    &.com_btn_disabled{
+        background: url(resources/baseModule/button/wood/images/btn_round_dis.png) center top no-repeat;
+        background-size: 100% auto;
+        .text_box{
+            color: #c2ad8e;
+        }
+        .icons_box{
+            background: url(resources/baseModule/button/wood/images/icon_tick_dis.png) left center no-repeat;
+            background-size: 100% auto;
+        }
+    }
+}

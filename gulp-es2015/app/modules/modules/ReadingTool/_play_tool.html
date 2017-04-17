@@ -1,0 +1,22 @@
+<!-- by: cjj 工号:232249 2017-3-14 -->
+<!-- 工具栏 -->
+<div class="ndui-tool read-play" style="font-size: 24px;">
+    <!-- 侧边按钮 -->
+    <div class="ndui-tool-box">
+        <ul class="ndui-tool-list left">
+            @@include('_play_tool_btn-cell.html',{"txt":"全文"})
+            @@include('_play_tool_btn-cell.html',{"txt":"段落","btn-state":"ui_btn_active"})
+            @@include('_play_tool_btn-cell.html',{"txt":"句子","btn-state":"click_disabled"})
+        </ul>
+        <ul class="ndui-tool-list right">
+            @@include('_play_tool_btn-cell.html',{"txt":"全文"})
+            @@include('_play_tool_btn-cell.html',{"txt":"段落"})
+            @@include('_play_tool_btn-cell.html',{"txt":"句子"})
+        </ul>                
+    </div>
+    <!-- 其他操作按钮 播放工具栏-->
+    <div class="ndui-tool-box-other">
+        @@include('_play_tool_play-control-field.html')
+    </div>
+    <!-- 其他操作按钮 -->            
+</div>

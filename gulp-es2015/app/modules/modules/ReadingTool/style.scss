@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import "../../common/resources/common/setting/wood/setting";
+@import "../../common/resources/common/function/function";
+
+/* 生字图卡没有引common.css 初始化css */
+* { box-sizing: border-box; vertical-align: baseline; font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif; }
+dl, dd, h1, h2, h3, h4, h5, h6, p, form { margin: 0; }
+fieldset, img, iframe, abbr { border: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+input, select { vertical-align: middle; }
+input, textarea, select { font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;  }
+input:focus { outline: none; }
+textarea { resize: none; }
+fieldset, img { border: 0; }
+img { border: none; vertical-align: top; }
+address,code,caption,th,cite,dfn,em,i { font-style: normal; font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif; }
+ol, ul { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+blockquote, q { quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+legend { display: none; }
+a { text-decoration: none; outline: none; }
+a:hover { text-decoration: none; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+input,button,select,textarea{outline:none;border:none;}
+textarea{resize:none}
+table{border-collapse: collapse; border-spacing: 0;}
+
+.hide_dom{display:none!important}
+/*可以同时屏蔽ios和android下点击元素时出现的阴影。*/
+a, img, button, input, textarea ,li{
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+body{ margin: 0; height: 100%; line-height: 1;}
+html, body{ border: 0;
+    user-select:none;
+}
+html { height: 100%;}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.clearfix:after {
+    clear: both;
+}
+// 木质皮肤
+.exam_skin_wood {
+    height: 100%;
+    @import "resources/wood/style_wood";
+    @import "resources/wood/style_wood_readbody";
+    @import "resources/wood/style_wood_tool";
+
+}
+
+// 天空皮肤
+.exam_skin_sky {
+    @import "resources/sky/style_sky";
+}

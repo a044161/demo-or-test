@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>白板端题型外框</title>
+    <link rel="stylesheet" type="text/css" href="../../../common/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../../ToolDiolag/css_tooldiolag.css">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+
+<body  class="tooldiolag_skin_wood" style="background: #CCE2F3;">
+   <div class="exam_skin_wood">
+        <div class="word_card_full_screen">
+    <!-- 展示 -->
+    <div class="js_show_container">
+        <!-- 生字图卡 -->
+        <!-- 页面显示1-2个生字图卡时，默认大小，要显示3-4个图卡时，加类small_box。 -->
+        <!-- 生字图卡 移动词卡时，改变left和top。设置z-index
+        缩放transform: scale(.82);-webkit-transform: scale(.82);-->
+        <!-- 确认一键清除按钮弹窗,加hide_dom隐藏 -->
+        <div class="chinesegrid_pop hide_dom">
+            <div class="chinesegrid_prom">
+                <div class="chinesegrid_prom_wrap">
+                    <p class="gridprom_text"><em class="text">该操作将清空所有已写内容，你确定要清除页面吗？</em></p>
+                    <a class="btn_gridprom_tip"><em class="btn_text">取消</em></a>
+                    <a class="btn_gridprom_tip color_light"><em class="btn_text">确认</em></a>
+                </div>
+            </div>
+        </div>
+        <div class="wordcard_teach" style="left: 2em;top: 2em;z-index: 100;">
+            <a href="#" class="btn_card_close">关闭按钮</a>
+            <!-- 生字卡左侧 -->
+            <div class="cardmain">
+                <div class="wordcard_jiexi_container">
+                    <div class="mainbox">
+                        <!-- 笔顺 -->
+                        <div class="main">
+                            <div class="pinyinwrap">
+                                <p class="pinyin"><em class="word">wā</em></p>
+                                <a href="###" class="btn_voice"></a>
+                            </div>
+                            <div class="wordwrap_mid">
+                                <!--田字格-->
+                                <canvas style="width: 100%; height:100%;">您的浏览器不支持canvas</canvas>
+                            </div>
+                            <div class="footwrap">
+                                <p class="introtxt">
+                                    <em class="word">共<em class="color_red">12</em>画</em>   
+                                </p>
+                                <div class="switch">
+                                    <!-- 选中加on -->
+                                    <a href="###" class="btn_switch on"><em class="word">正常</em></a>
+                                    <a href="###" class="btn_switch"><em class="word">慢速</em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /笔顺 -->
+
+                        <!-- 部首 -->
+                        <div class="main hide_dom">
+                            <div class="pinyinwrap">
+                                <p class="pinyin"><em class="word">wā</em></p>
+                                <a href="###" class="btn_voice"></a>
+                            </div>
+                            <div class="wordwrap_mid">
+                                <!--田字格-->
+                                <canvas style="width: 100%; height:100%;">您的浏览器不支持canvas</canvas>
+                            </div>
+                            <div class="footwrap">
+                                <p class="introtxt">
+                                    <em class="word"><em class="color_red">虫</em>字旁
+                                   </em> 
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /部首 -->
+
+                        <!-- 字体结构 -->
+                        <div class="main hide_dom">
+                            <div class="pinyinwrap">
+                                <p class="pinyin"><em class="word">wā</em></p>
+                                <a href="###" class="btn_voice"></a>
+                            </div>
+                            <div class="wordwrap_mid">
+                                <!--田字格-->
+                                <canvas style="width: 100%; height:100%;">您的浏览器不支持canvas</canvas>
+                            </div>
+                            <div class="footwrap">
+                                <p class="introtxt">
+                                    <em class="word"><em class="color_red">左右</em>结构</em>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /字体结构 -->
+
+                        <!-- 音序 -->
+                        <div class="main hide_dom">
+                            <div class="pinyinwrap">
+                                <p class="pinyin">
+                                    <em class="word">
+                                        <em class="color_red">W</em><em class="color_red">-</em><em class="color_red">w</em>ā
+                                    </em>
+                                </p>
+                                <a href="###" class="btn_voice"></a>
+                            </div>
+                            <div class="wordwrap_mid">
+                                <!--田字格-->
+                                <canvas style="width: 100%; height:100%;">您的浏览器不支持canvas</canvas>
+                            </div>
+                        </div>
+                        <!-- /音序 -->
+                    </div>
+                    <!-- 多媒体（生字解析）内容展开，加on。显示  -->
+                    <div class="card_middle">
+                        <!-- s多媒体 -->
+                        <div class="card_media">
+                            <div class="mediastage">
+                                <!-- 字形演化什么gui，加hide_dom隐藏元素 ，要显示则去掉hide_dom-->
+                                <div class="mediabox media_xing hide_dom">
+                                    <img src="demopic/demo_media.png" alt="">
+                                </div>
+                                <!-- 字形演化 -->
+
+                                <!-- 音频 加hide_dom隐藏元素 ，要显示则去掉hide_dom-->
+                                <div class="mediabox media_radio hide_dom">
+                                    <audio src="demopic/song.mp3" style="width:100%; height:100%;">您的浏览器不支持audio</audio>
+                                    <div class="ctrl">
+                                        <!-- 暂停的时候下面的a标签去掉class名btn_pause -->
+                                        <a href="###" class="btn_play btn_pause">播放</a>
+                                        <p class="probar">
+                                            <span class="bar" style="width: 30%"></span>
+                                        </p>
+                                        <a href="###" class="btn_fullscreen">全屏</a>
+                                    </div>
+                                </div>
+                                <!-- 音频 -->
+
+                                <!-- 图片 加hide_dom隐藏元素 ，要显示则去掉hide_dom-->
+                                <div class="mediabox media_pic">
+                                    <!-- 以下是多张图 -->
+                                    <div class="box_media_pic">
+                                        <ul class="media_pic_content clearfix">
+                                            <li class="media_pic"><img src="demopic/demo_media.png" alt=""></li>
+                                            <li class="media_pic"><img src="demopic/demo_media.png" alt=""></li>
+                                            <li class="media_pic"><img src="demopic/demo_media.png" alt=""></li>
+                                            <li class="media_pic"><img src="demopic/demo_media.png" alt=""></li>
+                                        </ul>
+                                    </div>
+                                    <div class="box_flicking">
+                                        <!-- 选中的添加class名on -->
+                                        <a class="on" href="###">1</a>
+                                        <a href="###">2</a>
+                                        <a href="###">3</a>
+                                        <a href="###">4</a>
+                                    </div>
+                                </div>
+                                <!-- 图片 -->
+
+                                <!-- 视频 加hide_dom隐藏元素 ，要显示则去掉hide_dom-->
+                                <div class="mediabox media_video hide_dom">
+                                    <video src="demo.mp4" style="width:100%; height:100%;">您的浏览器不支持此种视频格式</video>
+                                    <div class="ctrl">
+                                        <a href="###" class="btn_play btn_pause">播放</a>
+                                        <p class="probar">
+                                            <span class="bar" style="width: 30%"></span>
+                                        </p>
+                                        <a href="###" class="btn_fullscreen">全屏</a>
+                                    </div>
+                                </div>
+                                <!-- 视频 -->
+                            </div>
+                            <div class="mediatab">
+                                <ul>
+                                    <!-- 选中态加on -->
+                                    <li class="tab_media_cell">
+                                        <a href="###" class="tab_media icon_xing"></a>
+                                        <a href="###" class="uedc_preload_img_wordcard_03"></a>
+                                    </li>
+                                    <li class="tab_media_cell">
+                                        <a href="###" class="tab_media icon_radio"></a>
+                                    </li>
+                                    <li class="tab_media_cell on">
+                                        <a href="###" class="tab_media icon_pic"></a>
+                                    </li>
+                                    <li class="tab_media_cell">
+                                        <a href="###" class="tab_media icon_video"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /多媒体 -->
+                        <!--生字解析-->
+                        <div class="card_analyse hide_dom">
+                            <div class="analyse_stage">
+                                <div class="footwrap">
+                                    <div class="switch">
+                                        <!-- 选中加on -->
+                                        <a href="###" class="btn_switch"><em class="word">课内解析</em></a>
+                                        <a href="###" class="btn_switch on"><em class="word">扩展解析</em></a>
+                                    </div>
+                                </div>
+                                <!-- 课内解析 -->
+                                <div class="explain_list scrollbar_style_wborder hide_dom">
+                                    <dl class="explain_content">
+                                        <dt class="explain_tit">
+                                            <em class="word">释义</em>
+                                        </dt>
+                                        <dd class="exlpain_word">
+                                            <em class="word">1. 两栖动物的一科，无尾，后肢长，前肢短，趾有蹼，善于跳跃和泅水</em>
+                                        </dd>
+                                        <dt class="explain_tit">
+                                            <em class="word">组词</em>
+                                            </dt>
+                                        <dd class="exlpain_word">
+                                            <em class="word">青蛙、蛙泳</em>
+                                        </dd>
+                                        <dt class="explain_tit">
+                                             <em class="word">例句</em>
+                                        </dt>
+                                        <dd class="exlpain_word">
+                                            <em class="word">小蝌蚪开始长出两条后腿,渐渐变得像它们的青蛙妈妈一样.</em>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <!-- /课内解析 -->
+                                <!-- 拓展解析 -->
+                                <div class="explain_list scrollbar_style_wborder">
+                                    <dl class="explain_content">
+                                        <dt class="explain_tit">
+                                            <em class="word">释义</em>
+                                        </dt>
+                                        <dd class="exlpain_word">
+                                            <em class="word">1. 两栖动物的一科，无尾，后肢长，前肢短，趾有蹼，善于跳跃和泅水</em>
+                                        </dd>
+                                        <dt class="explain_tit">
+                                            <em class="word">形近字</em>
+                                        </dt>
+                                        <dd class="exlpain_word">
+                                            <em class="word">娃、洼、桂、挂、佳、涯、崖、封、畦</em>
+                                        </dd>
+                                        <dt class="explain_tit">
+                                            <em class="word">近义字</em>
+                                        </dt>
+                                        <dd class="exlpain_word">
+                                            <em class="word">娃、洼、桂、挂、佳、涯、崖、封、畦</em>
+                                        </dd>
+                                        <dt class="explain_tit">
+                                            <em class="word">反义字</em>
+                                        </dt>
+                                        <dd class="exlpain_word">
+                                            <em class="word">娃、洼、桂、挂、佳、涯、崖、封、畦</em>
+                                        </dd>
+                                        <dt class="explain_tit">
+                                            <em class="word">组词</em>
+                                        </dt>
+                                        <dd class="exlpain_word">
+                                            <span class="group_word clearfix">
+                                                <span class="title"><em class="word">蛙人：</em></span><span class="sentence" style="padding-left: 4.6em;"><em class="word">为长时间在水下游动而带着口罩、备有脚蹼、橡皮一、氧气筒等的潜水者。</em></span>
+                                            </span>
+                                            <span class="group_word clearfix">
+                                                <span class="title"><em class="word">蛙泳：</em></span><span class="sentence" style="padding-left: 4.6em;"><em class="word">游泳的一种姿势而得名。</em></span>
+                                            </span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <!-- /拓展解析 -->
+                            </div>
+                        </div>
+                        <!-- /生字解析-->
+                    </div>
+                </div>
+                <!-- 田字格 -->
+                <div class="chinesegrid">
+                    <div class="chinesegrid_main">
+                        <canvas class="tzg_main_canvas">您的浏览器不支持canvas</canvas><!-- 田字格，全区域写字板 -->
+                        <div class="chinesegrid_show">
+                            <div class="pinyinwrap">
+                                <p class="pinyin"><em class="word">wa</em></p>
+                            </div>
+                            <div class="wordwrap">
+                                <!--田字格-->
+                                <div class="wordwrap_inner"></div>
+                                <canvas class="tzg_show_canvas">您的浏览器不支持canvas</canvas><!-- 田字格，左上角。隐藏时，加类hide_dom -->
+                            </div>
+                            <div href="###" class="tzg_switch gridword_show on"><!--选中态，.gridword_show 加on-->
+                                <span class="tzg_switch_on">
+                                    <span class="tzg_switch_text">ON</span>
+                                    <i class="tzg_switch_icon"></i>
+                                </span>
+                                <span class="tzg_switch_off">
+                                    <i class="tzg_switch_icon"></i>
+                                    <span class="tzg_switch_text">OFF</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="chinesegrid_write_gridnum_single "><!-- 单田字格时，显示。隐藏加hide_dom-->
+                            <!-- 隐藏四格线，.chinesegrid_write_gridnum_single加类 hide_line -->
+                            <div class="pinyinwrap">
+                                <p class="pinyin"></p>
+                            </div>
+                            <div class="wordwrap">
+                                <div class="wordwrap_inner"></div><!-- 回宫格辅助线，隐藏加类hide_dom -->
+                            </div>
+                            <div href="###" class="tzg_switch gridhelp_line on"><!--选中态,.gridhelp_line 加类on-->
+                                <span class="tzg_switch_on">
+                                    <span class="tzg_switch_text">ON</span>
+                                    <i class="tzg_switch_icon"></i>
+                                </span>
+                                <span class="tzg_switch_off">
+                                    <i class="tzg_switch_icon"></i>
+                                    <span class="tzg_switch_text">OFF</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="chinesegrid_write_gridnum_eight hide_dom"><!-- 八田字格时，显示。隐藏加hide_dom-->
+                            <div class="wordwrap_s"></div>
+                            <div class="wordwrap_s"></div>
+                            <div class="wordwrap_s"></div>
+                            <div class="wordwrap_s"></div>
+                            <div class="wordwrap_s"></div>
+                            <div class="wordwrap_s"></div>
+                            <div class="wordwrap_s"></div>
+                            <div class="wordwrap_s"></div>
+                        </div>
+                    </div>
+                    <!-- 田字格底部 -->
+                    <div class="chinesegrid_btm">
+                        <ul class="clearfix gridmode_container">
+                            <!-- 选中时，在.gridmode_option 上 加on-->
+                            <li class="gridmode_option">
+                                <i class="gridmode_grid"></i>
+                            </li>
+                            <li class="gridmode_option on">
+                                <i class="gridmode_line"></i>
+                                <i class="gridmode_grid"></i>
+                            </li>
+                            <li class="gridmode_option gridmode_eight">
+                                <i class="gridmode_grid"></i>
+                                <i class="gridmode_grid"></i>
+                                <i class="gridmode_grid"></i>
+                                <i class="gridmode_grid"></i>
+                                <i class="gridmode_grid"></i>
+                                <i class="gridmode_grid"></i>
+                                <i class="gridmode_grid"></i>
+                                <i class="gridmode_grid"></i>
+                            </li>
+                            <li class="chinesegrid_writetool_list">
+                                <!-- 选中时，在.write_tool 上 加on。-->
+                                <a href="#" class="write_tool on">
+                                    <i class="write_tool_icon icon_hb"></i>
+                                </a>
+                                <a href="#" class="write_tool">
+                                    <i class="write_tool_icon icon_xpc"></i>
+                                    <ul class="xpc_type_container hide_dom">
+                                        <li class="xpc_type_btn xpc_clearall"><!-- 一键清除 -->
+                                            <i class="xpc_type_icon"></i>
+                                            <span class="xpc_type_word"><em class="text">一键清除</em></span>
+                                        </li>
+                                        <li class="xpc_type_btn xpc_ordi"><!-- 普通橡皮 -->
+                                            <i class="xpc_type_icon"></i>
+                                            <span class="xpc_type_word"><em class="text">普通橡皮</em></span>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <!-- /田字格 -->
+            </div>
+            <!-- /生字卡左侧 -->
+            <div class="cardmenu">
+                <ul class="menulist">
+                    <li class="item_menu item_left on">
+                        <a href="###" class="menu"><em class="word">笔顺</em></a>
+                    </li>
+                    <li class="item_menu item_left">
+                        <a href="###" class="menu"><em class="word">部首</em></a>
+                    </li>
+                    <li class="item_menu item_left">
+                        <a href="###" class="menu"><em class="word">字体结构</em></a>
+                    </li>
+                    <li class="item_menu item_left">
+                        <a href="###" class="menu"><em class="word">音序</em></a>
+                    </li>
+                    <li class="item_menu item_mid hide_dom">
+                        <a href="###" class="menu"><em class="word">生字解析</em></a>
+                    </li>
+                    <li class="item_menu item_mid duomeiti">
+                        <a href="###" class="menu"><em class="word">多媒体</em></a>
+                    </li>
+                    <li class="item_menu item_mid tianzige">
+                        <a href="###" class="menu"><em class="word">田字格</em></a>
+                    </li>
+                </ul>
+                <a href="###" class="btn_send" ><em class="send_word">发送练习</em></a>
+                <a href="###" class="btn_send btn_endpar hide_dom">
+                    <i class="icon_time"></i>
+                    <p class="txt"><em class="text">05:18</em></p>
+                    <p class="txt"><em class="text">结束练习</em></p>
+                </a>
+            </div>
+        </div>
+        <!-- /生字图卡22 -->
+    </div>
+    <!-- /展示 -->
+
+    <!-- 遮罩层 -->
+    <div class="js_wordCard_mask wordcard_mask hide_dom"></div>
+</div>
+    </div>
+
+    <script src="../../../common/resources/common/layout/wood/layout.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="ue.js"></script>
+</body>
+</html>

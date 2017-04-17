@@ -1,0 +1,234 @@
+<div class="com_layout" id="layout">
+    <div class="com_wrapper_board" id="wrapper"> <!-- pad端加.com_wrapper_pad，白板端加.com_wrapper_board -->
+        <!--防止页面加载完根据比例缩放的闪动现象执行该脚本-->
+        <script>layoutReset();</script>
+        <!--头部-->
+        <div class="com_layout_header">
+            <!--计时器-->
+            <div class="com_header_time">
+                <div class="com_time">
+    <div class="time_default ">
+        <b class="time_text">答题时间：</b><!-- 
+                 --><span class="time_m"><em>05</em></span><!-- 
+                          --><b class="time_text">分</b><!--         
+                                   --><i>:</i><!-- 
+                                            --><span class="time_s"><em>21</em></span><!-- 
+                                                     --><b class="time_text">秒</b>
+    </div>
+</div>
+                <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>
+            </div>
+            <!--/计时器-->
+            <!--提交按钮-->
+            <div class="com_header_tool">
+                <a class="com_btn_round " href="javascript:;">
+<!-- <span class="icons_box"></span> -->
+<span class="text_box">提&nbsp;&nbsp;交</span>
+</a>
+            </div>
+            <!--/提交按钮-->
+
+        </div>
+        <!--/头部-->
+        <!--主体内容-->
+        <div class="com_layout_container"><!-- 没有标题时加.notit -->
+            <!--新结构-->
+
+
+            <!--题型猜词游戏-->
+                <!-- 可以移动的动画层默认隐藏，当要调用移动动画时，先根据获取点击的块的位置，设置坐标 translate(x,y); -webkit-transform和transform 都要设置，然后再设置块所要移动过去的区域的坐标，再次设置坐标，前后留点时间间隔，最后显示visibility: visible。本页底部含脚本参考。用小按钮时，加类guessWord_btnS_animate-->
+                <div class="guessWord_btn_animate_box guessWord_btnS_animate" style="visibility: hidden; -webkit-transform: translate(45.9em,21.5em);transform: translate(45.9em,21.5em);">
+                    <span class="com_btn_square"><em>对</em></span>
+                </div>
+            <div class="com_layout_exam_content guessWord_box">                
+                <div class="com_layout_main_exam"> 
+                    <div class="com_layout_tit">
+                        <h2 class="tit">在右侧选项中选择正确的选项拖入左侧空格中，使文章。</h2><!-- 文字过多的情况加.s_tit -->
+                    </div>
+                    <div class="com_layout_main guessWord_btnS"><!--答案超过8个的时候，用小的按钮，加class:guessWord_btnS，不超过8个则去掉该class-->
+                        <div class="guessWord_left">
+                            <div class="cellMiddle">
+                                <ul class="guessWord_tab">
+                                    <li class="on"><img src="demopic/tab1.png"><span class="tabNum"><em>1</em></span></li><!--选中状态加class：on，回答正确加class：res_right,回答错误加class：res_err-->
+                                    <li class="res_err"><img src="demopic/tab1.png"><span class="tabNum"><em>2</em></span></li>
+                                    <li class="res_right"><img src="demopic/tab1.png"><span class="tabNum"><em>3</em></span></li>
+                                    <li class="on res_err"><span class="res_video"></span><span class="tabNum"><em>4</em></span></li>
+                                    <li><span class="res_audio"></span><span class="tabNum"><em>5</em></span></li>
+                                </ul>
+                                <div class="guessWord_content">
+                                    <div class="guessWord_contentChi scrollbar_style_gray">
+                                        <div class="content_box">
+                                            
+                                            <div class="content_img">
+                                                <img src="demopic/tab1.png">
+                                            </div>
+                                            <div class="content_audio">
+                                                <audio controls="controls"><source src="http://sdpcs.beta.web.sdp.101.com/v0.1/static/preproduction_content_edu/esp/assets/03a8b44a-7ab5-49a2-9523-67e55cddbc9f.pkg/66f5a37c-8934-452d-a0db-b5217a28857c.mp3"> Your browser does not support HTML5 video.</audio>
+                                            </div>
+                                            <div class="content_video">
+                                                <video controls="controls" poster=""><source src="http://localhost:8000/vedio.mp4"> Your browser does not support HTML5 video.</video>
+                                            </div>
+                                            <p><em>提示：在第一课中学到的成语在第一课提到的成语在在第一课中学到的成语在第一课中学到的成语在第一课提到的成语在在第一课中学到的成语在第一课中学到的成语在第一课提到的成语在在第一课中学到的成语</em></p>
+                                        </div></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="guessWord_right">
+                            <ul class="guessWord_answerBtn"><!--回答正确 li 加类名：com_s_error，回答错误 li 加类名：com_s_right--><!--按钮不可点击的时候，li加类名：click_disabled，可点击的时候li去掉类名click_disabled-->
+                                <li class="com_s_right click_disabled">
+                                    <span class="com_btn_square"><em>对</em></span>
+                                </li>
+                                <li class="com_s_error click_disabled">
+                                    <span class="com_btn_square"><em>对</em></span>
+                                </li>
+                                <li class="on">
+
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li class="com_s_right click_disabled">
+                                    <span class="com_btn_square"><em>对</em></span>
+                                </li>
+                                <li class="com_s_error click_disabled">
+                                    <span class="com_btn_square"><em>对</em></span>
+                                </li>
+                                <li class="on">
+
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                            </ul>
+                            <ul class="guessWord_selectBtn scrollbar_style_gray">
+                                
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+                                    <span class="com_btn_square "><em>对</em></span>
+                                </li>
+                                <li>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--题型猜词游戏结束-->
+            </div>
+        </div>
+        <!--/主体内容-->
+    </div>
+</div>
+

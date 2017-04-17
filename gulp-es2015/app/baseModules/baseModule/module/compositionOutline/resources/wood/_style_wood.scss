@@ -1,0 +1,437 @@
+@charset "UTF-8";
+.hide-dom {
+    display: none !important;
+}
+.composition-mindmap {
+    width: 100%;
+    height: 100%;
+    .mindmap-toolbar {
+        z-index: 1;
+        position: absolute;
+        top: pxToEm(-130px);
+        left: pxToEm(-190px);
+        width: pxToEm(160px);
+        height: pxToEm(912px);
+    }
+    .composition-mindmap-wrap {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    /*参考案例，检查清单按钮*/
+    .composition-outline-outline-handle {
+        z-index: 1;
+        position: absolute;
+        top: pxToEm(54px);
+        right: pxToEm(16px);
+        .composition-outline-btn {
+            position: relative;
+            margin: pxToEm(20px) 0;
+            padding: 0 pxToEm(40px);
+            height: pxToEm(72px);
+            line-height: pxToEm(70px);
+            background: #f6f6f6;
+            background: linear-gradient(to bottom, #fff 0%, #e6e5e5 100%);
+            box-shadow: 0px 3px 5px 0px rgba(4, 0, 0, 0.2);
+            border: 1px solid #e0dcd3;
+            border-radius: pxToEm(72px);
+            cursor: pointer;
+            &:active,&.ui-btn-select {
+                .mindbtn-txt {
+                    color: #ff9000;
+                }
+            }
+            .mindbtn-txt {
+                font-size: pxToEm(30px);
+                color: #333;
+            }
+        }
+    }
+    /*提纲内思维导图弹窗*//*参考案例*/
+    .composition-outline-pop {
+        position: relative;
+        width: pxToEm(1172px);
+        height: pxToEm(768px);
+        background: url(resources/wood/images/mindmap/wood_bg.png) no-repeat center center;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        cursor: default;
+        /*检查清单*/
+        &.cnt-viewcase {
+            width: pxToEm(1172px);
+            height: pxToEm(768px);
+            .btn-close {
+                z-index: 1;
+                display: block; 
+                position: absolute;
+                right: pxToEm(-21px);
+                top: pxToEm(-18px);
+                width: pxToEm(64px);
+                height: pxToEm(64px);
+                background: url(resources/wood/images/mindmap/icon_close.png) no-repeat center center;
+                background-size: 100% 100%;
+                cursor: pointer;
+            }
+        }
+        &.cnt-checklist {
+            position: relative;
+            left: pxToEm(312px);
+            top: pxToEm(-72px);
+            width: pxToEm(553px);
+            height: pxToEm(518px);
+            padding: pxToEm(11px) pxToEm(13px) pxToEm(13px);
+            border-radius: pxToEm(12px);
+            box-shadow: 0 3px 12px 0 rgba(91,54,0,.35);
+            cursor: default;
+            /*关闭按钮*/
+            .btn-close {
+                z-index: 1;
+                display: block;
+                position: absolute;
+                top: pxToEm(-13px);
+                right: pxToEm(-17px);
+                width: pxToEm(46px);
+                height: pxToEm(46px);
+                background: url(resources/wood/images/mindmap/icon_close.png) no-repeat center center;
+                background-size: 100% 100%;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .composition-outline-pop-header {
+        padding-top: pxToEm(29px);
+        text-align: center;
+    }
+    .composition-outline-pop-type {
+        position: absolute;
+        left: 7px;
+        top: 12px;
+        padding: 0 8px 0 20px;
+        height: 31px;
+        font-size: 15px;
+        line-height: 29px;
+        border: 1px solid #cab593;
+        border-radius: 15px 3px 3px 15px;
+        background: #f5f2ed;
+        background: linear-gradient(to bottom, #fff 0%, #e4dccd 100%);
+        &:before {
+            content:'';
+            position: absolute;
+            left: 7px;
+            top: 11px;
+            width: 6px;
+            height: 6px;
+            background: #555250;
+            border-radius: 50%;
+        }
+    }
+    .composition-outline-pop-tab {
+        display: inline-block;
+        padding: pxToEm(4px);
+        border-radius: pxToEm(80px);
+        background: #f5f2ed;
+        background: linear-gradient(to bottom, #eae4d7 0%, #f7f2ea 100%);
+        box-shadow: inset 0 0 2px 0px rgba(0, 0, 0, 0.4);
+
+        .tabcell {
+            padding: 0 pxToEm(31px);
+            float: left;
+            border-radius: pxToEm(72px);
+            background: none;
+            cursor: pointer;
+            .cell-txt {
+                font-size: pxToEm(30px);
+                line-height: 2.4;
+                color: #333;
+            }
+            &.ui-btn-select {
+                .cell-txt {
+                    color: #ff9000;
+                }
+                box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+                background: #f5f2ed;
+                background: linear-gradient(to bottom, #fcfcfc 0%, #e6e5e5 100%);
+            }
+        }
+    }
+    .composition-outline-pop-view {
+        position: absolute;
+        top: pxToEm(132px);
+        left: pxToEm(12px);
+        right: pxToEm(12px);
+        bottom: pxToEm(16px);
+        padding: pxToEm(24px) pxToEm(6px) pxToEm(14px) pxToEm(6px);
+        background: #f0e9d8;
+        background: linear-gradient(to bottom, #f6f0dd 0%, #f8f1e2 100%);
+        box-shadow: inset 0 0 12px 4px #fafafa,0 1px 4px 0 rgba(0,0,0,.3);
+        border-radius: pxToEm(8px);
+        overflow: hidden;
+        .composition-outline-minder-wrap {
+            height: 100%;
+        }
+        .composition-outline-art-wrap {
+            width: 100%;
+            height: 100%;
+            padding: 0 pxToEm(32px) 0 pxToEm(30px);
+            overflow: auto;
+            word-wrap: break-word;
+            word-break: break-all;
+            .title {
+                margin-bottom: pxToEm(18px);
+                text-align: center;
+                font-size: pxToEm(36px);
+                line-height: 1.5;
+                color: #666;
+            }
+            .para {
+                text-align: left;
+                text-indent: 2em;
+                font-size: pxToEm(36px);
+                line-height: 1.3;
+                color: #666;
+            }
+            &::-webkit-scrollbar{
+                width: pxToEm(12px);
+                height: pxToEm(12px);
+                background: #e8decc;
+                border-radius: pxToEm(12px);
+            }
+
+            &::-webkit-scrollbar-thumb{
+                background: #d0bf9b;
+                border-radius: pxToEm(12px);
+            }
+        }
+    }
+    
+    
+    .composition-outline-cl-box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #f3e2c7;
+        border-radius: pxToEm(12px);
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+    }
+    .composition-outline-cl-header {
+        padding-top: 2px;
+        text-align: center;
+        .title {
+            font-size: pxToEm(26px);
+            line-height: 1.7;
+            color: #5d390d;
+        }
+        .remark {
+            font-size: pxToEm(16px);
+            line-height: 1.2;
+            color: #5d390d;
+        }
+    }
+    .composition-chosetype-txtwrap {
+        text-align: center;
+    }
+    .composition-chosetype-tip {
+        display: inline-block;
+        text-align: left;
+        .pop-txt {
+            color: #333;
+            font-size: pxToEm(34px);    
+            line-height: 1.5;    
+        }
+    }
+    .composition-chosetype-select {
+        display: inline-block;
+        margin-top: pxToEm(35px);
+        
+    }
+    .composition-chosetype-btn {
+        float: left;
+        position: relative;
+        margin: pxToEm(10px) pxToEm(20px);
+        padding: 0 pxToEm(46px);
+        height: pxToEm(70px);
+        line-height: pxToEm(68px);
+        background: #f6f6f6;
+        background: linear-gradient(to bottom, #fff 0%, #e6e5e5 100%);
+        box-shadow: 0px 3px 5px 0px rgba(4, 0, 0, 0.2);
+        border: 1px solid #e0dcd3;
+        border-radius: pxToEm(72px);
+        cursor: pointer;
+        &:active,&.ui-btn-select {
+            .btn-txt {
+                color: #ff9000;
+            }
+        }
+        .btn-txt {
+            font-size: pxToEm(30px);
+            color: #333;
+        }
+    }
+    .composition-chosetype-pop {
+        width: pxToEm(802px);
+        min-height: pxToEm(299px);
+        padding: pxToEm(23px) pxToEm(38px) pxToEm(50px);
+        background: url(resources/wood/images/mindmap/bg_pop_woodzwtype.png) no-repeat center center;
+        background-size: 100% 100%;
+        overflow: hidden;
+        user-select: none;
+        text-align: center;
+    }
+    .composition-outline-checklist-pop {
+        width: pxToEm(553px);
+        height: pxToEm(518px);
+        padding: pxToEm(11px) pxToEm(13px) pxToEm(13px);
+        background: url(resources/wood/images/mindmap/wood_bg.png) no-repeat center center;
+        background-size: 100% 100%;
+        border-radius: pxToEm(12px);
+        box-shadow: 0 3px 12px 0 rgba(91,54,0,.35);
+        cursor: default;
+    }
+    .composition-outline-viewcase-pop {
+        position: relative;
+        width: pxToEm(1172px);
+        height: pxToEm(768px);
+        background: url(resources/wood/images/mindmap/wood_bg.png) no-repeat center center;
+        background-size: 100% 100%;
+        border-radius: pxToEm(12px);
+        box-shadow: 0px 3px 12px 0px rgba(91, 54, 0, 0.35);
+        cursor: default;
+    }
+}
+.scrollbar-style-lightbrowm::-webkit-scrollbar{
+    width: pxToEm(8px);
+    height: pxToEm(8px);
+    background: #e9dfcd;
+    border-radius: pxToEm(8px);
+}
+
+.scrollbar-style-lightbrowm::-webkit-scrollbar-thumb{
+    border-radius: pxToEm(8px);
+    background: #d2c29f;
+}
+/*检查清单列表样式*/
+.ndui-list-box {
+    &.checklist {
+        position: absolute;
+        top: pxToEm(74px);
+        bottom: pxToEm(40px);
+        left: 0;
+        right: 0;
+        padding: pxToEm(12px) pxToEm(5px) pxToEm(16px) pxToEm(38px);
+        background: #eee7d6;
+        background: linear-gradient(to bottom, #f4eedb 0%, #f5eedf 100%);
+        border: 1px solid #edd8b8;
+        border-width: pxToEm(2px) 0 pxToEm(2px) 0;
+        .ndui-list {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            padding-right: pxToEm(32px);
+        }
+        .ndui-list-item {
+            position: relative;
+            margin-top: pxToEm(15px);
+            padding: pxToEm(2px) 0 0 0;
+            border-bottom: 1px solid rgba(106, 57, 6, 0.2);
+            &:first-child {
+                margin-top: pxToEm(6px);
+            }
+            .list-txt {
+                display: block;
+                font-size: pxToEm(18px);
+                line-height: 1.2;
+                color: #4d4c4c;
+            }
+        }
+    }
+}
+
+/*弹窗公共样式*/
+.ndui-pop{
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .ndui-pop-mask {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #000;
+        opacity: 0.5;
+    }
+    .ndui-pop-square {
+        z-index: 10;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: inline-block;
+    }
+}
+
+.ndui-pop {
+    /*检查清单弹窗 start*/
+    &.pop-checklist {
+        .ndui-pop-wrap {
+            position: relative;
+            left: pxToEm(312px);
+            top: pxToEm(-72px);
+        }
+        .ndui-pop-close {
+            z-index: 1;
+            display: block; 
+            position: absolute;
+            right: pxToEm(-21px);
+            top: pxToEm(-18px);
+            width: pxToEm(46px);
+            height: pxToEm(46px);
+            background: url(resources/wood/images/mindmap/icon_close.png) no-repeat center center;
+            background-size: 100% 100%;
+            cursor: pointer;      
+            &>* {
+                display: none;
+            }  
+        }   
+        .composition-outline-checklist-box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #f3e2c7;
+            border-radius: pxToEm(12px);
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+        }
+    }
+    /*检查清单弹窗 end*/
+    /* 参考范例弹窗 start */
+    &.pop-viewcase {
+        .ndui-pop-close {
+            z-index: 1;
+            display: block; 
+            position: absolute;
+            right: pxToEm(-21px);
+            top: pxToEm(-18px);
+            width: pxToEm(64px);
+            height: pxToEm(64px);
+            background: url(resources/wood/images/mindmap/icon_close.png) no-repeat center center;
+            background-size: 100% 100%;
+            cursor: pointer;      
+            &>* {
+                display: none;
+            }  
+        }   
+    }
+    /* 参考范例弹窗 end */
+    /*选择文体 start*/
+    &.pop-chose-type {
+        .ndui-pop-close {
+            display: none;
+        }
+    }
+    /*选择文体 end*/
+}

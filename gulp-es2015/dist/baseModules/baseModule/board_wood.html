@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>外框--白板</title>
+    <link rel="stylesheet" type="text/css" href="common/common_base_module.css">
+</head>
+<body>
+<div class="exam-skin-wood">
+    
+<div class="baseMod-com-layout" id="layout">
+    <!-- 
+        pad类名baseMod-com-wrapper-pad
+        白板类名baseMod-com-wrapper-board
+        学生端答题框baseMod-com-wrapper-answer
+        老师端等待学生答题baseMod-com-wrapper-waiting
+    -->
+    <div class="baseMod-com-wrapper-board">
+        <div class="baseMod-com-header-box">
+            <!--计时器-->
+            <div class="com_time">
+                <div class="time_default">
+                    <b class="time_text">答题时间：</b>
+                    <span class="time_m"><em>05</em></span>
+                    <b class="time_text">分</b>        
+                    <i>:</i>
+                    <span class="time_s"><em>21</em></span>
+                    <b class="time_text">秒</b>
+                </div>
+            </div>
+            <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>              
+        </div>
+        <!-- 公共提交按钮 -->
+        <div class="baseMod-com-submit">
+            <a class="com_btn_round com_btn_disabled" href="javascript:;"><!-- 不可点击添加类名com_btn_disabled -->
+    <!-- <span class="icons_box"></span> -->
+    <span class="text_box">提&nbsp;&nbsp;交</span>
+</a>
+        </div>
+        <!-- /公共提交按钮 -->
+        <div class="baseMod-com-layout-container">
+            <!-- 公共标题 -->
+            <div class="baseMod-com-layout-title">
+                <p class="baseMod-tit">题型</p>
+            </div>
+            <!-- /公共标题 -->
+            <div class="baseMod-com-layout-body baseMod-scrollbar-style-gray">
+                <!-- module-nqit容器 -->
+            </div>
+        </div>
+    </div> 
+    <!-- 弹窗与弹窗交互 -->
+    <div class="baseMod-com-pop-content baseMod-hide-dom" id="testBox1">
+	<div class="baseMod-com-pop-box com-pop-right"><!-- 答对添加类名com-pop-right答错添加类名com-pop-wrong 提交提示文字这里添加类名com-pop-submit 提示弹窗添加类名com-pop-hint-box -->
+		<p class="baseMod-com-pop-hd">
+			<span class="baseMod-pop-dec baseMod-dec-1"></span>
+			<span class="baseMod-pop-dec baseMod-dec-2"></span>
+		</p>
+		<div class="baseMod-com-pop-bd baseMod-scrollbar-style-gray">
+			<span class="baseMod-com-pop-icon"></span>
+			<p class="baseMod-com-pop-text">太棒啦，您答对了！</p>
+		</div>
+	</div>
+</div> 
+    <div class="baseMod-com-pop-content baseMod-hide-dom" id="testBox2">
+    <div class="baseMod-com-pop-box com-pop-wrong"><!-- 答对添加类名com-pop-right答错添加类名com-pop-wrong 提交提示文字这里添加类名com-pop-submit 提示弹窗添加类名com-pop-hint-box -->
+        <p class="baseMod-com-pop-hd">
+            <span class="baseMod-pop-dec baseMod-dec-1"></span>
+            <span class="baseMod-pop-dec baseMod-dec-2"></span>
+        </p>
+        <div class="baseMod-com-pop-bd baseMod-scrollbar-style-gray">
+            <span class="baseMod-com-pop-icon"></span>
+            <p class="baseMod-com-pop-text">这道题没有做对，下次加油哦！</p>
+        </div>
+    </div>
+</div>
+
+ 
+    <div class="baseMod-com-pop-content baseMod-hide-dom" id="testBox3">
+    <div class="baseMod-com-pop-box com-pop-submit">
+        <!-- 答对添加类名com-pop-right答错添加类名com-pop-wrong 提交提示文字这里添加类名com-pop-submit 提示弹窗添加类名com-pop-hint-box -->
+        <p class="baseMod-com-pop-hd">
+            <span class="baseMod-pop-dec baseMod-dec-1"></span>
+            <span class="baseMod-pop-dec baseMod-dec-2"></span>
+        </p>
+        <div class="baseMod-com-pop-bd baseMod-scrollbar-style-gray">
+            <div class="baseMod-com-remind-text">
+                <span class="baseMod-text-size">确定要提交答案吗？</span>
+            </div>
+        </div>
+        <div class="baseMod-com-pop-bt">
+			<a class="baseMod-hint-btn" href="javascript:;">
+                <span class="baseMod-tip-icon-text">取消</span>
+            </a>
+            <a class="baseMod-hint-btn" href="javascript:;">
+                <span class="baseMod-tip-icon-text">确认</span>
+            </a>
+		</div>
+    </div>
+</div> 
+    <div class="baseMod-com-pop-content baseMod-hide-dom" id="testBox4">
+    <div class="baseMod-com-pop-box com-pop-hint-box">
+        <!-- 答对添加类名com-pop-right答错添加类名com-pop-wrong 提交提示文字这里添加类名com-pop-submit 提示弹窗添加类名com-pop-hint-box -->
+        <p class="baseMod-com-pop-hd">
+            <span class="baseMod-pop-dec baseMod-dec-1"></span>
+            <span class="baseMod-pop-dec baseMod-dec-2"></span>
+        </p>
+        <div class="baseMod-com-pop-bd baseMod-scrollbar-style-gray">
+            <div class="baseMod-com-remind-text">
+                <span class="baseMod-text-size">提示文字</span>
+            </div>
+        </div>
+        <div class="baseMod-com-pop-bt">
+            <a class="baseMod-hint-btn" href="javascript:;">
+                <span class="baseMod-tip-icon-text">确认</span>
+            </a>
+		</div>
+    </div>
+</div>   
+    
+    <!-- 可以删除的交互结构与js -->
+    <div style="position:fixed; right:0;bottom:0;opacity: 0.6; z-index:999999">
+        <button style="padding: 1px 6px;border: 2px outset buttonface;    background-color: buttonface; margin:0 10px 10px 0" id="testBtn1">显示答对了弹窗</button>
+        <button style="padding: 1px 6px;border: 2px outset buttonface;    background-color: buttonface; margin:0 10px 10px 0" id="testBtn2">显示答错了弹窗</button>
+        <button style="padding: 1px 6px;border: 2px outset buttonface;    background-color: buttonface; margin:0 10px 10px 0" id="testBtn3">显示是否提交弹窗</button>
+        <button style="padding: 1px 6px;border: 2px outset buttonface;    background-color: buttonface; margin:0 10px 10px 0" id="testBtn4">显示提示弹窗</button>
+    </div>
+    <script type="text/javascript" src="http://www.w3school.com.cn/jquery/jquery.js"></script>  
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $("#testBtn3").click(function(){
+            //$("#testBox3").addClass("intro");
+            $(".baseMod-com-pop-content").addClass("baseMod-hide-dom");
+            //$("#testBox3").addClass("baseMod-hide-dom");
+          });
+          $("#testBtn3").toggle(function(){
+                $("#testBox3").removeClass("baseMod-hide-dom");
+            }, function() {
+                $("#testBox3").addClass("baseMod-hide-dom");
+            });
+          $("#testBtn1").click(function(){
+            //$("#testBox3").addClass("intro");
+            $(".baseMod-com-pop-content").addClass("baseMod-hide-dom");
+            //$("#testBox3").addClass("baseMod-hide-dom");
+          });
+          $("#testBtn1").toggle(function(){
+                $("#testBox1").removeClass("baseMod-hide-dom");
+            }, function() {
+                $("#testBox1").addClass("baseMod-hide-dom");
+            });
+          $("#testBtn2").click(function(){
+            //$("#testBox3").addClass("intro");
+            $(".baseMod-com-pop-content").addClass("baseMod-hide-dom");
+            //$("#testBox3").addClass("baseMod-hide-dom");
+          });
+          $("#testBtn2").toggle(function(){
+                $("#testBox2").removeClass("baseMod-hide-dom");
+            }, function() {
+                $("#testBox2").addClass("baseMod-hide-dom");
+            });
+          $("#testBtn4").click(function(){
+            //$("#testBox3").addClass("intro");
+            $(".baseMod-com-pop-content").addClass("baseMod-hide-dom");
+            //$("#testBox3").addClass("baseMod-hide-dom");
+          });
+          $("#testBtn4").toggle(function(){
+                $("#testBox4").removeClass("baseMod-hide-dom");
+            }, function() {
+                $("#testBox4").addClass("baseMod-hide-dom");
+            });
+          //加载演示
+            setTimeout(function () {
+                $(".baseMod-player-body").removeClass("baseMod-player-run-loading");
+            }, Math.random()*6000);
+        });
+    </script>      
+    <!-- /可以删除的交互结构与js -->
+</div>
+<script src="common/resources/baseModule/layout/wood/layout.js"></script>
+            
+</div>
+</body>
+</html>

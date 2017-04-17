@@ -1,0 +1,177 @@
+.chineseCharacter-module-answer{
+	position: relative;
+	height: 100%;
+}
+.chineseCharacter-module-student-title {
+	//width: 100%;
+	position: absolute;
+	top: -4em;
+	left: 9em;
+	right: 9em;
+	text-align: center;
+	.student-answer-text {
+		color: #796647;
+		font-size: pxToEm(24px);
+		white-space: nowrap;
+		.right-text {
+			color: #77ae00;
+		}
+		.wrong-text {
+			color: #ff6045;
+		}
+	}
+	.chineseCharacter-sut-time,
+	.chineseCharacter-sut-tj{
+		display: inline-block;
+	}
+}
+.chineseCharacter-module-student-box-ul{
+	position: absolute;
+	top: .2em;
+	right: -.6em;
+	left: 0;
+	bottom: -.3em;
+	padding-left: .6em;
+	overflow: hidden;
+	&.ChineseCd-light-scrollbar{
+		//padding-left:0;		
+		overflow-x: hidden;
+		overflow-y:auto;
+	}
+}
+.chineseCharacter-module-student-box-ul-box{
+	float: left;
+	width: pxToEm(906px);
+	padding-right: pxToEm(36px);
+	.chineseCharacter-module-student-box:first-child{
+		padding-top: 0;
+	}
+	&:last-child{
+		width: pxToEm(876px);
+		padding-right: pxToEm(6px);
+	}
+}
+.chineseCharacter-module-student-box {
+	//display: inline-block;
+	width: 100%;
+	//height: pxToEm(516px);
+	padding: pxToEm(34px) 0 0;	
+	margin-right: pxToEm(30px);
+	overflow: hidden;
+}
+.chineseCharacter-module-student-item {
+	width: 100%;
+	height: 100%;
+	padding:pxToEm(24px) pxToEm(80px) pxToEm(24px);
+	position: relative;
+	background: #fff;
+	/* border: pxToEm(1px) solid #dfd5c3; */
+	border: 1px solid #dfd5c3;
+	border-radius: pxToEm(16px);
+	.chineseCharacter-module-spell-box{
+		text-align: center;
+		width: 100%;
+		white-space: nowrap;
+	}
+	.chineseCharacter-module-student-num {
+		width: pxToEm(42px);
+		height: pxToEm(42px);
+		line-height: pxToEm(42px);
+		text-align: center;
+		border-radius: 50%;
+		/* border: pxToEm(1px) solid #8f8575; */
+		//border: 1px solid #8f8575;
+		//box-shadow: inset 0px 0px 1px 1px #8f8575;
+		position: absolute;
+		top: pxToEm(14px);
+		left: pxToEm(14px);
+		background: url(resources/wood/images/icons_num_bg.png) 0 0 no-repeat;
+		background-size: 100% 100%;
+		.student-num-text {
+			color: #8f8575;
+			font-size: pxToEm(24px);
+		}
+	}
+	.chineseCharacter-module-student-result-box {
+		//width: pxToEm(680px);
+		//min-height: pxToEm(50px);
+		width: 100%;
+		line-height: pxToEm(50px);
+		text-align: left;
+		.student-result-text {
+			padding-left: pxToEm(30px);
+			position: relative;
+			&.you-are-right {
+				color: #77ae00;
+				.student-result-icon {
+					display: inline-block;
+					background-position: center top;
+				}				
+			}
+			&.you-are-wrong{
+				color: #ff6045;
+				.student-result-icon {
+					display: inline-block;
+					background-position: center bottom;
+				}
+			}
+		}
+		.student-result-icon {
+			display: none;
+			width: pxToEm(32px);
+			height: pxToEm(32px);
+			background: url(resources/wood/images/character_correct_errors_icon.png) no-repeat;
+			background-size: 100% auto;
+			position: absolute;
+			left: 0;
+			top: pxToEm(10px);
+		}
+	}
+	/*汉字听写学生端答题 重写拼写和田字格样式 */
+ 	.chineseCharacter-module-spell {
+		 height: pxToEm(234px);
+	 }
+ 	.chineseCharacter-module-spell {
+	 	//width: pxToEm(680px);
+ 	}
+ 	.chineseCharacter-module-spell-item {
+ 		width: pxToEm(158px);
+ 		margin-right: pxToEm(24px);
+ 		vertical-align: top;
+ 		&.you-are-right{
+			.spell_characters{
+				border: pxToEm(4px) solid #77ae00;	
+			}
+ 		}
+ 		&.you-are-wrong{
+ 			.spell_characters{
+ 				border: pxToEm(4px) solid #ff6045;
+ 			}
+ 		} 		
+ 	}
+ 	.spell_letter {
+	 	width: pxToEm(158px);
+	 	height: pxToEm(50px);
+	 	line-height: pxToEm(50px);
+	 	margin-bottom: pxToEm(15px);
+	 }
+	 .spell_letter-text {
+		font-size: pxToEm(36px);
+	 }
+	 .spell_characters {
+	 	height: pxToEm(158px);
+	 	width: pxToEm(158px);
+	 	background-size: pxToEm(158px) auto;
+	 	border: pxToEm(4px) solid #f0a598;	 	
+	 	
+	 }
+	 .spell_characters-box {
+	 	img{
+	 		width: 100%;
+	 		height: 100%;
+	 	}
+	 	&.demo-bg {
+	 		background-size: pxToEm(158px) auto;
+	 	}
+	 }
+}

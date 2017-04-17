@@ -1,0 +1,166 @@
+.read_tool {
+    .read_tool_bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &.layout_full {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        .read_tool_content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: pxToEm(240px);
+            right: pxToEm(240px);
+        }
+    }
+    &.layout_window {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 704px;
+        height: 530px;
+        font-size: 12.25px;
+        border: 2px solid #968d7d;
+        .read_tool_content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .rdtl_arit_para {
+            font-size: 9.6px;
+        }
+        .rdtl_arit_sentence {
+            .txt {
+                /*font-size: 24px;*/
+            }
+        } 
+        .tool_scrollbar_bothside .tool_scrollbar.right {
+            right: 134px;
+        }
+        .tool_scrollbar_bothside .tool_scrollbar.left {
+            left: 134px;
+        }
+        .ndui-tool.read-play .ndui-tool-box .ndui-tool-list {
+            bottom: pxToEm(30px);
+        }
+        .readtool_wrap {
+            padding: 0 150px;
+        }
+    }
+    &.layout_edit {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        .read_tool_content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .ndui-tool.read-play .ndui-tool-box-other .btn.btn-size, .ndui-tool.read-play .ndui-tool-box-other .btn.btn-type {
+            display: none;
+        }
+
+        .ndui-tool.read-play .ndui-tool-box, .ndui-tool.readtool-middle .ndui-tool-box {
+            display: none;
+        }
+        .readtool_wrap {
+            bottom: 120px;
+            padding:0 25px 0 30px;
+            &:before,&:after {
+                display: none;
+            }
+        }
+        .readtool_wrap {
+            overflow: auto;
+            margin-right: 10px;
+            &.scrollbar_style_white::-webkit-scrollbar{
+                width: 6px;
+                background: #f6f2eb;
+                border-radius: pxToEm(3px);
+            }
+            &.scrollbar_style_white::-webkit-scrollbar-thumb{
+                background: #dacebe;
+                border-radius: 3px;
+            }
+        }
+        .tool_scrollbar_bothside .tool_scrollbar {
+            top: 10px;
+            bottom: 108px;
+            &.left{
+                display: none;
+            }
+            &.right {
+                display: none;
+            }
+        }
+        .readtool_article {
+            top: 12px;
+        }
+        .rdtl_arit_sentence .txt {
+            font-size: 24px;
+        }
+        .ndui-tool.read-play .ndui-tool-box-other .read_control-box {
+            padding:0 35px 0 30px;
+        }
+        .choose_para_box {
+            display: block;
+        }
+        .rdtl_arit_para {
+            text-indent: 48px;
+            cursor: pointer;
+            .rdtl_sign_cover {
+                display: none;
+            }
+            .rdtl_sentence_wrap{
+                position: relative;
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    left: 10px;
+                    top: 14px;
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: middle;
+                    border: 1px solid #d24726;
+                }
+            }
+            &.ui_btn_active{
+                .rdtl_sentence_wrap {
+                    border: none;
+                    box-shadow: none;
+                    background: none;
+                    border-radius: 0;
+                    .rdtl_arit_sentence .txt {
+                        color: #ed5714;
+                    }
+                    &:before {
+                        border: none;
+                        background: #d24726 url(resources/wood/images/read-tool_selected-icon.png) no-repeat center center;
+                        background-size: 84% auto;
+                    }
+                }
+               
+            } 
+        }
+    }
+}

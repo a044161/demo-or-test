@@ -1,0 +1,357 @@
+ /* 汉字听写部分样式 by 陈晶晶*/
+ .chineseCharacter-module {
+ 	padding: pxToEm(20px) pxToEm(35px) 0;
+ 	//height: 100%;
+ 	/*lxq*/
+ 	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	width: 100%;
+ 	display: flex;
+    flex-direction: column;
+ 	.chineseCharacter-module-title {
+	 	 width: 100%;
+	 	 text-align: left;
+	 	 min-height: pxToEm(50px);
+	 	 line-height: pxToEm(50px);
+	 	 margin-bottom: pxToEm(30px);
+	 }
+	.chineseCharacter-module-title-text {
+		 font-size: pxToEm(36px);
+		 color: #000;
+	}
+	 .chineseCharacter-module-btns {
+	 	width: pxToEm(1460px);
+	 	height: pxToEm(204px);
+	 	padding: pxToEm(40px) 0;
+	 	border-bottom: 1px solid #bdb9b1;
+	 	text-align: center;
+	 }
+	 .module-btns-box {
+		display: inline-block;
+	 }
+	 .module-btns-item {
+	 	display: inline-block;
+	 	margin-right: pxToEm(60px);
+	 	min-width: pxToEm(85px);
+	 	height: 100%;
+	 	&:last-child {
+			margin-right: 0;
+	 	}
+	 	.btn-icon {
+	 		display: block;
+	 		width: pxToEm(90px);
+	 		height: pxToEm(90px);
+	 		//border-radius: 50%;
+	 		//border: 1px solid #c0bbb6;
+	 		//box-shadow: 0 pxToEm(2px) pxToEm(3px) 1px rgba(4,0,0,0.2);
+	 		//background: #fff linear-gradient(to bottom,rgba(255,255,255,0.1),rgba(0,0,0,0.1));
+	 		background: url(resources/wood/images/hzcard_tab_bg.png) no-repeat left top;
+	 		background-size: 100% 100%;
+	 		margin-bottom: pxToEm(10px);
+	 		text-align: center;
+	 		margin: 0 auto;
+	 		&:before {
+	 			content: "";
+	 			display: inline-block;
+	 			margin-top: pxToEm(14px);
+	 			width: pxToEm(60px);
+	 			height: pxToEm(60px);
+	 			background: url(resources/wood/images/character_btns_icon.png) no-repeat;
+	 			background-size: pxToEm(60px) auto;
+	 		}
+	 		&.pen-icon:before {
+	 			background-position: center top;
+	 		}
+	 		&.eraser-icon:before{
+	 			background-position: center center;
+	 		}
+	 		&.voice-icon:before {
+	 			background-position: center bottom;
+	 		}
+	 	}
+	 	.btn-text {
+	 		font-size: pxToEm(24px);
+			color: #666;
+	 	}
+	 	&:active,
+	 	&.ui_btn_active,
+	 	&.on{
+			.btn-icon{
+				background-image: url(resources/wood/images/hzcard_tab_bg_active.png);
+			}
+	 	}
+	 	&.on{
+			.btn-icon{
+				&.voice-icon:before {
+		 			background: url(resources/wood/images/character_btns_icon_a.gif) no-repeat center bottom;
+	 				background-size: pxToEm(60px) auto;
+		 		}
+			}
+	 	}	 	
+	}
+	/* 点击态背景色预加载 */
+	.ChineseCd-preload-img01{
+        display:none;
+        background-image: url(resources/wood/images/hzcard_tab_bg_active.png);    
+    }
+	/* end点击态背景色预加载 */
+
+	 .chineseCharacter-module-decipher {
+	 	width: pxToEm(1460px);
+	 	//padding: pxToEm(30px) 0;
+	 	//min-height: pxToEm(150px);
+	 	line-height: pxToEm(50px);
+	 	/*lxq*/
+	 	flex: 1;
+	 	margin-top: pxToEm(30px);
+	 }
+	 .module-decipher-text{
+	 	color: #3a3a3a;
+	 	font-size: pxToEm(36px);
+	 }
+
+}
+ 
+
+/*汉字听写 重写复合题 mixedModule-switch-container部分样式*/
+.chineseCharacter-switch-container {
+	.mixedModule-switch-btn,
+	.mixedModule-shangxia-p{
+		display: none !important;
+	}
+	.mixedModule-subject-num{
+		/*lxq*/
+		//position: absolute;
+		//top: pxToEm(6px);
+		//left: pxToEm(6px);
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 1.8em;
+
+		width: pxToEm(38px);
+		height: pxToEm(38px);
+		line-height: pxToEm(38px);
+		text-align: center;
+		border-radius: 50%;
+		border: 1px solid #817764 ;		
+		color: #817764  ;
+		font-size: pxToEm(18px);
+	}
+	.mixedModule-subject-container{
+		left: auto;
+	}
+	&.mixedModule-switch-container {
+	    float: none;
+	    top: pxToEm(140px);
+	    left: auto;
+	    padding-left: 0;
+	    right: pxToEm(66px);
+	    //height: pxToEm(740px);
+	    height: auto;
+	}
+	.mixedModule-switch {
+		padding: 0;
+		position: relative;
+	}
+	.mixedModule-subject {
+		height: auto;
+		background: none;
+		border-radius: pxToEm(16px);
+		background: #fff;
+		position: relative;
+		top: 0;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+	.mixedModule-subject-list {
+		height: auto;
+		width: 100%;
+		border: none;
+		float: none;
+		display: block;
+	}
+	.mixedModule-subject-btn{
+		float: none;
+		background: #fff;
+		border-top: 1px solid #e7e6e4;
+		color: #666;
+		min-width: pxToEm(168px);
+		padding: 0 pxToEm(10px);
+		height: pxToEm(90px);
+		line-height: pxToEm(90px);
+		margin-left: 0;
+		text-align: left;
+		white-space: nowrap;
+		/* &:last-child {
+			border-bottom: 1px solid #e7e6e4;
+		} */
+		.mixedModule-subject-word {
+			//font-size: pxToEm(48px);
+			font-size: pxToEm(36px);
+		}
+		&:before {
+			width: 0;
+			border: 0;
+		}
+		&:after {
+			width: 0;
+			border: 0;
+			background: none;
+		}
+		&.answering-view {
+			background-color: #ffdfa6;
+			color: #000;
+			border-top: 1px solid #dfc699;
+			&:before {
+				background: none;
+				left: 0;
+				width: 100%;
+				border-top: 1px solid #ffebc8;
+			}
+		}
+	}
+	.mixedModule-subject-pre, .mixedModule-subject-next{
+		float: none;
+		display: block;
+	    left: 0;
+	    right: 0;
+		width: 100%;
+		height: pxToEm(54px);
+		border-radius: pxToEm(16px) pxToEm(16px) 0 0;
+		background: #fff4e0 url(resources/wood/images/character_arrow.png) center bottom no-repeat;
+		background-size: pxToEm(40px) auto;
+		&:active,
+		&.ui_btn_active {
+			background-color: #fde9c5;
+		}
+		&.click_disabled{
+			background:#fff4e0 url(resources/wood/images/character_arrow.png) center top no-repeat;
+			background-size: pxToEm(40px) auto;
+		}
+		&:after{
+			display: none;
+		}
+	}
+	.mixedModule-subject-pre {
+		top: 0;
+	}
+	.mixedModule-subject-next {
+		position: static;
+		//bottom: 1px;
+		border-top: 1px solid #e7e6e4;
+		display: block;
+    	transform:none;
+    	border-radius: 0 0 pxToEm(16px) pxToEm(16px);
+    	background-image: url(resources/wood/images/character_arrow_b.png);
+    	&.click_disabled{
+			background-image: url(resources/wood/images/character_arrow_b.png);
+		}
+		&:before {
+			position: absolute;
+			border-left: 0;
+			width: 100%;
+			//border-bottom: 1px solid #dfc699;
+			border: none;
+		    top: auto;
+		    height: 0;
+		    left: 0;
+		    bottom: 0;
+		    display: none;
+		}
+	}
+
+}
+
+/*滚动条样式*/
+.ChineseCd-light-scrollbar{
+	overflow:auto;
+    &::-webkit-scrollbar {
+
+        width: pxToEm(16px);
+        height: pxToEm(16px);
+        background: #e2dfdb;
+        border-radius: pxToEm(16px);
+    }
+    &::-webkit-scrollbar-thumb {
+        //border: pxToEm(24px) solid transparent;
+        //-webkit-border-image: url(resources/wood/images/scrollbar/vertical-thumb.png) 11 11; 
+        background: #c9c4bd;
+        border-radius: pxToEm(16px);
+    }  
+    /* &::-webkit-scrollbar-button:increment{
+        background: transparent;
+    }
+    &::-webkit-scrollbar-button:decrement{
+        background: transparent;
+    } */
+}
+
+/*提示弹窗*/
+.chineseCharacter-pop-bgtips {
+    position: fixed;
+    z-index: 1200;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    user-select: none;
+    display: none;
+    &.notice-tip-box-show {        
+        display: inline-block;
+    }
+    &.notice-tip-box-auto {
+        animation: ChineseCdTipShow 4s ease forwards;
+        display: inline-block;
+    }
+    * {
+        user-select: none;
+    }
+    &:after {
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        width: 0;
+        height: 100%;
+    }
+    .pop_text_main {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 36em;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 2em 1.6em;
+        border-radius: pxToEm(15px);
+        .font_size {
+            font-size: 1.6em;
+            line-height: 1.5;
+        }
+    }
+}
+@keyframes ChineseCdTipShow {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        transform: translate(0, 0);
+        //transform:translate3d(0,0,0);
+    }
+    80% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        transform: translate(0, 0);
+        //transform:translate3d(0,0,0);
+    }
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transform: translate(0, -10%);
+        //transform:translate3d(0,-10%,0);
+    }
+}

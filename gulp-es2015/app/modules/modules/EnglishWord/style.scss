@@ -1,0 +1,38 @@
+@import "../../common/resources/common/setting/wood/setting";
+@import "../../common/resources/common/mixin/mixin";
+@import "../../common/resources/common/function/function";
+// 木质皮肤
+.exam_skin_wood {
+    @import "resources/wood/style_wood";
+}
+
+// 天空皮肤
+.exam_skin_sky {
+    @import "resources/sky/style_sky";
+}
+
+// 手机端
+.exam_mobile {
+	height: 100%;
+	background-color: #fff;
+    @import "resources/mobile/style_mobile";
+}
+
+
+@-webkit-keyframes sound {
+    0% {background-position: 0px 0px, 0px 0px;}
+    100% {background-position: -300% 0px, 0px 0px;}
+}
+@keyframes sound {
+    0% {background-position: 0px 0px, 0px 0px;}
+    100% {background-position: -300% 0px, 0px 0px;}
+}
+
+//手机端新增svg，其他终端需隐藏，2017.2.23 by pxx
+.mobile-process {
+	display: none;
+}
+//手机端新增新手引導，其他终端需隐藏，2017.2.23 by pxx
+.guidetxtwrap {
+	display: none;
+}

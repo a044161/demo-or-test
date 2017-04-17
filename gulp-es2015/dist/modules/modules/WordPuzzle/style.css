@@ -1,0 +1,258 @@
+@charset "UTF-8";
+.exam_skin_wood .wordpuzzle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* 
+    .com_layout_main {
+        left: 0;
+        right: 0;
+        top: pxToEm(68px);
+        bottom: 0;
+    } */
+  /* s 组件: 面板2 */
+  /* e 组件: 面板2 */
+  /* .tip_box{
+        position: relative;
+        height: 100%;
+        margin-right: pxToEm(2px);
+        padding: pxToEm(40px) pxToEm(40px) 0 pxToEm(36px);
+        text-align: left;
+        overflow: auto;
+    }
+    .tip_normal{
+        position: relative;
+        padding: 0 pxToEm(12px);
+        line-height: pxToEm(46px);
+        margin: 0 pxToEm(40px) pxToEm(16px) 0;
+        color: #333;
+        .num,
+        .point,
+        .word{
+            font-style: normal;
+            font-size: pxToEm(25px);
+        }
+        .point{
+            padding-right: pxToEm(12px);
+        }
+        &.correct{
+            background-color: #e0e0e0;
+            color: #8e8e8e;
+            &:after{
+                content: '';
+                position: absolute;
+                top: pxToEm(5px);
+                right: pxToEm(-60px);
+                width: pxToEm(41px);
+                height: pxToEm(42px);
+                background: url(resources/wood/images/correct.png) center center no-repeat;
+                background-size: 100% auto;
+            }
+        }
+    }*/ }
+  .exam_skin_wood .wordpuzzle .sideboard {
+    position: relative;
+    float: right;
+    height: 100%;
+    width: 16.66667em;
+    margin: 0 0.41667em;
+    text-align: left; }
+  .exam_skin_wood .wordpuzzle .sidehead {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 3.5em;
+    border-radius: 0.75em 0.75em 0 0;
+    text-align: left;
+    z-index: 2; }
+    .exam_skin_wood .wordpuzzle .sidehead .tit {
+      padding-left: 1.66667em;
+      font-weight: bold;
+      color: #824f06;
+      line-height: 3.5em; }
+      .exam_skin_wood .wordpuzzle .sidehead .tit .em {
+        font-size: 1.5em; }
+  .exam_skin_wood .wordpuzzle .sidecon {
+    height: 100%;
+    border-bottom: 0.25em solid transparent;
+    border-radius: 0 0 0.75em 0.75em;
+    overflow: auto;
+    z-index: 1; }
+  .exam_skin_wood .wordpuzzle .manage_right {
+    position: absolute;
+    top: 1em;
+    right: 0;
+    left: 0;
+    bottom: 1em;
+    padding: 2.58333em 0 0;
+    border-radius: 0.75em;
+    border: 0.04167em solid #d09c4a;
+    background: linear-gradient(to bottom, #e1c08f, #cda569);
+    box-shadow: 0 0.25em 0.5em 0 #c4975f; }
+    .exam_skin_wood .wordpuzzle .manage_right .com_m_sidehead {
+      text-align: center;
+      z-index: 5; }
+  .exam_skin_wood .wordpuzzle .sidecon_box {
+    padding: 0 0.29167em 0.625em; }
+  .exam_skin_wood .wordpuzzle .tip_normal {
+    position: relative;
+    padding: 0 2.5em 0 0.66667em;
+    line-height: 2.33333em;
+    margin-top: 0.33333em;
+    color: #333; }
+    .exam_skin_wood .wordpuzzle .tip_normal .num,
+    .exam_skin_wood .wordpuzzle .tip_normal .word {
+      word-wrap: break-word;
+      word-break: break-word;
+      font-size: 1.66667em; }
+    .exam_skin_wood .wordpuzzle .tip_normal.correct {
+      background-color: #f3e1b6;
+      border: 0.04167em solid #ead0a1; }
+      .exam_skin_wood .wordpuzzle .tip_normal.correct:after {
+        content: '';
+        position: absolute;
+        top: 0.5em;
+        right: 0.41667em;
+        width: 1.25em;
+        height: 1.375em;
+        background: url(resources/wood/images/correct.png) center center no-repeat;
+        background-size: contain; }
+  .exam_skin_wood .wordpuzzle .cellMiddle {
+    white-space: nowrap; }
+    .exam_skin_wood .wordpuzzle .cellMiddle:after {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle; }
+  .exam_skin_wood .wordpuzzle .manage_right {
+    vertical-align: middle;
+    margin: 0; }
+    .exam_skin_wood .wordpuzzle .manage_right .com_m_sidehead {
+      text-align: center;
+      z-index: 5; }
+  .exam_skin_wood .wordpuzzle .com_m_sidecon {
+    box-shadow: none !important; }
+  .exam_skin_wood .wordpuzzle .manage_right_tit {
+    color: #fff6e4;
+    line-height: 2.41667em;
+    font-size: 1.08333em; }
+  .exam_skin_wood .wordpuzzle .manage_left {
+    height: 100%;
+    overflow: hidden;
+    text-align: center; }
+    .exam_skin_wood .wordpuzzle .manage_left .mainbox {
+      display: inline-block;
+      position: relative; }
+      .exam_skin_wood .wordpuzzle .manage_left .mainbox .bluebox_container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; }
+      .exam_skin_wood .wordpuzzle .manage_left .mainbox .bluebox {
+        position: absolute;
+        border: 0.16667em solid #27b1ea;
+        border-radius: 0.70833em;
+        z-index: 11;
+        overflow: hidden;
+        pointer-events: none; }
+        .exam_skin_wood .wordpuzzle .manage_left .mainbox .bluebox.blue_x {
+          height: 2.95833em;
+          width: 6.33333em;
+          left: 0.66667em;
+          top: 1em; }
+        .exam_skin_wood .wordpuzzle .manage_left .mainbox .bluebox.blue_y {
+          width: 2.95833em;
+          height: 9.875em;
+          right: 4.04167em;
+          top: 1em;
+          border-color: #73b108; }
+      .exam_skin_wood .wordpuzzle .manage_left .mainbox .num_box_x, .exam_skin_wood .wordpuzzle .manage_left .mainbox .num_box_y {
+        position: absolute;
+        top: 0;
+        z-index: 11;
+        min-width: 0.83333em;
+        min-height: 0.91667em;
+        padding: 0 0.20833em;
+        line-height: 0.91667em;
+        color: #fff; }
+        .exam_skin_wood .wordpuzzle .manage_left .mainbox .num_box_x .num, .exam_skin_wood .wordpuzzle .manage_left .mainbox .num_box_y .num {
+          font-size: 1em; }
+      .exam_skin_wood .wordpuzzle .manage_left .mainbox .num_box_x {
+        left: 0;
+        background: #27b1ea;
+        border-radius: 0.41667em 0 0.41667em 0; }
+      .exam_skin_wood .wordpuzzle .manage_left .mainbox .num_box_y {
+        border-radius: 0 0.41667em 0 0.41667em;
+        right: 0;
+        background: #73b108; }
+    .exam_skin_wood .wordpuzzle .manage_left .manage_box {
+      display: inline-block;
+      padding: 0.625em 0.83333em;
+      vertical-align: middle;
+      background: rgba(217, 167, 101, 0.35);
+      border-radius: 0.70833em;
+      box-shadow: 0 -1px 0.20833em 1px #b8894c; }
+    .exam_skin_wood .wordpuzzle .manage_left .box_normal {
+      float: left;
+      position: relative;
+      width: 2.79167em;
+      height: 2.79167em;
+      text-align: center;
+      margin: 0.125em 0.16667em;
+      background: rgba(168, 114, 42, 0.51);
+      border-radius: 0.58333em;
+      overflow: hidden; }
+      .exam_skin_wood .wordpuzzle .manage_left .box_normal:before {
+        z-index: 9;
+        content: "";
+        position: absolute;
+        left: -0.125em;
+        right: -0.125em;
+        top: -0.125em;
+        bottom: -0.125em;
+        background: url(resources/wood/images/shadow_01.png) no-repeat center center;
+        background-size: 100% 100%; }
+      .exam_skin_wood .wordpuzzle .manage_left .box_normal.done {
+        background: none; }
+        .exam_skin_wood .wordpuzzle .manage_left .box_normal.done:before {
+          z-index: 9;
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background: url(resources/wood/images/bg_done.png) no-repeat center center;
+          background-size: 100% 100%; }
+      .exam_skin_wood .wordpuzzle .manage_left .box_normal.disabled {
+        background: rgba(168, 114, 42, 0.15); }
+      .exam_skin_wood .wordpuzzle .manage_left .box_normal .word {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        height: 93%;
+        background: none;
+        border: none;
+        text-align: center;
+        color: #422701;
+        font-size: 1.91667em; }
+    .exam_skin_wood .wordpuzzle .manage_left .largeBox.less {
+      width: 17.41667em; }
+    .exam_skin_wood .wordpuzzle .manage_left .largeBox.many {
+      width: 20.625em; }
+    .exam_skin_wood .wordpuzzle .manage_left .normalBox.less {
+      width: 23.54167em; }
+    .exam_skin_wood .wordpuzzle .manage_left .normalBox.many {
+      width: 26.66667em; }
+    .exam_skin_wood .wordpuzzle .manage_left .smallBox.less {
+      width: 30em; }
+    .exam_skin_wood .wordpuzzle .manage_left .smallBox.many {
+      width: 32.91667em; }
+
+.exam_skin_wood .com_wrapper_pad .wordpuzzle .sideboard {
+  width: 18.5em; }
+
+/*# sourceMappingURL=style.css.map */

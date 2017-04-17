@@ -1,0 +1,1083 @@
+@charset "UTF-8";
+.freeCombination_wrapper{
+    .layout_FreeCombination{
+        .nhw_write_toolbar{
+            right: pxToEm(7px);
+        }
+    }
+}
+.layout_FreeCombination {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .3);
+    box-shadow: 0 0 pxToEm(6px) 0 rgba(0, 0, 0, .3);
+    border-radius: pxToEm(16px);    
+    .com_layout_main {
+        top: pxToEm(200px);
+        left: 0;
+        bottom: 0;
+        //right: pxToEm(168px);
+        right: pxToEm(134px);
+        background: #f6f2e8;
+        border-radius: 0;
+        border-top: 1px solid #ded7cc;
+        overflow: initial;
+        border-radius: 0 0 0 pxToEm(16px); 
+        &:before{
+            content: '';
+            position: absolute;
+            top: pxToEm(20px);
+            left: pxToEm(25px);
+            width: pxToEm(30px);
+            height: pxToEm(30px);
+            border-left: pxToEm(3px) solid #e2ded6;
+            border-top: pxToEm(3px) solid #e2ded6;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            top: pxToEm(20px);
+            right: pxToEm(25px);
+            width: pxToEm(30px);
+            height: pxToEm(30px);
+            border-right: pxToEm(3px) solid #e2ded6;
+            border-top: pxToEm(3px) solid #e2ded6;
+        }
+    }
+    .FreeCombination_txt_wrap {
+        position: absolute;
+        right: pxToEm(134px);
+        top: 0;
+        left: 0;
+        //height: pxToEm(920px);
+        height: 38.2em;
+        background: #f1ebde;
+        border-radius: pxToEm(16px) 0 0 pxToEm(16px);
+    }
+    .FreeCombination_txt {
+        height: pxToEm(720px);
+        padding: pxToEm(35px) pxToEm(40px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        .txt{
+            line-height: 1.8;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: pxToEm(46px);
+            color: #333;
+        }
+    }
+    .FreeCombination_wrap{
+        position: absolute;
+        top: pxToEm(20px);
+        left: pxToEm(25px);
+        right: pxToEm(25px);
+        bottom: pxToEm(20px);
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: pxToEm(30px);
+            height: pxToEm(30px);
+            border-left: pxToEm(3px) solid #e2ded6;
+            border-bottom: pxToEm(3px) solid #e2ded6;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: pxToEm(30px);
+            height: pxToEm(30px);
+            border-right: pxToEm(3px) solid #e2ded6;
+            border-bottom: pxToEm(3px) solid #e2ded6;
+        }
+    }
+    .FreeCombination_content{
+        width: 100%;
+        height: 100%;
+        margin-right: pxToEm(-25px);
+        padding-right: pxToEm(25px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        box-sizing: content-box;
+    }
+    .FreeCombination_placeholder{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: pxToEm(-36px) 0 0 pxToEm(-180px);
+        color: rgba(171, 171, 171, .3);
+        .txt{
+            font-size: pxToEm(72px);
+        }
+    }
+
+    .FreeCombination_resize_wrapper{
+        position: absolute;
+        width:pxToEm(1000px);
+        height:0;
+        //border:1px solid red;
+        left:50%;
+        top:pxToEm(-20px);
+        margin-left: pxToEm(-500px);
+        text-align: center;
+    }
+
+    .FreeCombination_resize{
+        //position: absolute;
+        //left: 50%;
+        display: inline-block;
+        z-index: 30;
+        min-width: pxToEm(94px);
+        height: pxToEm(42px);
+        border:1px solid;
+        border-color:#dedcd9 #dedcd9 #c7c3bb #dedcd9;
+        background:#f8f6ee;
+        white-space: nowrap;
+        padding:pxToEm(8px) pxToEm(8px) pxToEm(8px) pxToEm(10px);
+        border-radius: pxToEm(5px);
+        background:linear-gradient(to bottom,#faf8f0,#dad7d0);
+        &.on{
+           .expansion{
+                display: inline-block;
+            }
+        }
+
+        &.off{
+            .collapse{
+                display: inline-block;
+            }
+        }
+        &:active{
+            background:linear-gradient(to top,#faf8f0,#dad7d0);
+        }
+    }
+
+
+
+    .FreeCombination_resize_text{
+        position: relative;
+        color:#a14800;
+        &.expansion{
+            display: none;
+            &:after{
+                margin-left: pxToEm(8px);
+                display: inline-block;
+                content:"";
+                width:pxToEm(16px);
+                height:pxToEm(16px);
+                //border: 1px solid red;
+                background: url(resources/wood/images/icon_arrow.png);
+                background-size: pxToEm(16px) auto;
+                background-position: center 0;
+            }
+
+        }
+
+        &.collapse{
+            display: none;
+            &:after{
+                margin-left: pxToEm(8px);
+                display: inline-block;
+                content:"";
+                width:pxToEm(16px);
+                height:pxToEm(16px);
+                //border: 1px solid red;
+                background: url(resources/wood/images/icon_arrow.png);
+                background-size: pxToEm(16px) auto;
+                background-position: center pxToEm(-28px);
+
+            }
+        }
+
+    }
+    //.nhw_btn_switch_box span{
+    //    background: #fbf2e8;
+    //    color: #6d5835;
+    //    box-shadow: 0 pxToEm(5px) pxToEm(7px) 0 rgba(56, 32, 0, .3);
+    //    &:after{
+    //        border-top-color: #fbf2e8;
+    //    }
+    //}
+    /* 按钮展开收起控制布局 */
+    .fct_resize_main{
+        top: 5.1em;
+        .FreeCombination_resize{
+            .expansion{
+                display: block;
+            }
+        }
+        &.fct_open{
+            top: 15.2em;
+            .FreeCombination_resize{
+                .expansion{
+                    display: none;
+                }
+                .collapse{
+                    display: block;
+                }
+            }
+            &.no_resources{
+                &.txt_row1{
+                    top: 5.1em; 
+                }
+                &.txt_row2{
+                    top: 8.2em;
+                }
+            }
+            &.txt_row1{
+                top: 12.075em;
+            }
+            &.txt_row2{
+                top: 15.2em;
+            }
+        }
+    }
+    /* 页面修饰 */
+    .fct_modification_foot{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        &:before {
+            content: '';
+            position: absolute;
+            top: -2.4em;
+            left: 1.04167em;
+            width: 1.25em;
+            height: 1.25em;
+            border-left: 0.125em solid #e2ded6;
+            border-bottom: 0.125em solid #e2ded6;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: -2.4em;
+            right: 1.04167em;
+            width: 1.25em;
+            height: 1.25em;
+            border-right: 0.125em solid #e2ded6;
+            border-bottom: 0.125em solid #e2ded6;
+        }
+    }
+}
+
+
+
+/* 右侧手写工具栏 */
+.freeCombination_wrapper{
+    .nhw_write_toolbar{
+        position: absolute;
+        top: 0;
+        right: pxToEm(110px);
+        bottom: 0;
+        z-index: 13;
+        //padding:0 pxToEm(7px);
+    }
+    //.nhw_btn_switch_box{
+    //    position: relative;
+    //    margin: pxToEm(48px) 0 0 pxToEm(9px);
+    //    display: block;
+    //    width: pxToEm(120px);
+    //    height: pxToEm(60px);
+    //    background-repeat: no-repeat;
+    //    background-size: 100% auto;
+    //    background-position: center center;
+    //    .nhw_btn_switch{
+    //        content:"";
+    //        position: absolute;
+    //        width: pxToEm(60px);
+    //        height: pxToEm(60px);
+    //        background-repeat: no-repeat;
+    //        background-size: 100% auto;
+    //        background-position: center center;
+    //        transition: transform .3s;
+    //        top: 0;
+    //        left: 0;
+    //    }
+    //    &.off{
+    //        background-image: url(resources/wood/images/icon_hand_write_off.png);
+    //        .nhw_btn_switch{
+    //            transform: translateX(pxToEm(-12px));
+    //            background-image: url(resources/wood/images/icon_hand_off.png);
+    //        }
+    //        .off_text{
+    //            display:block;
+    //            left: pxToEm(-15px);
+    //        }
+    //    }
+    //    &.on{
+    //       background-image: url(resources/wood/images/icon_hand_write_on.png);
+    //        .nhw_btn_switch{
+    //            transform: translateX(pxToEm(65px));
+    //            background-image: url(resources/wood/images/icon_hand_on.png);
+    //        }
+    //        .on_text{
+    //            display:block;
+    //            left: pxToEm(-3px);
+    //        }
+    //    }
+    //    span{
+    //        position: absolute;
+    //        top: pxToEm(-48px);
+    //        display: none;
+    //        color: #fff;
+    //        height: pxToEm(35px);
+    //        padding: 0 pxToEm(15px);
+    //        background: rgba(0, 0, 0, 0.5);
+    //        border-radius: pxToEm(30px);
+    //        white-space: nowrap;
+    //        text-align:center;
+    //        line-height: pxToEm(35px);
+    //        &>em{
+    //            font-size: pxToEm(20px);
+    //            vertical-align: top;
+    //        }
+    //        &:after{
+    //            content: "";
+    //            position: absolute;
+    //            width: 0;
+    //            height: 0;
+    //            top: pxToEm(35px);
+    //            left: 50%;
+    //            margin-left: pxToEm(-10px);
+    //            border-left: pxToEm(10px) solid transparent;
+    //            border-right: pxToEm(10px) solid transparent;
+    //            border-top: pxToEm(8px) solid rgba(0, 0, 0, 0.5);
+    //        }
+    //    }
+    //}
+    .nhw_write_toolbar_list {
+        margin: pxToEm(70px) 0 ;
+        &>li{
+            position: relative;
+            //margin-top: pxToEm(36px);
+            .nhw_mainlink {
+                display: block;
+                text-align: center;
+                width: pxToEm(120px);
+                padding: pxToEm(117px) 0 0 0;
+                background-image:url(resources/wood/images/icon_nhw_write_toolbar.png);
+                background-repeat:no-repeat;
+                background-size: pxToEm(120px) auto;
+
+                &.icon1 {
+                    background-position:center 0;
+                    &:active{
+                        background-position:center pxToEm(-819px);
+                    }
+                }
+                &.icon2 {
+                    background-position:center pxToEm(-117px);
+                    &:active{
+                        background-position:center pxToEm(-936px);
+                    }
+                }
+                &.icon3 {
+                    background-position:center pxToEm(-234px);
+                    &:active{
+                        background-position:center pxToEm(-1053px);
+                    }
+                }
+                &.icon4 {
+                    background-position:center pxToEm(-351px);
+                    &:active{
+                        background-position:center pxToEm(-1170px);
+                    }
+                }
+                &.icon5 {
+                    background-position:center pxToEm(-468px);
+                    &:active{
+                        background-position:center pxToEm(-1287px);
+                    }
+                }
+                &.icon6 {
+                    background-position:center pxToEm(-585px);
+                    &:active{
+                        background-position:center pxToEm(-1404px);
+                    }
+                }
+                &.icon7 {
+                    background-position:center pxToEm(-702px);
+                    &:active{
+                        background-position:center pxToEm(-1521px);
+                    }
+                }
+
+            }
+            //.listtxt {
+            //    display: block;
+            //    width: 100%;
+            //    line-height: 100%;
+            //    color: #6d5835;
+            //    font-size: pxToEm(30px);
+            //    font-weight: bold;
+            //}
+            &.on{
+                .nhw_mainlink {
+                    &:after{
+                        position: absolute;
+                        content:"";
+                        right: pxToEm(18px);
+                        top: pxToEm(32px);
+                        width:pxToEm(42px);
+                        height: pxToEm(42px);
+                        background: url(resources/wood/images/tool_s_r_on.png) center center no-repeat;
+                        background-size: 100% auto;
+                    }
+                }
+                .nhw_mainlink .listtxt {
+                    color: #351d00;
+                    text-shadow: 0 0 pxToEm(15px) rgba(255, 255, 190, 0.75);
+                }
+                .nhw_mainlink.icon1 {
+                    background-image: url(resources/wood/images/icon_pen_s_p.png);
+                }
+                .nhw_mainlink.icon2 {
+                    background-image: url(resources/wood/images/icon_clear_s_p.png);
+                }
+                .nhw_toolbarpop01 {
+                    display:block; 
+                    top:0;
+                    right: pxToEm(90px);
+                }
+            }
+            &.open{
+                .nhw_toolbarpop_bg {
+                    display:block;
+                }
+            }
+            &.open,&.ui_btn_select,&.ui_btn_active {
+                background: rgba(213, 162, 79, 0.4);
+                box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.294), inset 0px 2px 2px 0px rgba(4, 0, 0, 0.059);
+                .nhw_mainlink {
+                    &.icon1{
+                        background-position:center pxToEm(-819px);
+                    }
+                    &.icon2{
+                        background-position:center pxToEm(-936px);
+                    }
+                    &.icon3{
+                        background-position:center pxToEm(-1053px);
+                    }
+                    &.icon4{
+                        background-position:center pxToEm(-1170px);
+                    }
+                    &.icon5{
+                        background-position:center pxToEm(-1287px);
+                    }
+                    &.icon6{
+                        background-position:center pxToEm(-1404px);
+                    }
+                    &.icon7{
+                        background-position:center pxToEm(-1521px);
+                    }
+                    .listtxt{
+                        color: #6d3f0c;
+                        text-shadow:0 0 pxToEm(15px) rgba(255, 255, 190, 0.75);
+                    }
+                }     
+                .fct_color_range {
+                    display: block;
+                }           
+            }
+            &.ui_btn_select {
+                background: rgba(213, 162, 79, 0.4);
+                box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.294), inset 0px 2px 2px 0px rgba(4, 0, 0, 0.059);
+                .nhw_mainlink {
+                    &.icon1 {
+                        background-position: center pxToEm(-819px);
+                    }
+                }
+                .fct_color_range {
+                    display: block;
+                }
+            }
+            &.ui_btn_active,&:active{
+                background: rgba(213, 162, 79, 0.4);
+                box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.294), inset 0px 2px 2px 0px rgba(4, 0, 0, 0.059);
+            }
+            &.click_disabled {
+                 filter: grayscale(100%);
+                 opacity: .5;
+                 filter: alpha(opacity=50); 
+                 //background: none;
+                 //box-shadow: none;                
+                .nhw_mainlink {
+                    &.icon5{
+                        opacity: .8;
+                        filter: alpha(opacity=80);
+                    }
+                    &.icon4 {
+                        background-position:center pxToEm(-351px);
+                        &:active{
+                            background-position:center pxToEm(-351px);
+                        }
+                    }
+                    &.icon5 {
+                        background-position:center pxToEm(-468px);
+                        &:active{
+                            background-position:center pxToEm(-468px);
+                        }
+                    }
+                    &.icon6 {
+                        background-position:center pxToEm(-585px);
+                        &:active{
+                            background-position:center pxToEm(-585px);
+                        }
+                    }
+                    &.icon7 {
+                        background-position:center pxToEm(-702px);
+                        &:active{
+                            background-position:center pxToEm(-702px);
+                        }
+                    }
+                }
+                 &:active{
+                    background: none;
+                    box-shadow: none;
+                }                
+            }
+        }
+        .nhw_wrap_rubber {
+            width: auto;
+            min-width: pxToEm(345px);
+            .nhw_toolbarpop{
+                padding: 0 pxToEm(10px);
+            }
+        }
+        &.click_disabled{
+            > li{
+                filter: grayscale(100%);
+                opacity: .5;
+                filter: alpha(opacity=50);
+                background: none;
+                box-shadow: none;
+                .nhw_mainlink {
+                    cursor: default;
+                    &.icon1 {
+                        background-position:center 0;
+                        &:active{
+                            background-position:center 0;
+                        }
+                    }
+                    &.icon2 {
+                        background-position:center pxToEm(-117px);
+                        &:active{
+                            background-position:center pxToEm(-117px);
+                        }
+                    }
+                    &.icon3 {
+                        background-position:center pxToEm(-234px);
+                        &:active{
+                            background-position:center pxToEm(-234px);
+                        }
+                    }
+                    &.icon5{
+                        opacity: .8;
+                        filter: alpha(opacity=80);
+                    }
+                    &.icon4 {
+                        background-position:center pxToEm(-351px);
+                        &:active{
+                            background-position:center pxToEm(-351px);
+                        }
+                    }
+                    &.icon5 {
+                        background-position:center pxToEm(-468px);
+                        &:active{
+                            background-position:center pxToEm(-468px);
+                        }
+                    }
+                    &.icon6 {
+                        background-position:center pxToEm(-585px);
+                        &:active{
+                            background-position:center pxToEm(-585px);
+                        }
+                    }
+                    &.icon7 {
+                        background-position:center pxToEm(-702px);
+                        &:active{
+                            background-position:center pxToEm(-702px);
+                        }
+                    }
+                }
+                &:active{
+                    background: none;
+                    box-shadow: none;
+                }
+            }    
+            .fct_color_range {
+                display: none !important;
+            }        
+        }
+    } 
+    .nhw_toolbarpop_bg {
+        background:url(resources/wood/images/bg_com_hd_write.png) center center no-repeat;
+        background-size: 105% 130%;
+        border-radius: pxToEm(18px);
+        box-shadow: 0 0 pxToEm(21px) pxToEm(6px) rgba(4, 0, 0, 0.3),inset 0 -2px 2px rgba(4, 0, 0, 0.3);
+        display: none;
+        position: absolute;
+        right: pxToEm(136px);
+        top: 0;
+        width: pxToEm(345px);
+        border-radius: pxToEm(18px);
+        padding:pxToEm(12px);
+        overflow: hidden;
+
+        &.paintbucket_bg {
+            width: pxToEm(120px);
+            //margin-top:pxToEm(-200px);
+            margin-top:pxToEm(-240px);
+            z-index: 1000;
+        }
+
+    }
+    .nhw_toolbarpop01 {
+        background: #f4f1e9 url(resources/wood/images/tool_bar_bg_rb.png) right bottom no-repeat;
+        box-shadow: 0 0 pxToEm(6px) rgba(76, 47, 0, 0.24);
+        border-radius: 0 0 pxToEm(30px) 0;
+        &.nhw_toolbarpop_paintbucket{
+            padding: pxToEm(30px) 0 pxToEm(20px) 0;
+        }
+        .nhw_toolbox{
+            width: 100%;
+            padding: 0;
+            z-index: 9;
+            .nhw_toolrow{
+                text-align: center;
+            }
+            .nhw_listcon {
+                position: relative;
+                display: inline-block;
+                width: pxToEm(68px);
+                height: pxToEm(68px);
+                margin: 0 pxToEm(15px) pxToEm(15px);
+                border-radius: 50%;
+                background-color: #e5cca3;
+                border: pxToEm(3px) solid #f4f1e9;
+                box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.75), inset 0px 2px 2px 0px rgba(98, 57, 0, 0.24);
+                &.penweight1{
+                    background-image: url(resources/wood/images/toolbar_weight_s.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: auto 100%;
+                }
+                &.penweight2{
+                    background-image: url(resources/wood/images/toolbar_weight_m.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: auto 100%;
+                }
+                &.penweight3{
+                    background-image: url(resources/wood/images/toolbar_weight_w.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: auto 100%;
+                }
+                &.colorpurple_paintbucket{
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left: pxToEm(5px);
+                        right: pxToEm(5px);
+                        top: pxToEm(5px);
+                        bottom: pxToEm(5px);                     
+                        border-radius:50%;
+                        background: #8418d7;
+                    }
+                }
+                &.colorred {
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left: pxToEm(5px);
+                        right: pxToEm(5px);
+                        top: pxToEm(5px);
+                        bottom: pxToEm(5px);                     
+                        border-radius:50%;
+                        background: #ff4a32;
+                    }
+                }
+                &.colorgrey {
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left: pxToEm(5px);
+                        right: pxToEm(5px);
+                        top: pxToEm(5px);
+                        bottom: pxToEm(5px);                     
+                        border-radius:50%;
+                        background: #e1e1e1;
+                    }
+                }
+                &.colordark{
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left: pxToEm(5px);
+                        right: pxToEm(5px);
+                        top: pxToEm(5px);
+                        bottom: pxToEm(5px);
+                        border-radius:50%;
+                        background: #333333;
+                    }
+                }
+                &.colorred_paintbucket {
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left: pxToEm(5px);
+                        right: pxToEm(5px);
+                        top: pxToEm(5px);
+                        bottom: pxToEm(5px);
+                        border-radius:50%;
+                        background: #fc5300;
+                    }
+                }
+                &.colorgrey_paintbucket {
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left: pxToEm(5px);
+                        right: pxToEm(5px);
+                        top: pxToEm(5px);
+                        bottom: pxToEm(5px);
+                        border-radius:50%;
+                        background: #6f6f6f;
+                    }
+                }
+                &.colordark_paintbucket{
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left: pxToEm(5px);
+                        right: pxToEm(5px);
+                        top: pxToEm(5px);
+                        bottom: pxToEm(5px);
+                        border-radius:50%;
+                        background: #232323;
+                    }
+                }
+                &.colororange_paintbucket {
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left: pxToEm(5px);
+                        right: pxToEm(5px);
+                        top: pxToEm(5px);
+                        bottom: pxToEm(5px);
+                        border-radius:50%;
+                        background: #f0751f;
+                    }
+                }
+                &.coloryellow_paintbucket {
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left: pxToEm(5px);
+                        right: pxToEm(5px);
+                        top: pxToEm(5px);
+                        bottom: pxToEm(5px);
+                        border-radius:50%;
+                        background: #f7ef1b;
+                    }
+                }
+                &.colorgreen_paintbucket {
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left: pxToEm(5px);
+                        right: pxToEm(5px);
+                        top: pxToEm(5px);
+                        bottom: pxToEm(5px);
+                        border-radius:50%;
+                        background: #34cc0b;
+                    }
+                }
+                &.colorlightblue_paintbucket {
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left: pxToEm(5px);
+                        right: pxToEm(5px);
+                        top: pxToEm(5px);
+                        bottom: pxToEm(5px);
+                        border-radius:50%;
+                        background: #1dadbe;
+                    }
+                }
+                &.colorblue_paintbucket {
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        left: pxToEm(5px);
+                        right: pxToEm(5px);
+                        top: pxToEm(5px);
+                        bottom: pxToEm(5px);
+                        border-radius:50%;
+                        background: #235ddf;
+                    }
+                }
+
+
+                &.on,&:active{
+                    border-color: #ff8f00;
+                    &:before {
+                        position: absolute;
+                        bottom: pxToEm(6px);
+                        right: pxToEm(-9px);
+                        content: "";
+                        width: pxToEm(22px);
+                        height: pxToEm(22px);
+                        background: url(resources/wood/images/toolbar_tool_on.png) no-repeat top right;
+                        background-size: 100% auto;
+                        z-index:999;
+                    }
+                }
+            }
+        }
+        .nhw_penbox,.nhw_classtoolbox{
+            .nhw_listcon{
+                width: pxToEm(108px);
+                height: pxToEm(108px);
+                margin: pxToEm(-35px) 0 pxToEm(6px) pxToEm(-9px);
+                border-radius: 0;
+                border: none;
+                box-shadow: none;
+                background-position: 0 0px;
+            }
+        }
+        .nhw_penbox{
+            padding-bottom: pxToEm(14px);
+            .nhw_listcon{
+                position: relative;
+                .preview{
+                    display: none;
+                    position: absolute;
+                    left: pxToEm(10px);
+                    bottom: pxToEm(-12px);
+                }
+                &:active,&.on{
+                    .preview{
+                        display: block; 
+                    }
+                }
+            }
+            .pen1 {
+                background: url(resources/wood/images/toolbar_pen_1_press.png) no-repeat;
+                background-size: auto 100%; 
+                &:before{
+                    display:none;
+                }
+                &:active,&.on{
+                    background: url(resources/wood/images/toolbar_pen_1_press.png) no-repeat;
+                    background-size: auto 100%;
+                    background-position: pxToEm(-9px) pxToEm(22px);
+                }
+                &.preview{
+                    width: pxToEm(246px);
+                    height: pxToEm(30px);
+                    background-size: 100% auto;
+                    background-repeat: no-repeat;
+                }
+                .bold_black {
+                    background-image: url(resources/wood/images/pen_brushwork/pen1_bold_black.png); 
+                }
+                .bold_grey {
+                    background-image: url(resources/wood/images/pen_brushwork/pen1_bold_grey.png); 
+                }
+                .bold_red {
+                    background-image: url(resources/wood/images/pen_brushwork/pen1_bold_red.png); 
+                }
+                .nor_black {
+                    background-image: url(resources/wood/images/pen_brushwork/pen1_nor_black.png); 
+                }
+                .nor_grey {
+                    background-image: url(resources/wood/images/pen_brushwork/pen1_nor_grey.png); 
+                }
+                .nor_red {
+                    background-image: url(resources/wood/images/pen_brushwork/pen1_nor_red.png); 
+                }
+                .thin_black {
+                    background-image: url(resources/wood/images/pen_brushwork/pen1_thin_black.png); 
+                }
+                .thin_grey {
+                    background-image: url(resources/wood/images/pen_brushwork/pen1_thin_grey.png); 
+                }
+                .thin_red {
+                    background-image: url(resources/wood/images/pen_brushwork/pen1_thin_red.png); 
+                }
+            }
+            .pen2{
+                background: url(resources/wood/images/toolbar_pen_2.png) no-repeat;
+                background-size: auto 100%; 
+                &:before{
+                    display:none;
+                }
+                &.on,&:active{
+                    background: url(resources/wood/images/toolbar_pen_2_press.png) no-repeat;
+                    background-size: auto 100%;
+                    background-position: pxToEm(-9px) pxToEm(22px);
+                }
+                .preview {
+                    width: pxToEm(180px);
+                    height: pxToEm(30px);
+                    background-size: 100% auto;
+                    background-repeat: no-repeat; 
+                }
+                .bold_black {
+                    background-image: url(resources/wood/images/pen_brushwork/pen2_bold_black.png); 
+                }
+                .bold_grey {
+                    background-image: url(resources/wood/images/pen_brushwork/pen2_bold_grey.png); 
+                }
+                .bold_red {
+                    background-image: url(resources/wood/images/pen_brushwork/pen2_bold_red.png); 
+                }
+                .nor_black {
+                    background-image: url(resources/wood/images/pen_brushwork/pen2_nor_black.png); 
+                }
+                .nor_grey {
+                    background-image: url(resources/wood/images/pen_brushwork/pen2_nor_grey.png); 
+                }
+                .nor_red {
+                    background-image: url(resources/wood/images/pen_brushwork/pen2_nor_red.png); 
+                }
+                .thin_black {
+                    background-image: url(resources/wood/images/pen_brushwork/pen2_thin_black.png); 
+                }
+                .thin_grey {
+                    background-image: url(resources/wood/images/pen_brushwork/pen2_thin_grey.png); 
+                }
+                .thin_red {
+                    background-image: url(resources/wood/images/pen_brushwork/pen2_thin_red.png); 
+                }
+            }
+            .pen3 {
+                background: url(resources/wood/images/toolbar_pen_3_press.png) no-repeat;
+                background-size: auto 100%; 
+                &:before{
+                    display:none;
+                }
+                &:active,&.on{
+                    background: url(resources/wood/images/toolbar_pen_3_press.png) no-repeat;
+                    background-size: auto 100%;
+                    background-position: pxToEm(-9px) pxToEm(22px);
+                }
+                .preview {
+                    width: pxToEm(80px);
+                    height: pxToEm(30px);
+                    background-size: 100% auto;
+                    background-repeat: no-repeat; 
+                }
+                .bold_black {
+                    background-image: url(resources/wood/images/pen_brushwork/pen3_bold_black.png); 
+                }
+                .bold_grey {
+                    background-image: url(resources/wood/images/pen_brushwork/pen3_bold_grey.png); 
+                }
+                .bold_red {
+                    background-image: url(resources/wood/images/pen_brushwork/pen3_bold_red.png); 
+                }
+                .nor_black {
+                    background-image: url(resources/wood/images/pen_brushwork/pen3_nor_black.png); 
+                }
+                .nor_grey {
+                    background-image: url(resources/wood/images/pen_brushwork/pen3_nor_grey.png); 
+                }
+                .nor_red {
+                    background-image: url(resources/wood/images/pen_brushwork/pen3_nor_red.png); 
+                }
+                .thin_black {
+                    background-image: url(resources/wood/images/pen_brushwork/pen3_thin_black.png); 
+                }
+                .thin_grey {
+                    background-image: url(resources/wood/images/pen_brushwork/pen3_thin_grey.png); 
+                }
+                .thin_red {
+                    background-image: url(resources/wood/images/pen_brushwork/pen3_thin_red.png); 
+                }
+            }
+        }
+        .nhw_rubberbox {
+            padding: 0 0 pxToEm(15px) pxToEm(15px); 
+            white-space: nowrap;
+            .nhw_listcon {
+                width: auto;
+                padding: 0 pxToEm(15px);
+                background: transparent;
+                .icon{
+                    display: block;
+                    margin: pxToEm(9px) auto;
+                    width: pxToEm(105px);
+                    height: pxToEm(88px);
+                }
+                &:before{
+                    display:none;
+                }
+                .tit {
+                    display: inline-block;
+                    height: pxToEm(36px);
+                    margin: pxToEm(3px);
+                    // margin-top: pxToEm(117px);
+                    padding: 0 pxToEm(12px);
+                    line-height: pxToEm(32px);
+                    text-align: center;
+                    border-radius: pxToEm(18px);
+                    color: #999;
+                    .txt{
+                        font-size: pxToEm(18px);
+                    }
+                }
+                &:active,&.on{
+                    .tit{
+                        color: #000;
+                        border-radius: pxToEm(18px);
+                        background: #e1c08d;
+                        box-shadow: inset 0px pxToEm(3px) pxToEm(3px) rgba(98, 57, 0, 0.24);
+                    }
+                    &:before{
+                        display: block;
+                        right: auto;
+                        left: 50%;
+                        margin-left: pxToEm(30px);
+                    }
+                }
+            }
+        }
+        .nhw_classtoolbox{
+            .toolbar_rubber1 {
+                .icon{
+                    background: url(resources/wood/images/toolbar_rubber_1_off.png) no-repeat;
+                    background-size: 100% auto;
+                }
+                &.on,&:active{
+                    .icon{
+                       background: url(resources/wood/images/toolbar_rubber_1.png) no-repeat;
+                       background-size: 100% auto;
+                       background-position: pxToEm(3px) pxToEm(12px); 
+                    }
+                }
+            }
+            .toolbar_rubber2 {
+                .icon{
+                    background: url(resources/wood/images/toolbar_rubber_2_off.png) no-repeat;
+                    background-size: 100% auto;
+                }
+                &.on,&:active{
+                    .icon{
+                        background: url(resources/wood/images/toolbar_rubber_2.png) no-repeat;
+                        background-size: 100% auto;
+                        background-position: pxToEm(3px) pxToEm(12px);
+                    }
+                }
+            }
+        }
+    }
+    /* /右侧手写工具栏 */
+}
+

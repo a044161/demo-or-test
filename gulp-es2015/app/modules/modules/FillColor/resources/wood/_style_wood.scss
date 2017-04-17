@@ -1,0 +1,264 @@
+@charset "UTF-8";
+.fillColor_wrapper {
+  .layout_FreeCombination {
+    .nhw_write_toolbar {
+      right: pxToEm(7px);
+    }
+  }
+}
+
+.layout_FillColor {
+  // width: 100%;
+  // height: 100%;
+  /* 暂时解决颗粒窗口宽度被overflow */
+  position: absolute;
+  left: pxToEm(5px);
+  top: 0;
+  right: pxToEm(5px);
+  bottom: 0;
+  /* 暂时解决颗粒窗口宽度被overflow end*/
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 pxToEm(6px) 0 rgba(0, 0, 0, .3);
+  border-radius: pxToEm(16px);
+  &.take_up_leftbar {
+    .com_layout_main {
+      left: 0;
+      border-radius: 0 0 pxToEm(16px) pxToEm(16px);
+      .com_layout_main_att{
+      left: pxToEm(198px);
+    }
+    }
+    .FillColor_txt_wrap {
+      left: 0;
+	  border-radius:pxToEm(16px);
+      .FillColor_txt {
+        padding-left: pxToEm(190px);
+      }
+    }
+
+    .left_fillcolor_bar {
+      .ndui-tool-box {
+        display: none;
+      }
+      .fc_switch_btn {
+        display: none;
+      }
+
+    }
+    .ndui-tool-colse {
+      transform: rotate(-180deg);
+    }
+
+  }
+  .com_layout_main {
+    top: pxToEm(92px);
+    right: 0;
+    bottom: 0;
+    left: pxToEm(136px);
+    background: #f6f2e8;
+    border-top: 1px solid #ded7cc;
+    overflow: initial;
+    border-radius: 0 0 pxToEm(16px) 0;
+    .inner {
+      // position: absolute;
+      // left: 50%;
+      // top: 50%;
+      //transform: translate(-50%, -50%);
+      // margin-left:pxToEm(-635px);
+      // margin-top: pxToEm(-398px);
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &.animate_set{
+        animation: con_show_animate 1s linear 1 forwards;
+        transform-origin: center center;
+      }
+    }
+    .com_layout_main_att {
+      width: pxToEm(1270px);
+      height: pxToEm(796px);
+      // right: pxToEm(262px);
+      left: pxToEm(62px);
+      top: pxToEm(17px);
+      position: absolute;
+      // border:pxToEm(3px) solid transparent;
+      // border-image:url(resources/wood/images/inner_border.png) 1 round;
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: pxToEm(-3px);
+        left: pxToEm(-3px);
+        width: pxToEm(30px);
+        height: pxToEm(30px);
+        border-left: pxToEm(3px) solid #e2ded6;
+        border-bottom: pxToEm(3px) solid #e2ded6;
+        pointer-events: none;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: pxToEm(-3px);
+        right: pxToEm(-3px);
+        width: pxToEm(30px);
+        height: pxToEm(30px);
+        border-right: pxToEm(3px) solid #e2ded6;
+        border-bottom: pxToEm(3px) solid #e2ded6;
+        pointer-events: none;
+      }
+      .layout_att_inner {
+        width: 100%;
+        height: 100%;
+        &:before {
+          content: '';
+          position: absolute;
+          top: pxToEm(-3px);
+          left: pxToEm(-3px);
+          width: pxToEm(30px);
+          height: pxToEm(30px);
+          border-left: pxToEm(3px) solid #e2ded6;
+          border-top: pxToEm(3px) solid #e2ded6;
+          pointer-events: none;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          top: pxToEm(-3px);
+          right: pxToEm(-3px);
+          width: pxToEm(30px);
+          height: pxToEm(30px);
+          border-right: pxToEm(3px) solid #e2ded6;
+          border-top: pxToEm(3px) solid #e2ded6;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+  .FillColor_txt_wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: pxToEm(136px);
+    height: 100%;
+    background: #f1ebde;
+    border-radius: 0 pxToEm(16px) pxToEm(16px) 0;
+  }
+  .FillColor_txt {
+    height: pxToEm(720px);
+    padding: pxToEm(8px) pxToEm(54px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    .txt {
+      line-height: 1.8;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: pxToEm(42px);
+      color: #333333;
+    }
+  }
+  .left_fillcolor_bar {
+    z-index: 13;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: pxToEm(136px);
+    height: pxToEm(920px);
+  }
+  /*收起侧边栏按钮*/
+  .ndui-tool-colse {
+    position: absolute;
+    top: pxToEm(840px);
+    left: pxToEm(34px);
+    z-index: 20;
+    cursor: pointer;
+    .ndui-btn-pic {
+      display: inline-block;
+      width: pxToEm(68px);
+      height: pxToEm(76px);
+      background-image: url(resources/wood/images/nudi_btn/ndui-tool-colse.png);
+      background-size: 100% auto;
+    }
+    // &.turn_up {
+    //     transform: rotate(-180deg);
+    // }
+  }
+  /*收起侧边栏按钮end*/
+  /* 查看事例按钮 */
+  /*.fc_see_btn{
+      display: inline-block;
+      position: absolute;
+      right:pxToEm(-236px);
+      bottom: pxToEm(3px);
+      margin:0 pxToEm(18px);
+      padding:0 pxToEm(34px);
+      height:pxToEm(70px);
+      line-height:pxToEm(70px);
+      text-align: center;
+      vertical-align: middle;
+      border-radius: pxToEm(35px);
+      background: #fff;
+      border: pxToEm(1px) solid none;
+      box-shadow: 0 0 pxToEm(5px) 1px rgba(0, 0, 0, .3);
+      background: linear-gradient(to top, rgb(233,233,233) 0%, rgb(255,255,255) 100%);
+      &:active,&.ui_btn_active{
+          border-color:#fe9d13;
+          box-shadow: 0px 1px 1px 1px #ffd100, inset 0px 1px 1px 1px #ffd100;
+      }
+      &.click_disabled{
+          border-color:#93989a;
+          background: linear-gradient(to bottom, #c8d1d7 0%, #c1c8cc 100%);
+          box-shadow:none;
+          cursor: default;
+          &:active{
+              border-color:#93989a;
+              background: linear-gradient(to bottom, #c8d1d7 0%, #c1c8cc 100%);
+              box-shadow:none;
+          }
+          .fc_see_text{
+              color: #969fa4;
+          }
+      }
+      .fc_see_text{
+          font-size: pxToEm(30px);
+          color: #5d390d;
+      }
+  }*/
+  .fc_seeexm_btn {
+    position: absolute;
+    right: pxToEm(-240px);
+    bottom: pxToEm(3px);
+    .text_box {
+      font-size: pxToEm(30px);
+      color: #5d390d;
+    }
+  }
+  /* 查看事例按钮end */
+  /*填色示例*/
+  .show_exm {
+    position: absolute;
+    padding: 0 pxToEm(5px);
+    text-align: center;
+    right: pxToEm(-220px);
+    bottom: pxToEm(3px);
+    .show_exam_text {
+      display: block;
+      font-size: pxToEm(23.99px);
+    }
+    .show_exam_icon {
+      background: #fff;
+      margin-top: pxToEm(14px);
+      width: pxToEm(180px);
+      height: pxToEm(112px);
+      display: inline-block;
+      box-shadow: 0px 3px pxToEm(10px) 1px rgba(0, 0, 0, .2);
+      padding: pxToEm(5px);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  /*填色示例end*/
+}

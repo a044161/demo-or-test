@@ -1,0 +1,68 @@
+
+<div class="baseMod-com-layout" id="layout">
+    <div class="baseMod-com-wrapper-board">
+        <div class="baseMod-com-header-box">
+            <!--计时器-->
+            <div class="com_time">
+                <div class="time_default">
+                    <b class="time_text">答题时间：</b>
+                    <span class="time_m"><em>05</em></span>
+                    <b class="time_text">分</b>        
+                    <i>:</i>
+                    <span class="time_s"><em>21</em></span>
+                    <b class="time_text">秒</b>
+                </div>
+            </div>
+            <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>             
+        </div>
+        <!-- 公共提交按钮 -->
+        <div class="baseMod-com-submit">
+            @@include('../button/_com_btn_round.html', {"txt": "提&nbsp;&nbsp;交","classname":"com_btn_disabled"})
+        </div>
+        <!-- /公共提交按钮 -->
+        <div class="baseMod-com-layout-container">
+            <!-- 公共标题 -->
+            <div class="baseMod-com-layout-title">
+                <p class="baseMod-tit">@@layoutTitle</p>
+            </div>
+            <!-- /公共标题 -->  
+            <div class="baseMod-com-layout-body baseMod-scrollbar-style-gray">
+                <!-- module-nqit容器 -->
+                <div class="nqti-player-skin-wood"><!-- nqti皮肤控制层 默认皮肤类名nqti-player-skin-default -->          
+                    <div class="nqti-player-body nqti-scrollbar-style-gray nqti-module-show-num"><!-- 加载中添加类名nqti-player-run-loading 显示序号添加类名nqti-module-show-num -->
+                        <div class="nqti-player-loading" ><span>正在努力解析中...</span></div>
+                        <!-- 复合题类的大标题 -->
+                        <div class="nqti-module-header">
+                            <em class="nqti-header-text">动画片复合题</em>
+                        </div>
+                        <!-- /复合题类的大标题 -->
+                        <div class="nqti-module-body @@moduleName">
+                            <!-- 题目序号 -->
+                            <div class="nqti-module-listnum">
+                                <em class="nqti-listnum-text">1</em>
+                                <span class="nqti-listnum-dot">、</span>
+                            </div>
+                            <!-- /题目序号 -->
+                            <!-- 题目描述文字 -->
+                            <div class="nqti-module-title">
+                                <em class="nqti-title-text">@@moduleTitle</em>
+                            </div>
+                            <!-- /题目描述文字 -->
+
+                            <!-- 多媒体附件插入容器 -->
+                            <div class="nqti-module-media  nqti-hide-dom">
+                                不显示的dom结构添加类名nqti-hide-dom
+                            </div>
+                            <!-- /多媒体附件插入容器 -->
+
+                            <!-- 提示按钮容器 -->
+                            <div class="nqti-hint-box @@boxTips">
+                                <span class="nqti-preload-img-01">预加载此按钮点击之后的背景图</span>
+                                @@include('../button/_com_btn_hint.html', {"txt": "提示","classname":""})
+                            </div>
+                            <!-- /提示按钮容器 -->
+                            
+                            <!-- 题型选项 -->
+                            <div class="nqti-module-content">
+                                <!-- @@include("../../../modules/@@page/resources/_index.html") -->
+            

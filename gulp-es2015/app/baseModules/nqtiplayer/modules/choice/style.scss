@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "../../common/resources/setting";
+@import "../../common/resources/function";
+// 木质皮肤
+.nqti-player-skin-wood {
+    @import "resources/wood/style_wood";    
+}
+.exam-skin-wood .baseMod-com-answer-pad .baseMod-com-layout-body-scrn .nqti-com-layout-title-answer  > .nqti-txt{ max-width: 27em; }
+
+// 天空皮肤
+.nqti-player-skin-default {
+    @import "resources/sky/style_sky";
+}
+

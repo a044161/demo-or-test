@@ -1,0 +1,156 @@
+/*****************************************
+nqti-com
+*****************************************/
+.nqti-com-pop-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    z-index: 500;
+    &:after{
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .nqti-com-pop-box{
+        display: inline-block;
+        width: 60%;
+        min-height: pxToEm(400px);
+        border-radius: pxToEm(15px);
+        vertical-align: middle;
+        box-shadow: 0px pxToEm(3px) pxToEm(3px) 0px rgba(0, 0, 0, 0.169), inset 0px pxToEm(-3px) 0px 0px rgba(130, 99, 50, 0.392);
+        background: url(resources/pop/wood/images/pop_w_bg.png) repeat;
+    }
+    .nqti-com-pop-hd{
+        text-align: center;
+        position: relative;
+        height: pxToEm(55px);
+        border-radius: pxToEm(15px) pxToEm(15px) 0 0;
+        background: url(resources/pop/wood/images/pop_w_dec2.png) repeat-x;
+        background-size: auto 100%;
+        box-shadow: 0px 2px 2px 0px rgba(156, 87, 5, 0.157), inset 0px -2px 0px 0px rgba(177, 113, 22, 0.392);
+        .nqti-pop-dec{
+            display: inline-block;
+            width: pxToEm(73px);
+            height: pxToEm(56px);
+            background: url(resources/pop/wood/images/pop_w_dec1.png) no-repeat;
+            background-size: 100% auto;
+        }
+        .nqti-dec-1{
+            position: absolute;
+            left: pxToEm(40px);
+            bottom: pxToEm(20px);
+        }
+        .nqti-dec-2{
+            position: absolute;
+            right: pxToEm(40px);
+            bottom: pxToEm(20px);
+        }
+    }
+    .nqti-com-pop-bd{
+        overflow-y: auto;
+        max-height: pxToEm(540px);        
+        .nqti-com-pop-icon{
+            display: inline-block;
+            width: pxToEm(118px);
+            height: pxToEm(118px);
+            margin: pxToEm(43px) 0 pxToEm(34px);
+        }
+        .nqti-com-pop-text{
+            padding: 0 pxToEm(15px);
+            font-size: pxToEm(42px);
+            line-height: 1.2;
+        }
+        .nqti-com-remind-text{
+            margin: pxToEm(80px) pxToEm(24px) pxToEm(26px);
+            padding: 0 pxToEm(30px);            
+            line-height: pxToEm(50px);
+            color: #603300;
+            .nqti-text-size{
+                font-size: pxToEm(48px);
+            }
+        }
+    }
+    .nqti-com-pop-bt{
+        text-align: center;
+        padding: pxToEm(54px) 0;
+        .nqti-hint-btn{
+            width: pxToEm(230px);
+            height: pxToEm(74px);
+            line-height: pxToEm(74px);
+            margin: 0 pxToEm(24px);
+            background: url(resources/button/wood/images/btn_pop_normal.png) no-repeat center center;
+            background-size: 100% auto;
+            border:none;
+            border-radius:0;
+            box-shadow: none;
+            &:before{
+                display: none;
+            }
+            .nqti-tip-icon-text{
+                font-size: pxToEm(38px);
+            }
+            &:active{                
+                background-image: url(resources/button/wood/images/btn_pop_press.png);
+            }
+        }
+    }
+    .com-pop-right{
+        width: pxToEm(740px);
+        .nqti-com-pop-icon{
+            background: url(resources/pop/wood/images/icon_a_right.png) no-repeat;
+            background-size: 100% auto; 
+        }
+        .nqti-com-pop-text{
+            color: #d6630f;
+        }
+        .nqti-com-pop-bd{
+            min-height: pxToEm(320px);
+        }
+    }
+    .com-pop-wrong{
+        width: pxToEm(740px);
+        .nqti-com-pop-icon{
+            background: url(resources/pop/wood/images/icon_a_wrong.png) no-repeat;
+            background-size: 100% auto;  
+        }
+        .nqti-com-pop-text{
+            color: #972700;
+        }
+        .nqti-com-pop-bd{
+            min-height: pxToEm(320px);
+        }
+    }
+    .com-pop-submit{
+        width: pxToEm(740px);
+    }
+    .com-pop-hint-box{
+        text-align: left;
+        .nqti-com-pop-bd{
+            min-height: pxToEm(194px);
+        }
+        .nqti-com-remind-text{
+            text-align: left;
+            margin: pxToEm(24px);
+            .nqti-text-size{
+                font-size: pxToEm(36px);
+            }
+        }
+        .nqti-com-pop-bt{
+            padding-top: pxToEm(24px);
+        }
+    }
+}
+.nqti-com-pop-title{
+    text-align: center;
+    color: #603300;
+    line-height: pxToEm(55px);
+    span{
+        font-size: pxToEm(36px);
+    }
+}

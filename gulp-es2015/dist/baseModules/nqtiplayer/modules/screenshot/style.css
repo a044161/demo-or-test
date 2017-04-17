@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/* 截图发题css */
+.nqti-modal-screenshot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  width: 51.04167em;
+  margin: -18.41667em 0 0 -25.5em;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif; }
+
+.nqti-modal-screenshot-hd {
+  font-size: 1em;
+  height: 1.91667em;
+  margin: 0;
+  padding: 0 0.625em;
+  background: #333;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1.875em;
+  box-sizing: border-box; }
+
+.nqti-modal-screenshot-tit {
+  font-size: 0.83333em;
+  line-height: 1; }
+
+.nqti-modal-screenshot-view {
+  width: 46.25em;
+  height: 26.04167em;
+  margin: 0.95833em 2.41667em 0;
+  padding: 0.83333em;
+  border: 1px solid #c8c8c8;
+  text-align: center;
+  white-space: nowrap;
+  box-sizing: border-box; }
+  .nqti-modal-screenshot-view:after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle; }
+  .nqti-modal-screenshot-view img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle; }
+
+.nqti-modal-screenshot-options {
+  height: 3.33333em;
+  padding: 0 2.41667em;
+  text-align: center;
+  line-height: 3.29167em;
+  box-sizing: border-box; }
+
+.nqti-modal-screenshot-ft {
+  height: 4.58333em;
+  background: #eee;
+  text-align: center;
+  line-height: 4.54167em; }
+
+.nqti-modal-screenshot-btn {
+  display: inline-block;
+  min-width: 7.83333em;
+  height: 2.25em;
+  margin: 0 2.20833em;
+  padding: 0 0.625em;
+  background: #649c01;
+  color: #fff;
+  line-height: 2.25em;
+  box-sizing: border-box;
+  text-decoration: none; }
+  .nqti-modal-screenshot-btn:active {
+    background: #517e00; }
+  .nqti-modal-screenshot-btn.nqti-disable {
+    opacity: .5;
+    cursor: no-drop; }
+    .nqti-modal-screenshot-btn.nqti-disable:active {
+      background: #649c01; }
+  .nqti-modal-screenshot-btn.nqti-cancel {
+    background: #919191; }
+    .nqti-modal-screenshot-btn.nqti-cancel:active {
+      background: #636363; }
+  .nqti-modal-screenshot-btn em {
+    font-style: normal; }
+
+.nqti-modal-screenshot-option-box {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5;
+  text-align: left; }
+
+.nqti-modal-screenshot-radio {
+  position: relative;
+  display: inline-block;
+  min-width: 7.91667em;
+  height: 1.33333em;
+  margin: 0 1.45833em;
+  padding: 0 0.83333em 0 1.66667em;
+  line-height: 1.33333em;
+  white-space: nowrap;
+  box-sizing: border-box; }
+  .nqti-modal-screenshot-radio:before {
+    content: '';
+    position: absolute;
+    top: 0.16667em;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #bbb;
+    border-radius: 100%;
+    box-shadow: inset 0 1px 2px 0 #ccc;
+    box-sizing: border-box; }
+  .nqti-modal-screenshot-radio input {
+    display: none; }
+  .nqti-modal-screenshot-radio.nqti-checked:before {
+    border-color: #649c01; }
+  .nqti-modal-screenshot-radio.nqti-checked:after {
+    content: '';
+    position: absolute;
+    top: 0.375em;
+    left: 0.20833em;
+    width: 0.58333em;
+    height: 0.58333em;
+    background: #649c01;
+    border-radius: 100%;
+    box-sizing: border-box; }
+  .nqti-modal-screenshot-radio:active {
+    opacity: .7; }
+
+.nqti-modal-screenshot-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.95833em;
+  height: 1.91667em;
+  background: #1b1b1b url(resources/wood/images/icon_close.png) no-repeat center center;
+  background-size: 1.125em auto;
+  border-left: 1px solid #505050; }
+  .nqti-modal-screenshot-close:active {
+    background-color: #000; }
+
+/* 学生端答题 */
+.nqti-screenshot-answer-bd {
+  white-space: nowrap;
+  text-align: center; }
+  .nqti-screenshot-answer-bd:after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 99.9%;
+    vertical-align: middle; }
+  .nqti-screenshot-answer-bd img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid #965b18;
+    vertical-align: middle; }
+
+/* end 截图发题css */
+/* 公用黑底半透明提示框 */
+.nqti-com-mask-tips {
+  font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  width: 17.08333em;
+  margin: -4.58333em 0 0 -8.54167em;
+  padding: 1.66667em;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  line-height: 1.5;
+  text-align: center; }
+
+.nqti-com-mask-tips-txt {
+  display: inline-block;
+  text-align: left; }
+
+/* 抖动动画 */
+.nqti-wobble {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: wobble; }
+
+@keyframes wobble {
+  from {
+    transform: none; }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
+  to {
+    transform: none; } }
+
+/*# sourceMappingURL=style.css.map */

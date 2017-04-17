@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "../../common/resources/common/setting/wood/setting";
+@import "../../common/resources/common/mixin/mixin";
+@import "../../common/resources/common/function/function";
+// 木质皮肤
+.exam_skin_wood {
+    @import "resources/wood/style_wood";
+}
+
+// 天空皮肤
+.exam_skin_sky {
+    @import "resources/sky/style_sky";
+}
+
+// 手机端
+.exam_mobile {
+    height: 100%;
+    background-color: #fff;
+    @import "resources/mobile/style_mobile";
+}

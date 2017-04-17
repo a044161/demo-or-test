@@ -1,0 +1,35 @@
+.mindmap-tips-edit {
+  position: absolute;
+  left: 8.33333em;
+  top: 25em;
+  height: 2.08333em;
+  padding: 0 2.375em 0 1.66667em;
+  white-space: nowrap;
+  background: #f7ebcf;
+  border: 1px solid #c19f6e;
+  border-radius: 2em;
+  box-shadow: 0.04167em 0.16667em 0.75em 0 rgba(92, 71, 8, 0.75); }
+  .mindmap-tips-edit input {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 20.83333em;
+    line-height: 1.91667em;
+    font-size: 0.95833em;
+    background: none;
+    border: 0;
+    color: #000; }
+    .mindmap-tips-edit input:focus {
+      outline: 0; }
+    .mindmap-tips-edit input[disabled] {
+      color: #000; }
+  .mindmap-tips-edit:before {
+    content: '';
+    position: absolute;
+    left: -0.29167em;
+    top: -0.66667em;
+    width: 2.08333em;
+    height: 2.79167em;
+    background: url(resources/wood/images/mindmap/light.png) center repeat;
+    background-size: 100% auto; }
+
+/*# sourceMappingURL=style_mindmap.css.map */

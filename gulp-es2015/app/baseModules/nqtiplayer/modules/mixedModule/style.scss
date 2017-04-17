@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import "../../common/resources/setting";
+@import "../../common/resources/function";
+// 木质皮肤
+.exam-skin-wood {
+    @import "resources/wood/style_wood";
+}
+.exam-skin-wood .mixedModule-layout-box .baseMod-com-layout-body {
+    top: pxToEm(24px);
+    bottom: pxToEm(120px);
+}
+.exam-skin-wood .hide-dom {
+    display: none !important;
+}
+.exam_skin_wood .mixedModule-player-container .layout_handWrite .com_layout_main {
+    position: absolute;
+    top: 8em;
+    border: 1px solid #ded7cc;
+}

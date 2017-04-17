@@ -1,0 +1,64 @@
+<!-- 汉字听写 学生端-->
+<div class="chineseCharacter-module">
+	<div class="chineseCharacter-module-title" style="display: none;">
+		<span class="chineseCharacter-module-title-text">听读音，写汉字</span>
+	</div>
+	<!-- 汉字听写 拼音和田字格部分-->
+    <!-- 汉字听写 拼音和田字格部分-->
+<div class="chineseCharacter-module-spell">
+	 <ul class="chineseCharacter-module-spell-box">
+ 	    <!-- 田字格正确的时候 chineseCharacter-module-spell-item 添加样式: you-are-right  
+ 			 田字格错误的时候 chineseCharacter-module-spell-item 添加样式: you-are-wrong  
+ 			 答题的时候选中添加类名 on
+ 	    -->
+	 	<li class="chineseCharacter-module-spell-item you-are-right">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters wrong-character-box">
+                <!-- 开发过程中直接在 spell_characters-box 元素中插入笔画元素，删除样式:demo-bg -->
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item you-are-wrong ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item you-are-wrong ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters wrong-character-box">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li>
+	 </ul>
+</div>
+	<div class="chineseCharacter-module-btns">
+		<div class="module-btns-box">
+			<!-- 预加载点击背景色的span -->
+			<span class="ChineseCd-preload-img01"></span>
+			<!-- module-btns-item 选中的加类名 on -->
+			<a href="#" class="module-btns-item">
+				<i class="btn-icon pen-icon"></i>
+				<span class="btn-text">画笔</span>
+			</a>
+		 	<a href="#" class="module-btns-item">
+		 		<i class="btn-icon eraser-icon"></i>
+				<span class="btn-text">橡皮擦</span>
+		 	</a>
+			<a href="#" class="module-btns-item"><!-- 执行发音动画 .module-btns-item 加类名 on -->
+				<i class="btn-icon voice-icon"></i>
+				<span class="btn-text">发音</span>
+			</a>
+		</div>
+	</div>
+	<div class="chineseCharacter-module-decipher ChineseCd-light-scrollbar">
+		<p class="module-decipher-text"><strong>源于：</strong>唐·韩愈《进学解》:“~，荒于嬉；行成于思，毁于随。”</p>
+		<p class="module-decipher-text"><strong>释义：</strong>学业精深是由勤奋得来的。</p>
+	</div>
+</div>

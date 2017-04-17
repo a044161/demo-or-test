@@ -1,0 +1,327 @@
+/* 学生端 */
+.com_layout .com_wrapper_pad.en_card_wrapper .com_layout_container {
+    height: pxToEm(965px);
+}
+.com_layout .com_wrapper_pad.en_card_wrapper{
+    width: 80em;
+    height: 45em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22.5em 0 0 -40em;
+    padding: 0 1.125em;
+    box-sizing: border-box;
+    .com_layout_header {
+        margin-left: -.6em;
+        margin-right: -.7em;
+    }
+}
+.com_wrapper_pad.en_card_wrapper {
+    .ec_com_media {
+        width: pxToEm(522px)
+    }
+    .ec_carousel {
+        height: pxToEm(329px);
+    }
+    .com_btn_square_s{
+        display: none;
+    }
+    .en_card_main {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #faf5ec;
+        border-radius: pxToEm(16px);
+        text-align: center;
+        box-shadow: 0 0 1px rgba(250, 245, 236, 0.2);
+    }
+
+    .en_card_view {
+        position: relative;
+        width: pxToEm(1824px);
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .ec_see_answer {
+        position: absolute;
+        top: pxToEm(-102px);
+        right: pxToEm(210px);
+        z-index: 500;
+    }
+    /* 单词拼写 */
+    .ec_word_spell {
+        .ec_spell_content {
+            display: inline-block;
+            width: 96%;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: pxToEm(110px);
+        }
+        .ec_com_media{
+            display: inline-block;
+        }
+        .ec_spell_content.ec_show_answer{
+            padding-top: pxToEm(30px);
+        }
+        .ec_spell_info {
+            display: inline-block;
+            width: pxToEm(522px);
+            color: #565451;
+            margin: pxToEm(12px) 0 pxToEm(20px);
+            text-align: left;
+            span {
+                display: inline-block;
+                font: pxToEm(60px) 'Microsoft YaHei';
+            }
+        }
+        .ec_spell_writting_area {
+            position: relative;
+            left: 50%;
+            margin-left: pxToEm(-800px);
+            margin-bottom: pxToEm(20px);
+            width: pxToEm(1600px);
+            height: pxToEm(250px);
+            background: url(resources/wood/images/bg_word_writting.png) repeat-x;
+            background-size: auto 100%;
+        }
+        .ec_spell_dash_line {
+            display: none;
+            position: relative;
+            margin-top: pxToEm(40px);
+            width: pxToEm(1780px);
+            height: 1px;
+            background:  url(resources/wood/images/bg_dash.png) repeat-x;
+            background-size: pxToEm(15px) auto;
+        }
+        .ec_show_answer .ec_spell_writting_area{
+            margin-bottom: 0;
+        }
+        .ec_show_answer .ec_spell_dash_line{
+            display: block;
+        }
+        .ec_spell_answer_area {
+            display: none;
+        }
+        .ec_show_answer .ec_spell_answer_area{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,0);
+            display: block;
+        }
+
+        .ec_spell_answer_info {
+            display: none;
+            color: #333333;
+            margin-bottom: pxToEm(15px);
+            span {
+                font: pxToEm(36px) 'Microsoft YaHei';
+            }
+        }
+        .ec_spell_answer_writting {
+            min-width: pxToEm(580px);
+            height: pxToEm(175px);
+            padding: 0 pxToEm(12px);
+            color: #333333;
+            text-align: center;
+            margin-bottom: 0;
+            em {
+                font: pxToEm(105px) 'Microsoft YaHei';
+                line-height: 1.58;
+            }
+        }
+    }
+
+    /* 句子拼写 */
+    .ec_sentence_spell {
+        .ec_spell_content {
+            height: 100%;
+            padding: pxToEm(80px) 0 0 pxToEm(146px);
+        }
+        .ec_spell_info {
+            color: #565451;
+            margin: pxToEm(12px) 0 pxToEm(20px);
+            text-align: left;
+            span {
+                font: pxToEm(60px) 'Microsoft YaHei';
+            }
+        }
+        .ec_spell_writting_area {
+            width: pxToEm(1600px);
+            height: pxToEm(250px);
+            background: url(resources/wood/images/bg_word_writting.png) repeat-x;
+            background-size: auto 100%;
+        }
+        .ec_spell_dash_line {
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 99%;
+            height: 1px;
+            margin-top: pxToEm(32px);
+            background:  url(resources/wood/images/bg_dash.png) repeat-x;
+            background-size: pxToEm(15px) auto;
+        }
+        .ec_show_answer .ec_spell_dash_line{
+            display: block;
+        }
+        .ec_spell_answer_area {
+            display: none;
+            margin: pxToEm(48px) 0;
+        }
+        .ec_show_answer .ec_spell_answer_area{
+            display: block;
+            text-align: left;
+        }
+
+        .ec_spell_answer_info {
+            display: inline-block;
+            color: #333333;
+            span{
+                font: pxToEm(36px) 'Microsoft YaHei';
+            }
+        }
+        .ec_spell_answer_writting {
+            display: inline-block;
+            color: #333333;
+            em {
+                font: pxToEm(36px) 'Microsoft YaHei';
+            }
+        }
+    }
+
+    .en_card_main_board {
+        display: none;
+    }
+
+    /* 滚动条 */
+    /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+    .scrollbar_style_wborder::-webkit-scrollbar
+    {
+        width: pxToEm(14px);
+        background-color: #F5F5F5;
+    }
+
+    /*定义滚动条轨道 内阴影+圆角*/
+    .scrollbar_style_wborder::-webkit-scrollbar-track
+    {
+        border-radius: pxToEm(16px);
+        margin: pxToEm(26px)  0;
+        background-color: #e2dfdb;
+    }
+
+    /*定义滑块 内阴影+圆角*/
+    .scrollbar_style_wborder::-webkit-scrollbar-thumb
+    {
+        border-radius: pxToEm(16px);
+        background-color: #c9c4bd;
+    }
+}
+
+/* 白板端 */
+.com_wrapper_board.en_card_wrapper {
+    .com_btn_round {
+        display: none;
+    }
+    .com_header_time {
+        display: none;
+    }
+    &.en_card_wrapper_send .com_header_time {
+        display: block;
+    }
+    .en_card_main {
+        position: relative;
+        width: pxToEm(1712px);
+        height: pxToEm(905px);
+        background-color: #faf5ec;
+        border-radius: pxToEm(14px);
+        margin: 0 auto;
+        box-shadow: 0 0 1px rgba(250, 245, 236, 0.2);
+    }
+    .en_card_view {
+        position: relative;
+        width: pxToEm(1700px);
+        height: 100%;
+        overflow-x: hidden;
+        text-align: center;
+    }
+    /* 单词拼写 */
+    .ec_word_spell {
+        .ec_spell_content {
+            display: inline-block;
+            height: 100%;
+            margin: 0 auto;
+            padding-top: pxToEm(70px);
+        }
+        .ec_spell_info {
+            color: #565451;
+            margin: pxToEm(12px) 0 pxToEm(20px);
+            text-align: left;
+            span {
+                font: pxToEm(60px) 'Microsoft YaHei';
+            }
+        }
+        .ec_spell_writting_area {
+            position: absolute;
+            left: pxToEm(55px);
+            width: pxToEm(1600px);
+            height: pxToEm(250px);
+            background: url(resources/wood/images/bg_word_writting.png) repeat-x;
+            background-size: auto 100%;
+            margin-bottom: pxToEm(48px);
+        }
+    }
+
+    /* 句子拼写 */
+    .ec_sentence_spell {
+        .ec_spell_content {
+            height: 100%;
+            padding: pxToEm(80px) 0 0 pxToEm(55px);
+        }
+        .ec_spell_info {
+            color: #565451;
+            margin: pxToEm(12px) 0 pxToEm(20px);
+            text-align: left;
+            span {
+                font: pxToEm(60px) 'Microsoft YaHei';
+            }
+        }
+        .ec_spell_writting_area {
+            width: pxToEm(1600px);
+            height: pxToEm(250px);
+            background: url(resources/wood/images/bg_word_writting.png) repeat-x;
+            background-size: auto 100%;
+            margin-bottom: pxToEm(48px);
+        }
+    }
+
+    .ec_spell_dash_line,
+    .ec_spell_answer_area,
+    .ec_see_answer{
+        display: none;
+    }
+
+
+    /* 滚动条 */
+    /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+    .scrollbar_style_wborder::-webkit-scrollbar
+    {
+        width: pxToEm(14px);
+        background-color: #F5F5F5;
+    }
+
+    /*定义滚动条轨道 内阴影+圆角*/
+    .scrollbar_style_wborder::-webkit-scrollbar-track
+    {
+        border-radius: pxToEm(16px);
+        margin: pxToEm(26px) 0 pxToEm(45px);
+        background-color: #e2dfdb;
+    }
+
+    /*定义滑块 内阴影+圆角*/
+    .scrollbar_style_wborder::-webkit-scrollbar-thumb
+    {
+        border-radius: pxToEm(16px);
+        background-color: #c9c4bd;
+    }
+}

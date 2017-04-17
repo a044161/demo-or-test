@@ -1,0 +1,74 @@
+@charset "UTF-8";
+.exam_skin_wood {
+  /*文本选择题型*/
+  /*文本选择题型结束*/ }
+  .exam_skin_wood .com_btn_remind.pad_initial {
+    left: 3.33333em;
+    top: 4.83333em; }
+  .exam_skin_wood .textselect_box {
+    position: relative;
+    height: 100%;
+    z-index: 333; }
+    .exam_skin_wood .textselect_box .com_layout_main {
+      margin: 0 1.5em;
+      margin: 2em 1.5em;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      transform: translate3d(0, 0, 0); }
+    .exam_skin_wood .textselect_box .textselect_container {
+      color: #5d390d;
+      height: 100%;
+      font-size: 1.91667em;
+      padding: 0 0.5em;
+      border-radius: 0.33333em;
+      line-height: 2;
+      word-wrap: break-word;
+      word-break: break-word; }
+      .exam_skin_wood .textselect_box .textselect_container .textselect_option {
+        background: #b18745;
+        color: #fff;
+        border: 1px solid #806031;
+        border-bottom-width: 0.125em;
+        position: relative;
+        cursor: pointer;
+        border-radius: 0.20833em;
+        padding: 0.125em 0.25em;
+        display: inline-block;
+        line-height: 1.5; }
+      .exam_skin_wood .textselect_box .textselect_container .textselect_selected {
+        background: #76c1ea;
+        /* padding-left:34px; */
+        color: #fff;
+        border: 1px solid #4b8aad;
+        border-bottom-width: 0.125em;
+        /* &:before{
+          position: absolute;
+          left:0;
+          top:0;
+          height: 100%;
+          width: 30px;
+          content:"";
+          background:#5397ba url(images/wood/icons_c_ok.png) center center no-repeat;
+          background-size: auto 100%;
+
+      } */ }
+      .exam_skin_wood .textselect_box .textselect_container .textselect_error {
+        background: #d62727;
+        color: #fff;
+        border: 1px solid #861010;
+        border-bottom-width: 0.125em; }
+      .exam_skin_wood .textselect_box .textselect_container .textselect_correct {
+        background: #268b52;
+        color: #fff;
+        border: 1px solid #14c061;
+        border-bottom-width: 0.125em; }
+  .exam_skin_wood .textselect_result {
+    float: left;
+    margin: 0.83333em 0 0 35%;
+    color: #5e390c;
+    font-size: 1em; }
+    .exam_skin_wood .textselect_result span {
+      color: #fd9000;
+      font-size: 1.66667em; }
+
+/*# sourceMappingURL=style.css.map */

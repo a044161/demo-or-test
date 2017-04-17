@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>pad端题型外框</title>
+    <link rel="stylesheet" type="text/css" href="../../../common/common.css">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+
+<body>
+    <div class="exam_skin_wood">
+        <div class="com_layout" id="layout">
+            <div class="com_wrapper_pad" id="wrapper">
+                <!-- pad端加.com_wrapper_pad，白板端加.com_wrapper_board -->
+                <!--头部-->
+                <div class="com_layout_header">
+                    <!--计时器-->
+                    <div class="com_header_time">
+                        <div class="com_time">
+    <div class="time_default ">
+        <b class="time_text">答题时间：</b><!-- 
+                 --><span class="time_m"><em>05</em></span><!-- 
+                          --><b class="time_text">分</b><!--         
+                                   --><i>:</i><!-- 
+                                            --><span class="time_s"><em>21</em></span><!-- 
+                                                     --><b class="time_text">秒</b>
+    </div>
+</div>
+                        <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>
+                    </div>
+                    <!--/计时器-->
+                    <!--提交按钮-->
+                    <div class="com_header_tool">
+                        <a class="com_btn_round " href="javascript:;">
+<!-- <span class="icons_box"></span> -->
+<span class="text_box">提&nbsp;&nbsp;交</span>
+</a>
+                    </div>
+                    <!--/提交按钮-->
+                </div>
+                <!--/头部-->
+                <!--主体内容-->
+                <div class="com_layout_container">
+                <!-- 没有标题时加.notit -->
+                    <div class="com_layout_exam_content matchit">
+                    <!-- 具体题型内容 -->
+                        <!--主体内容-->                
+                        <div class="com_layout_main_exam"><!-- 没有标题时加.notit -->
+                            <div class="com_layout_tit">
+                                <h2 class="tit">标题</h2>
+                                <!-- 文字过多的情况加.s_tit -->
+                            </div>
+                            <div class="com_layout_main">
+                                <!-- 在这里新建div写新的题型 -->
+                                <div class="com_m_sideboard_1">
+    <!--左面板宽度对应类名：com_grid_0、com_grid_1、com_grid_2 ~ com_grid_10 分别表示：无左侧面板、宽度为10%、20% ~ 100% -->
+    <div class="com_m_sidehead">
+        <!--if 有标题的话写在这儿-->
+        <div class="match_counter">
+            <span class="moment_num">0</span><i>/</i><span class="max_num">12</span>
+        </div>
+    </div>
+    <div class="com_m_sidecon">
+        <!-- 当需要使用重写后的滚动条样式，容器的加类scrollbar_style_gray -->
+        <div class="coursebox scrollbar_style_gray">
+            <!-- 左边结果区域 -->
+            <div class="match_left_result">
+                <!-- 学生未选择的显示 -->
+                <ul class="match_unfinished show_line">
+                <!-- 加show_line时，显示错误ul的底部黑线。去掉show_line则不显示 -->
+                    <!-- 链接正确的项目li的类名是match_right连接错的li类名是match_wrong -->
+                    <li class="match_wrong">
+                        <em class="match_icon"></em>
+                        <div class="match_list">
+                            <div class="list_m_box">
+                                <div class="list_m_pic">
+                                    <img src="demopic/demo_item1.png" alt="">
+                                </div>
+                                <ins class="ins_line"></ins>
+                                <div class="list_m_pic">
+                                    <img src="demopic/demo_item2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="match_wrong">
+                        <em class="match_icon"></em>
+                        <div class="match_list">
+                            <div class="list_m_box">
+                                <div class="list_m_pic">
+                                    <img src="demopic/demo_item1.png" alt="">
+                                </div>
+                                <ins class="ins_line"></ins>
+                                <div class="list_m_pic">
+                                    <img src="demopic/demo_item1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- /学生未选择的显示 -->
+                <!-- 学生选中的结果显示 -->
+                <ul class="match_user_done">
+                    <!-- 链接正确的项目li的类名是match_right连接错的li类名是match_wrong -->
+                    <li class="match_right">
+                        <em class="match_icon"></em>
+                        <div class="match_list">
+                            <div class="list_m_box">
+                                <div class="list_m_pic">
+                                    <img src="demopic/demo_item3.png" alt="">
+                                </div>
+                                <ins class="ins_line"></ins>
+                                <div class="list_m_text">
+                                    <!-- 小于等于2个字符长度时，用text_l ，3-6长度时 ，用text_m ，7个以上长度用text_s -->
+                                    <p class="text_s">这个地方要能够放二十个字符包括英文和中文</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="match_right">
+                        <em class="match_icon"></em>
+                        <div class="match_list">
+                            <div class="list_m_box">
+                                <div class="list_m_pic">
+                                    <img src="demopic/demo_item3.png" alt="">
+                                </div>
+                                <ins class="ins_line"></ins>
+                                <div class="list_m_pic">
+                                    <img src="demopic/demo_item1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="match_wrong">
+                        <em class="match_icon"></em>
+                        <div class="match_list">
+                            <div class="list_m_box">
+                                <div class="list_m_pic">
+                                    <img src="demopic/demo_item1.png" alt="">
+                                </div>
+                                <ins class="ins_line"></ins>
+                                <div class="list_m_text">
+                                    <p class="text_m">候满十五个字</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="match_right">
+                        <em class="match_icon"></em>
+                        <div class="match_list">
+                            <div class="list_m_box">
+                                <div class="list_m_pic">
+                                    <img src="demopic/demo_item3.png" alt="">
+                                </div>
+                                <ins class="ins_line"></ins>
+                                <div class="list_m_text">
+                                    <p class="text_l">小于</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="match_right">
+                        <em class="match_icon"></em>
+                        <div class="match_list">
+                            <div class="list_m_box">
+                                <div class="list_m_pic">
+                                    <img src="demopic/demo_item3.png" alt="">
+                                </div>
+                                <ins class="ins_line"></ins>
+                                <div class="list_m_pic">
+                                    <img src="demopic/demo_item1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- /学生选中的结果显示 -->
+            </div>
+            <!-- /左边结果区域 -->
+        </div>
+    </div>
+</div>
+<div class="com_m_mainboard_1">
+    <div class="match_board_bg">
+    <!-- 右边游戏区域 -->
+            <div class="com_layout_container inner">
+                <div class="com_layout_main">
+                <!-- 答题错误的弹窗 -->
+                    <!-- 答案正确与错误弹出框 -->
+<div class="com_pop_ans_result wrong">
+    <p class="ans_result_tit">
+       <span>时间到了，下次加油哦！</span>
+    </p>
+    <div class="ans_result_content">
+        <div class="ans_result_pics">
+            <span class="pics_t"></span>
+            <span class="pics_r"></span>
+            <span class="pics_b"></span>
+            <span class="pics_l"></span>
+        </div>
+        <p class="ans_result_time">
+            <span class="com_pop_minute">1</span><span>分</span>
+            <span class="com_pop_second">30</span><span>秒</span>
+        </p>
+        <p class="ans_result_bottom">
+            左侧可以查看正确答案啦！
+        </p>
+    </div>
+</div>
+<!-- 答案正确与错误弹出框 -->
+
+                 </div>
+            </div>
+            <!--/主体内容-->
+     <!-- /右边游戏区域 -->
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                    <!-- 具体题型内容 -->
+                    </div>
+                </div>
+                <!--/主体内容-->
+            </div>
+        </div>
+    </div>
+    <script src="../../../common/resources/common/layout/wood/layout.js"></script>
+</body>
+</html>

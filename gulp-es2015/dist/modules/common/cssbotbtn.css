@@ -1,0 +1,611 @@
+@charset "UTF-8";
+.hide_dom {
+  display: none !important; }
+
+.hide-dom {
+  display: none !important; }
+
+/*互动按钮*/
+.ndui-btn-square {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.41667em;
+  min-width: 4.16667em;
+  height: 4.08333em;
+  text-align: center;
+  color: #0c0701;
+  text-decoration: none;
+  /*底部按钮调大*/ }
+  .ndui-btn-square .ndui-btn-text {
+    display: block;
+    color: #0c0701;
+    font-size: 0.66667em;
+    line-height: 1.25em;
+    /*底部按钮调大*/
+    font-size: .78667em; }
+  .ndui-btn-square .ndui-btn-pic {
+    position: relative;
+    display: inline-block;
+    width: 2.95833em;
+    height: 2.79167em;
+    margin: 0 auto;
+    background: url(resources/common/button/wood/images/btn_br_board.png) center top no-repeat;
+    background-size: 100% 100%;
+    /*底部按钮调大*/ }
+    .ndui-btn-square .ndui-btn-pic:before {
+      z-index: 1;
+      content: '';
+      position: absolute;
+      width: 2.04167em;
+      height: 2.58333em;
+      left: 50%;
+      margin-left: -1.02083em;
+      top: 0.25em; }
+  .ndui-btn-square:active, .ndui-btn-square.on {
+    /*background-position: center pxToEm(-98.5px);*/
+    /*底部按钮调大*/ }
+    .ndui-btn-square:active .ndui-btn-pic:after, .ndui-btn-square.on .ndui-btn-pic:after {
+      content: '';
+      position: absolute;
+      left: 0.16667em;
+      right: 0.16667em;
+      top: 0.08333em;
+      bottom: 0.08333em;
+      border: 0.125em solid #fe9d13;
+      border-radius: 0.41667em;
+      box-shadow: 0 0 0 1px #ffd200, inset 0 0 0 1px #ffd200; }
+  .ndui-btn-square.send_to_student .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board00.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_seat .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board01.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_team .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board02.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_time .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board03.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_check .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board04.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_answer .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board05.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_quit .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board06.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_stats .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board07.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_result .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board08.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_analysis .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board09.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_vote .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board10.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_view_progress .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board11.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_end_answer .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board12.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_exit .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board13.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_backView .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board14.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_peerReview .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board15.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_leader_first .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board16.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_statistic .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board17.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_resend .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board19.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.square_tool_treasure .ndui-btn-pic:before {
+    background: url(resources/common/button/wood/images/icon_board20.png) center top no-repeat;
+    background-size: 100% auto; }
+  .ndui-btn-square.click-disabled {
+    filter: Gray;
+    -webkit-filter: grayscale(100%); }
+    .ndui-btn-square.click-disabled .ndui-btn-pic:after {
+      display: none; }
+
+/*投票选择类按钮*/
+.com_btn_square_w {
+  position: relative;
+  display: inline-block;
+  min-width: 5.16667em;
+  height: 3.5em;
+  line-height: 3.5em;
+  text-align: center;
+  padding: 0 0.5em;
+  color: #0c0701;
+  font-size: 1em;
+  background: url(resources/common/button/wood/images/btn_br_board_bg.png) left top repeat-x;
+  background-size: auto 100%;
+  text-decoration: none;
+  border: 0.08333em solid #dbb87c;
+  border-radius: 0.41667em;
+  box-shadow: 0 0.16667em 0.16667em 0 rgba(208, 141, 75, 0.7), inset 0 0 0.25em 0 rgba(255, 255, 255, 0.81); }
+  .com_btn_square_w:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1.75em;
+    background: url(resources/common/button/wood/images/btn_br_board_bg_lh.png) left top repeat-x;
+    background-size: auto 100%;
+    border-radius: 0.41667em 0.41667em 0 0; }
+  .com_btn_square_w .com_btn_square_txt {
+    position: relative;
+    font-size: 1em; }
+  .com_btn_square_w:active, .com_btn_square_w.ui_btn_active {
+    border-color: #fe9d13; }
+    .com_btn_square_w:active:after, .com_btn_square_w.ui_btn_active:after {
+      content: "";
+      position: absolute;
+      left: -0.08333em;
+      top: 0;
+      right: -0.08333em;
+      bottom: 0;
+      border: 0.16667em solid #fe9d13;
+      border-radius: 0.5em;
+      box-shadow: 0 0 0 0.08333em #ffd200, inset 0 0 0 0.04167em #ffd200; }
+  .com_btn_square_w.highlight {
+    color: #da4242; }
+    .com_btn_square_w.highlight .com_btn_square_txt {
+      color: #da4242; }
+  .com_btn_square_w.radius_rb {
+    border-radius: 0 0.41667em 0.41667em 0; }
+    .com_btn_square_w.radius_rb:active:after, .com_btn_square_w.radius_rb.ui_btn_active:after {
+      left: 0;
+      border-radius: 0 0.41667em 0.41667em 0; }
+  .com_btn_square_w.radius_none {
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
+    z-index: 5; }
+    .com_btn_square_w.radius_none:active:after, .com_btn_square_w.radius_none.ui_btn_active:after {
+      border-radius: 0; }
+  .com_btn_square_w.radius_lb {
+    border-radius: 0.41667em 0 0 0.41667em; }
+    .com_btn_square_w.radius_lb:active:after, .com_btn_square_w.radius_lb.ui_btn_active:after {
+      right: 0;
+      border-radius: 0.41667em 0 0 0.41667em; }
+
+/*发送至学生按钮*/
+.com_board_sdt_box {
+  position: absolute;
+  /*bottom: pxToEm(12px);*/
+  top: 40.5em;
+  right: 4em;
+  z-index: 340;
+  /*底部按钮调大*/
+  top: 40.3em; }
+  .com_board_sdt_box .send_to_student {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 4.08333em;
+    height: 4.08333em;
+    text-align: center;
+    color: #0c0701;
+    background: url(resources/common/button/wood/images/btn_br_board.png) center top no-repeat;
+    background-size: 100% auto;
+    text-decoration: none;
+    /*底部按钮调大*/
+    height: 4.58333em;
+    width: 4.58333em; }
+    .com_board_sdt_box .send_to_student .com_sdt_word {
+      display: block;
+      color: #0c0701;
+      font-size: 0.66667em;
+      line-height: 1.25em;
+      /*底部按钮调大*/
+      font-size: .78667em; }
+    .com_board_sdt_box .send_to_student .com_sdt_pic {
+      display: inline-block;
+      width: 2.58333em;
+      height: 2.58333em;
+      margin: 0 auto;
+      background: url(resources/common/button/wood/images/icon_board00.png) center top no-repeat;
+      background-size: 100% auto;
+      /*底部按钮调大*/
+      margin: 0.1em auto 0; }
+    .com_board_sdt_box .send_to_student:active, .com_board_sdt_box .send_to_student.on {
+      background-position: center -4.10417em;
+      /*底部按钮调大*/
+      background-position: center -4.58333em; }
+    .com_board_sdt_box .send_to_student.click_disabled {
+      filter: Gray;
+      -webkit-filter: grayscale(100%); }
+    .com_board_sdt_box .send_to_student.std_turn_left {
+      left: -72em; }
+    .com_board_sdt_box .send_to_student.std_turn_right {
+      right: 0; }
+
+/* 工具弹窗 */
+.ndui-btn-complex {
+  position: relative;
+  display: inline-block; }
+  .ndui-btn-complex .selected {
+    display: none; }
+  .ndui-btn-complex.pop_up .selected {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    min-width: 5.25em;
+    border-radius: 0.41667em;
+    padding: 0.375em 0.41667em;
+    text-align: center;
+    background: rgba(144, 128, 104, 0.9);
+    white-space: nowrap;
+    transform: translate(-50%, 0);
+    margin: 0 0 0.54167em 0; }
+  .ndui-btn-complex.pop_up .options {
+    display: block;
+    padding: 0.41667em 0;
+    font-size: 0.83333em;
+    font-weight: bold;
+    line-height: 1em;
+    color: #f6ead6;
+    text-shadow: 1px 1px 1px #7a746c, -1px -1px 1px #7a746c; }
+    .ndui-btn-complex.pop_up .options:active, .ndui-btn-complex.pop_up .options.on {
+      color: #ffa82f;
+      text-shadow: 1px 1px 1px #9c6e2d,-1px -1px 1px #9c6e2d; }
+  .ndui-btn-complex.pop_up .tips {
+    position: absolute;
+    width: 1.29167em;
+    top: 100%;
+    left: 50%;
+    display: block;
+    width: 1.29167em;
+    height: 0.54167em;
+    margin: 0 0 0 -0.625em;
+    background: url(resources/common/button/wood/images/select_tips.png) no-repeat;
+    background-size: 100% 100%; }
+
+/* 公布结果选项 */
+.square_tool_result_list {
+  position: absolute;
+  top: -3.75em;
+  right: -1.25em;
+  border: 0.125em solid #b09876;
+  border-radius: 0.5em;
+  white-space: nowrap; }
+  .square_tool_result_list:after {
+    content: '';
+    position: absolute;
+    bottom: -0.77083em;
+    right: 1.79167em;
+    width: 1.83333em;
+    height: 0.875em;
+    background: url(resources/common/button/wood/images/bg_arrow.png) no-repeat center center;
+    background-size: contain; }
+  .square_tool_result_list.for_left {
+    right: auto;
+    left: -1.25em; }
+    .square_tool_result_list.for_left:after {
+      right: auto;
+      left: 1.95833em;
+      transform: rotateY(180deg); }
+
+.squere_tool_result_list_content {
+  padding: 0 0.83333em;
+  background: #f3e2c6;
+  border: 0.125em solid #f7f0e4;
+  border-radius: 0.375em;
+  height: 2.91667em;
+  line-height: 2.66667em;
+  box-shadow: inset 0 0 1.66667em 0 #d7b990; }
+
+.squere_tool_result_list_txt {
+  color: #585858;
+  font-size: 1.25em; }
+
+.squere_tool_result_list_radio {
+  position: relative;
+  display: inline-block;
+  height: 1.45833em;
+  margin: 0 0.83333em;
+  padding-left: 1.75em;
+  color: #333;
+  line-height: 1.33333em;
+  vertical-align: middle; }
+  .squere_tool_result_list_radio:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.08333em;
+    width: 1.16667em;
+    height: 1.16667em;
+    border: 0.125em solid #585858;
+    border-radius: 100%;
+    box-sizing: border-box; }
+  .squere_tool_result_list_radio .txt {
+    font-size: 1.33333em; }
+  .squere_tool_result_list_radio.checked {
+    color: #a1bc23; }
+    .squere_tool_result_list_radio.checked:before {
+      border-color: #a1bc23; }
+    .squere_tool_result_list_radio.checked:after {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      top: 0.375em;
+      left: 0.29167em;
+      width: 0.58333em;
+      height: 0.58333em;
+      border-radius: 100%;
+      background: #a1bc23; }
+  .squere_tool_result_list_radio:active {
+    opacity: .7; }
+
+/*底部按钮布局*/
+.ndui-tool.k12-footer-tool {
+  position: absolute;
+  right: 0;
+  top: 0.33333em;
+  z-index: 340;
+  /*在思维导图里面，发送习题 、 百宝袋 的按钮变换风格，和位置*/ }
+  .ndui-tool.k12-footer-tool .ndui-tool-box {
+    position: absolute;
+    left: 0; }
+  .ndui-tool.k12-footer-tool .ndui-tool-list {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    white-space: nowrap; }
+    .ndui-tool.k12-footer-tool .ndui-tool-list.ndui-tool-left {
+      left: -72em; }
+    .ndui-tool.k12-footer-tool .ndui-tool-list.ndui-tool-right {
+      right: 0; }
+  .ndui-tool.k12-footer-tool .ndui-tool-cell {
+    display: inline-block;
+    vertical-align: top; }
+  .ndui-tool.k12-footer-tool .ndui-tool-box-other {
+    position: absolute;
+    top: 0;
+    left: -72em;
+    right: 0; }
+  .ndui-tool.k12-footer-tool.mindmap-footer-tool {
+    right: 0;
+    width: 71.66667em;
+    top: auto;
+    bottom: -4.8em;
+    height: 3.5em; }
+    .ndui-tool.k12-footer-tool.mindmap-footer-tool .ndui-tool-box {
+      width: 100%;
+      height: 100%; }
+    .ndui-tool.k12-footer-tool.mindmap-footer-tool .ndui-tool-list.ndui-tool-left {
+      left: 0;
+      right: auto; }
+    .ndui-tool.k12-footer-tool.mindmap-footer-tool .ndui-tool-list.ndui-tool-right {
+      left: auto;
+      right: 0; }
+    .ndui-tool.k12-footer-tool.mindmap-footer-tool .ndui-tool-cell {
+      margin: 0 -0.16667em; }
+    .ndui-tool.k12-footer-tool.mindmap-footer-tool .send_to_student {
+      width: 4.58333em;
+      height: 3.45833em;
+      background: #e5e5e5; }
+      .ndui-tool.k12-footer-tool.mindmap-footer-tool .send_to_student .ndui-btn-text {
+        color: #80c269; }
+      .ndui-tool.k12-footer-tool.mindmap-footer-tool .send_to_student .ndui-btn-pic {
+        width: 2.58333em;
+        height: 2.18333em;
+        background: none; }
+        .ndui-tool.k12-footer-tool.mindmap-footer-tool .send_to_student .ndui-btn-pic:before {
+          top: 0.45em;
+          background: url(resources/common/button/wood/images/icon_board22_normal.png) center top no-repeat;
+          background-size: 1.70833em auto; }
+        .ndui-tool.k12-footer-tool.mindmap-footer-tool .send_to_student .ndui-btn-pic:after {
+          display: none; }
+      .ndui-tool.k12-footer-tool.mindmap-footer-tool .send_to_student:hover .ndui-btn-text {
+        color: #b6d66b; }
+      .ndui-tool.k12-footer-tool.mindmap-footer-tool .send_to_student:hover .ndui-btn-pic:before {
+        background-image: url(resources/common/button/wood/images/icon_board22_hover.png); }
+      .ndui-tool.k12-footer-tool.mindmap-footer-tool .send_to_student:active .ndui-btn-text, .ndui-tool.k12-footer-tool.mindmap-footer-tool .send_to_student.on .ndui-btn-text {
+        color: #26b566; }
+      .ndui-tool.k12-footer-tool.mindmap-footer-tool .send_to_student:active .ndui-btn-pic:before, .ndui-tool.k12-footer-tool.mindmap-footer-tool .send_to_student.on .ndui-btn-pic:before {
+        background-image: url(resources/common/button/wood/images/icon_board22_active.png); }
+    .ndui-tool.k12-footer-tool.mindmap-footer-tool .square_tool_treasure {
+      width: 4.58333em;
+      height: 3.45833em;
+      background: #e5e5e5; }
+      .ndui-tool.k12-footer-tool.mindmap-footer-tool .square_tool_treasure .ndui-btn-text {
+        color: #80c269; }
+      .ndui-tool.k12-footer-tool.mindmap-footer-tool .square_tool_treasure .ndui-btn-pic {
+        width: 2.58333em;
+        height: 2.18333em;
+        background: none; }
+        .ndui-tool.k12-footer-tool.mindmap-footer-tool .square_tool_treasure .ndui-btn-pic:before {
+          top: 0.35em;
+          background: url(resources/common/button/wood/images/icon_board21_normal.png) center top no-repeat;
+          background-size: 1.70833em auto; }
+        .ndui-tool.k12-footer-tool.mindmap-footer-tool .square_tool_treasure .ndui-btn-pic:after {
+          display: none; }
+      .ndui-tool.k12-footer-tool.mindmap-footer-tool .square_tool_treasure:hover .ndui-btn-text {
+        color: #b6d66b; }
+      .ndui-tool.k12-footer-tool.mindmap-footer-tool .square_tool_treasure:hover .ndui-btn-pic:before {
+        background-image: url(resources/common/button/wood/images/icon_board21_hover.png); }
+      .ndui-tool.k12-footer-tool.mindmap-footer-tool .square_tool_treasure:active .ndui-btn-text, .ndui-tool.k12-footer-tool.mindmap-footer-tool .square_tool_treasure.on .ndui-btn-text {
+        color: #26b566; }
+      .ndui-tool.k12-footer-tool.mindmap-footer-tool .square_tool_treasure:active .ndui-btn-pic:before, .ndui-tool.k12-footer-tool.mindmap-footer-tool .square_tool_treasure.on .ndui-btn-pic:before {
+        background-image: url(resources/common/button/wood/images/icon_board21_active.png); }
+
+/*底部投票按钮框架*/
+.com_vote_tool {
+  position: absolute;
+  right: 0;
+  top: -0.16667em;
+  z-index: 3;
+  text-align: right;
+  height: 4.08333em;
+  padding-top: 0.25em; }
+  .com_vote_tool .com_btn_square_w {
+    float: left;
+    margin-left: 0.75em; }
+  .com_vote_tool .com_tabs_btn {
+    float: left; }
+    .com_vote_tool .com_tabs_btn .com_btn_square_w {
+      margin: 0; }
+
+/*统计底部按钮旧样式，暂时保留，等所有开发人员的结构全部改完，就可以删除*/
+.com_other_tool_box {
+  position: absolute;
+  top: 0;
+  left: -72em;
+  right: 0; }
+
+/*白板底部方形按钮*/
+.com_part_toolbar_li .com_btn_square_tool {
+  display: inline-block;
+  min-width: 4.16667em;
+  height: 4.08333em;
+  text-align: center;
+  color: #0c0701;
+  text-decoration: none;
+  position: relative;
+  /*底部按钮调大*/
+  height: 4.58333em; }
+  .com_part_toolbar_li .com_btn_square_tool .com_btn_text {
+    display: block;
+    color: #0c0701;
+    font-size: 0.66667em;
+    line-height: 1.25em;
+    /*底部按钮调大*/
+    font-size: .78667em; }
+  .com_part_toolbar_li .com_btn_square_tool .com_btn_pic {
+    position: relative;
+    display: inline-block;
+    width: 2.04167em;
+    height: 2.58333em;
+    margin: 0 auto;
+    /*底部按钮调大*/
+    margin: 0.1em auto 0; }
+    .com_part_toolbar_li .com_btn_square_tool .com_btn_pic:before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      left: -0.45833em;
+      right: -0.45833em;
+      top: -0.25em;
+      bottom: 0.04167em;
+      background: url(resources/common/button/wood/images/btn_br_board.png) center top no-repeat;
+      background-size: 100% 100%; }
+  .com_part_toolbar_li .com_btn_square_tool:active, .com_part_toolbar_li .com_btn_square_tool.on {
+    /*background-position: center pxToEm(-98.5px);*/
+    /*底部按钮调大*/ }
+    .com_part_toolbar_li .com_btn_square_tool:active .com_btn_pic:after, .com_part_toolbar_li .com_btn_square_tool.on .com_btn_pic:after {
+      content: '';
+      position: absolute;
+      left: -0.29167em;
+      right: -0.29167em;
+      top: -0.125em;
+      bottom: 0.08333em;
+      border: 0.125em solid #fe9d13;
+      border-radius: 0.41667em;
+      box-shadow: 0 0 0 0.04167em #ffd200, inset 0 0 0 0.04167em #ffd200; }
+  .com_part_toolbar_li .com_btn_square_tool.send_to_student .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board00.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_seat .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board01.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_team .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board02.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_time .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board03.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_check .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board04.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_answer .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board05.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_quit .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board06.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_stats .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board07.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_result .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board08.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_analysis .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board09.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_vote .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board10.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_view_progress .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board11.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_end_answer .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board12.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_exit .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board13.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_backView .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board14.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_peerReview .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board15.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_leader_first .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board16.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_statistic .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board17.png) center top no-repeat;
+    background-size: 100% auto; }
+  .com_part_toolbar_li .com_btn_square_tool.square_tool_resend .com_btn_pic {
+    background: url(resources/common/button/wood/images/icon_board19.png) center top no-repeat;
+    background-size: 100% auto; }
+
+.com_part_toolbar_li.click_disabled {
+  filter: Gray;
+  -webkit-filter: grayscale(100%); }
+  .com_part_toolbar_li.click_disabled .com_btn_pic:after {
+    display: none; }
+
+/*底部按钮*/
+.com_stat_tool {
+  margin: 0 auto;
+  z-index: 3;
+  height: 4.58333em;
+  position: absolute;
+  right: 4em;
+  top: 40.91667em;
+  z-index: 340;
+  /*底部按钮调大*/ }
+
+.com_part_toolbar {
+  height: 4.08333em;
+  /*底部按钮调大*/
+  height: 4.58333em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  white-space: nowrap; }
+  .com_part_toolbar .com_part_toolbar_li {
+    display: inline-block; }
+  .com_part_toolbar.cptb_left {
+    right: auto;
+    left: -72em; }
+
+/*# sourceMappingURL=cssbotbtn.css.map */

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+.btnUi_skin_wood{
+
+    &.com_board_btnUi_box{
+        position: absolute;
+        /*bottom: pxToEm(12px);*/
+        top: pxToEm(972px);
+        right: pxToEm(96px);
+        z-index: 340;
+        /*底部按钮调大*/
+        top: 40.3em;
+        .com_btnUi_bg{
+            position: absolute;
+            top:0;
+            display: inline-block;
+            width: pxToEm(98px);
+            height: pxToEm(98px);        
+            text-align: center;
+            color:#0c0701;
+            background: url(resources/wood/images/ui_btn_br_board.png) center top no-repeat;
+            background-size: 100% auto;
+            text-decoration: none;
+            /*底部按钮调大*/
+            height: 4.58333em;
+            width: 4.58333em;
+            .com_btnUi_word{
+                display: block;
+                color: #0c0701;
+                font-size: pxToEm(16px);
+                line-height: pxToEm(30px);
+                /*底部按钮调大*/
+                font-size: .78667em;
+            }
+            .com_btnUi_pic{
+                display: inline-block;
+                width: pxToEm(62px);
+                height: pxToEm(62px);
+                margin:0 auto;
+                background: url(resources/wood/images/ui_icon_board14.png) center top no-repeat;
+                background-size: 100% auto;
+                /*底部按钮调大*/
+                margin: 0.1em auto 0;
+            }    
+            &.btn_ui_goBackStat{
+                .com_btnUi_pic{
+                    background-image: url(resources/wood/images/ui_icon_board17.png);
+                }
+            }
+            &:active,&.on{
+                background-position: center pxToEm(-98.5px);
+                /*底部按钮调大*/
+                background-position: center -4.58333em;
+            }
+            &.click_disabled {
+                filter: Gray;
+                -webkit-filter: grayscale(100%);
+            }
+            &.btnUi_turn_left{
+                left: pxToEm(-1728px);
+            }
+            &.btnUi_turn_right{
+                right: 0;
+            } 
+        }
+           
+    }
+}

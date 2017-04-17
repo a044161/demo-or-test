@@ -1,0 +1,548 @@
+@charset "UTF-8";
+@keyframes nqtiloaddot {
+  25% {
+    border-color: transparent;
+    background-color: transparent; }
+  /* 0个点 */
+  50% {
+    border-right-color: transparent;
+    background-color: transparent; }
+  /* 1个点 */
+  75% {
+    border-right-color: transparent; } }
+
+.nqti-player-skin-elearning {
+  font-size: 14px; }
+
+.nqti-player-skin-elearning {
+  /* HTML5 display-role reset for older browsers */
+  /*可以同时屏蔽ios和android下点击元素时出现的阴影。*/
+  /*公共*/
+  /*解析中*/
+  /*单选题*/
+  /*.nqti-base-choice-list {*/
+  /*判断题*/
+  /*填空*/
+  /*问答*/ }
+  .nqti-player-skin-elearning * {
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif; }
+  .nqti-player-skin-elearning *:before, .nqti-player-skin-elearning *:after {
+    box-sizing: border-box; }
+  .nqti-player-skin-elearning dl, .nqti-player-skin-elearning dd, .nqti-player-skin-elearning h1, .nqti-player-skin-elearning h2, .nqti-player-skin-elearning h3, .nqti-player-skin-elearning h4, .nqti-player-skin-elearning h5, .nqti-player-skin-elearning h6, .nqti-player-skin-elearning p, .nqti-player-skin-elearning form {
+    margin: 0; }
+  .nqti-player-skin-elearning fieldset, .nqti-player-skin-elearning img, .nqti-player-skin-elearning iframe, .nqti-player-skin-elearning abbr {
+    border: 0; }
+  .nqti-player-skin-elearning table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .nqti-player-skin-elearning ins {
+    text-decoration: none; }
+  .nqti-player-skin-elearning del {
+    text-decoration: line-through; }
+  .nqti-player-skin-elearning input, .nqti-player-skin-elearning select {
+    vertical-align: middle; }
+  .nqti-player-skin-elearning input, .nqti-player-skin-elearning textarea, .nqti-player-skin-elearning select {
+    font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif; }
+  .nqti-player-skin-elearning input:focus {
+    outline: none; }
+  .nqti-player-skin-elearning textarea {
+    resize: none; }
+  .nqti-player-skin-elearning fieldset, .nqti-player-skin-elearning img {
+    border: 0; }
+  .nqti-player-skin-elearning img {
+    border: none;
+    vertical-align: top; }
+  .nqti-player-skin-elearning address, .nqti-player-skin-elearning code, .nqti-player-skin-elearning caption, .nqti-player-skin-elearning th, .nqti-player-skin-elearning cite, .nqti-player-skin-elearning dfn, .nqti-player-skin-elearning em, .nqti-player-skin-elearning i {
+    font-style: normal;
+    font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif; }
+  .nqti-player-skin-elearning ol, .nqti-player-skin-elearning ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .nqti-player-skin-elearning h1, .nqti-player-skin-elearning h2, .nqti-player-skin-elearning h3, .nqti-player-skin-elearning h4, .nqti-player-skin-elearning h5, .nqti-player-skin-elearning h6 {
+    font-weight: normal; }
+  .nqti-player-skin-elearning blockquote, .nqti-player-skin-elearning q {
+    quotes: none; }
+  .nqti-player-skin-elearning blockquote:before, .nqti-player-skin-elearning blockquote:after, .nqti-player-skin-elearning q:before, .nqti-player-skin-elearning q:after {
+    content: "";
+    content: none; }
+  .nqti-player-skin-elearning legend {
+    display: none; }
+  .nqti-player-skin-elearning a {
+    text-decoration: none;
+    outline: none; }
+  .nqti-player-skin-elearning a:hover {
+    text-decoration: none; }
+  .nqti-player-skin-elearning article, .nqti-player-skin-elearning aside, .nqti-player-skin-elearning details, .nqti-player-skin-elearning figcaption, .nqti-player-skin-elearning figure,
+  .nqti-player-skin-elearning footer, .nqti-player-skin-elearning header, .nqti-player-skin-elearning hgroup, .nqti-player-skin-elearning menu, .nqti-player-skin-elearning nav, .nqti-player-skin-elearning section {
+    display: block; }
+  .nqti-player-skin-elearning input, .nqti-player-skin-elearning button, .nqti-player-skin-elearning select, .nqti-player-skin-elearning textarea {
+    outline: none;
+    border: none; }
+  .nqti-player-skin-elearning textarea {
+    resize: none; }
+  .nqti-player-skin-elearning table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .nqti-player-skin-elearning a, .nqti-player-skin-elearning img, .nqti-player-skin-elearning button, .nqti-player-skin-elearning input, .nqti-player-skin-elearning textarea, .nqti-player-skin-elearning li, .nqti-player-skin-elearning label {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+  .nqti-player-skin-elearning em {
+    font-style: italic; }
+  .nqti-player-skin-elearning .nqti-module-title .nqti-title-text {
+    font-style: normal;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word; }
+  .nqti-player-skin-elearning .nqti-hide-dom {
+    display: none !important; }
+  .nqti-player-skin-elearning .nqti-preload-img-01 {
+    display: none; }
+  .nqti-player-skin-elearning .nqti-module-body {
+    position: relative;
+    line-height: 1.8; }
+    .nqti-player-skin-elearning .nqti-module-body.npti-show-onlymodule-num {
+      padding-left: 48px; }
+      .nqti-player-skin-elearning .nqti-module-body.npti-show-onlymodule-num .nqti-module-listnum {
+        display: block; }
+  .nqti-player-skin-elearning .nqti-player-body {
+    position: relative; }
+    .nqti-player-skin-elearning .nqti-player-body svg {
+      vertical-align: bottom !important; }
+  .nqti-player-skin-elearning .nqti-module-listnum {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 4px; }
+    .nqti-player-skin-elearning .nqti-module-listnum .nqti-listnum-text, .nqti-player-skin-elearning .nqti-module-listnum .nqti-listnum-dot {
+      line-height: 1.8;
+      font-size: 14px;
+      color: #333; }
+  .nqti-player-skin-elearning .nqti-option-radio-icon, .nqti-player-skin-elearning .nqti-option-radio-icon:before, .nqti-player-skin-elearning .nqti-option-checkbox-icon, .nqti-player-skin-elearning .nqti-option-checkbox-icon:before {
+    background: url(resources/elearning/icon_learn.png) no-repeat; }
+  .nqti-player-skin-elearning .nqti-hint-box {
+    margin-bottom: 12px; }
+  .nqti-player-skin-elearning .nqti-hint-btn {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin-left: 2px;
+    width: 92px;
+    height: 32px;
+    line-height: 32px;
+    line-height: 26px\9;
+    color: #333;
+    text-align: center;
+    background: linear-gradient(to bottom, #fcfcfc, #e6e6e6);
+    box-shadow: 0px 2px 2px rgba(4, 0, 0, 0.2), 2px -2px 1px #eee9e1, -2px 0 1px #eee9e1;
+    border-radius: 16px;
+    background: #FBFBFB\9;
+    border: 1px solid #C7C3BC \9;
+    background-color: #FBFBFB\9\0; }
+    .nqti-player-skin-elearning .nqti-hint-btn:active:before, .nqti-player-skin-elearning .nqti-hint-btn.on:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border: 2px solid #ffa200;
+      border-radius: 16px; }
+  .nqti-player-skin-elearning .nqti-tip-icon {
+    display: inline-block;
+    padding-right: 0;
+    background: url(resources/elearning/icon_bulbs.png) no-repeat left center;
+    vertical-align: top;
+    margin-top: 9px;
+    margin-top: 7px\9;
+    margin-left: -2px;
+    padding: 0;
+    width: 13px;
+    height: 15px;
+    background-size: 100% auto; }
+  .nqti-player-skin-elearning .nqti-tip-icon-text {
+    font-size: 14px; }
+  .nqti-player-skin-elearning .nqti-module-content {
+    margin: 12px 0;
+    font-size: 14px; }
+  .nqti-player-skin-elearning .nqti-player-loading {
+    text-align: center;
+    width: 100%;
+    height: 2em;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin: -1.33333em 0 0 0;
+    padding-right: 2.66667em;
+    display: none; }
+    .nqti-player-skin-elearning .nqti-player-loading span {
+      font-size: 14px;
+      color: #333; }
+    .nqti-player-skin-elearning .nqti-player-loading .nqti-loading-dotting {
+      display: inline-block;
+      width: 10px;
+      min-height: 2px;
+      margin-left: 2px;
+      padding-left: 2px;
+      padding-right: 2px;
+      border-left: 2px solid currentColor;
+      border-right: 2px solid currentColor;
+      background-color: currentColor;
+      background-clip: content-box;
+      box-sizing: border-box;
+      animation: nqtiloaddot 3s infinite step-start both; }
+  .nqti-player-skin-elearning .nqti-com-pop-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    background: url(resources/elearning/black_mask.png) repeat\9;
+    z-index: 500;
+    font-size: 14px; }
+    .nqti-player-skin-elearning .nqti-com-pop-content:after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle; }
+    .nqti-player-skin-elearning .nqti-com-pop-content .nqti-com-pop-box {
+      display: inline-block;
+      width: 60%;
+      min-height: 180px;
+      border-radius: 10px;
+      vertical-align: middle;
+      /*box-shadow: 0px 0.125em 0.125em 0px rgba(0, 0, 0, 0.169), inset 0px -0.125em 0px 0px rgba(130, 99, 50, 0.392);*/
+      background: #fff;
+      border: 1px solid #C7C3BC;
+      text-align: left; }
+    .nqti-player-skin-elearning .nqti-com-pop-content .nqti-com-pop-title {
+      display: none;
+      text-indent: -9999px; }
+    .nqti-player-skin-elearning .nqti-com-pop-content .nqti-com-pop-bd {
+      min-height: 100px; }
+    .nqti-player-skin-elearning .nqti-com-pop-content .nqti-com-pop-bd .nqti-com-remind-text {
+      padding: 0 12px;
+      margin: 12px;
+      line-height: 1.5;
+      color: #603300;
+      text-align: left; }
+    .nqti-player-skin-elearning .nqti-com-pop-content .nqti-com-pop-bt {
+      text-align: center;
+      padding: 12px 0 26px 0; }
+      .nqti-player-skin-elearning .nqti-com-pop-content .nqti-com-pop-bt .nqti-hint-btn {
+        position: relative;
+        display: inline-block;
+        width: 92px;
+        height: 32px;
+        line-height: 32px; }
+  .nqti-player-skin-elearning .nqti-check {
+    float: left;
+    display: inline-block;
+    left: 36px;
+    top: 10px;
+    padding: 0; }
+  .nqti-player-skin-elearning .size {
+    padding-right: 8px;
+    font-size: 14px;
+    font-style: normal; }
+    .nqti-player-skin-elearning .size p, .nqti-player-skin-elearning .size div {
+      display: inline; }
+  .nqti-player-skin-elearning .nqti-check .size:after {
+    content: '.'; }
+  .nqti-player-skin-elearning .nqti-option {
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+    padding: 8px 5px 8px 30px;
+    font-size: 14px;
+    line-height: 1.4;
+    border: 1px solid transparent;
+    cursor: pointer;
+    /*}*/ }
+    .nqti-player-skin-elearning .nqti-option.nqti-option-on .nqti-option-radio-icon {
+      background-position: 0 -171px; }
+    .nqti-player-skin-elearning .nqti-option.nqti-option-on .nqti-option-checkbox-icon {
+      background-position: -36px -171px; }
+    .nqti-player-skin-elearning .nqti-option.nqti-option-right .nqti-option-radio-icon:before, .nqti-player-skin-elearning .nqti-option.nqti-option-right .nqti-option-checkbox-icon:before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      width: 21px;
+      height: 15px;
+      background-position: -100px -52px; }
+    .nqti-player-skin-elearning .nqti-option.nqti-option-wrong .nqti-option-radio-icon:before, .nqti-player-skin-elearning .nqti-option.nqti-option-wrong .nqti-option-checkbox-icon:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 5px;
+      width: 18px;
+      height: 18px;
+      background-position: -89px -13px; }
+    .nqti-player-skin-elearning .nqti-option .nqti-option-radio-icon {
+      position: absolute;
+      top: 7px;
+      left: 0;
+      display: block;
+      width: 21px;
+      height: 21px;
+      vertical-align: -4px;
+      background-position: 0 -120px; }
+    .nqti-player-skin-elearning .nqti-option .nqti-option-checkbox-icon {
+      position: absolute;
+      top: 7px;
+      left: 0;
+      display: block;
+      width: 21px;
+      height: 21px;
+      vertical-align: -4px;
+      background-position: -36px -120px; }
+  .nqti-player-skin-elearning .nqti-module-header {
+    color: #333;
+    margin-top: 8px;
+    margin-right: 10px; }
+    .nqti-player-skin-elearning .nqti-module-header .nqti-header-text {
+      font-size: 14px;
+      line-height: 1.8; }
+      .nqti-player-skin-elearning .nqti-module-header .nqti-header-text .nqti-base-fill {
+        font-size: 14px;
+        position: relative;
+        line-height: 2;
+        color: #333; }
+  .nqti-player-skin-elearning .nqti-base-fill-index {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 12px 5px;
+    margin: 0 12px 4px\9;
+    background: transparent;
+    border: 1px solid #0098ce;
+    border-radius: 100%;
+    line-height: 1;
+    vertical-align: middle;
+    text-align: center;
+    color: #0098ce;
+    font-size: 14px; }
+    .nqti-player-skin-elearning .nqti-base-fill-index.for-input {
+      position: relative;
+      z-index: 1;
+      margin: 0 -18px 7px 6px;
+      margin: 0 -18px 4px 6px\9;
+      border-color: #0098ce;
+      color: #0098ce;
+      font-size: 14px; }
+      .nqti-player-skin-elearning .nqti-base-fill-index.for-input + input.nqti-base-fill-cell {
+        padding: 0 6px 2px 26px;
+        width: 140px; }
+  .nqti-player-skin-elearning .nqti-base-fill-cell {
+    border-bottom: 1px solid #333;
+    color: #0098ce;
+    background: none;
+    text-align: center;
+    margin: 0 4px 4px;
+    margin-bottom: 0\9;
+    vertical-align: middle;
+    border-radius: 0;
+    word-wrap: break-word;
+    word-break: break-all; }
+    .nqti-player-skin-elearning .nqti-base-fill-cell.span-to-div {
+      text-align: left;
+      min-width: 184px;
+      display: inline-block;
+      margin-bottom: 3px;
+      margin-bottom: 0\9;
+      line-height: 1.2; }
+      .nqti-player-skin-elearning .nqti-base-fill-cell.span-to-div .nqti-base-fill-index {
+        margin: 2px 6px 0;
+        border-color: #0098ce;
+        color: #0098ce; }
+    .nqti-player-skin-elearning .nqti-base-fill-cell.nqti-error {
+      color: red; }
+      .nqti-player-skin-elearning .nqti-base-fill-cell.nqti-error .nqti-base-fill-index {
+        border-color: red;
+        color: red; }
+    .nqti-player-skin-elearning .nqti-base-fill-cell.nqti-correct {
+      color: green; }
+      .nqti-player-skin-elearning .nqti-base-fill-cell.nqti-correct .nqti-base-fill-index {
+        border-color: green;
+        color: green; }
+  .nqti-player-skin-elearning .nqti-base-essayQuestion-wrap {
+    padding: 12px 0 12px 12px;
+    margin: 0 10px;
+    height: 320px;
+    background: #f7f7f7;
+    border: 1px solid #c5c5c5;
+    box-shadow: 0px 2px 0px 1px rgba(255, 255, 255, 0.1);
+    border-radius: 8px; }
+  .nqti-player-skin-elearning .nqti-base-essay-area {
+    overflow-y: auto;
+    padding-right: 16px;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    background: transparent;
+    color: #333;
+    font-size: 14px;
+    word-wrap: break-word;
+    word-break: break-all; }
+
+@media screen and (max-width: 600px) {
+  /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+  .nqti-player-skin-elearning .nqti-option-radio-icon, .nqti-player-skin-elearning .nqti-option-radio-icon:before, .nqti-player-skin-elearning .nqti-option-checkbox-icon, .nqti-player-skin-elearning .nqti-option-checkbox-icon:before {
+    background: url(resources/elearning/icon_elearning_make.png) no-repeat;
+    background-size: 67px 100px; }
+  .nqti-player-skin-elearning .nqti-option {
+    /*}*/ }
+    .nqti-player-skin-elearning .nqti-option.nqti-option-on .nqti-option-radio-icon {
+      background-position: -5px -33px; }
+    .nqti-player-skin-elearning .nqti-option.nqti-option-on .nqti-option-checkbox-icon {
+      background-position: -39px -33px; }
+    .nqti-player-skin-elearning .nqti-option.nqti-option-right .nqti-option-radio-icon:before, .nqti-player-skin-elearning .nqti-option.nqti-option-right .nqti-option-checkbox-icon:before {
+      background-position: -5px -72px; }
+    .nqti-player-skin-elearning .nqti-option.nqti-option-wrong .nqti-option-radio-icon:before, .nqti-player-skin-elearning .nqti-option.nqti-option-wrong .nqti-option-checkbox-icon:before {
+      background-position: -39px -71px; }
+    .nqti-player-skin-elearning .nqti-option .nqti-option-radio-icon {
+      background-position: -5px -5px; }
+    .nqti-player-skin-elearning .nqti-option .nqti-option-checkbox-icon {
+      background-position: -39px -5px; } }
+
+/*extras.css*/
+.nqti-player-skin-wood .nqti-module-extras-default {
+  font-size: 1.7em;
+  color: #333;
+  line-height: 1.8; }
+
+.nqti-player-skin-elearning .nqti-module-extras-default {
+  background-color: #fafafa; }
+
+.nqti-player-skin-elearning .nqti-module-extras-default .nqti-answer-user.nqti-correct {
+  color: #369900; }
+
+.nqti-player-skin-elearning .nqti-module-extras-default .nqti-answer-user.nqti-wrong {
+  color: #ff0000; }
+
+.nqti-player-skin-wood .nqti-composite-title {
+  line-height: 1.8;
+  font-size: 1.91667em; }
+
+.nqti-player-skin-elearning .nqti-composite-title {
+  line-height: 1.4; }
+
+.nqti-answer-correct {
+  padding-left: 2em; }
+
+.nqti-composite-title-bar {
+  display: block;
+  /*justify-content: center;*/
+  border-bottom: 2px solid #F2F2F2; }
+
+.nqti-composite-title-content {
+  overflow-y: auto;
+  height: 200px;
+  padding: 5px; }
+
+.nqti-composite-body {
+  overflow-y: auto;
+  padding: 5px; }
+
+.exam-skin-wood .nqti-com-layout-body {
+  overflow: visible; }
+
+.nqti-composite-title-bar .nqti-line {
+  border: 2px solid #F2F2F2;
+  display: none; }
+
+.nqti-composite-title-bar .nqti-bar {
+  width: 80px;
+  height: 23px;
+  background-color: #f2f2f2;
+  margin: 0 auto; }
+
+.nqti-composite-title-bar .nqti-icon {
+  width: 100%;
+  background: url(resources/elearning/u28_up.png) no-repeat;
+  background: url(data:image/png;base64,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) no-repeat\9;
+  background-position: center center;
+  height: 100%;
+  background-size: 30%; }
+
+.nqti-composite-title.nqti-down .nqti-composite-title-bar .nqti-icon {
+  background-image: url(resources/elearning/u28_down.png);
+  background: url(data:image/png;base64,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) no-repeat\9;
+  background-position: center center;
+  height: 100%;
+  background-size: 30%; }
+
+.nqti-player-body .mejs-video {
+  overflow: hidden;
+  margin-bottom: 2px;
+  margin-top: 2px; }
+
+.nqti-player-body .mejs-audio {
+  margin-bottom: 2px;
+  margin-top: 2px; }
+
+.nqti-player-body input:invalid {
+  /*background-color: #FFC5C5;*/ }
+
+.nqti-player-body .input-number {
+  ime-mode: disabled; }
+
+/*20160721lxq适配最小宽度*/
+.nqti-player-skin-elearning input.nqti-base-fill-cell {
+  width: 130px; }
+
+.nqti-player-skin-elearning .nqti-base-fill-cell.fill-cell-min-width {
+  display: inline-block;
+  min-width: 130px;
+  line-height: 1.33;
+  margin-bottom: .32em; }
+
+/*显示题号时调整问答题框间距*/
+.nqti-show-composite-num .nqti-base-essayQuestion-wrap {
+  margin: 0 48px 0 0; }
+
+.nqti-show-composite-num.nqti-module-show-num .nqti-base-essayQuestion-wrap {
+  margin: 0 72px 0 0; }
+
+.nqti-module-show-num .nqti-base-essayQuestion-wrap {
+  margin: 0 24px 0 0; }
+
+/*复合题增加标题*/
+.nqti-player-skin-elearning .nqti-composite-container {
+  position: relative; }
+
+.nqti-player-skin-elearning .nqti-listnum-text, .nqti-player-skin-elearning .nqti-listnum-dot, .nqti-player-skin-elearning .nqti-title-text, .nqti-player-skin-elearning .size {
+  font-style: normal; }
+
+.nqti-player-skin-elearning .nqti-module-show-num .nqti-composite-container .nqti-module-body {
+  padding-left: 24px; }
+
+.nqti-player-skin-elearning .nqti-composite-listnum {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0; }
+  .nqti-player-skin-elearning .nqti-composite-listnum .text, .nqti-player-skin-elearning .nqti-composite-listnum .dot {
+    font-style: normal;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #333; }
+
+.nqti-player-skin-elearning .nqti-player-body.nqti-show-composite-num .nqti-composite-container {
+  padding-left: 48px; }
+
+.nqti-player-skin-elearning .nqti-player-body.nqti-show-composite-num .nqti-composite-container .nqti-composite-listnum {
+  display: block; }
+
+.nqti-player-skin-elearning .nqti-player-body.nqti-module-show-num .nqti-composite-container .nqti-module-listnum {
+  display: block; }
+
+/*# sourceMappingURL=elearning.css.map */

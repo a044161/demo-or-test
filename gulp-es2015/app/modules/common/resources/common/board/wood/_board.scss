@@ -1,0 +1,93 @@
+.com_board_blank{
+    position: relative;
+    float: left;
+    height: 100%;
+    padding: pxToEm(60px) 0 0;
+    .head {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: pxToEm(62px);
+        background: url(resources/common/board/wood/images/bg_sidetit1.png) repeat-x;
+        background-size: auto 100%;
+        border-top-left-radius: pxToEm(13px);
+        border-top-right-radius: pxToEm(13px);
+        z-index: 2;
+        @include vermid;
+        .title{
+            display: inline-block;
+            padding: 0 pxToEm(68px) 0 pxToEm(30px);
+            font-size: 28px;
+            vertical-align: middle;
+        }
+        .close{
+            position: absolute;
+            top: pxToEm(18px);
+            right: pxToEm(30px);
+            display: inline-block;
+            width: pxToEm(27px);
+            height: pxToEm(27px);
+            background: url(resources/common/board/wood/images/icon_close.png) no-repeat;
+            background-size: 100% 100%;
+           @include state-opacity;
+        }
+    }
+    .sidecon {
+        position: relative;
+        height: 100%;
+        padding-bottom: pxToEm(8px);
+        background: url(resources/common/board/wood/images/decm_sidecon.png) center bottom repeat-x;
+        border-radius: 0 0 pxToEm(20px) pxToEm(20px);
+        &:before{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            width: pxToEm(21px);
+            height: pxToEm(25px);
+            background: url(resources/common/board/wood/images/decl_sidecon.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        &:after{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            width: pxToEm(21px);
+            height: pxToEm(25px);
+            background: url(resources/common/board/wood/images/decr_sidecon.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        .main{
+            height: 100%;
+            background: url(resources/common/board/wood/images/bg_sidecon1.png);
+            border-radius: 0 0 pxToEm(20px) pxToEm(20px);
+            overflow: auto;
+        }
+    }
+}
+
+/* 扩展类名提示 */
+.com_board_remind{
+    width: pxToEm(1141px);
+    height: pxToEm(742px);
+}
+
+
+//排序題面板
+.com_m_sidehead {
+    background: url(resources/common/board/wood/images/bg_sidetit1.png) repeat-x;
+    background-size: auto 100%;
+    border-radius: pxToEm(18px) pxToEm(18px) 0 0;
+}
+.com_m_sidecon {
+    border-radius: 0 0 pxToEm(18px) pxToEm(18px);
+    background-image: url(resources/common/board/wood/images/decl_sidecon.png), url(resources/common/board/wood/images/decr_sidecon.png), url(resources/common/board/wood/images/decm_sidecon.png), url(resources/common/board/wood/images/bg_sidecon1.png);
+        background-repeat: no-repeat, no-repeat, repeat-x, repeat;
+        background-position: left bottom, right bottom, center bottom, left top;
+        background-size: pxToEm(21px) auto, pxToEm(21px) auto, pxToEm(9px) auto, pxToEm(65px) auto;
+        background-origin: border-box, border-box, border-box, content-box;
+}

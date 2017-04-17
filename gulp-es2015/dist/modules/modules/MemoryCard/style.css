@@ -1,0 +1,426 @@
+@charset "UTF-8";
+.exam_skin_wood .memorycard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*连连看左边结果区域*/
+  /*右边游戏窗口*/
+  /*****************************************
+        * 组件: 面板
+        *****************************************/
+  /* 面板样式1：选词填空题型 */ }
+  .exam_skin_wood .memorycard .com_layout_main {
+    left: 0;
+    right: 0;
+    top: 2.83333em;
+    bottom: 0; }
+  .exam_skin_wood .memorycard .com_m_sideboard_1 {
+    padding-bottom: 0.58333em;
+    margin-right: 0.58333em;
+    margin-left: 0.58333em;
+    padding-top: 11em; }
+    .exam_skin_wood .memorycard .com_m_sideboard_1 .com_m_sidehead {
+      top: 0.58333em; }
+    .exam_skin_wood .memorycard .com_m_sideboard_1 .com_m_sidecon {
+      box-shadow: none; }
+      .exam_skin_wood .memorycard .com_m_sideboard_1 .com_m_sidecon .coursebox {
+        position: relative;
+        height: 99%;
+        overflow-y: auto;
+        margin-top: 0.5%; }
+    .exam_skin_wood .memorycard .com_m_sideboard_1.com_grid_2 {
+      width: 22%; }
+  .exam_skin_wood .memorycard .com_m_mainboard_1 {
+    position: relative; }
+  .exam_skin_wood .memorycard .match_board_bg {
+    left: 0;
+    top: 1.5em;
+    right: 0.58333em;
+    bottom: 1.5em;
+    position: absolute;
+    border-radius: 0.75em; }
+  .exam_skin_wood .memorycard .com_s_bold {
+    position: absolute;
+    right: 0.625em;
+    top: 0.625em; }
+  .exam_skin_wood .memorycard .match_counter {
+    height: 2.66667em;
+    line-height: 2.66667em;
+    font-size: 1em;
+    color: #fff;
+    text-align: center; }
+    .exam_skin_wood .memorycard .match_counter .moment_num {
+      font-size: 1.75em; }
+    .exam_skin_wood .memorycard .match_counter .max_num {
+      font-size: 1.33333em; }
+    .exam_skin_wood .memorycard .match_counter i {
+      margin: 0 0.16667em;
+      font-size: 1.33333em; }
+  .exam_skin_wood .memorycard .match_left_result .match_unfinished {
+    padding-bottom: 1.25em; }
+    .exam_skin_wood .memorycard .match_left_result .match_unfinished.show_line {
+      border-bottom: 0.08333em solid #b9b0b0; }
+  .exam_skin_wood .memorycard .match_left_result .match_user_done {
+    padding-bottom: 0.41667em; }
+  .exam_skin_wood .memorycard .match_left_result .match_wrong,
+  .exam_skin_wood .memorycard .match_left_result .match_right {
+    padding: 1.33333em 0 0 2.08333em;
+    position: relative; }
+    .exam_skin_wood .memorycard .match_left_result .match_wrong .match_list,
+    .exam_skin_wood .memorycard .match_left_result .match_right .match_list {
+      position: relative;
+      padding-top: 5.41667em;
+      height: 0; }
+  .exam_skin_wood .memorycard .match_left_result .list_m_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .exam_skin_wood .memorycard .match_left_result .list_m_pic {
+    float: left;
+    width: 5.41667em;
+    height: 5.41667em;
+    overflow: hidden;
+    border: 0.08333em solid #885e17;
+    border-radius: 0.41667em;
+    background: #fff; }
+    .exam_skin_wood .memorycard .match_left_result .list_m_pic img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.41667em; }
+  .exam_skin_wood .memorycard .match_left_result .list_m_text {
+    float: left;
+    width: 5.41667em;
+    height: 5.41667em;
+    color: #333;
+    overflow: hidden;
+    text-align: center;
+    border: 0.08333em solid #885e17;
+    border-radius: 0.41667em;
+    background: #fff; }
+    .exam_skin_wood .memorycard .match_left_result .list_m_text p {
+      display: inline-block;
+      max-width: 91%;
+      vertical-align: middle;
+      word-wrap: break-word;
+      word-break: break-word; }
+      .exam_skin_wood .memorycard .match_left_result .list_m_text p.text_s {
+        font-size: 0.83333em;
+        line-height: 1.4; }
+      .exam_skin_wood .memorycard .match_left_result .list_m_text p.text_m {
+        font-size: 1.5em;
+        line-height: 1.4; }
+      .exam_skin_wood .memorycard .match_left_result .list_m_text p.text_l {
+        font-size: 2.08333em;
+        line-height: 1.4; }
+    .exam_skin_wood .memorycard .match_left_result .list_m_text:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      height: 100%; }
+  .exam_skin_wood .memorycard .ins_line {
+    float: left;
+    vertical-align: middle;
+    width: 1.08333em;
+    margin: 0 0.125em;
+    height: 0;
+    border-top: 0.08333em dashed #885e17;
+    margin-top: 2.66667em; }
+  .exam_skin_wood .memorycard .match_icon {
+    position: absolute;
+    left: 0.25em;
+    top: 4.08333em;
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: -0.75em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%; }
+  .exam_skin_wood .memorycard .match_right .match_icon {
+    background-image: url(resources/wood/images/icon_s_wood_right.png); }
+  .exam_skin_wood .memorycard .match_wrong .match_icon {
+    background-image: url(resources/wood/images/icon_s_wood_wrong.png); }
+  .exam_skin_wood .memorycard .match_edit_box {
+    position: absolute;
+    left: 1em;
+    top: 0.58333em;
+    right: 1em;
+    bottom: 0.16667em;
+    overflow: auto;
+    z-index: 3; }
+  .exam_skin_wood .memorycard .com_m_sideboard_1 {
+    position: relative;
+    float: left;
+    width: 15.41667em;
+    height: 100%;
+    padding: 4.20833em 0 1.45833em;
+    margin-left: 1.45833em;
+    margin-right: 1.45833em; }
+    .exam_skin_wood .memorycard .com_m_sideboard_1 .com_m_sidehead {
+      position: absolute;
+      left: 0;
+      top: 1.45833em;
+      right: 0;
+      height: 2.75em;
+      background: url(resources/wood/images/bg_sidetit1.png) repeat-x;
+      background-size: auto 100%;
+      border-top-left-radius: 0.75em;
+      border-top-right-radius: 0.75em; }
+    .exam_skin_wood .memorycard .com_m_sideboard_1 .com_m_sidecon {
+      height: 100%;
+      border-bottom: 0.375em solid transparent;
+      background-image: url(resources/wood/images/decl_sidecon.png), url(resources/wood/images/decr_sidecon.png), url(resources/wood/images/decm_sidecon.png), url(resources/wood/images/bg_sidecon1.png);
+      background-repeat: no-repeat, no-repeat, repeat-x, repeat;
+      background-position: left bottom, right bottom, center bottom, left top;
+      background-size: 0.875em auto, 0.875em auto, 0.375em auto, 2.70833em auto;
+      background-origin: border-box, border-box, border-box, content-box;
+      box-shadow: 0.0625em 0.10825em 0.79167em 0px rgba(75, 40, 0, 0.75);
+      border-bottom-left-radius: 0.75em;
+      border-bottom-right-radius: 0.75em;
+      overflow: auto; }
+  .exam_skin_wood .memorycard .com_m_mainboard_1 {
+    height: 100%;
+    overflow: hidden; }
+
+.exam_skin_wood .com_layout .com_layout_container.inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  overflow: hidden; }
+  .exam_skin_wood .com_layout .com_layout_container.inner .com_layout_main {
+    top: 0.91667em;
+    right: 1.33333em;
+    left: 1.33333em;
+    bottom: 0.91667em; }
+
+.exam_skin_sky .memorycard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*连连看左边结果区域*/
+  /*右边游戏窗口*/
+  /*****************************************
+        * 组件: 面板
+        *****************************************/
+  /* 面板样式1：选词填空题型 */ }
+  .exam_skin_sky .memorycard .com_layout_main {
+    left: -1em;
+    right: 0;
+    top: 2.83333em;
+    bottom: -0.91667em; }
+  .exam_skin_sky .memorycard .com_m_sideboard_1 {
+    padding-bottom: 0.58333em;
+    margin-right: 0.58333em;
+    margin-left: 0.58333em;
+    padding-top: 11em; }
+    .exam_skin_sky .memorycard .com_m_sideboard_1 .com_m_sidehead {
+      top: 0.58333em; }
+    .exam_skin_sky .memorycard .com_m_sideboard_1 .com_m_sidecon {
+      box-shadow: none; }
+      .exam_skin_sky .memorycard .com_m_sideboard_1 .com_m_sidecon .coursebox {
+        position: relative;
+        height: 95%;
+        overflow-y: auto;
+        margin-top: 1.33333em; }
+    .exam_skin_sky .memorycard .com_m_sideboard_1.com_grid_2 {
+      width: 22%; }
+  .exam_skin_sky .memorycard .com_m_mainboard_1 {
+    position: relative; }
+  .exam_skin_sky .memorycard .match_board_bg {
+    left: 0;
+    top: 1.5em;
+    right: 0.58333em;
+    bottom: 1.5em;
+    position: absolute;
+    border-radius: 0.75em; }
+  .exam_skin_sky .memorycard .com_s_bold {
+    position: absolute;
+    right: 0.625em;
+    top: 0.625em; }
+  .exam_skin_sky .memorycard .match_counter {
+    height: 2.91667em;
+    line-height: 2.91667em;
+    color: #fdf097;
+    text-align: center; }
+    .exam_skin_sky .memorycard .match_counter span {
+      font-size: 1.91667em; }
+    .exam_skin_sky .memorycard .match_counter i {
+      font-size: 1.83333em; }
+    .exam_skin_sky .memorycard .match_counter .moment_num {
+      line-height: 1.0;
+      font-size: 2.5em; }
+  .exam_skin_sky .memorycard .match_left_result .match_unfinished {
+    /*margin-bottom: pxToEm(10px);*/
+    border-bottom: 0.04167em dashed #29a6e6; }
+  .exam_skin_sky .memorycard .match_left_result .match_user_done {
+    /*padding: pxToEm(10px) 0;*/ }
+  .exam_skin_sky .memorycard .match_left_result li {
+    padding: 0.70833em 0 0.70833em 2.08333em;
+    position: relative; }
+    .exam_skin_sky .memorycard .match_left_result li .match_list {
+      position: relative;
+      padding-top: 4.41667em;
+      height: 0; }
+  .exam_skin_sky .memorycard .match_left_result .list_m_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .exam_skin_sky .memorycard .match_left_result .list_m_pic {
+    position: relative;
+    float: left;
+    width: 4.41667em;
+    height: 4.41667em;
+    overflow: hidden;
+    border: 0.29167em solid #32b5f7;
+    border-radius: 0.41667em;
+    background: #fff; }
+    .exam_skin_sky .memorycard .match_left_result .list_m_pic img {
+      width: 100%;
+      height: 100%; }
+  .exam_skin_sky .memorycard .match_left_result .list_m_text {
+    position: relative;
+    float: left;
+    width: 40%;
+    height: 4.41667em;
+    color: #0082c4;
+    overflow: hidden;
+    text-align: center;
+    border: 0.29167em solid #32b5f7;
+    border-radius: 0.41667em;
+    background: #fff; }
+    .exam_skin_sky .memorycard .match_left_result .list_m_text p {
+      display: inline-block;
+      max-width: 91%;
+      vertical-align: middle; }
+      .exam_skin_sky .memorycard .match_left_result .list_m_text p.text_s {
+        font-size: 0.66667em;
+        line-height: 1.4; }
+      .exam_skin_sky .memorycard .match_left_result .list_m_text p.text_m {
+        font-size: 0.70833em;
+        line-height: 1.3; }
+      .exam_skin_sky .memorycard .match_left_result .list_m_text p.text_l {
+        font-size: 0.83333em;
+        line-height: 1.4; }
+    .exam_skin_sky .memorycard .match_left_result .list_m_text:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      height: 100%; }
+  .exam_skin_sky .memorycard .ins_line {
+    float: left;
+    vertical-align: middle;
+    width: 1.375em;
+    margin: 0 0.125em;
+    height: 0.16667em;
+    border-radius: 2px;
+    margin-top: 2.16667em;
+    background-image: linear-gradient(to top, #f5b601, #ffe600);
+    box-shadow: 0 2px 2px rgba(4, 0, 0, 0.3); }
+  .exam_skin_sky .memorycard .match_icon {
+    position: absolute;
+    left: 0.25em;
+    top: 2.875em;
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: -0.75em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%; }
+  .exam_skin_sky .memorycard .match_right .match_icon {
+    background-image: url(resources/sky/images/icon_s_sky_right.png); }
+  .exam_skin_sky .memorycard .match_wrong .match_icon {
+    background-image: url(resources/sky/images/icon_s_sky_wrong.png); }
+  .exam_skin_sky .memorycard .match_edit_box {
+    position: absolute;
+    left: 1em;
+    top: 0.58333em;
+    right: 1em;
+    bottom: 0.16667em;
+    overflow: auto;
+    z-index: 3; }
+  .exam_skin_sky .memorycard .com_m_sideboard_1 {
+    position: relative;
+    z-index: -1;
+    float: left;
+    width: 14.16667em;
+    height: 100%;
+    padding: 4.20833em 0 1.45833em;
+    margin-left: 1.75em;
+    margin-right: 2.08333em; }
+    .exam_skin_sky .memorycard .com_m_sideboard_1 .com_m_sidehead {
+      z-index: 9;
+      position: absolute;
+      left: 0;
+      top: 1.45833em;
+      right: 0;
+      height: 2.75em;
+      border-top-left-radius: 0.75em;
+      border-top-right-radius: 0.75em; }
+      .exam_skin_sky .memorycard .com_m_sideboard_1 .com_m_sidehead:before {
+        content: "";
+        z-index: -1;
+        display: block;
+        position: absolute;
+        left: -1.75em;
+        top: 0;
+        width: 17.58333em;
+        height: 4.04167em;
+        background: url(resources/sky/images/bg_sidetit1.png) center center no-repeat;
+        background-size: 100% auto; }
+    .exam_skin_sky .memorycard .com_m_sideboard_1 .com_m_sidecon {
+      height: 100%;
+      margin-top: -0.58333em;
+      border-bottom: 0.375em solid transparent;
+      background: url(resources/sky/images/bg_sidecon1.png) left top repeat;
+      background-size: 4.5em auto;
+      box-shadow: 0.0625em 0.10825em 0.79167em 0px rgba(75, 40, 0, 0.75);
+      border: 0.41667em solid #2198d6;
+      border-bottom-left-radius: 0.75em;
+      border-bottom-right-radius: 0.75em;
+      overflow: auto; }
+  .exam_skin_sky .memorycard .com_m_mainboard_1 {
+    height: 100%;
+    overflow: hidden; }
+
+.exam_skin_sky .com_layout .com_layout_container.inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  overflow: hidden;
+  background: url(resources/sky/images/bg_mainboard.jpg) repeat;
+  background-size: auto 100%;
+  border-radius: 0.75em; }
+  .exam_skin_sky .com_layout .com_layout_container.inner:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    display: inline-block;
+    width: 2.95833em;
+    height: 100%;
+    background: url(resources/sky/images/bg_boardleft.jpg) left top no-repeat;
+    background-size: auto 100%; }
+  .exam_skin_sky .com_layout .com_layout_container.inner:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: inline-block;
+    width: 4.25em;
+    height: 100%;
+    background: url(resources/sky/images/bg_boardright.jpg) right top no-repeat;
+    background-size: auto 100%; }
+  .exam_skin_sky .com_layout .com_layout_container.inner .com_layout_main {
+    top: 2.25em;
+    right: 2.08333em;
+    left: 2.08333em;
+    bottom: 2.75em;
+    background-color: #1c4567;
+    border-radius: 0.75em; }
+
+/*# sourceMappingURL=style.css.map */

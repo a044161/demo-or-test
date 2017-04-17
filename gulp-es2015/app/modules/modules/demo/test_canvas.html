@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>白板端工具外框</title>
+    <link rel="stylesheet" type="text/css" href="../../common/common.css">
+    <link rel="stylesheet" type="text/css" href="wood/style.css">
+    <link rel="stylesheet" type="text/css" href="wood/style_dev.css">
+</head>
+<body>
+<div class="exam_skin_wood addon_demo">
+    <div class="com_layout com_layout_tool" id="layout">
+        <div class="com_wrapper_board" id="wrapper"> <!-- pad端加.com_wrapper_pad，白板端加.com_wrapper_board /-->
+            @@include('../../common/resources/common/layout/_layout_tool_side.html', {"classname":""})
+            <!--主体内容-->
+            <div class="com_layout_container"><!-- 没有标题时加.notit -->
+                <div class="com_layout_tit">
+                    <h2 class="tit">标题</h2><!-- 文字过多的情况加.s_tit -->
+                </div>
+                <div class="com_layout_main">
+                    <div class="demo_main">
+                        <h1>canvas测试</h1>
+                        <div class="canvas">
+                            <canvas id="myCanvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/主体内容-->
+            @@include('../../common/resources/common/layout/_layout_tool_side.html', {"classname":""})
+        </div>
+    </div>
+</div>
+<script src="../../common/resources/common/layout/wood/layout.js"></script>
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+    var ratio = getRatio();
+
+    window.onLayoutReset(function() {
+        ratio = getRatio();
+        canvas.setAttribute('width', 800*ratio + 'px');
+        canvas.setAttribute('height', 800*ratio + 'px');
+        draw();
+    });
+
+    function draw(){
+        context.clearRect(0, 0, 800*ratio, 800*ratio);
+        context.beginPath();
+        context.strokeStyle = "rgb(0,0,0)";
+        context.arc(400*ratio,400*ratio,400*ratio,0,2*Math.PI,true);
+        context.closePath();
+        context.fillStyle = 'rgb(200,0,200)';
+        context.fill();
+
+        context.stroke();
+    }
+
+</script>
+</body>
+</html>
+

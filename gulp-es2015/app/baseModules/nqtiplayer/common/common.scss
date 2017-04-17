@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import "resources/mixin";
+body{ margin: 0; height: 100%; line-height: 1;}
+html, body{ border: 0; }
+html { height: 100%;}
+$baseFontSize:24px !default;
+$baseFontFamily:        "Helvetica Neue", Helvetica, Tahoma, sans-serif !default;
+@function pxToEm($px, $baseSize:$baseFontSize){
+    @return $px / $baseSize * 1em;
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.clearfix:after {
+    clear: both;
+}
+// 默认皮肤
+.nqti-player-skin-default {
+    box-sizing: border-box;
+    @import "resources/reset";
+    @import "resources/function";
+    @import "resources/setting";    
+    @import "resources/layout/default/layout";
+    em{font-style:italic;}
+}
+// 木质皮肤
+.nqti-player-skin-wood {
+    box-sizing: border-box;
+    user-select:none;
+    // height: 100%;
+    @import "resources/reset";
+    @import "resources/function";
+    @import "resources/setting";    
+    @import "resources/layout/wood/layout";   
+    @import "resources/button/wood/button";
+    @import "resources/pop/wood/pop";
+    @import "resources/scrollbar/wood/scrollbar";
+    em{font-style:italic;}
+    //预加载
+    .nqti-preload-img-01{
+        display:none;
+        background-image: url(resources/button/wood/images/btn2_press.png);      
+    }
+}
+//加载动画
+@keyframes nqtiloaddot {
+    25% { border-color: transparent; background-color: transparent; }          /* 0个点 */
+    50% { border-right-color: transparent; background-color: transparent; }    /* 1个点 */
+    75% { border-right-color: transparent; }    
+}

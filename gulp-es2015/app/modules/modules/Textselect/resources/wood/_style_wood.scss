@@ -1,0 +1,83 @@
+/*文本选择题型*/
+.com_btn_remind.pad_initial{
+  left: pxToEm(80px); top:pxToEm(116px);
+}
+.textselect_box{
+  position: relative;
+  height: 100%;
+  z-index: 333;
+  .com_layout_main{
+    margin: 0 pxToEm(36px); margin: pxToEm(48px) pxToEm(36px);overflow-y: auto;
+    -webkit-overflow-scrolling:touch;
+    transform:translate3d(0,0,0);
+  }
+  .textselect_container{
+    // background: rgba(111, 75, 27, 0.1);
+    color:#5d390d;
+    height:100%;    
+    font-size: pxToEm(46px);
+    padding:0 pxToEm(12px);
+    -webkit-border-radius:pxToEm(8px);
+    -moz-border-radius:pxToEm(8px);
+    border-radius:pxToEm(8px);
+    line-height: 2;
+    //word-break: break-all; 
+    word-wrap:break-word;
+    word-break: break-word;
+    .textselect_option{
+      background:#b18745;
+      color: #fff;
+      border: 1px solid #806031;
+      border-bottom-width: pxToEm(3px);
+      position: relative;
+      cursor: pointer;
+      -webkit-border-radius:pxToEm(5px);
+      -moz-border-radius:pxToEm(5px);
+      border-radius:pxToEm(5px);
+      padding:pxToEm(3px) pxToEm(6px);
+      display: inline-block;
+      line-height: 1.5;
+    }
+    .textselect_selected{
+      background:#76c1ea;
+      /* padding-left:34px; */
+      color:#fff;
+      border: 1px solid #4b8aad;
+      border-bottom-width: pxToEm(3px);
+      /* &:before{
+          position: absolute;
+          left:0;
+          top:0;
+          height: 100%;
+          width: 30px;
+          content:"";
+          background:#5397ba url(images/wood/icons_c_ok.png) center center no-repeat;
+          background-size: auto 100%;
+
+      } */
+    }
+    .textselect_error{
+      background:#d62727;
+      color:#fff;
+      border: 1px solid #861010;
+      border-bottom-width: pxToEm(3px);
+    }
+    .textselect_correct{
+      background:#268b52;
+      color:#fff;
+      border: 1px solid #14c061;
+      border-bottom-width: pxToEm(3px);
+    }
+  }
+}
+.textselect_result{
+  float: left;
+  margin: pxToEm(20px) 0 0 35%;
+  color: #5e390c;
+  font-size: pxToEm(24px);
+  span{
+    color: #fd9000;
+    font-size: pxToEm(40px);
+  }
+}
+/*文本选择题型结束*/

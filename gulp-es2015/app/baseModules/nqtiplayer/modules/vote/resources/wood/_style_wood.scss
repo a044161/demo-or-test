@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/* 投票css */
+.nqti-vote {
+    margin-right: 0;
+}
+.nqti-base-vote-list{
+    &:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+    &.nqti-fixed{
+        .nqti-base-vote-list-cell{
+            width: pxToEm(325px);
+            margin: 0 pxToEm(64px) pxToEm(0px) 0;
+        }
+        .nqti-base-vote-list-views{
+            height: pxToEm(244px);
+            line-height: pxToEm(238px);
+        }
+        .nqti-base-vote-list-txt{
+            max-height: pxToEm(140px);
+            margin: pxToEm(8px) pxToEm(10px);
+            font-size: pxToEm(40px);
+            line-height: pxToEm(34px);
+            text-align: left;
+            overflow: hidden;
+            max-width:100%;
+        }
+    }
+}
+.nqti-base-vote-list-cell{
+    word-break: break-all;
+    word-wrap: break-word;
+    position: relative;
+    float: left;
+    width: pxToEm(147px);
+    margin: 0 pxToEm(28px) pxToEm(20px) 0;
+    // height: pxToEm(128px);
+    .nqti-base-image-mark-bg {
+        display: none;
+    }
+    &.nqti-base-image-mark .nqti-base-vote-list-views {
+        .nqti-checked-icon {
+            position: absolute;
+            display: inline-block;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .2);
+        }
+    }
+    &.nqti-checked{
+        .nqti-base-vote-list-views{
+            background: #daebf1;
+            // border-color: #ff8400;
+            .nqti-checked-icon {
+                display: inline-block;
+                position: absolute;
+                top: pxToEm(7px);
+                right: pxToEm(7px);
+                width: pxToEm(41px);
+                height: pxToEm(41px);
+                background: url(resources/wood/images/icon_checked.png) no-repeat center center;
+                background-size: cover;
+            }
+        }
+        .nqti-base-vote-list-index{
+            color: #333;
+        }
+        // .nqti-base-vote-list-txt{
+        //     color: #ac6312;
+        // }
+    }
+    
+}
+.nqti-base-vote-list-box{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.nqti-base-vote-list-views{
+    position: relative;
+    height: pxToEm(147px);
+    text-align: center;
+    background-color: #f7f7f7;
+    border: 2px solid #c5c5c5;
+    overflow: hidden;
+    line-height: pxToEm(141px);
+    img{
+        max-height: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+    .nqti-checked-icon {
+        display: none;
+    }
+}
+.nqti-base-vote-list-txt{
+    display: inline-block;
+    color: #333;
+    font-size: pxToEm(60px);
+    vertical-align: middle;
+}
+.nqti-base-vote-list-views-txt{
+    font-size: pxToEm(36px);
+    display: inline-block;
+    height: pxToEm(118px);
+    word-wrap: break-word;
+    margin: pxToEm(15px);
+    line-height: 1.3;
+    vertical-align: middle;
+    text-align: left;
+    overflow: hidden;
+}
+.nqti-base-vote-list-desc{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: pxToEm(10px);
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    text-align: left;
+    line-height: 1.4;
+    z-index: 5;
+}
+.nqti-base-vote-list-desc-txt{
+    display: block;
+    width: 100%;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.nqti-base-vote-list-index{
+    color: #898989;
+    font-size: pxToEm(36px);
+    text-align: center;
+    line-height: pxToEm(42px);
+}
+
+.nqti-base-vote-hint{
+    color: #726555;
+    padding-bottom: pxToEm(30px); 
+    .nqti-base-vote-txt{
+        font-size: pxToEm(34px);  
+    }
+}
+/* end 投票css */
+/*显示题号时调整间距*/
+.nqti-module-show-num .nqti-base-vote-list.nqti-fixed .nqti-base-vote-list-cell  {
+    margin-right: pxToEm(46px);
+}

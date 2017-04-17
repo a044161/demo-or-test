@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>数轴题-学生端</title>
+    <link rel="stylesheet" type="text/css" href="../../../common/common.css">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+
+<body>
+    <div class="exam_skin_wood">
+        <div class="com_layout" id="layout">
+            <div class="com_wrapper_pad" id="wrapper">
+                <!-- pad端加.com_wrapper_pad，白板端加.com_wrapper_board -->
+                <!--头部-->
+                <div class="com_layout_header">
+                    <!--计时器-->
+                    <div class="com_header_time">
+                        <div class="com_time">
+    <div class="time_default ">
+        <b class="time_text">答题时间：</b><!-- 
+                 --><span class="time_m"><em>05</em></span><!-- 
+                          --><b class="time_text">分</b><!--         
+                                   --><i>:</i><!-- 
+                                            --><span class="time_s"><em>21</em></span><!-- 
+                                                     --><b class="time_text">秒</b>
+    </div>
+</div>
+                        <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>
+                    </div>
+                    <!--/计时器-->
+                    <!--提交按钮-->
+                    <div class="com_header_tool">
+                        <a class="com_btn_round " href="javascript:;">
+<!-- <span class="icons_box"></span> -->
+<span class="text_box">提&nbsp;&nbsp;交</span>
+</a>
+                    </div>
+                    <!--/提交按钮-->
+                </div>
+                <!--/头部-->
+                <!--主体内容-->
+                <div class="com_layout_container">
+                <!-- 没有标题时加.notit -->
+                    <div class="com_layout_exam_content numberline">
+                    <!-- 具体题型内容 -->
+                        <div class="com_layout_main_exam"><!-- 没有标题时加.notit -->
+                            <div class="com_layout_tit">
+                                <h2 class="tit">标题标题标题标题标题标题标题标题标题</h2>
+                                <!-- 文字过多的情况加.s_tit -->
+                            </div>
+                            <div class="com_layout_main">
+                                <!-- 在这里新建div写新的题型 -->
+                                <!--主体内容-->
+<div class="numberline_board">
+    <div class="com_grid_wrap">
+        <div class="number_position_box">
+            <!-- 选中添加类名on -->
+            <div class="number_list_box on">
+                <input class="number_list_input" type="text">
+            </div>
+            <div class="symbol_box icon_plus"></div>
+            <div class="number_list_box">
+                <input class="number_list_input" type="text" value="5">
+            </div>
+            <div class="symbol_box icon_minus"></div>
+            <div class="number_list_box">
+                <input class="number_list_input" type="text">
+            </div>
+            <div class="symbol_box icon_equals"></div>
+            <div class="number_list_box">
+                <input class="number_list_input" type="text">
+            </div>
+        </div>
+
+        <div class="number_position_box" style="top:340px;">
+            <div class="number_list_box">7-9=？</div>
+        </div>
+        
+        <div class="number_position_box" style="top:340px; left:400px;">
+            <div class="number_list_box on">-14</div>
+        </div>
+                    
+    </div>
+
+</div>
+<!--/主体内容-->
+
+                            </div>
+                        </div>
+                    <!-- 具体题型内容 -->
+                    </div>
+                </div>
+                <!--/主体内容-->
+            </div>
+        </div>
+    </div>
+    <script src="../../../common/resources/common/layout/wood/layout.js"></script>
+</body>
+</html>

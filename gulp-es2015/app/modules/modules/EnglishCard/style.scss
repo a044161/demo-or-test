@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "../../common/resources/common/setting/wood/setting";
+@import "../../common/resources/common/function/function";
+
+// 木质皮肤
+.exam_skin_wood {
+    @import "resources/wood/style_wood";//词汇卡
+    @import "resources/wood/style_wzy";
+}
+

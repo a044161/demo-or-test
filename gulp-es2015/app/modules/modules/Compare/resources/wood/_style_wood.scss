@@ -1,0 +1,239 @@
+@import "../../../../common/resources/common/mixin/mixin";
+/*比较大小*/
+.compare_main{
+  position:relative;
+  height:100%;
+  z-index:333;
+  .com_layout_main {
+    padding: 0 pxToEm(30px);
+  }
+  /*顶部提示文字*/
+  .respondRes_tip{
+    margin: pxToEm(20px) 0 pxToEm(-20px);
+    padding: 0 pxToEm(20px);
+    font-size: pxToEm(40px);
+    text-align: center;
+    &.respond_right{
+      color: #258d52;
+    }
+    &.respond_error{
+      color: #d52a2a;
+    }
+  }
+  /*顶部提示文字结束*/
+  .exam_box{
+    max-height: pxToEm(590px);
+    margin:pxToEm(42px) 0 0 0;
+    overflow-y: auto;
+    ul{ }
+    li{ position:relative;margin-bottom:pxToEm(23px); height:pxToEm(93px);
+      line-height:pxToEm(93px); text-align:center;}
+  }
+  .module_number{
+    position:absolute;
+    left: pxToEm(10px);
+    top:pxToEm(18px);
+    padding: 0 ;
+    height: pxToEm(56px);
+    line-height: pxToEm(50px);
+    border-radius: pxToEm(12px);
+    border:pxToEm(3px) solid #9b590c;
+    min-width: pxToEm(68px);
+    &.green{
+      border-color: green;
+      color: green;
+    }
+  }
+  .module_left{
+    margin: 0 pxToEm(18px);
+    display:inline-block;
+    width: pxToEm(600px);
+    height: 100%;
+    color: #5d390d;
+    background-image:url(resources/wood/images/bg_m.png);
+    background-repeat:repeat-x;
+    background-position:left top;
+    background-origin:padding-box;
+    -webkit-border-radius:pxToEm(4px);-moz-border-radius:pxToEm(4px);border-radius:pxToEm(4px);
+    background-size:auto 100%;
+    /*字体一行显示，超过了用...*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: pxToEm(10px);
+    &:before {
+      content: " ";
+      float: left;
+      position: relative;
+      top:0;
+      left:0;
+      background:url(resources/wood/images/bg_l.png) left top no-repeat;
+      background-size:auto 100%;
+      display: block;
+      height: pxToEm(93px);
+      width: pxToEm(20px);
+    }
+    &:after {
+      content: " ";
+      float: right;
+      position: relative;
+      top:0;
+      right:0;
+      background:url(resources/wood/images/bg_r.png) right top no-repeat;
+      background-size:auto 100%;
+      display: block;
+      height: pxToEm(93px);
+      width: pxToEm(20px);
+    }
+  }
+  .module_right{
+    margin:0 pxToEm(20px);
+    display:inline-block;
+    width: pxToEm(600px);
+    height: 100%;
+    color: #5d390d;
+    background-image:url(resources/wood/images/bg_m.png);
+    background-repeat:repeat-x;
+    background-position:left top;
+    background-origin:padding-box;
+    -webkit-border-radius:pxToEm(4px);-moz-border-radius:pxToEm(4px);border-radius:pxToEm(4px);
+    background-size:auto 100%;
+    /*字体一行显示，超过了用...*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: pxToEm(10px);
+    &:before {
+      content: " ";
+      float: left;
+      position: relative;
+      top:0;
+      left:0;
+      background:url(resources/wood/images/bg_l.png) left top no-repeat;
+      background-size:auto 100%;
+      display: block;
+      height: pxToEm(93px);
+      width: pxToEm(20px);
+    }
+    &:after {
+      content: " ";
+      float: right;
+      position: relative;
+      top:0;
+      right:0;
+      background:url(resources/wood/images/bg_r.png) right top no-repeat;
+      background-size:auto 100%;
+      display: block;
+      height: pxToEm(93px);
+      width: pxToEm(20px);
+    }
+  }
+  .module_fz_em{
+    font-size: pxToEm(42px);
+    color: #59390b;
+    &.fz_em_big{
+      font-size: pxToEm(46px);
+    }
+  }
+  .module_mid{
+    width:pxToEm(138px);
+    display:inline-block;
+    height: pxToEm(93px);
+    vertical-align:top;
+    .com_u_btn2{
+      /*默认状态*/
+      display: inline-block;
+      width: pxToEm(138px);
+      height: pxToEm(93px);
+      vertical-align: top;
+      line-height: pxToEm(76px);
+      border-radius: pxToEm(12px);
+      /*background: url(resources/wood/images/btn_lr_board.png) center top no-repeat;*/
+      @include bglinear(#6aa4ca , #4b9ad3);
+      background-size: 100% auto;
+      text-align: center;
+      em{
+        font-size: pxToEm(52px);color: #fff;font-weight: bold;
+      }
+      /*拖动按钮到区域*/
+      &.com_s_on{
+        @include bglinear(#4cc9fd , #74ddff);
+        border: 3px solid #0d64a3;
+        // line-height: pxToEm(84px);
+      }
+      &.com_s_right{
+        @include bglinear(#1ea056 , #268b52);
+      }
+      &.com_s_right_on{
+        @include bglinear(#1ea056 , #268b52);
+        border: 3px solid #14c061;
+        // line-height: pxToEm(84px);
+      }
+      &.com_s_error{
+        @include bglinear(#ca4747 , #d62727);
+      }
+      &.com_s_error_on{
+        @include bglinear(#ca4747 , #d62727);
+        border: 3px solid #861010;
+        // line-height: pxToEm(84px);
+      }
+
+    }
+  }
+  .symbol_box{
+    .com_u_btn2{ /*background:url(resources/images/btn_bg.jpg) center top repeat-x;-webkit-border-radius:8px);-moz-border-radius:8px);border-radius:8px);background-size:auto 100%;*/width:pxToEm(100px);margin:0 pxToEm(10px);display:inline-block; height: pxToEm(72px);line-height: pxToEm(72px);font-size: pxToEm(30px); color:#834f06; font-weight: bold;}
+  }
+  .compare_lay_box{
+    padding:0;text-align:center;
+  }
+  /*底部比较符号*/
+  .compare_bottom_tool{
+    position:absolute; z-index:339; width:100%;height:pxToEm(138px);bottom:pxToEm(20px);left:0;text-align: center;
+    .bottom_tools{
+      li{
+        position: relative;
+        margin: 0 pxToEm(31px);
+        display: inline-block;
+        width: pxToEm(179px);
+        height:pxToEm(138px);
+        line-height: pxToEm(130px);
+        background: url(resources/wood/images/btn_lr_board.png) center top no-repeat;
+        background-size: 100% auto;
+        text-align: center;
+        cursor: pointer;
+        em{font-size: pxToEm(54px);color: #834f06;font-weight: bold;}
+        div{
+          display: inline-block;
+          position: absolute;left: 0;top:0;
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+        }
+        &:active,&.ui_btn_selected{
+          background-position: center bottom;
+        }
+      }
+    }
+  }
+  /*底部比较符号结束*/
+  /*拖动的符号*/
+  .moving_tool{
+    position: absolute;
+    left: pxToEm(600px);
+    bottom:pxToEm(150px);
+    z-index: 998;
+    display: inline-block;
+    width: pxToEm(179px);
+    height: pxToEm(138px);
+    line-height: pxToEm(130px);
+    background: url(resources/wood/images/btn_lr_board.png) center top no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    cursor: pointer;
+    em{font-size: pxToEm(54px);color: #834f06;font-weight: bold;}
+    &:active{
+      background-position: center bottom;
+    }
+  }
+  /*拖动的符号结束*/
+}

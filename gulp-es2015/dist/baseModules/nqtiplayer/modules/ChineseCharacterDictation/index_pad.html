@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>汉字听写-学生端</title>
+    <link rel="stylesheet" type="text/css" href="../../../baseModule/common/common_base_module.css">
+    <link rel="stylesheet" type="text/css" href="../../common/common.css">
+    <link rel="stylesheet" type="text/css" href="../choice/style.css">  
+    <link rel="stylesheet" type="text/css" href="../connectLine/style.css">  
+    <link rel="stylesheet" type="text/css" href="../essayQuestion/style.css">  
+    <link rel="stylesheet" type="text/css" href="../puzzle/style.css">  
+    <link rel="stylesheet" type="text/css" href="../screenshot/style.css">  
+    <link rel="stylesheet" type="text/css" href="../sequence/style.css">  
+    <link rel="stylesheet" type="text/css" href="../textEnter/style.css">  
+    <link rel="stylesheet" type="text/css" href="../vote/style.css">  
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="exam-skin-wood">
+    <div class="baseMod-com-layout ChineseCharacterDictation-layout-box" id="layout">
+        <!-- 
+            pad类名baseMod-com-wrapper-pad
+            白板类名baseMod-com-wrapper-board
+            学生端答题框baseMod-com-wrapper-answer
+            老师端等待学生答题baseMod-com-wrapper-waiting
+        -->
+        <div class="baseMod-com-wrapper-pad">
+            <div class="baseMod-com-header-box">
+                <!--计时器-->
+                <div class="com_time">
+                    <div class="time_default">
+                        <b class="time_text">答题时间：</b>
+                        <span class="time_m"><em>05</em></span>
+                        <b class="time_text">分</b>        
+                        <i>:</i>
+                        <span class="time_s"><em>21</em></span>
+                        <b class="time_text">秒</b>
+                    </div>
+                </div>
+                <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>             
+            </div>
+            <!-- 公共提交按钮 -->
+            <div class="baseMod-com-submit">
+                <a class="com_btn_round com_btn_disabled" href="javascript:;"><!-- 不可点击添加类名com_btn_disabled -->
+    <span class="icons_box"></span>
+    <span class="text_box">提&nbsp;&nbsp;交</span>
+</a>
+            </div>
+            <!-- /公共提交按钮 -->
+            <div class="baseMod-com-layout-container">
+                <!-- 汉字听写 部分容器-->
+                <div style="width:100%;height:100%">
+                    <div class="baseMod-com-layout-body baseMod-scrollbar-style-gray">
+                        <!-- 复合题类的题干,隐藏题干加nqti-hide-dom -->
+                        <div class="mixedModule-topic">
+                            <div class="mixedModule-header-text">动画片复合题</div>
+                        </div>
+                        <!-- /复合题类的大标题 -->
+                        <!-- module-nqit容器 -->
+                        <div class="mixedModule-player-container">
+                            <!-- 插入QTI -->
+                            <div class="mixedModule-nqti-container">
+                                <div style="width:100%;height:100%">
+                                    <!-- 汉字听写 学生端-->
+<div class="chineseCharacter-module">
+	<div class="chineseCharacter-module-title" style="display: none;">
+		<span class="chineseCharacter-module-title-text">听读音，写汉字</span>
+	</div>
+	<!-- 汉字听写 拼音和田字格部分-->
+    <!-- 汉字听写 拼音和田字格部分-->
+<div class="chineseCharacter-module-spell">
+	 <ul class="chineseCharacter-module-spell-box">
+ 	    <!-- 田字格正确的时候 chineseCharacter-module-spell-item 添加样式: you-are-right  
+ 			 田字格错误的时候 chineseCharacter-module-spell-item 添加样式: you-are-wrong  
+ 			 答题的时候选中添加类名 on
+ 	    -->
+	 	<li class="chineseCharacter-module-spell-item you-are-right">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters wrong-character-box">
+                <!-- 开发过程中直接在 spell_characters-box 元素中插入笔画元素，删除样式:demo-bg -->
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item you-are-wrong ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item you-are-wrong ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters wrong-character-box">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li>
+	 </ul>
+</div>
+	<div class="chineseCharacter-module-btns">
+		<div class="module-btns-box">
+			<!-- 预加载点击背景色的span -->
+			<span class="ChineseCd-preload-img01"></span>
+			<!-- module-btns-item 选中的加类名 on -->
+			<a href="#" class="module-btns-item">
+				<i class="btn-icon pen-icon"></i>
+				<span class="btn-text">画笔</span>
+			</a>
+		 	<a href="#" class="module-btns-item">
+		 		<i class="btn-icon eraser-icon"></i>
+				<span class="btn-text">橡皮擦</span>
+		 	</a>
+			<a href="#" class="module-btns-item"><!-- 执行发音动画 .module-btns-item 加类名 on -->
+				<i class="btn-icon voice-icon"></i>
+				<span class="btn-text">发音</span>
+			</a>
+		</div>
+	</div>
+	<div class="chineseCharacter-module-decipher ChineseCd-light-scrollbar">
+		<p class="module-decipher-text"><strong>源于：</strong>唐·韩愈《进学解》:“~，荒于嬉；行成于思，毁于随。”</p>
+		<p class="module-decipher-text"><strong>释义：</strong>学业精深是由勤奋得来的。</p>
+	</div>
+</div>
+                                </div>
+                                
+                                <div style="width:100%;height:100%;display:none;">
+                                    <div class="nqti-player-skin-wood"><!-- nqti皮肤控制层 默认皮肤类名nqti-player-skin-default -->          
+                                        <div class="nqti-player-body nqti-scrollbar-style-gray nqti-module-show-num"><!-- 加载中添加类名nqti-player-run-loading 显示序号添加类名nqti-module-show-num -->
+                                            <div class="nqti-player-loading" ><em>正在努力解析中...</em></div>
+                                            <!-- 单选题 -->
+                                             <div class="nqti-module-body nqti-base-choice">
+    <!-- 题目序号 -->
+    <div class="nqti-module-listnum">
+        <em class="nqti-listnum-text">1</em>
+        <span class="nqti-listnum-dot">、</span>
+    </div>
+    <!-- /题目序号 -->
+    <!-- 题目描述文字 -->
+    <div class="nqti-module-title">
+        <em class="nqti-title-text">（单选题）图上的男孩们在踢足球的行为是正确的，应予以鼓励</em>
+    </div>
+    <!-- /题目描述文字 -->
+
+    <!-- 多媒体附件插入容器 -->
+    <div class="nqti-module-media  nqti-hide-dom">
+        不显示的dom结构添加类名nqti-hide-dom
+    </div>
+    <!-- /多媒体附件插入容器 -->
+
+    <!-- 提示按钮容器 -->
+    <div class="nqti-hint-box ">
+        <span class="nqti-preload-img-01">预加载此按钮点击之后的背景图</span>
+        <a class="nqti-hint-btn" href="javascript:;">
+    <span class="nqti-tip-icon"></span>
+    <span class="nqti-tip-icon-text">提示</span>
+</a>
+    </div>
+    <!-- /提示按钮容器 -->
+    
+    <!-- 题型选项 -->
+    <div class="nqti-module-content">
+        <ul class="nqti-base-choice-list"><!--单选题类名.nqti-base-choice-list,多选题类名.nqti-base-choice-multiple,判断题类名.nqti-base-judment-list-->
+    <li class="nqti-option nqti-option-on"><!--选中增加类名option-on,错误增加类名option-wrong,正确增加类名option-right-->
+        <i class="nqti-option-radio-icon"></i>
+        <span class="nqti-check"><span class="size">A</span></span>
+        <div class="nqti-content"><span class="size">选项是对的</span></div>
+    </li>
+    <li class="nqti-option nqti-option-right">
+        <i class="nqti-option-radio-icon"></i>
+        <span class="nqti-check"><span class="size">B</span></span>
+        <div class="nqti-content"><span class="size">选项是对的</span></div>
+    </li>
+    <li class="nqti-option nqti-option-wrong">
+        <i class="nqti-option-radio-icon"></i>
+        <span class="nqti-check"><span class="size">C</span></span>
+        <div class="nqti-content"><span class="size">选项是错的</span></div>
+    </li>
+    <li class="nqti-option">
+        <i class="nqti-option-radio-icon"></i>
+        <span class="nqti-check"><span class="size">D</span></span>
+        <div class="nqti-content"><span class="size">选项是对的</span></div>
+    </li>
+</ul>
+
+    </div>
+</div>
+                                            <!-- 多选题 -->
+                                            
+                                            <!-- 判断题 -->
+                                            
+                                            <!-- 连线题 -->
+                                            
+                                            <!-- 问答题 -->
+                                            
+                                            <!-- 拼图题 -->
+                                            
+                                            <!-- 排序题 -->
+                                            
+                                            <!-- 填空题 -->
+                                            
+                                            <!-- 投票题 -->
+                                            
+                                            <!--moduleName（复合题内题型名字），moduleNum（题号），moduleTitle （题目标题），隐藏提示上面的 "boxTips": "nqti-hide-dom" -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /module-nqit容器 -->
+
+                        <!-- 提示解析，隐藏时，加类nqti-hide-dom -->
+                        <div class="mixedModule-result hide_dom ">
+                            <!-- 单选题、多选题、判断题时，显示这个结构。隐藏，加nqti-hide-dom-->
+                            <div class="mixedModule-answer wrong">
+                                <i class="mixedModule-answer-icon"></i>
+                                <span class="mixedModule-answer-text answer-choice">作答：<em class="mixedModule-answer-left">否</em>正确答案：<em>是</em></span>
+                            </div>
+                            <!-- 连线题、排序题、拼图题时，显示这个结构。隐藏，加hide-dom -->
+                            <div class="mixedModule-answer wrong hide-dom">
+                                <i class="mixedModule-answer-icon"></i>
+                                <span class="mixedModule-answer-text answer-pic">回答错误</span><a href="#" class="mixedModule-pop-btn">正确答案</a>
+                            </div>
+                            <!-- 投票提，主观题，手写题没有对错，不显示结果。分割线，底下一直在 -->
+                            <div class="mixedModule-divideLine"></div>
+                            <div class="mixedModule-resolve clearfix">
+                                <p class="tips">提示：</p>
+                                <p class="word">--</p>
+                            </div>
+                            <div class="mixedModule-resolve clearfix">
+                                <p class="tips">解析：</p>
+                                <p class="word">这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析这里是解析</p>
+                            </div>
+                        </div>
+                        <!-- /提示解析 -->
+
+                    </div>
+                </div>
+                <!-- 切换题目按钮  -->
+                <!--  汉字听写部分样式 by 陈晶晶 复写部分样式添加前缀 chineseCharacter -->
+                <div class="mixedModule-switch-container chineseCharacter-switch-container"><!-- 这个写在layout -->
+                    <div style="width:100%;height:100%">
+                        <div class="mixedModule-switch">
+                            <!-- 点击时，响应鼠标.mixedModule-switch-btn加类 click_on。完后移除-->
+                            <a href="###" class="mixedModule-switch-btn click_on hide-dom">
+                                <!-- 当前显示题干时，底下内容变成隐藏题干。当前未显示题干时，底下内容变为查看题干 -->
+                                <em class="mixedModule-switch-text">隐藏题干</em>
+                            </a>
+                            <div class="mixedModule-subject-container">
+                                <div class="mixedModule-subject"><!-- 当小于等于5个题目时（含5个），用类mixedModule-less -->
+                                    <!-- 汉字听写 mixedModule-subject-pre  不可点击添加类名 click_disabled 选中添加样式 ui_btn_active-->
+                                    <a href="#" class="mixedModule-subject-pre click_disabled"></a>
+                                    <!-- 题目按钮使用说明：.mixedModule-subject-btn
+                                        答题中时:
+                                            已答题加类answered
+                                            正在答题中，加类answering
+                                            未答题，什么都不加
+                                            当前查看哪一题，加类answering-view
+                                        正误反馈：
+                                            该题正确，加类right
+                                            该题错误，加类wrong
+                                            该题为主观题，没有正误,加类noanswer
+                                            查看当前题目时，加类checking-view
+                                    -->
+                                    <!--汉字听写 拼音按钮使用说明：.mixedModule-subject-btn
+                                            选中加类：active;
+                                            未选中: 什么都不加
+                                    -->
+                                    <ul class="mixedModule-subject-list">
+                                        <li class="mixedModule-subject-btn active">
+                                            <em class="mixedModule-subject-num">1</em>
+                                            <em class="mixedModule-subject-word">yě</em>
+                                        </li>
+                                        <li class="mixedModule-subject-btn">
+                                            <em class="mixedModule-subject-num">2</em>
+                                            <em class="mixedModule-subject-word">jīn</em>
+                                        </li>
+                                        <li class="mixedModule-subject-btn">
+                                            <em class="mixedModule-subject-num">3</em>
+                                            <em class="mixedModule-subject-word">mǎng</em>
+                                        </li>
+                                        <li class="mixedModule-subject-btn">
+                                            <em class="mixedModule-subject-num">4</em>
+                                            <em class="mixedModule-subject-word">wá</em>
+                                        </li>
+                                        <li class="mixedModule-subject-btn">
+                                            <em class="mixedModule-subject-num">5</em>
+                                            <em class="mixedModule-subject-word">jǐ</em>
+                                        </li>
+                                        <li class="mixedModule-subject-btn">
+                                            <em class="mixedModule-subject-num">6</em>
+                                            <em class="mixedModule-subject-word">mǚ</em>
+                                        </li>
+                                        <li class="mixedModule-subject-btn">
+                                            <em class="mixedModule-subject-num">30</em>
+                                            <em class="mixedModule-subject-word">ě</em>
+                                        </li>
+                                        <li class="mixedModule-subject-btn">
+                                            <em class="mixedModule-subject-num">8</em>
+                                            <em class="mixedModule-subject-word">ě</em>
+                                        </li>
+                                    </ul>
+                                    <!-- 汉字听写 mixedModule-subject-next 不可点击添加类名 click_disabled 选中添加样式 ui_btn_active-->
+                                    <a href="#" class="mixedModule-subject-next"></a>
+                                </div>
+                            </div>
+                            <div class="mixedModule-shangxia-p hide-dom">
+                            <!-- 上一题下一题，不可点击加click_disabled -->
+                                <a href="###" class="mixedModule-prev click_disabled">
+                                    <em class="mixedModule-switch-text">上一题</em>
+                                </a>
+                                <a href="###" class="mixedModule-next">
+                                    <em class="mixedModule-switch-text">下一题</em>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- 查看答案 -->
+                <div style="width:100%;height:100%; display: none ;">
+                    <!-- 汉字听写 学生端答题-->
+<div class="chineseCharacter-module-answer"><!-- chineseCharacter-module-answer 白板端 统计界面查看详情的弹窗的时候 添加类名 chineseCharacter-module-answer-stat 来调整布局 -->
+	<div class="chineseCharacter-module-student-title">
+		<div class="student-answer-text">
+			<div class="chineseCharacter-sut-time">
+				答题时间：
+				<span>4</span>分
+				<span>30</span>秒 
+			</div>
+			<div class="chineseCharacter-sut-tj">
+				共<span>6</span>题 , 
+				答对<span class="right-text">4</span>题，
+				答错<span class="wrong-text">2</span>题
+			</div>
+		</div>
+	</div>
+	<div class="chineseCharacter-module-student-box-ul ChineseCd-light-scrollbar"><!-- 超过4个的时候才添加类名 ChineseCd-light-scrollbar 来显示滚动条与调整布局 -->
+		<ul class="chineseCharacter-module-student-box-ul-box">
+			<li class="chineseCharacter-module-student-box">
+				<!-- 汉字听写 学生答案评析部分-->
+				<div class="chineseCharacter-module-student-item">
+	<div class="chineseCharacter-module-student-num"><span class="student-num-text">1</span></div>
+	<!-- 汉字听写 学生答案评析部分-->
+	<!-- 汉字听写 拼音和田字格部分-->
+<div class="chineseCharacter-module-spell">
+	 <ul class="chineseCharacter-module-spell-box">
+ 	    <!-- 田字格正确的时候 chineseCharacter-module-spell-item 添加样式: you-are-right  
+ 			 田字格错误的时候 chineseCharacter-module-spell-item 添加样式: you-are-wrong  
+ 			 答题的时候选中添加类名 on
+ 	    -->
+	 	<li class="chineseCharacter-module-spell-item you-are-right">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters wrong-character-box">
+                <!-- 开发过程中直接在 spell_characters-box 元素中插入笔画元素，删除样式:demo-bg -->
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item you-are-wrong ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item you-are-wrong ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters wrong-character-box">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li>
+	 </ul>
+</div>
+
+	<div class="chineseCharacter-module-student-result-box">
+	    <!-- 学生正确student-result-text添加样式: you-are-right  
+			 学生错误student-result-text添加样式: you-are-wrong  
+	    -->
+		<p class="student-result-text you-are-right"><i class="student-result-icon"></i>“业”字笔顺错误，正确的笔顺是 丨 丨 丶 丿 — </p>
+		<p class="student-result-text you-are-wrong"><i class="student-result-icon"></i>“精”字正确</p>
+		<p class="student-result-text you-are-wrong"><i class="student-result-icon"></i>“于”字正确</p>
+		<p class="student-result-text you-are-right"><i class="student-result-icon"></i>“勤”字笔画错误，本应有13笔，但写成了12笔</p>
+	</div>
+</div>
+			</li><!-- 
+		 --><li class="chineseCharacter-module-student-box">
+				<!-- 汉字听写 学生答案评析部分-->
+				<div class="chineseCharacter-module-student-item">
+	<div class="chineseCharacter-module-student-num"><span class="student-num-text">3</span></div>
+	<!-- 汉字听写 学生答案评析部分-->
+	<!-- 汉字听写 拼音和田字格部分-->
+<div class="chineseCharacter-module-spell">
+	 <ul class="chineseCharacter-module-spell-box">
+ 	    <!-- 田字格正确的时候 chineseCharacter-module-spell-item 添加样式: you-are-right  
+ 			 田字格错误的时候 chineseCharacter-module-spell-item 添加样式: you-are-wrong  
+ 			 答题的时候选中添加类名 on
+ 	    -->
+	 	<li class="chineseCharacter-module-spell-item you-are-right">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters wrong-character-box">
+                <!-- 开发过程中直接在 spell_characters-box 元素中插入笔画元素，删除样式:demo-bg -->
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item you-are-wrong ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item you-are-wrong ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters wrong-character-box">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li>
+	 </ul>
+</div>
+
+	<div class="chineseCharacter-module-student-result-box">
+	    <!-- 学生正确student-result-text添加样式: you-are-right  
+			 学生错误student-result-text添加样式: you-are-wrong  
+	    -->
+		<p class="student-result-text you-are-right"><i class="student-result-icon"></i>“业”字笔顺错误，正确的笔顺是 丨 丨 丶 丿 — </p>
+		<p class="student-result-text you-are-wrong"><i class="student-result-icon"></i>“精”字正确</p>
+		<p class="student-result-text you-are-wrong"><i class="student-result-icon"></i>“于”字正确</p>
+		<p class="student-result-text you-are-right"><i class="student-result-icon"></i>“勤”字笔画错误，本应有13笔，但写成了12笔</p>
+	</div>
+</div>
+			</li>
+		</ul>
+		<ul class="chineseCharacter-module-student-box-ul-box">
+			<li class="chineseCharacter-module-student-box">
+				<!-- 汉字听写 学生答案评析部分-->
+				<div class="chineseCharacter-module-student-item">
+	<div class="chineseCharacter-module-student-num"><span class="student-num-text">20</span></div>
+	<!-- 汉字听写 学生答案评析部分-->
+	<!-- 汉字听写 拼音和田字格部分-->
+<div class="chineseCharacter-module-spell">
+	 <ul class="chineseCharacter-module-spell-box">
+ 	    <!-- 田字格正确的时候 chineseCharacter-module-spell-item 添加样式: you-are-right  
+ 			 田字格错误的时候 chineseCharacter-module-spell-item 添加样式: you-are-wrong  
+ 			 答题的时候选中添加类名 on
+ 	    -->
+	 	<li class="chineseCharacter-module-spell-item you-are-right">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters wrong-character-box">
+                <!-- 开发过程中直接在 spell_characters-box 元素中插入笔画元素，删除样式:demo-bg -->
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item you-are-wrong ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item you-are-wrong ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters wrong-character-box">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li>
+	 </ul>
+</div>
+
+	<div class="chineseCharacter-module-student-result-box">
+	    <!-- 学生正确student-result-text添加样式: you-are-right  
+			 学生错误student-result-text添加样式: you-are-wrong  
+	    -->
+		<p class="student-result-text you-are-right"><i class="student-result-icon"></i>“业”字笔顺错误，正确的笔顺是 丨 丨 丶 丿 — </p>
+		<p class="student-result-text you-are-wrong"><i class="student-result-icon"></i>“精”字正确</p>
+		<p class="student-result-text you-are-wrong"><i class="student-result-icon"></i>“于”字正确</p>
+		<p class="student-result-text you-are-right"><i class="student-result-icon"></i>“勤”字笔画错误，本应有13笔，但写成了12笔</p>
+	</div>
+</div>
+			</li><!-- 			
+		 --><li class="chineseCharacter-module-student-box">
+				<!-- 汉字听写 学生答案评析部分-->
+				<div class="chineseCharacter-module-student-item">
+	<div class="chineseCharacter-module-student-num"><span class="student-num-text">4</span></div>
+	<!-- 汉字听写 学生答案评析部分-->
+	<!-- 汉字听写 拼音和田字格部分-->
+<div class="chineseCharacter-module-spell">
+	 <ul class="chineseCharacter-module-spell-box">
+ 	    <!-- 田字格正确的时候 chineseCharacter-module-spell-item 添加样式: you-are-right  
+ 			 田字格错误的时候 chineseCharacter-module-spell-item 添加样式: you-are-wrong  
+ 			 答题的时候选中添加类名 on
+ 	    -->
+	 	<li class="chineseCharacter-module-spell-item you-are-right">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters wrong-character-box">
+                <!-- 开发过程中直接在 spell_characters-box 元素中插入笔画元素，删除样式:demo-bg -->
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item you-are-wrong ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item you-are-wrong ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li><!-- 
+	 	 --><li class="chineseCharacter-module-spell-item ">
+	 		<div class="spell_letter"><span class="spell_letter-text">wá</span></div>
+	 		<div class="spell_characters wrong-character-box">
+	 			<div class="spell_characters-box demo-bg"></div>
+	 		</div>
+	 	</li>
+	 </ul>
+</div>
+
+	<div class="chineseCharacter-module-student-result-box">
+	    <!-- 学生正确student-result-text添加样式: you-are-right  
+			 学生错误student-result-text添加样式: you-are-wrong  
+	    -->
+		<p class="student-result-text you-are-right"><i class="student-result-icon"></i>“业”字笔顺错误，正确的笔顺是 丨 丨 丶 丿 — </p>
+		<p class="student-result-text you-are-wrong"><i class="student-result-icon"></i>“精”字正确</p>
+		<p class="student-result-text you-are-wrong"><i class="student-result-icon"></i>“于”字正确</p>
+		<p class="student-result-text you-are-right"><i class="student-result-icon"></i>“勤”字笔画错误，本应有13笔，但写成了12笔</p>
+	</div>
+</div>
+			</li>
+		</ul>
+	</div>
+</div>
+  
+                </div>
+                <!-- /查看答案 -->
+
+                <!-- 答题提示tips -->
+                    <div class="chineseCharacter-pop-bgtips notice-tip-box-auto">
+<!-- 
+显示后自动消失 .chineseCharacter-pop-bgtips 添加类名 notice-tip-box-auto 并且
+4秒后移除类名 .notice-tip-box-auto 来隐藏容器  
+
+始终显示 .chineseCharacter-pop-bgtips 添加类名 notice-tip-box-show
+-->
+    <div class="pop_text_main">
+        <span class="font_size">答得不好，别灰心，下次要加油！</span>
+    </div>
+</div> 
+                <!-- /答题提示tips -->
+            </div>
+        </div>
+        <!-- 正确答案弹窗。隐藏加hide-dom -->
+        <div class="mixedModule-answerpop hide-dom">
+            <div class="mixedModule-answerpop-main">
+                <div class="mixedModule-answer-content nqti-player-skin-wood"  style="font-size: 0.9em;">
+                    <div class="nqti-base-connectLine-container clearfix">
+    <!-- 连线宽度为4px，换算为0.16667em， 常态连线 #854700，鼠标hover颜色值#ffae00 -->
+    <ul class="nqti-base-connectLine-sort-num-ul">
+        <li class="nqti-base-connectLine-sort-list"><span class="nqti-base-connectLine-sort-text"><span class="nqti-base-connectLine-sort-text-word">1</span></span></li>
+        <li class="nqti-base-connectLine-sort-list"><span class="nqti-base-connectLine-sort-text"><span class="nqti-base-connectLine-sort-text-word">2</span></span></li>
+        <li class="nqti-base-connectLine-sort-list"><span class="nqti-base-connectLine-sort-text"><span class="nqti-base-connectLine-sort-text-word">3</span></span></li>
+        <li class="nqti-base-connectLine-sort-list"><span class="nqti-base-connectLine-sort-text"><span class="nqti-base-connectLine-sort-text-word">4</span></span></li>
+        <li class="nqti-base-connectLine-sort-list"><span class="nqti-base-connectLine-sort-text"><span class="nqti-base-connectLine-sort-text-word">5</span></span></li>
+    </ul>
+    <ul class="nqti-base-connectLine-list-ul">
+        <!-- 只有图片时，用only-pic, 只有文字时用only-text，图文都有时用pic-text。选中状态加on -->
+        <!-- 纯图片 -->
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-only-pic on">
+            <div class="nqti-base-connectLine-list-img">
+                <img src="resources/demopic/demo1.png" alt="">
+            </div>
+        </li>
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-only-pic correct">
+            <img src="resources/demopic/demo1.png" alt="">
+        </li>
+        <!-- 图片加文字 -->
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-pic-text error">
+            <div class="nqti-base-connectLine-list-img">
+                <img src="resources/demopic/demo3.png" alt="">
+            </div>
+            <span class="nqti-base-connectLine-list-btm"><i class="opacity_black_bg" style="display: none;"></i><span class="nqti-base-connectLine-list-btm-word">熊猫喜欢吃什么</span></span>
+        </li>
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-only-pic">
+            <div class="nqti-base-connectLine-list-img">
+                <img src="resources/demopic/demo4.png" alt="">
+            </div>
+        </li>
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-only-text on"><span class="nqti-base-connectLine-only-text-word">BamboohhggdBambooBamboo</span></li>
+    </ul>
+    <ul class="nqti-base-connectLine-list-ul">
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-only-text correct"><span class="nqti-base-connectLine-only-text-word">Toy</span></li>
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-pic-text error">
+            <div class="nqti-base-connectLine-list-img">
+                <img src="resources/demopic/demo3.png" alt="">
+            </div>
+            <span class="nqti-base-connectLine-list-btm"><i class="opacity_black_bg" style="display: none;"></i><span class="nqti-base-connectLine-list-btm-word">pandas like to eat what</span></span>
+        </li>
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-only-text"><span class="nqti-base-connectLine-only-text-word">Hat</span></li>
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-only-text on"><span class="nqti-base-connectLine-only-text-word">Dog</span></li>
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-only-text on"><span class="nqti-base-connectLine-only-text-word">BamboohhggdBambooBamboo</span></li>
+    </ul>
+    <ul class="nqti-base-connectLine-list-ul">
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-only-text"><span class="nqti-base-connectLine-only-text-word">BamboohhggdBambooBamboo</span></li>
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-only-text on"><span class="nqti-base-connectLine-only-text-word">Bark</span></li>
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-only-text correct"><span class="nqti-base-connectLine-only-text-word">
+            <!-- 使用内部HTML编辑生成的结构 -->
+            <p>熊猫爬竹竿吃竹子</p>
+            </span></li>
+        <li class="nqti-base-connectLine-list nqti-base-connectLine-only-text error"><span class="nqti-base-connectLine-only-text-word">Wear</span></li>
+    </ul>
+</div>
+<svg class="nqti-base-connectLine-svg nqti-js-svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs></defs>
+    <!-- left -->
+    <line id="" x1="28.1em" y1="26.8em" x2="20.1em" y2="7.8em" style="" class="nqti-base-connectLine-normal" rid="J" tid="A"></line>
+    <line id="" x1="28.1em" y1="7.8em" x2="20.1em" y2="14.1em" style="" class="nqti-base-connectLine-normal nqti-base-connectLine-correct" rid="C" tid="B"></line>
+    <line id="" x1="28.1em" y1="14.1em" x2="20.1em" y2="20.4em" style="" class="nqti-base-connectLine-normal nqti-base-connectLine-error" rid="I" tid="H"></line>
+    <line id="" x1="28.1em" y1="20.4em" x2="20.1em" y2="26.8em" style="" class="nqti-base-connectLine-normal nqti-base-connectLine-hover" rid="G" tid="D"></line>
+
+    <!-- right -->
+    <line id="" x1="45.4em" y1="14.1em" x2="37.4em" y2="26.8em" style="" class="nqti-base-connectLine-normal" rid="J" tid="A"></line>
+    <line id="" x1="45.4em" y1="20.4em" x2="37.4em" y2="7.8em" style="" class="nqti-base-connectLine-normal nqti-base-connectLine-correct" rid="C" tid="B"></line>
+    <line id="" x1="45.4em" y1="26.8em" x2="37.4em" y2="14.1em" style="" class="nqti-base-connectLine-normal nqti-base-connectLine-error" rid="I" tid="H"></line>
+    <!-- <line id="" x1="45.4em" y1="7.8em" x2="37.4em" y2="20.4em" style="" class="nqti-base-connectLine-normal nqti-base-connectLine-hover" rid="G" tid="D"></line> -->
+</svg>
+
+
+                </div>
+                <div class="mixedModule-answerpop-bottom">
+                    <a href="#" class="mixedModule-answer-closebtn">关闭</a>
+                </div>
+            </div>
+        </div>
+        <!-- 正确答案弹窗 -->
+    </div>
+   
+</div>
+<script src="../../common/resources/layout/wood/layout.js"></script>
+</body>
+</html>

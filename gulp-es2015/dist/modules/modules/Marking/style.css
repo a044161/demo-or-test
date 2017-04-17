@@ -1,0 +1,270 @@
+@charset "UTF-8";
+.exam_skin_wood .marking_box {
+  position: relative;
+  padding-right: 29.58333em;
+  /*左侧划词标记-顶部*/
+  /*左侧划词标记-底部*/
+  /*右侧词组板块*/ }
+  .exam_skin_wood .marking_box.item_quantity_1 .marking_box_top {
+    height: 8.75em; }
+  .exam_skin_wood .marking_box.item_quantity_1 .marking_box_bottom {
+    top: 9.58333em; }
+  .exam_skin_wood .marking_box.item_quantity_1 .marking_brush_box .brush:before {
+    border-bottom-left-radius: 0.83333em; }
+  .exam_skin_wood .marking_box.item_quantity_2 .marking_box_top {
+    height: 8.75em; }
+  .exam_skin_wood .marking_box.item_quantity_2 .marking_box_bottom {
+    top: 9.58333em; }
+  .exam_skin_wood .marking_box.item_quantity_2 .marking_brush_box .brush:nth-child(1):before {
+    border-bottom-left-radius: 0.83333em; }
+  .exam_skin_wood .marking_box.item_quantity_2 .marking_brush_box .brush:nth-child(2):before {
+    border-bottom-right-radius: 0.83333em; }
+  .exam_skin_wood .marking_box.item_quantity_3 .marking_brush_box .brush:nth-child(3):before, .exam_skin_wood .marking_box.item_quantity_4 .marking_brush_box .brush:nth-child(3):before {
+    border-bottom-left-radius: 0.83333em; }
+  .exam_skin_wood .marking_box.item_quantity_3 .marking_brush_box .brush:nth-child(4):before, .exam_skin_wood .marking_box.item_quantity_4 .marking_brush_box .brush:nth-child(4):before {
+    border-bottom-right-radius: 0.83333em; }
+  .exam_skin_wood .marking_box .marking_box_top {
+    margin-bottom: 0.75em;
+    height: 14.25em; }
+  .exam_skin_wood .marking_box .contral_box {
+    height: 100%;
+    border-radius: 0.83333em;
+    border-left: 1px solid #ce943b;
+    border-right: 1px solid #ce943b;
+    box-shadow: 1px 1.732px 0.33333em 0px rgba(68, 49, 19, 0.176);
+    background: url(resources/wood/images/contral_bg.png) repeat-x;
+    background-size: auto 100%; }
+  .exam_skin_wood .marking_box .marking_contral_title {
+    overflow: hidden;
+    height: 2.08333em;
+    line-height: 2.08333em;
+    color: #8a5d1b;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+    .exam_skin_wood .marking_box .marking_contral_title .font {
+      font-size: 1.16667em;
+      text-shadow: 1px 1px 0px rgba(255, 244, 244, 0.75); }
+    .exam_skin_wood .marking_box .marking_contral_title em {
+      font-weight: bold; }
+  .exam_skin_wood .marking_box .marking_require {
+    overflow: hidden;
+    padding: 0.5em 1.75em; }
+  .exam_skin_wood .marking_box .marking_require_main .require {
+    display: block;
+    overflow: hidden;
+    margin-top: 8px;
+    padding-left: 0.83333em;
+    height: 2.25em;
+    line-height: 2.25em;
+    background: #fff;
+    border-radius: 0.33333em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-shadow: inset 0px 2px 4px #858383; }
+    .exam_skin_wood .marking_box .marking_require_main .require .font {
+      font-size: 1.25em;
+      color: #5d390d; }
+    .exam_skin_wood .marking_box .marking_require_main .require.color_red em {
+      color: #ff0000; }
+    .exam_skin_wood .marking_box .marking_require_main .require.color_green em {
+      color: #6fbb04; }
+    .exam_skin_wood .marking_box .marking_require_main .require.color_purple em {
+      color: #9857cb; }
+    .exam_skin_wood .marking_box .marking_require_main .require.color_blue em {
+      color: #0f92ee; }
+  .exam_skin_wood .marking_box .marking_brush {
+    float: right;
+    overflow: hidden;
+    margin-left: 0.83333em;
+    width: 10.75em; }
+    .exam_skin_wood .marking_box .marking_brush .marking_contral_title {
+      height: 3.41667em;
+      line-height: 3.41667em;
+      border-bottom: 1px solid #d4a162;
+      text-align: center; }
+  .exam_skin_wood .marking_box .marking_brush_box {
+    overflow: hidden;
+    margin-top: -1px; }
+    .exam_skin_wood .marking_box .marking_brush_box .brush {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 5.375em;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 100% auto;
+      position: relative;
+      border: 1px solid #d4a162; }
+      .exam_skin_wood .marking_box .marking_brush_box .brush:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        z-index: 1; }
+      .exam_skin_wood .marking_box .marking_brush_box .brush.on:before {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        bottom: 0;
+        left: 0;
+        content: "";
+        z-index: 2;
+        border: 0.125em solid #ff0000; }
+    .exam_skin_wood .marking_box .marking_brush_box .color_red {
+      background-image: url(resources/wood/images/p_icon1.png); }
+      .exam_skin_wood .marking_box .marking_brush_box .color_red:after {
+        border-top: 1px solid #ffdeac;
+        border-right: 1px solid #ffdeac; }
+    .exam_skin_wood .marking_box .marking_brush_box .color_green {
+      background-image: url(resources/wood/images/p_icon2.png); }
+      .exam_skin_wood .marking_box .marking_brush_box .color_green:after {
+        border-top: 1px solid #ffdeac; }
+    .exam_skin_wood .marking_box .marking_brush_box .color_purple {
+      background-image: url(resources/wood/images/p_icon3.png); }
+      .exam_skin_wood .marking_box .marking_brush_box .color_purple:after {
+        border-top: 1px solid #ffdeac;
+        border-right: 1px solid #ffdeac; }
+    .exam_skin_wood .marking_box .marking_brush_box .color_blue {
+      background-image: url(resources/wood/images/p_icon4.png); }
+      .exam_skin_wood .marking_box .marking_brush_box .color_blue:after {
+        border-top: 1px solid #ffdeac; }
+  .exam_skin_wood .marking_box .com_m_sidehead {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2.5em;
+    z-index: 3; }
+  .exam_skin_wood .marking_box .marking_box_bottom {
+    position: absolute;
+    left: 0;
+    right: 29.58333em;
+    bottom: 0.41667em;
+    top: 15em;
+    padding-top: 2.5em; }
+  .exam_skin_wood .marking_box .com_m_sidecon {
+    position: relative;
+    padding: 0.41667em 0.83333em 0.83333em 1.66667em;
+    height: 100%;
+    overflow: visible; }
+  .exam_skin_wood .marking_box .marking_article {
+    overflow-y: auto;
+    height: 100%;
+    line-height: 3.08333em;
+    color: #333; }
+    .exam_skin_wood .marking_box .marking_article .article_tit {
+      font-size: 1em;
+      text-align: center;
+      font-weight: bold; }
+      .exam_skin_wood .marking_box .marking_article .article_tit .font {
+        font-size: 1.91667em; }
+    .exam_skin_wood .marking_box .marking_article .text {
+      font-size: 1.66667em;
+      text-indent: 1.16667em; }
+      .exam_skin_wood .marking_box .marking_article .text .mark_red {
+        background: #ff0000; }
+      .exam_skin_wood .marking_box .marking_article .text .mark_green {
+        background: #6fbb04; }
+      .exam_skin_wood .marking_box .marking_article .text .mark_purple {
+        background: #9857cb; }
+      .exam_skin_wood .marking_box .marking_article .text .mark_blue {
+        background: #0f92ee; }
+  .exam_skin_wood .marking_box .com_layout_main_exam {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 28.95833em; }
+  .exam_skin_wood .marking_box .marking_text_box {
+    position: absolute;
+    top: 1.66667em;
+    left: 1.25em;
+    right: 1.25em;
+    bottom: 1.66667em;
+    padding-right: 0.41667em;
+    overflow-y: auto;
+    z-index: 2; }
+    .exam_skin_wood .marking_box .marking_text_box li {
+      background: rgba(153, 102, 37, 0.175);
+      border: 2px solid #c59759;
+      border-radius: 0.41667em;
+      margin-bottom: 0.5em; }
+      .exam_skin_wood .marking_box .marking_text_box li.text_box_edit .btn_oper {
+        box-shadow: inset 0 0 14.66667px rgba(200, 114, 40, 0.9);
+        color: #fff; }
+      .exam_skin_wood .marking_box .marking_text_box li.text_box_edit .btn_del {
+        display: block; }
+      .exam_skin_wood .marking_box .marking_text_box li.item_seleted {
+        border-color: #e78c6c; }
+    .exam_skin_wood .marking_box .marking_text_box .types_title {
+      position: relative;
+      background: rgba(153, 102, 37, 0.35);
+      border-radius: 0.41667em 0.41667em 0 0;
+      line-height: 2.75em;
+      text-align: center; }
+      .exam_skin_wood .marking_box .marking_text_box .types_title .font {
+        font-size: 1.25em;
+        color: #121212; }
+      .exam_skin_wood .marking_box .marking_text_box .types_title .btn_oper {
+        position: absolute;
+        display: inline-block;
+        top: 0.54167em;
+        right: 0.83333em;
+        width: 3.20833em;
+        height: 1.875em;
+        line-height: 1.75em;
+        background: rgba(153, 102, 37, 0.3);
+        border-radius: 0.25em;
+        border: 1px solid #8c622d;
+        color: #e1d2c2;
+        font-size: 0.91667em; }
+        .exam_skin_wood .marking_box .marking_text_box .types_title .btn_oper:active {
+          background: #996625; }
+    .exam_skin_wood .marking_box .marking_text_box .types_main {
+      padding: 1.04167em 0 0.20833em 0.33333em; }
+    .exam_skin_wood .marking_box .marking_text_box .marked_word {
+      display: inline-block;
+      position: relative;
+      margin: 0 0.16667em 1.04167em;
+      padding: 0 0.83333em;
+      height: 2.91667em;
+      line-height: 2.66667em;
+      border: 0.08333em solid #f0d7b3;
+      border-radius: 0.625em;
+      background: #f0d7b3;
+      box-shadow: 0px 0.125em 0.33333em 0px rgba(151, 112, 49, 0.46); }
+      .exam_skin_wood .marking_box .marking_text_box .marked_word:before {
+        content: '';
+        position: absolute;
+        left: 0.08333em;
+        top: 0.08333em;
+        right: 0.08333em;
+        bottom: 0.08333em;
+        border: 0.08333em solid #966f3a;
+        border-radius: 0.625em; }
+      .exam_skin_wood .marking_box .marking_text_box .marked_word b {
+        font-size: 1.66667em;
+        color: #121212;
+        font-weight: normal; }
+      .exam_skin_wood .marking_box .marking_text_box .marked_word .btn_del {
+        display: none;
+        position: absolute;
+        right: -0.66667em;
+        top: -0.66667em;
+        width: 1.875em;
+        height: 1.875em;
+        background: url(resources/wood/images/btn_close.png) no-repeat center center;
+        background-size: 100% auto; }
+        .exam_skin_wood .marking_box .marking_text_box .marked_word .btn_del:active {
+          background-image: url(resources/wood/images/btn_close_ac.png); }
+
+@keyframes sound {
+  0% {
+    background-position: 0px 0px, 0px 0px; }
+  100% {
+    background-position: -300% 0px, 0px 0px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,220 @@
+ <!-- 提纲工具栏 -->
+<div class="ndui-tool mindmap-toolbar">
+    <!-- 返回,关闭按钮 -->
+    <a href="javascript:;" class="ndui-tool-colse">
+        <i class="ndui-btn-pic"></i>
+        <span class="ndui-btn-text">关闭</span>
+    </a>
+    <!--工具按钮 -->
+    <div class="ndui-tool-box">
+        <ul class="ndui-tool-list ndui-tool-left">
+            <li class="ndui-tool-cell">
+                <a href="javascript:;" class="ndui-btn-mindmap reset ">
+                    <i class="ndui-btn-pic"></i>
+                    <span class="ndui-btn-text">还原</span>
+                </a>
+            </li>
+            <li class="ndui-tool-cell ">
+                <a href="javascript:;" class="ndui-btn-mindmap back click_disabled">
+                    <i class="ndui-btn-pic"></i>
+                    <span class="ndui-btn-text">撤消</span>
+                </a>
+            </li>
+            <li class="ndui-tool-cell">
+                <a href="javascript:;" class="ndui-btn-mindmap location ui_btn_active">
+                    <i class="ndui-btn-pic"></i>
+                    <span class="ndui-btn-text">定位</span>
+                </a>
+                
+            </li>
+            <li class="ndui-tool-cell ">
+                <a href="javascript:;" class="ndui-btn-mindmap total">
+                    <i class="ndui-btn-pic"></i>
+                    <span class="ndui-btn-text">全局</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--/工具按钮 -->
+    
+    <div class="ndui-tool-box-other">
+        <!--缩放控制条 ，竖版加verticle ，横版加 horizontal-->
+        <div class="ndui-slide-wrap verticle">
+            <div class="ndui-slide">
+                <div class="ndui-slide-btn plus">+</div>
+                <div class="ndui-slide-btn minus">-</div>
+                <div class="ndui-slide-body">
+                    <!-- 改变进度条位置，最上端为0%，如果要设置成x%的位置,则 class:toolbar-pro-value：style写成translateY((100-x)%)  -->
+                    <div class="ndui-slide-bg">
+                        <div class="ndui-slide-bg-tips" style="transform: translateY(60%)"></div>
+                    </div>
+                    <input type="range" class="ndui-slide-range" min="0" max="100" value="40" id="range" oninput="processCtrl(this.value);" />
+                    <!-- 刻度 -->
+                </div>
+            </div>
+        </div>
+        <!--/缩放控制条 -->
+    </div>
+    
+</div>
+<script>
+var color_dom = document.getElementsByClassName('ndui-slide-bg-tips')[0];
+function processCtrl(val){
+    color_dom.style.WebkitTransform="translateY("+(100-val)+"%)";
+    
+}
+</script>
+<!-- /提纲工具栏 -->
+<ul class="composition-outline-outline-handle">
+    <li class="composition-outline-btn ui-btn-select">
+        <span class="mindbtn-txt">参考范例</span>
+    </li>
+
+    <li class="composition-outline-btn">
+        <span class="mindbtn-txt">检查清单</span>
+    </li>
+</ul>
+<!-- 全屏弹窗，参考范例，隐藏加 hide-dom-->
+<div class="ndui-pop pop-viewcase">
+    <div class="ndui-pop-mask"></div>
+    <div class="ndui-pop-square">
+        <!-- 参考范例 -->
+        <div class="ndui-pop-wrap">
+            <!-- 关闭按钮 -->
+            <a href="javascript:;" class="ndui-pop-close">
+                <em></em>
+                <span class="preload-btn-close-pic1"></span>
+                <span class="preload-btn-close-pic2"></span>
+            </a>
+            <!-- 外部注入DOM -->
+            <div class="composition-outline-viewcase-pop">
+                <div class="composition-outline-pop-header">
+                    <ul class="composition-outline-pop-tab">
+                        <li class="tabcell ui-btn-select"><span class="cell-txt">提纲范例</span></li>
+                        <li class="tabcell"><span class="cell-txt">作文范例</span></li>
+                    </ul>
+                   <!--  <ul class="composition-outline-pop-tab">
+                        <li class="tabcell ui-btn-select">提纲范例</li>
+                        <li class="tabcell">作文范例</li>
+                    </ul> -->
+                </div>
+                <div class="composition-outline-pop-view">
+                    <div class="composition-outline-minder-wrap hide-dom"></div>
+                    <div class="composition-outline-art-wrap">
+                        <p class="title">大海有岸  母爱无边</p>
+                        <p class="para">上帝不能到每家，所以创造了母亲。从此，母爱便一路相随……</p>
+                        <p class="para">①小时候，母爱是叮咛。“水喝了吗？天气炎热，一定要多喝水。”“喝啦，满满一大杯呢!”“红领巾、作业本都装进书包没有?”“放心吧，我昨天晚上就收拾好啦！”“噢，对了，天气预报说下午有大雨，你记得把伞带上。”妈妈边说边把伞递给了我。“妈，我走啦！”“过马路注意点儿，上课要专心听讲……”到了</p>
+                        <p class="para">上帝不能到每家，所以创造了母亲。从此，母爱便一路相随……</p>
+                        <p class="para">①小时候，母爱是叮咛。“水喝了吗？天气炎热，一定要多喝水。”“喝啦，满满一大杯呢!”“红领巾、作业本都装进书包没有?”“放心吧，我昨天晚上就收拾好啦！”“噢，对了，天气预报说下午有大雨，你记得把伞带上。”妈妈边说边把伞递给了我。“妈，我走啦！”“过马路注意点儿，上课要专心听讲……”到了</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /外部注入 -->
+        </div>
+        <!-- /参考范例 -->
+    </div>
+</div>
+<!-- /全屏弹窗，参考范例 -->
+<!-- 全屏弹窗，检查清单 隐藏加 hide-dom-->
+<div class="ndui-pop pop-checklist hide-dom">
+    <div class="ndui-pop-mask"></div>
+    <div class="ndui-pop-square">
+        <!-- 检查清单盒 -->
+        <div class="ndui-pop-wrap">
+            <!-- 关闭按钮 -->
+            <a href="javascript:;" class="ndui-pop-close">
+                <em></em>
+                <span class="preload-btn-close-pic1"></span>
+                <span class="preload-btn-close-pic2"></span>
+            </a>
+            <!-- 外部注入 -->
+            <div class="composition-outline-checklist-pop">
+                <div class="composition-outline-checklist-box">
+                    <div class="composition-outline-cl-header">
+                        <p class="title">检查清单</p>
+                        <p class="remark">（请对照写完的提纲进行自我检查，检查完再提交哦）</p>
+                    </div>
+                    <div class="ndui-list-box checklist">
+                        <ul class="ndui-list scrollbar-style-lightbrowm">
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                            <li class="ndui-list-item">
+                                <p class="list-txt">中心思想要和题目相符，不可矛盾。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /外部注入 -->
+        </div>
+        <!-- /检查清单 -->
+    </div>
+</div>
+<!-- /全屏弹窗 ，检查清单-->
+<!-- 全屏弹窗 ，选择文体 隐藏加 hide-dom-->
+<div class="ndui-pop pop-chose-type hide-dom">
+    <div class="ndui-pop-mask"></div>
+    <div class="ndui-pop-square">
+        <div class="ndui-pop-wrap">
+            <!-- 关闭按钮 -->
+            <a href="javascript:;" class="ndui-pop-close">
+                <em></em>
+                <span class="preload-btn-close-pic1"></span>
+                <span class="preload-btn-close-pic2"></span>
+            </a>
+            <div class="composition-chosetype-pop">
+                <div class="composition-chosetype-txtwrap">
+                    <p class="composition-chosetype-tip">
+                    <span class="pop-txt">请先选择你想要写的作文文体：</span></p>
+                    <p class="composition-chosetype-tip"><span class="pop-txt">（问题不同，对应的填写指导、参考范例不同哦</span></p>
+                </div>
+                <div class="composition-chosetype-select clearfix">
+                    <div class="composition-chosetype-btn ui-btn-select">
+                        <span class="btn-txt">记叙文</span>
+                    </div>
+                    <div class="composition-chosetype-btn">
+                        <span class="btn-txt">议论文</span>
+                    </div>
+                    <div class="composition-chosetype-btn">
+                        <span class="btn-txt">说明文</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /全屏弹窗 ，选择文体-->

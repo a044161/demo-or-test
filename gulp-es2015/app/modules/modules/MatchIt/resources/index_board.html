@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>白板端题型外框</title>
+    <link rel="stylesheet" type="text/css" href="../../../common/common.css">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+
+<body>
+    <div class="exam_skin_wood">
+        <div class="com_layout" id="layout">
+            <div class="com_wrapper_board" id="wrapper">
+                <!-- pad端加.com_wrapper_pad，白板端加.com_wrapper_board -->
+                <!--头部-->
+                <div class="com_layout_header">
+                    <!--计时器-->
+                    <div class="com_header_time">
+                        @@include('../../../common/resources/common/time/_time.html', {"txt":"", "classname":""})
+                        <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>
+                    </div>
+                    <!--/计时器-->
+                    <!--提交按钮-->
+                    <div class="com_header_tool">
+                        @@include('../../../common/resources/common/button/_com_btn_round.html', {"txt":"提&nbsp;&nbsp;交", "classname":""})
+                    </div>
+                    <!--/提交按钮-->
+                </div>
+                <!--/头部-->
+                <!--主体内容-->
+                <div class="com_layout_container">
+                <!-- 没有标题时加.notit -->
+                    <div class="com_layout_exam_content matchit">
+                    <!-- 具体题型内容 -->
+                        <!--主体内容-->                
+                        <div class="com_layout_main_exam"><!-- 没有标题时加.notit -->
+                            <div class="com_layout_tit">
+                                <h2 class="tit">标题</h2>
+                                <!-- 文字过多的情况加.s_tit -->
+                            </div>
+                            <div class="com_layout_main">
+                                <!-- 在这里新建div写新的题型 -->
+                                @@include('../_index_board.html')
+                            </div>
+                        </div>
+                    <!-- 具体题型内容 -->
+                    </div>
+                </div>
+                <!--/主体内容-->
+            </div>
+        </div>
+    </div>
+    <script src="../../../common/resources/common/layout/wood/layout.js"></script>
+</body>
+</html>

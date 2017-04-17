@@ -21,4 +21,6 @@ gulp.task('clean', function(){
 	return del(_path.dist)
 })
 
-gulp.task('default', gulp.series('clean',gulp.parallel(task_html,task_scripts, task_styles,task_image,server.dev,task_watch)))
+gulp.task('default', gulp.series('clean',gulp.parallel(task_html, task_styles,task_image,server.dev,task_watch)))
+
+gulp.task('build', gulp.series('clean',gulp.parallel(task_html, task_styles,task_image)))

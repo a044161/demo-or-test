@@ -1,0 +1,81 @@
+<!--主体内容-->
+<div class="imgmark">
+    <div class="imgbig">
+        <div class="mark_img">
+            <img src="demopic/demo01.png" alt="" class="img" />
+        </div>
+        <svg id="svgLines" width="1255.0805215980329" height="461.63881254180524" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div class="text_marks">
+            <div class="list wrong" style="right:100px; top: 100px;"><!--  按住拖动的时候加move 选中状态加 on,错误的加类名wrong,正确加类名correct -->
+                <img src="demopic/demo02.png" alt="" class="list_img" />
+            </div>
+            <div class="list on" style="left:60px; top: 100px;"><!--  按住拖动的时候加move 选中状态加 on -->
+                <img src="demopic/demo02.png" alt="" class="list_img" />
+            </div>
+            <div class="list on" style="left:20px; top: 300px;">
+                <p class="list_text">四个汉字</p>
+            </div>
+            <div class="list wrong over" style="right:100px; top:300px;">
+                <p class="list_text">这里就只有四十个字不会超出这里就只有四十个字不会超出这里就只有四十个字不会超出四十个字不会超出</p>
+            </div>
+        </div>
+        
+        <ul class="mark_round">
+            <li class="round wrong" style="right: 200px; top: 200px;"><span class="mark"></span></li><!--错误的加类名wrong,正确加类名correct -->
+            <li class="round correct" style="right: 300px; top: 100px;"><span class="mark"></span></li><!--错误的加类名wrong,正确加类名correct -->
+            <li class="round" style="right: 500px; top: 300px;"><span class="mark"></span></li><!--错误的加类名wrong,正确加类名correct -->
+            
+            <li class="round_circle" style="left: 200px; top: 100px;width: 300px;height: 300px;background: rgba(255,255,255,.3);box-shadow:rgba(0, 0, 0, 0.5) 0px 0px 10px;border-radius: 50%;">
+                <div class="list on"><!--  按住拖动的时候加move 选中状态加 on -->
+                    <img src="demopic/demo02.png" alt="" class="list_img" />
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="com_bottom_box">
+        <!-- 程序一定要看
+             列表如果是图片的话，li 上要增加类名.imglist
+             按住拖动的时候li 上要增加类名move
+             移开的时候li 上要增加类名out
+             超过27个字时，li 上要增加类名over -->
+        <div class="bottom_wrap">
+            <ul class="listwrap"><!--ui建议将此处滚动条去除，故此处左右滚动由程序控制-->
+                <li class="list imglist out">
+                    <img src="demopic/demo02.png" alt="" class="list_img" />
+                </li>
+                <li class="list">
+                    <p class="list_text">四个汉字</p>
+                </li>
+                <li class="list">
+                    <p class="list_text">这里就只有四十个字</p>
+                </li>
+                <li class="list over">
+                    <p class="list_text">这里就只有四十个字不会超出这里就只有四十个字不会超出这里就只有四十个字不会超出四十个字不会超出</p>
+                </li>
+                <li class="list imglist">
+                    <img src="demopic/demo02.png" alt="" class="list_img" />
+                </li>
+                <li class="list">
+                    <p class="list_text">这里就只有三十个字不会超出真的不这里就只有三十个字不会超出真</p>
+                </li>
+                <li class="list">
+                    <p class="list_text">这里就只有三十个字不会超出真的不</p>
+                </li>
+                <li class="list imglist">
+                    <img src="demopic/demo02.png" alt="" class="list_img" />
+                </li>
+            </ul>
+        </div>
+        <a href="###" class="com_bottom_box_btn btn_left"></a>
+        <a href="###" class="com_bottom_box_btn btn_right ui_btn_active"></a><!--点击状态增加类名.ui_btn_active,此处ui跟策划商讨不做不可点击状态-->
+    </div>
+
+    <!--拖动时显示的div-->
+    <div class="list move over" type="text" serial-num="1" style="left: 293px; top: 767px;"><!--隐藏增加类名.hide_dom-->
+      <!-- <img src="" class="list_img"> -->
+      <p class="list_text over">这里就只有四十个字不会超出这里就只有四十个字不会超出这里就只有四十个字不会超出四十个字不会超出</p>
+    </div>
+    <!--/拖动时显示的div-->
+</div>
+
+<!--/主体内容

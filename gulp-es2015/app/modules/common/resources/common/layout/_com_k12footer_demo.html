@@ -1,0 +1,48 @@
+<!-- 如果是思维道题，在class:ndui-tool  增加Class: mindmap-footer-tool -->
+<div class="ndui-tool k12-footer-tool mindmap-footer-tool">
+    <!-- 底部方形按钮 -->
+    <div class="ndui-tool-box @@tongjiBtns">
+        <ul class="ndui-tool-list ndui-tool-left">
+            <li class="ndui-tool-cell">
+                @@include('../button/_com_btn_footer_tool.html', {"classname":"square_tool_treasure","txt":"百宝袋"})
+            </li>
+            <li class="ndui-tool-cell">
+                @@include('../button/_com_btn_footer_tool.html', {"classname":"square_tool_result","txt":"公布结果"})
+            </li>
+            <li class="ndui-tool-cell">
+                <div class="ndui-btn-complex pop_up">
+                    @@include('../button/_com_btn_footer_tool.html', {"classname":"square_tool_peerReview","txt":"作业互评"})
+                    <div class="selected">
+                        <a href="###" class="options on">匿名互评</a><!-- 选中加on -->
+                        <a href="###" class="options">公开互评</a>
+                        <i class="tips"></i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="ndui-tool-list ndui-tool-right">
+            <li class="ndui-tool-cell">
+                <div class="ndui-btn-complex pop_up">
+                    @@include('../button/_com_btn_footer_tool.html', {"classname":"square_tool_peerReview","txt":"作业互评"})
+                    <div class="selected">
+                        <a href="###" class="options on">匿名互评</a><!-- 选中加on -->
+                        <a href="###" class="options">公开互评</a>
+                        <i class="tips"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="ndui-tool-cell">
+                @@include('../button/_com_btn_footer_tool.html', {"classname":"square_tool_result","txt":"公布结果"})
+            </li>
+            <li class="ndui-tool-cell">
+                @@include('../button/_com_btn_footer_tool.html', {"classname":"square_tool_treasure","txt":"百宝袋"})
+            </li>
+        </ul>                
+    </div>
+    <!-- 统计界面方形按钮 -->
+    <!-- 底部其他操作按钮 -->
+    <div class="ndui-tool-box-other @@otherBtns">
+        <!-- 底部对比操作栏 -->
+    </div>
+    <!-- 底部其他操作按钮 -->            
+</div>

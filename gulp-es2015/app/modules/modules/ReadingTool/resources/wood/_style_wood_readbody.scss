@@ -1,0 +1,274 @@
+.read_tool{
+    overflow: hidden;
+    .readtool_wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 68px;
+        padding: 0 pxToEm(180px);
+        overflow: hidden;
+        &:before {
+            content:'';
+            pointer-events: none;
+            z-index: 100;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: pxToEm(275px);
+            background: url(resources/wood/images/txt_mask.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+        &:after {
+            content:'';
+            z-index: 100;
+            pointer-events: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: pxToEm(275px);
+            transform-origin: center center;
+            transform: rotate(180deg);
+            background: url(resources/wood/images/txt_mask.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+    }
+    .readtool_tool {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .readtool_article {
+        position: relative;
+        top: 50%;
+        width: 100%;
+    }
+    .rdtl_arit_title {
+        text-align: center;
+    }
+    .rdtl_arit_title {
+        .title {
+            font-size: pxToEm(60px);
+            line-height: 1.8;
+            color: #333;
+        }
+        .author {
+            font-size: pxToEm(50px);
+            line-height: 1.8;
+            color: #333;
+        }
+        &.second_line {
+            .title {
+                display: block;
+            }
+            .author {
+                display: block;
+                line-height: 1.2;
+                margin-bottom: pxToEm(12px);
+            }
+        }
+    }
+    .rdtl_arit_para {
+        position: relative;
+        width: 100%;
+        text-indent: pxToEm(144px);
+        text-align: justify;
+        &.ui_btn_active {
+            .rdtl_sentence_wrap {
+                border: 1px solid rgba(136,91,6,.5);
+                box-shadow: 0 pxToEm(3px) pxToEm(10px) 0 rgba(0,0,0,.15);
+                background: rgba(255,255,255,.2);
+                border-radius: pxToEm(10px);
+            }
+        }
+    }
+    .rdtl_sentence_wrap {
+        z-index: 10;
+        position: relative;
+        padding: 0 pxToEm(14px);
+
+        
+    }
+    .count {
+        display: inline-block;
+        vertical-align: top;
+        width: 1px;
+        height: pxToEm(20px);
+        background: #000;
+        visibility: hidden;
+    }
+    .rdtl_arit_sentence {
+
+        &:nth_of_type(1){
+            margin-left: 0;
+        }
+        position: relative;
+        display: inline;
+        cursor: pointer;
+        &.ui_btn_active {
+            /*选中句子*/
+        }
+        &.active {
+            .txt {
+                color: #ed5714;
+            }
+        }
+        .txt {
+            font-size: pxToEm(60px);
+            line-height: 1.8;
+            color: #333;
+            .new {
+                font-style: normal;
+                color: #147fed;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .rdtl_sign_cover {
+        position:absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .rdtl_sign_cover_wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: pxToEm(112px);
+        padding: pxToEm(106px) 0 pxToEm(86px);
+        margin-top: pxToEm(-40px);
+    }
+    .rdtl_sign_cover_strip {
+        position: relative;
+        margin-bottom: pxToEm(23px);
+        height: pxToEm(86px);
+        left: 0;
+        width: 100%;
+        border: 1px solid rgba(136,91,6,.5);
+        box-shadow: 0 pxToEm(3px) pxToEm(10px) 0 rgba(0,0,0,.15);
+        background: rgba(255,255,255,.2);
+        border-radius: pxToEm(10px);
+        &.top {
+            position: absolute;
+            right: pxToEm(-14px);
+            top: 0;
+            width: 0;
+        }
+        &.bottom {
+            position: absolute;
+            left: pxToEm(-14px);
+            bottom: 0;
+            width: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .ndui-btn-readtool {
+        display: inline-block;
+        width: pxToEm(72px);
+        height: pxToEm(72px);
+        background: url(resources/wood/images/icon_readplay_normal.png) no-repeat center center;
+        background-size: 100% 100%;
+        &.btn-read-play {
+            background-image: url(resources/wood/images/icon_readplay_normal.png);
+            &:active,&.ui_btn_active {
+                background-image: url(resources/wood/images/icon_readplay_active.png);
+            }
+            &.click_disabled {
+                background-image: url(resources/wood/images/icon_readplay_disabled.png);
+            }
+        }
+        &.btn-read-pause {
+            background-image: url(resources/wood/images/icon_readpause_normal.png);
+            &:active,&.ui_btn_active {
+                background-image: url(resources/wood/images/icon_readpause_active.png);
+            }
+            &.click_disabled {
+                background-image: url(resources/wood/images/icon_readpause_disabled.png);
+            }
+        }
+        
+    }
+}
+/*按钮*/
+.ndui-tool {
+    &.readtool-middle {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        .ndui-tool-box {
+            pointer-events: none;
+            z-index: 10;
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            width: 100%;
+            height: pxToEm(72px);
+            transform: translate(-50%, -50%);
+            
+        }
+        .ndui-tool-list {
+            position: absolute;
+            pointer-events: auto;
+            width: 100px;
+            text-align: center;
+            &.left {
+                left: 0;
+                right: auto;
+            }
+            &.right {
+                left: auto;
+                right: 0;   
+            }
+        }
+        .ndui-tool-box-other {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+/*滚动条*/
+.tool_scrollbar_bothside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    .tool_scrollbar {
+        position: absolute;
+        top: pxToEm(136px);
+        bottom: pxToEm(50px);
+        &.left {
+            left: pxToEm(130px);
+            right: auto;
+        }
+        &.right {
+            left: auto;
+            right: pxToEm(130px);   
+        }
+    }
+    .scrollbar_wrap {
+        width: pxToEm(6px);
+        height: 100%;
+        background: rgba(255,255,255,.5);
+    }
+    .scrollbar_thumb {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: pxToEm(-6px);
+        width: pxToEm(12px);
+        height: 40%;
+        max-height: 100%;
+        border-radius: pxToEm(12px);
+        background: rgba(218,206,190,.8);
+        cursor: pointer;
+    }
+}

@@ -23,9 +23,7 @@ function image(){
 					imageminJpegRecompress({
 						max: 40
 					}),
-					imageminPngquant({
-						quality: 40
-					}),
+					imageminPngquant(),
 					imagemin.svgo()
 				],{
 					verbose:true

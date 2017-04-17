@@ -1,0 +1,247 @@
+@charset "UTF-8";
+.exam_skin_wood {
+  /*有底部样式结束*/
+  /*pad端底部栏调整*/ }
+  .exam_skin_wood .classify_box .com_layout_main_exam {
+    height: 30em; }
+  .exam_skin_wood .classify_box {
+    position: relative;
+    z-index: 333;
+    height: 37.5em; }
+    .exam_skin_wood .classify_box .com_layout_main {
+      top: 3.33333em;
+      bottom: 0.75em; }
+    .exam_skin_wood .classify_box .com_layout_tit {
+      margin: -0.41667em -0.75em 0 -0.75em; }
+    .exam_skin_wood .classify_box.show_number .list_num {
+      display: block !important; }
+    .exam_skin_wood .classify_box.show_number .option_list_num {
+      display: block !important; }
+    .exam_skin_wood .classify_box .move_container {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      width: 8.29167em;
+      height: 5.66667em;
+      border: 2px solid rgba(106, 70, 22, 0.2);
+      line-height: 0.83333em;
+      text-align: left;
+      background: #fff;
+      overflow: hidden;
+      cursor: default; }
+      .exam_skin_wood .classify_box .move_container img {
+        width: 100%;
+        height: 100%; }
+      .exam_skin_wood .classify_box .move_container.cur_move {
+        border-color: #ff3e02; }
+  .exam_skin_wood .classify {
+    width: 100%;
+    height: 100%; }
+    .exam_skin_wood .classify .grid {
+      position: relative;
+      float: left;
+      padding-top: 6.25em;
+      padding-right: 0.41667em;
+      height: 100%;
+      text-align: center;
+      background: url(resources/wood/images/grid.png) right top no-repeat;
+      background-size: 0.41667em 100%; }
+      .exam_skin_wood .classify .grid:after {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle; }
+      .exam_skin_wood .classify .grid:last-child {
+        background: none; }
+      .exam_skin_wood .classify .grid.grid_on {
+        background-color: rgba(255, 255, 255, 0.25); }
+      .exam_skin_wood .classify .grid .titlebox {
+        position: absolute;
+        top: 0;
+        left: -0.33333em;
+        right: 0;
+        width: 94%;
+        height: 5em;
+        text-align: center;
+        margin: 0 auto; }
+      .exam_skin_wood .classify .grid .classify_title {
+        margin: 0.83333em 0 0.41667em;
+        display: inline-block;
+        min-width: 7.5em;
+        height: 4em;
+        border: 1px solid #8e5c1f;
+        border-radius: 0.33333em;
+        text-align: center;
+        overflow: hidden;
+        color: #5d390d;
+        background-image: linear-gradient(to bottom, #f4bf7c, #daa055); }
+        .exam_skin_wood .classify .grid .classify_title .word {
+          display: inline-block;
+          line-height: 1.2;
+          font-size: 1.75em;
+          padding: 0 0.41667em 0 0.41667em;
+          vertical-align: middle;
+          word-wrap: break-word;
+          word-break: break-word;
+          text-align: left; }
+        .exam_skin_wood .classify .grid .classify_title.title_more .word {
+          font-size: 1.16667em; }
+        .exam_skin_wood .classify .grid .classify_title:after {
+          content: "";
+          display: inline-block;
+          width: 0;
+          height: 100%;
+          vertical-align: middle; }
+      .exam_skin_wood .classify .grid .list_box {
+        display: inline-block;
+        max-width: 13.16667em;
+        vertical-align: top; }
+        .exam_skin_wood .classify .grid .list_box .list {
+          position: relative;
+          float: left;
+          margin: 0.16667em 0.16667em;
+          cursor: default; }
+          .exam_skin_wood .classify .grid .list_box .list .list_container {
+            width: 6.25em;
+            height: 4.16667em;
+            line-height: 0.83333em;
+            text-align: left;
+            background: #fff;
+            border: 2px solid rgba(106, 70, 22, 0.2);
+            overflow: hidden;
+            text-align: center; }
+            .exam_skin_wood .classify .grid .list_box .list .list_container .text {
+              padding: 0.04167em 0.16667em;
+              word-wrap: break-word;
+              word-break: break-word;
+              line-height: 1.3;
+              font-size: 0.83333em;
+              display: inline-block;
+              vertical-align: middle;
+              text-align: left; }
+              .exam_skin_wood .classify .grid .list_box .list .list_container .text.small {
+                line-height: 1.1;
+                font-size: 0.75em; }
+            .exam_skin_wood .classify .grid .list_box .list .list_container:after {
+              content: "";
+              display: inline-block;
+              height: 100%;
+              width: 0;
+              vertical-align: middle; }
+          .exam_skin_wood .classify .grid .list_box .list .list_num {
+            display: none;
+            text-align: center;
+            color: #41a22b; }
+            .exam_skin_wood .classify .grid .list_box .list .list_num .word {
+              line-height: 1.5;
+              font-size: 0.66667em; }
+          .exam_skin_wood .classify .grid .list_box .list.click .list_container {
+            border: 0.08333em solid #ff3e02; }
+            .exam_skin_wood .classify .grid .list_box .list.click .list_container .list_delete {
+              display: block; }
+          .exam_skin_wood .classify .grid .list_box .list.correct .list_container {
+            border: 0.08333em solid #5dad2c; }
+          .exam_skin_wood .classify .grid .list_box .list.error .list_container {
+            border: 0.08333em solid #ff3e02; }
+      .exam_skin_wood .classify .grid .list_img {
+        width: 100%;
+        height: 100%; }
+      .exam_skin_wood .classify .grid .list_delete {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1.04167em;
+        height: 1.125em;
+        background: url(resources/wood/images/icon_delete.png) rgba(0, 0, 0, 0.66) no-repeat;
+        background-size: 100% auto;
+        border-radius: 0 0 0 0.29167em; }
+        .exam_skin_wood .classify .grid .list_delete:active {
+          background: url(resources/wood/images/icon_delete.png) rgba(0, 0, 0, 0.5) no-repeat;
+          background-size: 100% auto; }
+    .exam_skin_wood .classify.classify_two .grid {
+      width: 50%; }
+    .exam_skin_wood .classify.classify_three .grid {
+      width: 33.33%; }
+    .exam_skin_wood .classify.classify_four .grid {
+      width: 25%; }
+    .exam_skin_wood .classify.classify_five .grid {
+      width: 20%; }
+  .exam_skin_wood .classify_bottom {
+    position: absolute;
+    top: 30.5em;
+    left: 0.16667em;
+    right: 0.16667em;
+    height: 7.33333em;
+    background: rgba(144, 85, 24, 0.7);
+    overflow: hidden;
+    padding: 0.83333em 0.20833em 0.16667em 0.5em; }
+    .exam_skin_wood .classify_bottom .bottom_wrap {
+      height: 100%; }
+    .exam_skin_wood .classify_bottom .com_bottom_box_btn {
+      margin-top: -3.75em;
+      height: 7.5em; }
+  .exam_skin_wood .option_box {
+    height: 100%;
+    white-space: nowrap;
+    text-align: left; }
+    .exam_skin_wood .option_box .option_list {
+      position: relative;
+      display: inline-block;
+      margin-right: 0.29167em;
+      width: 8.29167em;
+      height: 5.66667em;
+      border: 2px solid rgba(106, 70, 22, 0.2);
+      cursor: default;
+      vertical-align: middle; }
+      .exam_skin_wood .option_box .option_list .option_list_container {
+        width: 100%;
+        height: 100%;
+        white-space: normal; }
+      .exam_skin_wood .option_box .option_list .option_list_num {
+        display: none;
+        text-align: center;
+        color: #41a22b; }
+        .exam_skin_wood .option_box .option_list .option_list_num .word {
+          line-height: 1.5;
+          font-size: 0.66667em; }
+      .exam_skin_wood .option_box .option_list.click .option_list_container {
+        border: 0.08333em solid #ff3e02; }
+      .exam_skin_wood .option_box .option_list.list_move {
+        border-color: #ff3e02; }
+    .exam_skin_wood .option_box .option_img {
+      width: 100%;
+      height: 100%; }
+  .exam_skin_wood .option_text {
+    height: 100%;
+    color: #2e2e2e;
+    background: #fff;
+    overflow: hidden;
+    text-align: center; }
+    .exam_skin_wood .option_text:after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 0;
+      vertical-align: middle; }
+    .exam_skin_wood .option_text .text {
+      padding: 0.04167em 0.41667em 0 0.41667em;
+      word-wrap: break-word;
+      word-break: break-word;
+      line-height: 1.3;
+      font-size: 1.16667em;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left; }
+      .exam_skin_wood .option_text .text.small {
+        line-height: 1.1;
+        font-size: 0.75em; }
+  .exam_skin_wood .com_wrapper_pad .classify_box .com_layout_main_exam {
+    height: 29.66667em; }
+  .exam_skin_wood .com_wrapper_pad .classify_bottom {
+    top: 30.25em; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,381 @@
+.guessWord_box {
+    position: relative;
+    height: 100%;
+    z-index: 333;
+    .com_layout_main{
+        padding: pxToEm(26px) 0 pxToEm(14px);
+        overflow: hidden;
+    }
+}
+.guessWord_btn_animate_box {
+    z-index: 335;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(48.9em,21.5em);
+    display: inline-block;
+    width: 3.66667em;
+    height: 3.66667em;
+    line-height: 3.41667em;
+    border-radius: 0.83333em;
+    text-align: center;
+    letter-spacing: normal;
+    &.guessWord_btnS_animate{
+        width: 2.70833em;
+        height: 2.70833em;
+        line-height: 2.5em;
+    }
+    .com_btn_square{
+        margin: auto;
+        position: absolute;
+        left: 0;top:0;right: 0;bottom: 0;
+        min-width: 0;min-height: 0;
+        width: 100%;
+        height: 100%;
+        background: url(resources/wood/images/btn_lr_board.png) no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
+        cursor: pointer;
+        em{
+            font-size: pxToEm(46px);
+            color: #422701;
+        }
+    }
+}
+.guessWord_left{
+  padding: 0 pxToEm(8px) 0 pxToEm(16px);
+  float: left;
+  width: pxToEm(592px);
+  height: 100%;
+  margin-left: pxToEm(-10px);
+  text-align: center;
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .cellMiddle{
+    display: inline-block;
+    vertical-align: middle;
+    width: 98%;
+    height: 100%;
+  }
+  .guessWord_tab{
+    padding: 0 pxToEm(5px);
+    display: inline-block;
+    height: pxToEm(116px);
+    background: rgba(111, 75, 27, 0.1);
+    border-radius: pxToEm(20px);
+    text-align: left;
+    letter-spacing: pxToEm(-8px);
+    white-space: nowrap;
+    li{
+      margin: 0 pxToEm(10px);
+      position: relative;
+      z-index: 0;
+      display: inline-block;
+      border-radius: pxToEm(25px);
+      text-align: center;
+      letter-spacing: normal;
+      vertical-align: middle;
+      cursor: pointer;
+      img{
+        display: block;
+        width: pxToEm(84px);
+        height: pxToEm(84px);
+        border-radius: pxToEm(20px);
+      }
+      .tabNum{
+        margin: auto;
+        position: absolute;
+        top: 0;bottom: 0;left: 0;right: 0;
+        display: inline-block;
+        width: pxToEm(42px);
+        height: pxToEm(42px);
+        line-height: pxToEm(42px);
+        border-radius: pxToEm(19px);
+        background: rgba(27,27,27,.4);
+        vertical-align: middle;
+        em{font-size: pxToEm(36px);color: #fff;}
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        top:0;left:0;z-index: 10;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: rgba(34,34,34,.3);
+        border-radius: pxToEm(20px);
+      }
+      &.on{
+        margin:0 pxToEm(8px);
+        border:pxToEm(5px) solid #fff;
+        .tabNum{
+          background: #f39602;
+        }
+        &:after{
+          margin: 0 auto;
+          left:0;right: 0;
+          top:auto;
+          bottom:pxToEm(-30px);
+          width: pxToEm(32px);
+          height: pxToEm(20px);
+          background: url(resources/wood/images/triangle.png) no-repeat;
+          background-size: auto 100%;
+        }
+      }
+      &.res_right{
+        margin:0 pxToEm(8px);
+        border:pxToEm(5px) solid #14c061;
+        .tabNum{
+          background: #14c061;
+        }
+      }
+      &.res_err{
+        margin:0 pxToEm(8px);
+        border:pxToEm(5px) solid #d62727;
+        .tabNum{
+          background: #d62727;
+        }
+      }
+      .res_audio,.res_video{
+        display: inline-block;
+        width: pxToEm(84px);
+        height: pxToEm(84px);
+        background-size: cover;
+        border-radius: pxToEm(20px);
+        vertical-align: middle;
+      }
+      .res_audio{
+        background-image: url(resources/wood/images/img_ico_audio.jpg);
+      }
+      .res_video{
+        background-image: url(resources/wood/images/img_ico_video.jpg);
+      }
+    }
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+  .guessWord_content{
+    margin-top: pxToEm(18px);
+    padding: pxToEm(50px) pxToEm(25px) pxToEm(45px);
+    display: inline-block;
+    width: 100%;
+    background: #f3f3f5;
+    border-radius: pxToEm(20px);
+    .guessWord_contentChi{
+      padding: 0 pxToEm(18px);
+      display: block;
+      height: pxToEm(526px);
+      overflow-y: auto;
+      &:after{
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+      }
+    }
+    .content_box{
+      display: inline-block;
+      width:100%;
+      vertical-align: middle;
+      img,audio,video{
+        max-width: 100%;
+        max-height: 100%;
+        vertical-align: middle;
+      }
+      audio{
+        min-height: pxToEm(30px);
+      }
+    }
+    .content_img{
+      margin-bottom: pxToEm(20px);
+    }
+    .content_audio,.content_video{
+      position: relative;
+      width: pxToEm(470px);
+    }
+    .content_video{
+      height: pxToEm(500px);
+      video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+      }
+    }
+    .content_audio{
+      background: url(resources/wood/images/bg_voice.png) no-repeat center center;
+      background-size: pxToEm(96px) auto;
+      height: pxToEm(380px);
+      audio{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+    p{
+
+      text-align: left;
+      em{
+        word-wrap: break-word;
+        //word-break: break-all;
+        font-size: pxToEm(40px);
+        color: #2e2e2e;
+        line-height: 1.5;
+      }
+
+    }
+  }
+}
+.guessWord_right{
+  float: left;
+  width: pxToEm(1065px);
+  height: 100%;
+  background: rgba(111, 75, 27, 0.1);
+  border-radius: pxToEm(20px);
+  text-align: center;
+  li{
+    position: relative;
+    display: inline-block;
+    width: pxToEm(88px);
+    height: pxToEm(88px);
+    line-height: pxToEm(82px);
+    border-radius: pxToEm(20px);
+    text-align: center;
+    letter-spacing:normal;
+    .com_btn_square{
+      margin: auto;
+      position: absolute;
+      left: 0;top:0;right: 0;bottom: 0;
+      min-width: 0;min-height: 0;
+      width: 100%;
+      height: 100%;
+      background: url(resources/wood/images/btn_lr_board.png) no-repeat;
+      background-position: center top;
+      background-size: 100% auto;
+      cursor: pointer;
+      em{font-size: pxToEm(46px);
+      color: #422701;}
+
+      &:active{
+        background-position: center bottom;
+      }
+    }
+    &:before{
+      content: '';
+      margin: auto;
+      position: absolute;
+      left: 0;top:0;right: 0;bottom: 0;
+      display: inline-block;
+      width: pxToEm(80px);
+      height: pxToEm(84px);
+      border-radius: pxToEm(20px);
+    }
+  }
+  .guessWord_answerBtn{
+    margin:0 pxToEm(10px);
+    letter-spacing:pxToEm(-7px);
+    white-space: nowrap;
+    overflow: hidden;
+    li{
+      margin:pxToEm(50px)  pxToEm(12px);
+      &:before{
+        background: url(resources/wood/images/gw_answerBox.jpg) no-repeat;
+        background-size: 100% 100%;
+        border: pxToEm(4px) solid #d4a360;
+      }
+      &.com_s_right{
+        &:before{
+          border:pxToEm(4px) solid #14c061;
+        }
+      }
+      &.com_s_error{
+        &:before{
+          border:pxToEm(4px) solid #d62727;
+        }
+      }
+      &.on{
+        &:before{
+          border: pxToEm(4px) solid #ffd43e;
+        }
+      }
+      &.click_disabled{
+        .com_btn_square{
+          cursor: default;
+          &:active{
+            background-position: center top;
+          }
+        }
+      }
+    }
+  }
+  .guessWord_selectBtn{
+    display: inline-block;
+    max-width: pxToEm(850px);
+
+    height: 100%;
+    max-height: pxToEm(510px);
+    overflow-y: auto;
+    letter-spacing:pxToEm(-8px);
+    li{
+      margin: 0 pxToEm(5px) pxToEm(40px);
+      &:before{
+        background: rgba(111, 75, 27, 0.1);
+      }
+    }
+  }
+}
+/*答案超过7个的时候用小按钮*/
+.guessWord_btnS{
+  .guessWord_right{
+    // width: pxToEm(1138px);
+    li{
+      width: pxToEm(65px);
+      height: pxToEm(65px);
+      line-height: pxToEm(60px);
+      &:before{
+        width: pxToEm(59px);
+        height: pxToEm(63px);
+      }
+    }
+    .guessWord_answerBtn{
+      margin: 0 pxToEm(5px) pxToEm(15px);
+      li{
+        margin:pxToEm(40px)  pxToEm(2px);
+        &:before{
+          border-radius: pxToEm(15px);
+        }
+      }
+    }
+    .guessWord_selectBtn{
+      max-width: pxToEm(900px);
+      li{
+        margin: pxToEm(20px);
+      }
+    }
+  }
+}
+.com_wrapper_pad{
+  .guessWord_content{
+    .guessWord_contentChi{
+      height: pxToEm(570px);
+    }
+  }
+  .guessWord_left{
+    margin-left: pxToEm(40px);
+    margin-right: pxToEm(30px);
+  }
+}

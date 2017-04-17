@@ -1,0 +1,35 @@
+<!--在类.en_card_main 中添加.ec_word_spell 为单词拼写,添加.ec_sentence_spell 为句子拼写-->
+<div class="en_card_main ec_word_spell">
+    <!--查看答案按钮 添加.hide_dom 隐藏按钮-->
+    <div class="ec_see_answer">
+        @@include('../../common/resources/common/button/_com_btn_round.html', {"txt":"查看答案","classname":""})
+    </div>
+    <div class="en_card_view scrollbar_style_wborder">
+        <!-- 拼写 在.ec_spell_content 类中添加.ec_show_answer 类即可出现答案区域 -->
+        <div class="ec_spell_content">
+            @@include('./component/_com_media.html',{"config":"only_carousel"})
+            <div class="ec_spell_writting">
+                <!-- 提示信息 -->
+                <div class="ec_spell_info">
+                    <span>n. 铅笔</span>
+                </div>
+                <!-- 拼写区 -->
+                <div class="ec_spell_writting_area">
+                    <canvas style="width: 100%; height:100%;">您的浏览器不支持canvas</canvas>
+                </div>
+            </div>
+            <div class="ec_spell_dash_line"></div>
+            <!-- 答案区域 -->
+            <div class="ec_spell_answer_area">
+                <div class="ec_spell_answer_info"><span>正确答案：</span></div>
+                <div class="ec_spell_answer_writting">
+                    <em>pencils</em>
+                </div>
+            </div>
+            <!-- /答案区域 -->
+        </div>
+    </div>
+</div>
+
+
+

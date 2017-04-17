@@ -1,0 +1,37 @@
+<!-- by: cjj 工号:232249 2017-3-14 -->
+<!-- 播放控制条 -->
+<ul class="read_control-box">
+	<li class="item item-main">
+		<span class="play-process">
+			<b style="left:40%;"></b>
+			<em style="width:40%;"></em>
+		</span>
+		<p class="play-time">
+			<span class="now-play-time"><em>00</em>:<em>06</em>:<em>34</em></span><span> / </span><span><em>00</em>:<em>45</em>:<em>30</em></span>
+		</p>
+	</li>
+	<li class="item item-left">
+	<!-- btn 点击添加样式:ui_btn_active；不可点击添加:click_disabled -->
+	    <!--btn-small:缩小按钮  btn-full:全屏按钮-->
+		<a class="btn btn-size btn-small"></a>
+		<!--btn-play:播放按钮  btn-pause:暂停按钮-->
+		<a class="btn btn-play"></a>
+	</li>
+	<li class="item item-right">
+	    <!--btn-repeat:跟读模式；btn-once:单次循环；btn-three：三次循环；btn-five: 五次循环；无限循环：btn-circulation-->
+	    <!-- 对应按钮添加文字title提示 -->
+		<a class="btn btn-type btn-once" title="单次循环"></a>
+		<!--btn-voice: 音量键 ; 添加样式on打开调节音量键-->
+		<div class="voice-wrapper on">
+			<a class="btn btn-voice"></a>
+		 	<p class="voice-box">
+		 		<span class="bg-black"></span>
+		    	<span class="play-text"><em>音量</em></span>
+				<span class="play-process">
+					<b style="bottom:20%;"></b>
+					<em style="height:20%;"></em>
+				</span>
+		    </p>
+		</div>
+	</li>
+</ul>

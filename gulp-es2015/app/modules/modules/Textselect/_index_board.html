@@ -1,0 +1,56 @@
+<div class="com_layout" id="layout">    
+    <div class="com_wrapper_board" id="wrapper"> <!-- pad端加.com_wrapper_pad，白板端加.com_wrapper_board -->
+        <!--防止页面加载完根据比例缩放的闪动现象执行该脚本-->
+        <script>layoutReset();</script>
+        @@include('../../common/resources/common/tips/_tips.html', {"txt":"", "classname":"remind_left"})
+        <!--头部-->
+        <div class="com_layout_header">
+            <!--计时器-->
+            <div class="com_header_time">
+                @@include('../../common/resources/common/time/_time.html', {"txt":"", "classname":""})
+                <p class="upload"><b class="upload_text">提交人数：</b><span class="num">35</span>/50</p>
+            </div>
+            <!--/计时器-->
+            <!--提交按钮-->
+            <div class="com_header_tool">
+                @@include('../../common/resources/common/button/_com_btn_round.html', {"txt":"提&nbsp;&nbsp;交", "classname":""})
+            </div>
+            <!--/提交按钮-->
+        </div>
+        <!--/头部-->
+        <!-- 底部发题按钮 -->
+        <div class="com_board_sdt_box" style="position: absolute;right: 3.8em;top: 40.3em;z-index:340;">
+            @@include('../../common/resources/common/layout/_com_k12footer_demo.html',{"tongjiBtns":""})
+        </div>
+        <!-- /底部发题按钮 -->
+        
+        <!--主体内容-->
+        <div class="com_layout_container"><!-- 没有标题时加.notit -->
+            <!--新结构-->
+            <div class="com_layout_exam_content textselect_box">
+            <!--题型文本选择-->
+                <div class="com_layout_main_exam">
+                    <div class="com_layout_tit">
+                        <h2 class="tit">请选择出属于热带水果的选项</h2><!-- 文字过多的情况加.s_tit -->
+                    </div>
+
+                    <div class="com_layout_main scrollbar_style_simple">
+                        <div class="textselect_container"><!-- scrollbar_style_simple 是滚动条样式-->
+                            Tropical fruits such as
+                            <span class="textselect_option textselect_selected">mango</span>, diamond,
+                            <span class="textselect_option ">banana</span>,
+                            <span class="textselect_option">apple</span>
+                            are <span class="textselect_option textselect_error">appetizing</span>. Tropical fruits such as
+                            <span class="textselect_option textselect_correct">mango</span>, diamond, banana, apple are appetizing. Tropical fruits such as mango,
+                            <span class="textselect_option textselect_error">diamond</span>, banana, apple areappetizing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--题型文本选择结束-->
+        </div>
+        <!--/主体内容-->
+    </div>
+</div>
+
+

@@ -1,0 +1,360 @@
+/*by: cjj 工号:232249 2017-3-14 */
+@mixin btnBgImg($imgName,$backgroundSize:100% auto,$backgroundPosition:center center,$backgroundRepeat:no-repeat){
+   background: url(resources/wood/image-btn/read-tool_#{$imgName}_normal.png) $backgroundPosition $backgroundRepeat;
+   background-size: $backgroundSize;
+   &:hover, &.ui_btn_active {
+   		background: url(resources/wood/image-btn/read-tool_#{$imgName}_active.png) $backgroundPosition $backgroundRepeat;
+   		background-size: $backgroundSize;
+   }
+   &.click_disabled {
+   		cursor: not-allowed;
+   		background: url(resources/wood/image-btn/read-tool_#{$imgName}_gray.png) $backgroundPosition $backgroundRepeat;
+   		background-size: $backgroundSize;
+   }
+}
+
+.ndui-tool {
+    &.read-play {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.7);
+        height: pxToEm(68px);
+        .ndui-tool-box {
+            position: relative;
+            bottom: 0;
+            left:0;
+            right:0;
+            .ndui-tool-list {
+                position: absolute;
+                bottom: pxToEm(225px);
+                z-index: 99;
+                &.left{
+                    left:0;
+                }
+                &.right{
+                    right:0;
+                }
+            }
+            .ndui-tool-cell {
+                margin-bottom: pxToEm(10px);
+                text-align: center;
+                .ndui-btn-read {
+                    display: block;
+                    min-width: pxToEm(120px);
+                    padding: 0 pxToEm(10px);
+                    height: pxToEm(40px);
+                    line-height: pxToEm(36px);
+                    border-radius: pxToEm(20px);
+                    background-color: rgba(253, 249, 241,0.8);
+                    background-image: none;
+                    box-shadow:0px pxToEm(4px) pxToEm(4px) 1px rgba(255,255,255,1) inset,
+                               0px pxToEm(-4px) pxToEm(4px) 0px rgba(235,223,199,1) inset,
+                               0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+                    &.ui_btn_active {
+                        background-color: #e66629;
+                        box-shadow:0px pxToEm(4px) pxToEm(4px) 1px #f47e47 inset,
+                                   0px pxToEm(-4px) pxToEm(4px) 0px #cb5721 inset,
+                                   0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+                        .ndui-btn-text {
+                            color: #fff;
+                        }
+                    }
+                    &.click_disabled {
+                        cursor: not-allowed;
+                        background-color: #9e9e9e;
+                        box-shadow: 0px pxToEm(4px) pxToEm(4px) 1px #c1c1c1 inset,
+                                    0px pxToEm(-4px) pxToEm(4px) 0px #6d6d6d inset,
+                                    0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+                        .ndui-btn-text {
+                            color: #646464;
+                        }
+                    }
+                    .ndui-btn-pic {
+                        display: none;
+                    }
+                    .ndui-btn-text {
+                        font-size: pxToEm(20px);
+                        color: #333;
+                    }
+                } 
+            }
+        }
+        .ndui-tool-box-other {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .read_control-box {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+                height: 100%;
+            }
+            .item {
+                white-space: nowrap;
+            }
+            .item-main {
+                order: 2;
+                width: 100%;
+                display: inline-flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: pxToEm(15px);
+                .play-time {
+                    display: inline-block;
+                    width: pxToEm(180px);
+                    height: pxToEm(68px);
+                    line-height: pxToEm(62px);
+                    text-align: center;
+                    white-space:nowrap;
+                    span {
+                        font-size: pxToEm(16px);
+                        color: #aeaeae;
+                        &.now-play-time {
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+            .item-left {
+                order: 1;
+                margin:0 pxToEm(10px);
+            }
+            .item-right {
+                order: 3;
+                margin:0 pxToEm(10px);
+            }
+            .btn {
+                display: inline-block;
+                width: pxToEm(36px);
+                height: pxToEm(68px);
+                cursor: pointer;
+                &.btn-small {
+                    @include btnBgImg(small-btn)
+                }
+                &.btn-full {
+                    @include btnBgImg(big-btn)
+                }
+                &.btn-play {
+                    @include btnBgImg(play-btn)
+                }
+                &.btn-pause {
+                    @include btnBgImg(pause-btn)
+                }
+                &.btn-repeat {
+                    @include btnBgImg(repeat-btn)
+                }
+                &.btn-circulation {
+                    @include btnBgImg(circulation-btn)
+                }
+                &.btn-once {
+                    @include btnBgImg(section01-btn)
+                }
+                &.btn-three {
+                    @include btnBgImg(section03-btn)
+                }
+                &.btn-five {
+                    @include btnBgImg(section05-btn)
+                }
+                &.btn-voice {
+                    @include btnBgImg(volume-btn)
+                }
+                .btn-size {
+                    margin-left: pxToEm(13px);
+                }
+                .btn-play  {
+                    margin-left: pxToEm(4px);
+                }
+            }
+            .voice-wrapper {
+                display: inline-block;
+                position: relative;
+                text-align: center;
+                margin-left: 0;
+                z-index: 999;
+                .voice-box {
+                    display: none;
+                    min-width: pxToEm(50px);
+                    height: pxToEm(140px);
+                    position: absolute;
+                    bottom: pxToEm(85px);
+                    right: pxToEm(-10px);
+                    border-radius: pxToEm(4px);
+                    .bg-black {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #000;
+                        opacity: 0.7;
+                        z-index: -1;
+                        &:after {
+                            content: '';
+                            display: inline-block;
+                            border-top: pxToEm(20px) solid #000;
+                            border-left: pxToEm(16px) solid transparent;
+                            border-right: pxToEm(16px) solid transparent;
+                            position:absolute;
+                            left: 50%;
+                            margin-left: pxToEm(-16px);
+                            bottom: pxToEm(-8px); 
+                        }
+                    }
+                    .play-text {
+                        display: block;
+                        height: pxToEm(32px);
+                        line-height: pxToEm(32px);
+                        padding: 0 pxToEm(10px);
+                        text-align: center;
+                        white-space: nowrap;
+                        em {
+                            font-size: pxToEm(18px);
+                            color: #fff;
+                        }
+                    }
+                    .play-process {
+                        display: inline-block;
+                        margin-right: 0;
+                        height: pxToEm(100px);
+                        b {
+                            left: 50%;
+                            top: auto;
+                            transform: translate(-50%, 50%);
+                        }
+                        em {
+                            left: auto;
+                            width: pxToEm(6px);
+                            background-color: #e44600;
+                            border-radius: pxToEm(3px);
+                            bottom: 0;
+                        }
+                        &:after {
+                            display: inline-block;
+                            width: pxToEm(6px);
+                            border-radius: pxToEm(3px);
+                        }
+                    }
+                }
+                &.on .voice-box {
+                    display: block;
+                }
+            }
+            .play-process {
+                width: 100%;
+                height: pxToEm(8px);
+                margin-right: pxToEm(20px);
+                cursor: pointer;
+                position: relative;
+                b {
+                    display: inline-block;
+                    width: pxToEm(18px);
+                    height: pxToEm(18px);
+                    position: absolute;
+                    top: pxToEm(-5px);
+                    border-radius: 50%;
+                    background-color: #fff;
+                    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.33),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.54);
+                    margin: 0;
+                    transform: translateX(-50%);
+                    z-index: 1;
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        width: pxToEm(36px);
+                        height: pxToEm(36px);
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                }
+                em {
+                    position: absolute;
+                    left: 0;
+                    display: inline-block;
+                    height: 100%;
+                    background-color: #e44600;
+                    border-radius: pxToEm(4px) 0 0 pxToEm(4px);
+                }
+                &:after {
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    background-color: #a09e9b;
+                    border-radius: pxToEm(4px);
+                }
+            }
+        }
+    }
+}
+.choose_para_box {
+    position: absolute;
+    bottom: pxToEm(68px);
+    left: 0;
+    right: 0;     
+    background-color: rgba(255,255,255,0.7);
+    display: none;
+    z-index: 99;
+    .choose_para_btn {
+        padding: pxToEm(5px) pxToEm(35px) pxToEm(5px) pxToEm(30px);
+        text-align: left;
+        white-space: nowrap;
+    }
+    .choose_btn {
+        display: inline-block;
+        vertical-align: top;
+        &.para-btn_box {
+            width: auto;
+            white-space: normal;
+        }
+    }
+    .choose_all_btn {
+        display: inline-block;
+        min-width: pxToEm(60px);
+        height: pxToEm(26px);
+        line-height: pxToEm(22px);
+        span {
+            font-size: pxToEm(16px);
+            color: #333;
+        }
+        &:before {
+            content: "";
+            display: inline-block;
+            position: relative;
+            width: pxToEm(14px);
+            height: pxToEm(14px);
+            vertical-align: middle;
+            border: 1px solid #d24726;
+            margin-right: pxToEm(10px);
+        }
+        &.ui_btn_active:before {
+            border: none;
+            background: #d24726 url(resources/wood/images/read-tool_selected-icon.png) no-repeat center center;
+            background-size: 100% auto;
+        }
+    }
+    .para_btn {
+        display: inline-block;
+        border: 1px solid  #f07740;
+        height: pxToEm(20px);
+        line-height: pxToEm(10px);
+        border-radius: pxToEm(11px);
+        padding: 0 pxToEm(10px);
+        vertical-align: middle;
+        margin: 0 pxToEm(5px);
+    }
+    .para_btn-text {
+        font-size: pxToEm(14px);
+        color:#ed5714;
+    }
+}

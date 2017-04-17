@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>白板端题型外框-无背景</title>
+    <link rel="stylesheet" type="text/css" href="../../../../common.css">
+</head>
+<body>
+<div class="exam_skin_wood">
+    <div class="com_layout_nbg" id="layout">
+        <div class="com_wrapper_board" id="wrapper"> <!-- pad端加.com_wrapper_pad，白板端加.com_wrapper_board -->
+            
+            <!--主体内容-->
+            <div class="com_layout_container"><!-- 没有标题时加.notit -->
+                <div style="height:100%;position: relative;height: 100%; z-index: 333;"> <!-- 这个relative的div建立一个自己题型的类名 -->
+                    <div class="com_layout_tit">
+                        <h2 class="tit">标题</h2><!-- 文字过多的情况加.s_tit -->
+                    </div>
+                    <div class="com_layout_main">
+                        <!-- 在这里新建div写新的题型 -->
+                    </div>
+                </div>
+            </div>
+            <!--/主体内容-->
+        </div>
+    </div>
+</div>
+
+<script src="../wood/layout.js"></script>
+</body>
+</html>

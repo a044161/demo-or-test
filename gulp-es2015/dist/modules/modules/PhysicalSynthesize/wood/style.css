@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*物理合力*/
+.com_layout_main {
+  bottom: 6.33333em !important; }
+
+.PhysicalSynthesize .tool_container {
+  position: absolute;
+  left: 1.5em;
+  right: 1.5em;
+  top: 1.875em;
+  bottom: 1.5em;
+  background: url(images/bg_exam_phy.png) 0 0 repeat;
+  background-size: 4.70833em 4.66667em;
+  border-radius: 0.66667em; }
+
+.PhysicalSynthesize .tool_buttons {
+  position: absolute;
+  left: 1.66667em;
+  right: 1.66667em;
+  bottom: 1.5em; }
+  .PhysicalSynthesize .tool_buttons .buttons_left {
+    float: left; }
+    .PhysicalSynthesize .tool_buttons .buttons_left .com_exam_square_btn {
+      margin-right: 0.41667em; }
+  .PhysicalSynthesize .tool_buttons .buttons_right {
+    float: right; }
+    .PhysicalSynthesize .tool_buttons .buttons_right .com_btn_rectangle {
+      margin-top: 0.20833em; }
+
+.tool_bottom {
+  z-index: 5;
+  position: absolute;
+  left: 0.75em;
+  bottom: 1em;
+  right: 0.75em;
+  height: 4.91667em;
+  background: rgba(111, 75, 27, 0.21);
+  background-size: 4.70833em 4.66667em;
+  border-radius: 0.91667em;
+  padding-top: 0.75em;
+  text-align: center; }
+  .tool_bottom .com_btn_rectangle_big {
+    margin: 0 0.08333em; }
+    .tool_bottom .com_btn_rectangle_big .com_btn_text {
+      display: inline-block;
+      width: 7.83333em;
+      height: 3.91667em;
+      line-height: 3.91667em;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 100% auto; }
+    .tool_bottom .com_btn_rectangle_big:active .com_btn_text, .tool_bottom .com_btn_rectangle_big.on .com_btn_text {
+      background-position: center -3.91667em; }
+    .tool_bottom .com_btn_rectangle_big.fun_point .com_btn_text {
+      background-image: url(images/btn_exam_pic1.png); }
+    .tool_bottom .com_btn_rectangle_big.drawing_force .com_btn_text {
+      background-image: url(images/btn_exam_pic2.png); }
+    .tool_bottom .com_btn_rectangle_big.synthesize .com_btn_text {
+      background-image: url(images/btn_exam_pic3.png); }
+    .tool_bottom .com_btn_rectangle_big.dissect .com_btn_text {
+      background-image: url(images/btn_exam_pic4.png); }
+
+/*# sourceMappingURL=style.css.map */
