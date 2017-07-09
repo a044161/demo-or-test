@@ -1,0 +1,7 @@
+@import './modules/val';
+@import './modules/components';
+
+.block {
+  color: $white;
+  background-color: $blue;
+}
