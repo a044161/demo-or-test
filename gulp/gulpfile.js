@@ -27,7 +27,7 @@ gulp.task(
 		"clean",
 		gulp.parallel(
 			task_html,
-			task_styles.scss,
+			task_styles,
 			task_image,
 			server.dev,
 			task_watch.bind({ css: "postcss" })
@@ -36,20 +36,6 @@ gulp.task(
 );
 
 gulp.task(
-	"default-postcss",
-	gulp.series(
-		"clean",
-		gulp.parallel(
-			task_html,
-			task_styles.postcss,
-			task_image,
-			server.dev,
-			task_watch
-		)
-	)
-);
-
-gulp.task(
 	"build",
-	gulp.series("clean", gulp.parallel(task_html, task_styles.scss, task_image))
+	gulp.series("clean", gulp.parallel(task_html, task_styles, task_image))
 );

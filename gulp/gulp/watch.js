@@ -25,7 +25,7 @@ function watch() {
 	);
 	watcher(
 		path.join(_path.src, _file_type.css),
-		gulp.series(task_css.postcss, gulp.parallel(server.reload))
+		gulp.series(task_css, gulp.parallel(server.reload))
 	), unlinkEvt;
 	watcher(
 		path.join(_path.src, _file_type.js),
