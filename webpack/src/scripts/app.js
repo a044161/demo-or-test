@@ -1,3 +1,4 @@
-var module1 = require('./libs/module-1');
+import modules1 from './libs/module-1';
+
 
 module1();
