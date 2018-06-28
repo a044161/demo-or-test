@@ -22,12 +22,13 @@ if (!projectName) {
   console.log(chalk.red('必须填写项目名称,例如 create-js-app js-demo'))
   process.exit(1)
 }
-
+// package 文件定义
 const packageJson = {
   "name": projectName,
   "version": "1.0.0",
   "description": "",
   "browser": `dist/${projectName}.js`,
+  "main": "src/main.js",
   "scripts": {
     "build": "standard && rollup -c",
     "dev": "rollup -c -w",
@@ -38,9 +39,22 @@ const packageJson = {
   "license": "ISC"
 }
 
-const devDependencies = ['babel-cli', 'babel-preset-env', 'rollup', 'rollup-plugin-babel', 'rollup-plugin-commonjs', 'rollup-plugin-node-resolve', 'standard', 'ms']
+// 依赖文件
+const devDependencies = [
+'babel-cli',
+'babel-preset-env',
+'rollup',
+'rollup-plugin-babel',
+'rollup-plugin-commonjs',
+'rollup-plugin-node-resolve',
+'rollup-plugin-filesize',
+'rollup-plugin-uglify',
+'uglify-es',
+'standard',
+'ms'
+]
 const commond = 'npm'
-const commondArgs = ['install', '--save', ...devDependencies]
+const commondArgs = ['install', '--save-dev', ...devDependencies]
 
 if(!fs.ensureDir(path.resolve(projectName))) {
   fs.mkdirsSync(path.resolve(projectName))

@@ -7,15 +7,13 @@
 
 # create-js-app
 
-基于 rollup 为模板简单制作了一个命令行工具
+基于 rollup 为模板简单制作了一个命令行工具  
+beta 版完成
 
 # rollup
 
-进行中...  
-
-- [ ] 兼容性配置  
-- [ ] 压缩  
-- [ ] output 优化  
+rollup 模板  
+beta 版完成
 
 # indexedDB
 

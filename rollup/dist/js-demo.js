@@ -1,15 +1,1 @@
-(function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (factory());
-}(this, (function () { 'use strict';
-
-  var moduleA = (() => {
-    console.log('this is moduleA');
-  });
-
-  moduleA();
-
-  Object.assign({}, { a: 1 });
-
-})));
+!function(e,o){"object"==typeof exports&&"undefined"!=typeof module?o():"function"==typeof define&&define.amd?define(o):o()}(0,function(){"use strict";console.log("this is moduleA"),console.log("a"),Object.assign({},{a:1})});
