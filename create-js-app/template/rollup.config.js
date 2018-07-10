@@ -7,10 +7,12 @@ import { minify } from 'uglify-es'
 import pkg from './package.json'
 
 export default {
-  entry: 'src/main.js',
-  dest: pkg.browser,
-  format: 'umd',
-  moduleName: 'rollupDemo',
+  input: 'src/main.js',
+  output: {
+    name: 'rollupDemo',
+    file: pkg.browser,
+    format: 'umd'
+  },
   plugins: [
     resolve(),
     commonjs(),
