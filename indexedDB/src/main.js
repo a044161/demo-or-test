@@ -1,6 +1,26 @@
 const DB_NAME = 'test'
 const DB_VER = 4
 
+/**
+ * 将 onsuccess、onerror 转为 Promise 对象
+ * @param {object} request - IDBRequest 对象
+ * @param {*} success - 处理成功时的回调函数，需要有返回值
+ * @param {*} error - 处理失败时的回调函数，需要有返回值
+ */
+function promiseRequest (request, success, error) {
+  return new Promise((resolve, reject) => {
+    request.onsuccess = function (event) {
+      if (success) return resolve(success(event))
+      return resolve(event)
+    }
+    request.onerror = function (event) {
+      if (error) return reject(error(event))
+      return reject(event)
+    }
+  })
+}
+
+// 数据库实例
 let DB
 
 // 打开数据库
@@ -29,111 +49,100 @@ request.onupgradeneeded = function (event) {
 /**
  * 新建对象仓库（新建表）
  * @param {string} name - 对象仓库名称
- * @param {*} opts - 配置项
- * @returns {object} 对象仓库
+ * @param {object} opts - 配置项
+ * @param {object} indexObj - 索引对象
  */
-function createObjectStore (name, opts = {}) {
+function createObjectStore (name, opts = {}, indexObj = {}) {
   // 如果没有指定主键，则自动创建主键
   if (!opts.keyPath) opts.autoIncrement = true
   // 判断是否存在同名的对象仓库
-  if (!DB.objectStoreNames.contains(name)) return DB.createObjectStore(name, opts)
+  if (!DB.objectStoreNames.contains(name)) {
+    // 创建对象仓库
+    const store = DB.createObjectStore(name, opts)
+    // 创建索引
+    for (let i in indexObj) {
+      store.createIndex(i, i, indexObj[i])
+    }
+  }
 }
 
 /**
  * 写入数据
  */
-function add () {
-  const request = DB.transaction('demo', 'readwrite')
-    .objectStore('demo')
-    .add({
-      id: 1,
-      name: 'abc'
-    })
+function add (name, data) {
+  if (!data) return
+  const request = DB.transaction(name, 'readwrite')
+    .objectStore(name)
+    .add(data)
 
-  request.onsuccess = function (event) {
-    console.log('数据写入成功')
-  }
-  request.onerror = function (event) {
-    console.log('数据写入失败')
-  }
+  return promiseRequest(request)
 }
 
 /**
  * 读取数据
  */
-function read () {
-  const objectStore = DB.transaction('demo')
-    .objectStore('demo')
-  const request = objectStore.get(1)
+function read (name, index) {
+  const request = DB.transaction(name)
+    .objectStore(name)
+    .get(index)
 
-  request.onerror = function (event) {
-    console.log('事务失败')
-  }
-
-  request.onsuccess = function (event) {
-    if (request.result) {
-      console.log(request.result)
-    } else {
-      console.log('未取到数据')
-    }
-  }
+  return promiseRequest(request)
 }
 
 /**
  * 读取全部数据
  */
-function readAll () {
-  const objectStore = DB.transaction('demo')
-    .objectStore('demo')
-  objectStore.openCursor().onsuccess = function (event) {
+function readAll (name) {
+  let data = []
+  const request = DB.transaction(name)
+    .objectStore(name)
+    .openCursor()
+
+  const handleSuccess = function (event) {
     const cursor = event.target.result
     if (cursor) {
-      console.log(cursor)
+      data.push(cursor.value)
       cursor.continue()
     } else {
-      console.log('读取数据完毕')
+      return data
     }
   }
+  return promiseRequest(request, handleSuccess)
 }
 
 /**
  * 更新数据
  */
-function update () {
-  const objectStore = DB.transaction('demo', 'readwrite')
-    .objectStore('demo')
-  const put = objectStore.put({
-    id: 1,
-    name: 's'
-  })
+function update (name, data) {
+  if (!data) return
+  const request = DB.transaction(name, 'readwrite')
+    .objectStore(name)
+    .put(data)
 
-  put.onsuccess = function (event) {
-    console.log('更新数据成功')
-  }
-
-  put.onerror = function (event) {
-    console.log('更新数据失败')
-  }
+  return promiseRequest(request)
 }
 
-function remove () {
-  const objectStore = DB.transaction('demo', 'readwrite')
-    .objectStore('demo')
+function remove (name, index) {
+  const request = DB.transaction(name, 'readwrite')
+    .objectStore(name)
+    .delete(index)
 
-  const remove = objectStore.delete(1)
-
-  remove.onsuccess = function (event) {
-    console.log('删除数据成功')
-  }
-  remove.onerror = function (event) {
-    console.log('删除数据失败')
-  }
+  return promiseRequest(request)
 }
 
 setTimeout(() => {
-  // add()
-  // read()
-  // readAll()
+  // add('demo', {
+  //   id: 1,
+  //   name: '33344'
+  // })
+  read('demo', 20)
+    .then(data => {
+      console.log(data)
+    })
+  readAll('demo')
+    .then(data => {
+      console.log(data)
+    })
   // update()
-  remove()
+  // remove()
 }, 2000)
